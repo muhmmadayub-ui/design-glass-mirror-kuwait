@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 <meta name="description" content="Design Glass & Mirror Kuwait provides professional glass, mirrors, shower glass, glass partitions, railings, office glass and aluminum works in Kuwait.">
-
 <meta name="keywords" content="glass Kuwait, mirror Kuwait, glass partitions Kuwait, shower glass Kuwait, glass railings Kuwait, office glass Kuwait, aluminum works Kuwait, Design Glass Mirror Kuwait">
-
 <meta name="author" content="Design Glass & Mirror Kuwait">
 
 <meta property="og:title" content="Design Glass & Mirror Kuwait">
@@ -22,11 +17,6 @@
 <title>Design Glass & Mirror Kuwait | Glass & Mirror Works</title>
 
 <style>
-
-/* =====================================================
-   RESET
-===================================================== */
-
 *{
     margin:0;
     padding:0;
@@ -58,98 +48,18 @@ button,input,textarea{
     font-family:inherit;
 }
 
-
-/* =====================================================
-   RTL
-===================================================== */
-
-html[dir="rtl"] body{
-    text-align:right;
-}
-
-html[dir="rtl"] nav{
-    direction:rtl;
-}
-
-html[dir="rtl"] .nav-container{
-    direction:rtl;
-}
-
-html[dir="rtl"] .hero,
-html[dir="rtl"] .section-heading,
-html[dir="rtl"] .gallery-description,
-html[dir="rtl"] .instagram-box,
-html[dir="rtl"] footer{
-    text-align:center;
-}
-
-html[dir="rtl"] .about-text,
-html[dir="rtl"] .contact-info,
-html[dir="rtl"] .contact-card,
-html[dir="rtl"] .service,
-html[dir="rtl"] .why-item,
-html[dir="rtl"] .admin-panel,
-html[dir="rtl"] .login-box{
-    text-align:right;
-}
-
-html[dir="rtl"] .contact-item{
-    flex-direction:row;
-}
-
-html[dir="rtl"] .contact-item small{
-    text-align:right;
-}
-
-html[dir="rtl"] input,
-html[dir="rtl"] textarea{
-    text-align:right;
-}
-
-html[dir="rtl"] .floating-whatsapp{
-    right:auto;
-    left:20px;
-}
-
-html[dir="rtl"] .admin-button{
-    left:auto;
-    right:18px;
-}
-
-html[dir="rtl"] .admin-panel{
-    right:auto;
-    left:15px;
-}
-
-html[dir="rtl"] .lightbox-close{
-    right:auto;
-    left:25px;
-}
-
-html[dir="rtl"] .points{
-    direction:rtl;
-}
-
-
-/* =====================================================
-   HEADER
-===================================================== */
-
+/* HEADER */
 header{
     position:sticky;
     top:0;
     z-index:1000;
-
     background:rgba(9,20,35,.97);
     color:#fff;
-
     min-height:64px;
     padding:10px 5%;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
-
     box-shadow:0 4px 20px rgba(0,0,0,.12);
 }
 
@@ -157,11 +67,9 @@ header{
     width:100%;
     max-width:1250px;
     margin:auto;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
-
     gap:20px;
 }
 
@@ -216,65 +124,39 @@ nav a:hover{
     cursor:pointer;
 }
 
-
-/* =====================================================
-   HERO
-===================================================== */
-
+/* HERO */
 .hero{
     position:relative;
-
     min-height:570px;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     text-align:center;
-
     color:#fff;
-
     overflow:hidden;
 
     background:
-        linear-gradient(
-            rgba(4,25,45,.60),
-            rgba(5,60,90,.58)
-        ),
-        linear-gradient(
-            135deg,
-            #0c6d9e,
-            #102d52
-        );
+        linear-gradient(rgba(4,25,45,.50),rgba(5,60,90,.48)),
+        url("6mm mirror with design LED LIGHT.jpeg");
 
     background-size:cover;
     background-position:center center;
-
-    transition:background-image 1s ease-in-out;
+    transition:background-image .8s ease-in-out;
 }
 
 .hero::after{
     content:"";
     position:absolute;
     inset:0;
-
-    background:
-        linear-gradient(
-            180deg,
-            rgba(0,0,0,.10),
-            rgba(0,0,0,.18)
-        );
-
+    background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.20));
     pointer-events:none;
 }
 
 .hero-content{
     position:relative;
     z-index:2;
-
     width:100%;
     max-width:900px;
-
     padding:50px 20px;
 }
 
@@ -296,7 +178,6 @@ nav a:hover{
 .hero-text{
     max-width:720px;
     margin:0 auto 28px;
-
     font-size:18px;
     color:#f4fbff;
 }
@@ -330,20 +211,12 @@ nav a:hover{
     color:#fff;
 }
 
-
-/* =====================================================
-   HERO DOTS
-===================================================== */
-
 .hero-dots{
     position:absolute;
     z-index:5;
-
     bottom:22px;
     left:50%;
-
     transform:translateX(-50%);
-
     display:flex;
     gap:8px;
 }
@@ -361,11 +234,7 @@ nav a:hover{
     transform:scale(1.25);
 }
 
-
-/* =====================================================
-   GENERAL
-===================================================== */
-
+/* GENERAL */
 .section{
     padding:75px 6%;
 }
@@ -401,11 +270,7 @@ nav a:hover{
     border-radius:10px;
 }
 
-
-/* =====================================================
-   ABOUT
-===================================================== */
-
+/* ABOUT */
 .about{
     background:#fff;
 }
@@ -413,12 +278,9 @@ nav a:hover{
 .about-grid{
     max-width:1100px;
     margin:auto;
-
     display:grid;
     grid-template-columns:1.4fr 1fr;
-
     gap:55px;
-
     align-items:center;
 }
 
@@ -444,26 +306,17 @@ nav a:hover{
 
 .about-card{
     min-height:300px;
-
     border-radius:22px;
-
     padding:35px 25px;
-
     text-align:center;
-
     display:flex;
     flex-direction:column;
     justify-content:center;
 
     background:
-        linear-gradient(
-            135deg,
-            #dff7ff,
-            #eef6ff
-        );
+        linear-gradient(135deg,#dff7ff,#eef6ff);
 
-    box-shadow:
-        0 20px 50px rgba(20,70,100,.12);
+    box-shadow:0 20px 50px rgba(20,70,100,.12);
 }
 
 .about-symbol{
@@ -477,11 +330,7 @@ nav a:hover{
     font-size:24px;
 }
 
-
-/* =====================================================
-   SERVICES
-===================================================== */
-
+/* SERVICES */
 .services{
     background:#f4f9fc;
 }
@@ -489,50 +338,35 @@ nav a:hover{
 .services-grid{
     max-width:1200px;
     margin:auto;
-
     display:grid;
     grid-template-columns:repeat(3,1fr);
-
     gap:22px;
 }
 
 .service{
     background:#fff;
-
     padding:30px 25px;
-
     border-radius:18px;
-
     border:1px solid #e4eef5;
-
-    box-shadow:
-        0 10px 35px rgba(20,60,90,.08);
-
+    box-shadow:0 10px 35px rgba(20,60,90,.08);
     transition:.25s;
 }
 
 .service:hover{
     transform:translateY(-6px);
-
-    box-shadow:
-        0 18px 40px rgba(20,80,120,.14);
+    box-shadow:0 18px 40px rgba(20,80,120,.14);
 }
 
 .service-icon{
     width:55px;
     height:55px;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     background:#e3f6ff;
     color:#0786c2;
-
     border-radius:14px;
-
     font-size:25px;
-
     margin-bottom:16px;
 }
 
@@ -545,22 +379,15 @@ nav a:hover{
     color:#697586;
 }
 
-
-/* =====================================================
-   GALLERY
-===================================================== */
-
+/* GALLERY */
 .gallery{
     background:#fff;
 }
 
 .gallery-description{
     max-width:750px;
-
     text-align:center;
-
     color:#667085;
-
     margin:-15px auto 35px;
 }
 
@@ -572,29 +399,19 @@ nav a:hover{
 
 .gallery-card{
     position:relative;
-
     height:245px;
-
     overflow:hidden;
-
     border-radius:15px;
-
     background:#eef7fb;
-
     cursor:pointer;
-
-    box-shadow:
-        0 8px 25px rgba(20,60,90,.10);
+    box-shadow:0 8px 25px rgba(20,60,90,.10);
 }
 
 .gallery-card img{
     width:100%;
     height:100%;
-
     object-fit:cover;
-
     display:block;
-
     transition:transform .4s;
 }
 
@@ -604,30 +421,17 @@ nav a:hover{
 
 .gallery-caption{
     position:absolute;
-
     left:0;
     right:0;
     bottom:0;
-
     padding:12px 15px;
-
     color:#fff;
-
     font-size:14px;
     font-weight:bold;
-
-    background:
-        linear-gradient(
-            transparent,
-            rgba(0,0,0,.82)
-        );
+    background:linear-gradient(transparent,rgba(0,0,0,.82));
 }
 
-
-/* =====================================================
-   VIDEOS
-===================================================== */
-
+/* VIDEOS */
 .videos{
     background:#f4f9fc;
 }
@@ -642,9 +446,7 @@ nav a:hover{
     background:#10233d;
     border-radius:18px;
     overflow:hidden;
-
-    box-shadow:
-        0 12px 35px rgba(10,30,50,.15);
+    box-shadow:0 12px 35px rgba(10,30,50,.15);
 }
 
 .video-card video{
@@ -662,52 +464,31 @@ nav a:hover{
 
 .video-empty{
     grid-column:1/-1;
-
-    min-height:300px;
-
+    min-height:250px;
     border-radius:20px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #102c49,
-            #087cac
-        );
-
+    background:linear-gradient(135deg,#102c49,#087cac);
     color:#fff;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     text-align:center;
-
     padding:40px;
 }
 
 .play-icon{
     width:70px;
     height:70px;
-
     border-radius:50%;
-
     background:#fff;
     color:#087cac;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     font-size:25px;
-
     margin:0 auto 18px;
 }
 
-
-/* =====================================================
-   WHY US
-===================================================== */
-
+/* WHY */
 .why{
     background:#10233d;
     color:#fff;
@@ -729,9 +510,7 @@ nav a:hover{
 
 .why-item{
     padding:25px 20px;
-
     border:1px solid rgba(255,255,255,.15);
-
     border-radius:15px;
 }
 
@@ -748,11 +527,7 @@ nav a:hover{
     color:#bdc9d7;
 }
 
-
-/* =====================================================
-   CONTACT
-===================================================== */
-
+/* CONTACT */
 .contact{
     background:#fff;
 }
@@ -760,11 +535,8 @@ nav a:hover{
 .contact-grid{
     max-width:1100px;
     margin:auto;
-
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:50px;
 }
 
@@ -788,17 +560,12 @@ nav a:hover{
 .contact-icon{
     width:48px;
     height:48px;
-
     flex-shrink:0;
-
     border-radius:12px;
-
     background:#e4f6fd;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     font-size:20px;
 }
 
@@ -819,11 +586,8 @@ nav a:hover{
 
 .contact-card{
     background:#f5faff;
-
     padding:30px;
-
     border-radius:20px;
-
     border:1px solid #e0edf4;
 }
 
@@ -846,17 +610,11 @@ form{
 form input,
 form textarea{
     width:100%;
-
     border:1px solid #d5e1e8;
-
     border-radius:10px;
-
     padding:13px;
-
     font-size:15px;
-
     outline:none;
-
     background:#fff;
 }
 
@@ -867,46 +625,28 @@ form textarea:focus{
 
 form button{
     border:0;
-
     border-radius:30px;
-
     padding:14px;
-
     background:#087cac;
-
     color:#fff;
-
     font-size:15px;
-
     font-weight:bold;
-
     cursor:pointer;
 }
 
-
-/* =====================================================
-   INSTAGRAM
-===================================================== */
-
+/* INSTAGRAM */
 .instagram{
     background:#f4f9fc;
 }
 
 .instagram-box{
     max-width:700px;
-
     margin:auto;
-
     padding:35px;
-
     border-radius:20px;
-
     text-align:center;
-
     background:#fff;
-
-    box-shadow:
-        0 10px 35px rgba(20,60,90,.08);
+    box-shadow:0 10px 35px rgba(20,60,90,.08);
 }
 
 .instagram-box p{
@@ -916,30 +656,18 @@ form button{
 
 .instagram-button{
     display:inline-block;
-
     background:#10233d;
-
     color:#fff;
-
     padding:12px 22px;
-
     border-radius:30px;
-
     font-weight:bold;
 }
 
-
-/* =====================================================
-   FOOTER
-===================================================== */
-
+/* FOOTER */
 footer{
     background:#081426;
-
     color:#fff;
-
     text-align:center;
-
     padding:40px 20px;
 }
 
@@ -953,13 +681,9 @@ footer p{
 
 .footer-links{
     margin:20px 0;
-
     display:flex;
-
     justify-content:center;
-
     gap:20px;
-
     flex-wrap:wrap;
 }
 
@@ -967,67 +691,38 @@ footer p{
     color:#8edfff;
 }
 
-
-/* =====================================================
-   WHATSAPP
-===================================================== */
-
+/* WHATSAPP */
 .floating-whatsapp{
     position:fixed;
-
     right:20px;
     bottom:20px;
-
     width:58px;
     height:58px;
-
     border-radius:50%;
-
     background:#25d366;
-
     color:#fff;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     font-size:27px;
-
-    box-shadow:
-        0 8px 25px rgba(0,0,0,.25);
-
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
     z-index:900;
 }
 
-
-/* =====================================================
-   ADMIN
-===================================================== */
-
+/* ADMIN */
 .admin-button{
     position:fixed;
-
     left:18px;
     bottom:18px;
-
     z-index:5000;
-
     border:0;
-
     padding:10px 15px;
-
     border-radius:9px;
-
     background:#111d2e;
-
     color:#fff;
-
     font-weight:bold;
-
     cursor:pointer;
-
-    box-shadow:
-        0 5px 20px rgba(0,0,0,.25);
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
 }
 
 .admin-button:hover{
@@ -1036,29 +731,17 @@ footer p{
 
 .admin-panel{
     display:none;
-
     position:fixed;
-
     top:75px;
     right:15px;
-
     width:min(430px,calc(100vw - 30px));
-
     max-height:calc(100vh - 95px);
-
     overflow-y:auto;
-
     z-index:4500;
-
     background:#fff;
-
     border-radius:18px;
-
     padding:20px;
-
-    box-shadow:
-        0 20px 70px rgba(0,0,0,.30);
-
+    box-shadow:0 20px 70px rgba(0,0,0,.30);
     border:1px solid #dce8ef;
 }
 
@@ -1085,27 +768,18 @@ body.admin-mode .admin-panel{
 
 .admin-section{
     border-top:1px solid #e3ebf0;
-
     padding-top:12px;
-
     margin-top:12px;
 }
 
 .admin-panel button{
     border:0;
-
     border-radius:8px;
-
     padding:10px 13px;
-
     margin:4px 3px;
-
     background:#10233d;
-
     color:#fff;
-
     cursor:pointer;
-
     font-weight:bold;
 }
 
@@ -1123,41 +797,14 @@ body.admin-mode .admin-panel{
 
 .admin-status{
     padding:10px;
-
     border-radius:8px;
-
     background:#edf8fc;
-
     color:#126e9c;
-
     font-size:13px;
-
     margin-top:10px;
 }
 
-.bg-preview-list{
-    display:flex;
-    gap:8px;
-    flex-wrap:wrap;
-    margin-top:10px;
-}
-
-.bg-preview{
-    width:90px;
-    height:60px;
-
-    border-radius:7px;
-
-    object-fit:cover;
-
-    border:2px solid #d5e1e8;
-}
-
-
-/* =====================================================
-   EDITABLE
-===================================================== */
-
+/* EDITABLE */
 .editable{
     outline:none;
 }
@@ -1172,26 +819,15 @@ body.admin-mode .editable:hover{
     background:rgba(8,124,172,.08);
 }
 
-
-/* =====================================================
-   LOGIN
-===================================================== */
-
+/* LOGIN */
 .login-overlay{
     display:none;
-
     position:fixed;
-
     inset:0;
-
     z-index:10000;
-
     background:rgba(0,0,0,.68);
-
     align-items:center;
-
     justify-content:center;
-
     padding:20px;
 }
 
@@ -1201,16 +837,10 @@ body.admin-mode .editable:hover{
 
 .login-box{
     width:min(390px,100%);
-
     background:#fff;
-
     border-radius:18px;
-
     padding:30px;
-
-    box-shadow:
-        0 25px 80px rgba(0,0,0,.35);
-
+    box-shadow:0 25px 80px rgba(0,0,0,.35);
     text-align:center;
 }
 
@@ -1227,33 +857,21 @@ body.admin-mode .editable:hover{
 
 .login-box input{
     width:100%;
-
     padding:13px;
-
     border:1px solid #d5e1e8;
-
     border-radius:9px;
-
     margin-bottom:12px;
 }
 
 .login-box button{
     width:100%;
-
     border:0;
-
     padding:13px;
-
     border-radius:9px;
-
     background:#087cac;
-
     color:#fff;
-
     font-weight:bold;
-
     cursor:pointer;
-
     margin-top:6px;
 }
 
@@ -1262,26 +880,15 @@ body.admin-mode .editable:hover{
     color:#243447;
 }
 
-
-/* =====================================================
-   LIGHTBOX
-===================================================== */
-
+/* LIGHTBOX */
 .lightbox{
     display:none;
-
     position:fixed;
-
     inset:0;
-
     z-index:12000;
-
     background:rgba(0,0,0,.9);
-
     align-items:center;
-
     justify-content:center;
-
     padding:25px;
 }
 
@@ -1292,30 +899,20 @@ body.admin-mode .editable:hover{
 .lightbox img{
     max-width:95vw;
     max-height:90vh;
-
     object-fit:contain;
-
     border-radius:8px;
 }
 
 .lightbox-close{
     position:absolute;
-
     top:15px;
     right:25px;
-
     color:#fff;
-
     font-size:42px;
-
     cursor:pointer;
 }
 
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
+/* MOBILE */
 @media(max-width:900px){
 
     header{
@@ -1329,25 +926,16 @@ body.admin-mode .editable:hover{
 
     nav{
         display:none;
-
         position:absolute;
-
         top:60px;
         left:0;
         right:0;
-
         background:#091423;
-
         padding:18px;
-
         flex-direction:column;
-
         gap:15px;
-
         text-align:center;
-
-        box-shadow:
-            0 10px 25px rgba(0,0,0,.2);
+        box-shadow:0 10px 25px rgba(0,0,0,.2);
     }
 
     nav.mobile-open{
@@ -1374,9 +962,7 @@ body.admin-mode .editable:hover{
     .video-grid{
         grid-template-columns:1fr;
     }
-
 }
-
 
 @media(max-width:600px){
 
@@ -1481,7 +1067,6 @@ body.admin-mode .editable:hover{
     .floating-whatsapp{
         width:54px;
         height:54px;
-
         right:14px;
         bottom:14px;
     }
@@ -1495,16 +1080,11 @@ body.admin-mode .editable:hover{
     .admin-panel{
         top:68px;
         right:10px;
-
         width:calc(100vw - 20px);
-
         max-height:calc(100vh - 85px);
-
         padding:16px;
     }
-
 }
-
 
 @media(max-width:380px){
 
@@ -1523,21 +1103,7 @@ body.admin-mode .editable:hover{
     .gallery-card{
         height:220px;
     }
-
 }
-
-
-@supports(padding:max(0px)){
-
-    .floating-whatsapp{
-        bottom:max(
-            14px,
-            env(safe-area-inset-bottom)
-        );
-    }
-
-}
-
 
 @media print{
 
@@ -1547,898 +1113,527 @@ body.admin-mode .editable:hover{
     .login-overlay{
         display:none!important;
     }
-
 }
 
-
-@media(prefers-reduced-motion:reduce){
-
-    html{
-        scroll-behavior:auto;
-    }
-
-    *,
-    *::before,
-    *::after{
-        animation-duration:.01ms!important;
-        animation-iteration-count:1!important;
-        transition-duration:.01ms!important;
-    }
-
+html[dir="rtl"] body{
+    text-align:right;
 }
 
+html[dir="rtl"] nav{
+    direction:rtl;
+}
+
+html[dir="rtl"] .nav-container{
+    direction:rtl;
+}
+
+html[dir="rtl"] .hero,
+html[dir="rtl"] .section-heading,
+html[dir="rtl"] .gallery-description,
+html[dir="rtl"] .instagram-box,
+html[dir="rtl"] footer{
+    text-align:center;
+}
+
+html[dir="rtl"] .about-text,
+html[dir="rtl"] .contact-info,
+html[dir="rtl"] .contact-card,
+html[dir="rtl"] .service,
+html[dir="rtl"] .why-item,
+html[dir="rtl"] .admin-panel,
+html[dir="rtl"] .login-box{
+    text-align:right;
+}
+
+html[dir="rtl"] input,
+html[dir="rtl"] textarea{
+    text-align:right;
+}
+
+html[dir="rtl"] .floating-whatsapp{
+    right:auto;
+    left:20px;
+}
+
+html[dir="rtl"] .admin-button{
+    left:auto;
+    right:18px;
+}
+
+html[dir="rtl"] .admin-panel{
+    right:auto;
+    left:15px;
+}
+
+html[dir="rtl"] .lightbox-close{
+    right:auto;
+    left:25px;
+}
+
+@media(max-width:600px){
+
+    html[dir="rtl"] .floating-whatsapp{
+        right:auto;
+        left:14px;
+    }
+
+    html[dir="rtl"] .admin-button{
+        left:auto;
+        right:12px;
+    }
+
+    html[dir="rtl"] .admin-panel{
+        right:auto;
+        left:10px;
+    }
+}
 </style>
-
 </head>
 
 <body>
 
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
-
 <header>
-
 <div class="nav-container">
 
 <a href="#home" class="logo">
-
 Design Glass & Mirror
-
 <span>KUWAIT</span>
-
 </a>
-
 
 <button
 class="menu-toggle"
 onclick="toggleMenu()"
 aria-label="Open navigation menu"
-aria-expanded="false"
->
+aria-expanded="false">
 ☰
 </button>
-
 
 <nav id="mainNav">
 
 <a href="#home" data-i18n="navHome">Home</a>
-
 <a href="#about" data-i18n="navAbout">About</a>
-
 <a href="#services" data-i18n="navServices">Services</a>
-
 <a href="#gallery" data-i18n="navGallery">Gallery</a>
-
 <a href="#videos" data-i18n="navVideos">Videos</a>
-
 <a href="#why" data-i18n="navWhy">Why Us</a>
-
 <a href="#contact" data-i18n="navContact">Contact</a>
 
 <button
 class="language-btn"
 onclick="toggleLanguage()"
-id="languageButton"
->
+id="languageButton">
 العربية
 </button>
 
 </nav>
-
 </div>
-
 </header>
-
-
-<!-- =====================================================
-     HERO
-===================================================== -->
 
 <section id="home" class="hero">
 
 <div class="hero-content">
 
-<div
-class="small-title editable"
-data-key="heroSmall"
->
+<div class="small-title editable" data-key="heroSmall">
 PROFESSIONAL GLASS & MIRROR WORKS IN KUWAIT
 </div>
 
-
-<h1
-class="editable"
-data-key="heroTitle"
->
+<h1 class="editable" data-key="heroTitle">
 Design Glass & Mirror Kuwait
 </h1>
 
-
-<p
-class="hero-text editable"
-data-key="heroText"
->
+<p class="hero-text editable" data-key="heroText">
 Beautiful glass and mirror solutions for homes,
 offices, shops and commercial projects in Kuwait.
 </p>
-
 
 <div class="hero-buttons">
 
 <a
 href="tel:+96555507290"
 class="btn call-btn"
-data-i18n="callNow"
->
+data-i18n="callNow">
 📞 Call Now
 </a>
-
 
 <a
 href="https://wa.me/96555507290"
 target="_blank"
 rel="noopener"
 class="btn whatsapp-btn"
-data-i18n="whatsapp"
->
+data-i18n="whatsapp">
 💬 WhatsApp
 </a>
 
 </div>
-
 </div>
-
 
 <div id="heroDots" class="hero-dots"></div>
 
 </section>
 
-
-<!-- =====================================================
-     ABOUT
-===================================================== -->
-
 <section id="about" class="section about">
-
 <div class="section-inner">
 
 <div class="section-heading">
-
 <small data-i18n="aboutSmall">ABOUT US</small>
 
-<h2
-class="editable"
-data-key="aboutTitle"
->
+<h2 class="editable" data-key="aboutTitle">
 Design Glass & Mirror
 </h2>
 
 <div class="heading-line"></div>
-
 </div>
-
 
 <div class="about-grid">
 
 <div class="about-text">
 
-<h3
-class="editable"
-data-key="aboutHeading"
->
+<h3 class="editable" data-key="aboutHeading">
 Professional Glass Solutions in Kuwait
 </h3>
 
-
-<p
-class="editable"
-data-key="aboutText1"
->
+<p class="editable" data-key="aboutText1">
 Design Glass & Mirror provides professional glass,
 mirror and aluminum solutions for homes, offices,
 shops and commercial projects.
 </p>
 
-
-<p
-class="editable"
-data-key="aboutText2"
->
+<p class="editable" data-key="aboutText2">
 We focus on clean finishing, modern designs and
 quality workmanship to create beautiful and practical spaces.
 </p>
 
-
 <div class="points">
 
-<div
-class="editable"
-data-key="point1"
->
-✓ Quality Work
-</div>
-
-<div
-class="editable"
-data-key="point2"
->
-✓ Modern Designs
-</div>
-
-<div
-class="editable"
-data-key="point3"
->
-✓ Professional Service
-</div>
-
-<div
-class="editable"
-data-key="point4"
->
-✓ Kuwait Service
-</div>
+<div class="editable" data-key="point1">✓ Quality Work</div>
+<div class="editable" data-key="point2">✓ Modern Designs</div>
+<div class="editable" data-key="point3">✓ Professional Service</div>
+<div class="editable" data-key="point4">✓ Kuwait Service</div>
 
 </div>
-
 </div>
-
 
 <div class="about-card">
 
-<div class="about-symbol">
-◈
-</div>
+<div class="about-symbol">◈</div>
 
-
-<h3
-class="editable"
-data-key="aboutCardTitle"
->
+<h3 class="editable" data-key="aboutCardTitle">
 Glass & Mirror Experts
 </h3>
 
-
-<p
-class="editable"
-data-key="aboutCardText"
->
+<p class="editable" data-key="aboutCardText">
 Residential & Commercial Projects
 </p>
 
 </div>
-
 </div>
-
 </div>
-
 </section>
 
-
-<!-- =====================================================
-     SERVICES
-===================================================== -->
-
 <section id="services" class="section services">
-
 <div class="section-inner">
 
 <div class="section-heading">
 
-<small data-i18n="servicesSmall">
-WHAT WE DO
-</small>
+<small data-i18n="servicesSmall">WHAT WE DO</small>
 
-
-<h2
-class="editable"
-data-key="servicesTitle"
->
+<h2 class="editable" data-key="servicesTitle">
 Our Services
 </h2>
 
-
 <div class="heading-line"></div>
 
 </div>
 
-
 <div class="services-grid">
 
-
 <div class="service">
-
 <div class="service-icon">◇</div>
-
-<h3
-class="editable"
-data-key="service1Title"
->
-Glass Partitions
-</h3>
-
-<p
-class="editable"
-data-key="service1Text"
->
+<h3 class="editable" data-key="service1Title">Glass Partitions</h3>
+<p class="editable" data-key="service1Text">
 Modern glass partitions for offices,
 homes and commercial spaces.
 </p>
-
 </div>
 
-
 <div class="service">
-
 <div class="service-icon">◈</div>
-
-<h3
-class="editable"
-data-key="service2Title"
->
-Custom Mirrors
-</h3>
-
-<p
-class="editable"
-data-key="service2Text"
->
+<h3 class="editable" data-key="service2Title">Custom Mirrors</h3>
+<p class="editable" data-key="service2Text">
 Beautiful custom mirrors for bedrooms,
 bathrooms, shops and interiors.
 </p>
-
 </div>
 
-
 <div class="service">
-
 <div class="service-icon">▣</div>
-
-<h3
-class="editable"
-data-key="service3Title"
->
-Shower Glass
-</h3>
-
-<p
-class="editable"
-data-key="service3Text"
->
+<h3 class="editable" data-key="service3Title">Shower Glass</h3>
+<p class="editable" data-key="service3Text">
 Elegant shower glass doors and modern
 bathroom solutions.
 </p>
-
 </div>
 
-
 <div class="service">
-
 <div class="service-icon">▤</div>
-
-<h3
-class="editable"
-data-key="service4Title"
->
-Office Glass
-</h3>
-
-<p
-class="editable"
-data-key="service4Text"
->
+<h3 class="editable" data-key="service4Title">Office Glass</h3>
+<p class="editable" data-key="service4Text">
 Professional glass solutions for offices
 and business environments.
 </p>
-
 </div>
 
-
 <div class="service">
-
 <div class="service-icon">║</div>
-
-<h3
-class="editable"
-data-key="service5Title"
->
-Glass Railings
-</h3>
-
-<p
-class="editable"
-data-key="service5Text"
->
+<h3 class="editable" data-key="service5Title">Glass Railings</h3>
+<p class="editable" data-key="service5Text">
 Stylish glass railing solutions for stairs,
 balconies and interiors.
 </p>
-
 </div>
 
-
 <div class="service">
-
 <div class="service-icon">▥</div>
-
-<h3
-class="editable"
-data-key="service6Title"
->
-Aluminum Works
-</h3>
-
-<p
-class="editable"
-data-key="service6Text"
->
+<h3 class="editable" data-key="service6Title">Aluminum Works</h3>
+<p class="editable" data-key="service6Text">
 Quality aluminum works and modern finishing
 for different projects.
 </p>
-
-</div>
-
-
 </div>
 
 </div>
-
+</div>
 </section>
 
-
-<!-- =====================================================
-     GALLERY
-===================================================== -->
-
 <section id="gallery" class="section gallery">
-
 <div class="section-inner">
 
 <div class="section-heading">
 
-<small data-i18n="gallerySmall">
-OUR WORK
-</small>
+<small data-i18n="gallerySmall">OUR WORK</small>
 
-
-<h2
-class="editable"
-data-key="galleryTitle"
->
+<h2 class="editable" data-key="galleryTitle">
 Glass & Mirror Project Gallery
 </h2>
-
 
 <div class="heading-line"></div>
 
 </div>
 
-
-<p
-class="gallery-description editable"
-data-key="galleryDescription"
->
+<p class="gallery-description editable" data-key="galleryDescription">
 Explore our glass, mirror, shower, staircase,
 railing, door and interior projects in Kuwait.
 </p>
 
-
 <div id="galleryGrid" class="gallery-grid">
 
+<div class="gallery-card">
+<img src="6mm mirror with design LED LIGHT.jpeg" alt="Custom mirror with LED lighting" loading="lazy">
+<div class="gallery-caption" data-i18n="gallery1">Custom Mirror & LED Light</div>
+</div>
 
 <div class="gallery-card">
-
-<img
-src="images/6mm mirror with design LED LIGHT.jpeg"
-alt="Custom mirror with LED lighting"
-loading="lazy"
->
-
-<div
-class="gallery-caption"
-data-i18n="gallery1"
->
-Custom Mirror & LED Light
+<img src="10mm black glass temper staircas kloudy.jpeg" alt="Black tempered glass staircase" loading="lazy">
+<div class="gallery-caption" data-i18n="gallery2">Black Tempered Glass Staircase</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="images/10mm black glass temper staircas kloudy.jpeg"
-alt="Black tempered glass staircase"
-loading="lazy"
->
-
-<div
-class="gallery-caption"
-data-i18n="gallery2"
->
-Black Tempered Glass Staircase
+<img src="10mm bowns glass temper shower.jpeg" alt="Brown tempered shower glass" loading="lazy">
+<div class="gallery-caption" data-i18n="gallery3">Tempered Shower Glass</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="images/10mm bowns glass temper shower.jpeg"
-alt="Brown tempered shower glass"
-loading="lazy"
->
-
-<div
-class="gallery-caption"
-data-i18n="gallery3"
->
-Tempered Shower Glass
+<img src="10mm browns glass temper amood fix.jpeg" alt="Brown tempered glass" loading="lazy">
+<div class="gallery-caption" data-i18n="gallery4">Brown Tempered Glass</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="images/10mm browns glass temper amood fix.jpeg"
-alt="Brown tempered glass"
-loading="lazy"
->
-
-<div
-class="gallery-caption"
-data-i18n="gallery4"
->
-Brown Tempered Glass
+<img src="10mm browns glass temper staircas.jpeg" alt="Brown glass staircase" loading="lazy">
+<div class="gallery-caption" data-i18n="gallery5">Brown Glass Staircase</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="images/10mm browns glass temper staircas.jpeg"
-alt="Brown glass staircase"
-loading="lazy"
->
-
-<div
-class="gallery-caption"
-data-i18n="gallery5"
->
-Brown Glass Staircase
+<img src="10mm clear glass temper fix in black spider system.jpeg" alt="Clear glass spider system" loading="lazy">
+<div class="gallery-caption" data-i18n="gallery6">Clear Glass Spider System</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="images/10mm clear glass temper fix in black spider system.jpeg"
-alt="Clear glass spider system"
-loading="lazy"
->
-
-<div
-class="gallery-caption"
-data-i18n="gallery6"
->
-Clear Glass Spider System
+<img src="10mm clear glass temper pool.jpeg" alt="Clear tempered pool glass" loading="lazy">
+<div class="gallery-caption" data-i18n="gallery7">Pool Glass</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="images/10mm clear glass temper pool.jpeg"
-alt="Clear tempered pool glass"
-loading="lazy"
->
-
-<div
-class="gallery-caption"
-data-i18n="gallery7"
->
-Pool Glass
+<img src="10mm clear glass temper shower with golden frame.jpeg" alt="Shower glass with golden frame" loading="lazy">
+<div class="gallery-caption" data-i18n="gallery8">Shower Glass With Golden Frame</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="images/10mm clear glass temper shower with golden frame.jpeg"
-alt="Shower glass with golden frame"
-loading="lazy"
->
-
-<div
-class="gallery-caption"
-data-i18n="gallery8"
->
-Shower Glass With Golden Frame
+<img src="10mm clear glass temper sliding door.jpeg" alt="Clear sliding glass door" loading="lazy">
+<div class="gallery-caption" data-i18n="gallery9">Sliding Glass Door</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="images/10mm clear glass temper sliding door.jpeg"
-alt="Clear sliding glass door"
-loading="lazy"
->
-
-<div
-class="gallery-caption"
-data-i18n="gallery9"
->
-Sliding Glass Door
+<img src="10mm clear glass temper stair with wooden handle.jpeg" alt="Glass staircase wooden handle" loading="lazy">
+<div class="gallery-caption" data-i18n="gallery10">Glass Staircase With Wooden Handle</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="images/10mm clear glass temper stair with wooden handle.jpeg"
-alt="Glass staircase wooden handle"
-loading="lazy"
->
-
-<div
-class="gallery-caption"
-data-i18n="gallery10"
->
-Glass Staircase With Wooden Handle
+<img src="10mm clear glass temper staircas with wooden handle.jpeg" alt="Clear glass staircase" loading="lazy">
+<div class="gallery-caption" data-i18n="gallery11">Clear Glass Staircase</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
+<img src="10mm clear glass temper swiming pool.jpeg" alt="Clear glass swimming pool" loading="lazy">
+<div class="gallery-caption">Swimming Pool Glass</div>
+</div>
 
-<img
-src="images/10mm clear glass temper staircas with wooden handle.jpeg"
-alt="Clear glass staircase"
-loading="lazy"
->
+<div class="gallery-card">
+<img src="10mm clear glass temper with normal doors shop.jpeg" alt="Clear glass shop doors" loading="lazy">
+<div class="gallery-caption">Shop Glass Doors</div>
+</div>
 
-<div
-class="gallery-caption"
-data-i18n="gallery11"
->
-Clear Glass Staircase
+<div class="gallery-card">
+<img src="10mm sandblast glass stair with standsteel handle.jpeg" alt="Sandblast glass staircase" loading="lazy">
+<div class="gallery-caption">Sandblast Glass Staircase</div>
+</div>
+
+<div class="gallery-card">
+<img src="10mm sandblast glass temper fixed in stanless steel.jpeg" alt="Sandblast tempered glass stainless steel" loading="lazy">
+<div class="gallery-caption">Sandblast Tempered Glass</div>
+</div>
+
+<div class="gallery-card">
+<img src="D shave mirror.jpeg" alt="D shave mirror" loading="lazy">
+<div class="gallery-caption">D Shave Mirror</div>
+</div>
+
+<div class="gallery-card">
+<img src="design mirror with light back.jpeg" alt="Design mirror with back light" loading="lazy">
+<div class="gallery-caption">Design Mirror With Back Light</div>
+</div>
+
+<div class="gallery-card">
+<img src="wood handle colour pictures .jpeg" alt="Wood handle glass project" loading="lazy">
+<div class="gallery-caption">Wood Handle Glass Project</div>
 </div>
 
 </div>
-
-
 </div>
-
-</div>
-
 </section>
 
-
-<!-- =====================================================
-     VIDEOS
-===================================================== -->
-
 <section id="videos" class="section videos">
-
 <div class="section-inner">
 
 <div class="section-heading">
 
-<small data-i18n="videosSmall">
-OUR PROJECTS
-</small>
+<small data-i18n="videosSmall">OUR PROJECTS</small>
 
-
-<h2
-class="editable"
-data-key="videosTitle"
->
+<h2 class="editable" data-key="videosTitle">
 Project Videos
 </h2>
-
 
 <div class="heading-line"></div>
 
 </div>
 
+<div class="video-grid">
 
-<div id="videoGrid" class="video-grid">
+<div class="video-card">
 
-<div id="videoEmpty" class="video-empty">
+<video
+controls
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+poster="10mm clear glass temper stair with wooden handle.jpeg">
 
-<div>
+<source src="staircase clear ggm.mp4" type="video/mp4">
 
-<div class="play-icon">▶</div>
+Your browser does not support the video tag.
 
-<h3 data-i18n="projectVideos">
-Project Videos
+</video>
+
+<h3 data-i18n="video1Title">
+Glass Staircase Project
 </h3>
 
-<p data-i18n="videosWillAppear">
-Project videos will appear here.
-</p>
-
 </div>
 
 </div>
-
 </div>
-
-</div>
-
 </section>
 
-
-<!-- =====================================================
-     WHY US
-===================================================== -->
-
 <section id="why" class="section why">
-
 <div class="section-inner">
 
 <div class="section-heading">
 
-<small data-i18n="whySmall">
-WHY CHOOSE US
-</small>
+<small data-i18n="whySmall">WHY CHOOSE US</small>
 
-
-<h2
-class="editable"
-data-key="whyTitle"
->
+<h2 class="editable" data-key="whyTitle">
 Why Design Glass & Mirror?
 </h2>
 
-
 <div class="heading-line"></div>
 
 </div>
 
-
 <div class="why-grid">
 
-
 <div class="why-item">
-
 <strong>01</strong>
-
-<h3
-class="editable"
-data-key="why1Title"
->
-Professional Work
-</h3>
-
-<p
-class="editable"
-data-key="why1Text"
->
+<h3 class="editable" data-key="why1Title">Professional Work</h3>
+<p class="editable" data-key="why1Text">
 Clean and professional finishing.
 </p>
-
 </div>
 
-
 <div class="why-item">
-
 <strong>02</strong>
-
-<h3
-class="editable"
-data-key="why2Title"
->
-Modern Designs
-</h3>
-
-<p
-class="editable"
-data-key="why2Text"
->
+<h3 class="editable" data-key="why2Title">Modern Designs</h3>
+<p class="editable" data-key="why2Text">
 Beautiful solutions for modern spaces.
 </p>
-
 </div>
 
-
 <div class="why-item">
-
 <strong>03</strong>
-
-<h3
-class="editable"
-data-key="why3Title"
->
-Quality Materials
-</h3>
-
-<p
-class="editable"
-data-key="why3Text"
->
+<h3 class="editable" data-key="why3Title">Quality Materials</h3>
+<p class="editable" data-key="why3Text">
 Solutions designed for long-term use.
 </p>
-
 </div>
-
 
 <div class="why-item">
-
 <strong>04</strong>
-
-<h3
-class="editable"
-data-key="why4Title"
->
-Customer Service
-</h3>
-
-<p
-class="editable"
-data-key="why4Text"
->
+<h3 class="editable" data-key="why4Title">Customer Service</h3>
+<p class="editable" data-key="why4Text">
 We work closely with our customers.
 </p>
-
-</div>
-
-
 </div>
 
 </div>
-
+</div>
 </section>
 
-
-<!-- =====================================================
-     CONTACT
-===================================================== -->
-
 <section id="contact" class="section contact">
-
 <div class="section-inner">
 
 <div class="section-heading">
 
-<small data-i18n="contactSmall">
-GET IN TOUCH
-</small>
+<small data-i18n="contactSmall">GET IN TOUCH</small>
 
-
-<h2
-class="editable"
-data-key="contactHeading"
->
+<h2 class="editable" data-key="contactHeading">
 Let's Discuss Your Project
 </h2>
-
 
 <div class="heading-line"></div>
 
 </div>
 
-
 <div class="contact-grid">
-
 
 <div class="contact-info">
 
@@ -2446,98 +1641,48 @@ Let's Discuss Your Project
 Contact Design Glass & Mirror
 </h3>
 
-
-<p
-class="editable"
-data-key="contactText"
->
+<p class="editable" data-key="contactText">
 Contact us for glass, mirror and aluminum
 work in Kuwait.
 </p>
 
-
 <div class="contact-item">
-
 <div class="contact-icon">📞</div>
-
 <div>
-
-<small data-i18n="phone">
-PHONE
-</small>
-
-<a href="tel:+96555507290">
-+965 5550 7290
-</a>
-
+<small data-i18n="phone">PHONE</small>
+<a href="tel:+96555507290">+965 5550 7290</a>
 </div>
-
 </div>
-
 
 <div class="contact-item">
-
 <div class="contact-icon">💬</div>
-
 <div>
-
-<small data-i18n="whatsappSmall">
-WHATSAPP
-</small>
-
-<a
-href="https://wa.me/96555507290"
-target="_blank"
-rel="noopener"
-data-i18n="chatWhatsApp"
->
+<small data-i18n="whatsappSmall">WHATSAPP</small>
+<a href="https://wa.me/96555507290" target="_blank" rel="noopener" data-i18n="chatWhatsApp">
 Chat on WhatsApp
 </a>
-
 </div>
-
 </div>
-
 
 <div class="contact-item">
-
 <div class="contact-icon">✉</div>
-
 <div>
-
-<small data-i18n="email">
-EMAIL
-</small>
-
+<small data-i18n="email">EMAIL</small>
 <a href="mailto:designglassmirror@gmail.com">
 designglassmirror@gmail.com
 </a>
-
 </div>
-
 </div>
-
 
 <div class="contact-item">
-
 <div class="contact-icon">📍</div>
-
 <div>
-
-<small data-i18n="location">
-LOCATION
-</small>
-
-<strong data-i18n="kuwait">
-Kuwait
-</strong>
-
+<small data-i18n="location">LOCATION</small>
+<strong data-i18n="kuwait">Kuwait</strong>
+</div>
 </div>
 
 </div>
-
-</div>
-
 
 <div class="contact-card">
 
@@ -2545,11 +1690,9 @@ Kuwait
 Request a Quote
 </h3>
 
-
 <p data-i18n="quoteText">
 Tell us about your glass or mirror project.
 </p>
-
 
 <form onsubmit="sendWhatsApp(event)">
 
@@ -2562,7 +1705,6 @@ autocomplete="name"
 required
 >
 
-
 <input
 type="tel"
 id="customerPhone"
@@ -2572,7 +1714,6 @@ autocomplete="tel"
 required
 >
 
-
 <textarea
 id="customerMessage"
 data-placeholder="messagePlaceholder"
@@ -2581,11 +1722,7 @@ placeholder="Tell us about your project..."
 required
 ></textarea>
 
-
-<button
-type="submit"
-data-i18n="sendRequest"
->
+<button type="submit" data-i18n="sendRequest">
 Send Request on WhatsApp
 </button>
 
@@ -2593,20 +1730,11 @@ Send Request on WhatsApp
 
 </div>
 
-
 </div>
-
 </div>
-
 </section>
 
-
-<!-- =====================================================
-     INSTAGRAM
-===================================================== -->
-
 <section class="section instagram">
-
 <div class="section-inner">
 
 <div class="section-heading">
@@ -2615,97 +1743,69 @@ Send Request on WhatsApp
 FOLLOW OUR WORK
 </small>
 
-
 <h2 data-i18n="instagramTitle">
 Instagram
 </h2>
-
 
 <div class="heading-line"></div>
 
 </div>
 
-
 <div class="instagram-box">
 
-<p
-class="editable"
-data-key="instagramText"
->
+<p class="editable" data-key="instagramText">
 See more glass and mirror projects,
 designs and updates on our Instagram page.
 </p>
-
 
 <a
 href="https://www.instagram.com/design_glass_mirror/"
 target="_blank"
 rel="noopener"
 class="instagram-button"
-data-i18n="instagramButton"
->
+data-i18n="instagramButton">
 📷 Follow Design Glass & Mirror
 </a>
 
 </div>
-
 </div>
-
 </section>
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
 
 <footer>
 
-<h3>
-Design Glass & Mirror
-</h3>
-
+<h3>Design Glass & Mirror</h3>
 
 <p data-i18n="footerText">
 Professional Glass & Mirror Solutions in Kuwait
 </p>
 
-
 <div class="footer-links">
 
-<a href="tel:+96555507290" data-i18n="footerCall">
-📞 Call
-</a>
-
+<a href="tel:+96555507290" data-i18n="footerCall">📞 Call</a>
 
 <a
 href="https://wa.me/96555507290"
 target="_blank"
 rel="noopener"
-data-i18n="footerWhatsApp"
->
+data-i18n="footerWhatsApp">
 💬 WhatsApp
 </a>
 
-
 <a
 href="mailto:designglassmirror@gmail.com"
-data-i18n="footerEmail"
->
+data-i18n="footerEmail">
 ✉ Email
 </a>
-
 
 <a
 href="https://www.instagram.com/design_glass_mirror/"
 target="_blank"
 rel="noopener"
-data-i18n="footerInstagram"
->
+data-i18n="footerInstagram">
 📷 Instagram
 </a>
 
 </div>
-
 
 <p>
 © 2026 Design Glass & Mirror Kuwait.
@@ -2714,38 +1814,21 @@ data-i18n="footerInstagram"
 
 </footer>
 
-
-<!-- =====================================================
-     FLOATING WHATSAPP
-===================================================== -->
-
 <a
 href="https://wa.me/96555507290"
 target="_blank"
 rel="noopener"
 class="floating-whatsapp"
-aria-label="WhatsApp"
->
+aria-label="WhatsApp">
 💬
 </a>
-
-
-<!-- =====================================================
-     ADMIN BUTTON
-===================================================== -->
 
 <button
 class="admin-button"
 onclick="openLogin()"
-data-i18n="adminButton"
->
+data-i18n="adminButton">
 🔐 Admin
 </button>
-
-
-<!-- =====================================================
-     ADMIN PANEL
-===================================================== -->
 
 <div class="admin-panel" id="adminPanel">
 
@@ -2753,17 +1836,14 @@ data-i18n="adminButton"
 🔐 Website Edit Mode
 </h2>
 
-
 <p class="admin-note" data-i18n="adminNote">
 Only use this panel when you want to edit your website.
 Customers will not see this panel.
 </p>
 
-
 <div class="admin-status" data-i18n="adminActive">
 ✓ Admin Mode Active
 </div>
-
 
 <div class="admin-section">
 
@@ -2771,132 +1851,17 @@ Customers will not see this panel.
 🖼️ Hero Background
 </h3>
 
-
-<p class="admin-note">
-<span data-i18n="backgroundNote">
-Choose up to
-</span>
-<strong>3</strong>
-<span data-i18n="backgroundNote2">
-pictures. They automatically change every 5 seconds.
-</span>
+<p class="admin-note" data-i18n="backgroundAdminNote">
+The public hero background uses images already uploaded to GitHub.
+To change them for all customers, upload the new image to the repository
+and change the image filename in index.html.
 </p>
 
-
-<button
-onclick="document.getElementById('backgroundInput').click()"
-data-i18n="replaceBackground"
->
-📸 Replace Background Pictures
+<button onclick="showCurrentBackgrounds()" data-i18n="showBackground">
+🖼️ Show Current Backgrounds
 </button>
-
-
-<button
-class="danger"
-onclick="removeBackgrounds()"
-data-i18n="removeBackground"
->
-🗑️ Remove Background
-</button>
-
-
-<input
-type="file"
-id="backgroundInput"
-accept="image/*"
-multiple
-style="display:none"
-onchange="changeBackground(event)"
->
-
-
-<div id="backgroundPreview" class="bg-preview-list"></div>
 
 </div>
-
-
-<div class="admin-section">
-
-<h3 data-i18n="adminGallery">
-📸 Gallery
-</h3>
-
-
-<p class="admin-note" data-i18n="adminGalleryNote">
-Add project pictures to the gallery.
-</p>
-
-
-<button
-onclick="document.getElementById('galleryInput').click()"
-data-i18n="addGallery"
->
-📸 Add Gallery Pictures
-</button>
-
-
-<button
-class="danger"
-onclick="removeAddedGallery()"
-data-i18n="removeGallery"
->
-🗑️ Remove Added Pictures
-</button>
-
-
-<input
-type="file"
-id="galleryInput"
-accept="image/*"
-multiple
-style="display:none"
-onchange="addGalleryImages(event)"
->
-
-</div>
-
-
-<div class="admin-section">
-
-<h3 data-i18n="adminVideos">
-🎥 Project Videos
-</h3>
-
-
-<p class="admin-note" data-i18n="adminVideosNote">
-Upload your project videos here.
-Videos will autoplay muted and loop.
-</p>
-
-
-<button
-onclick="document.getElementById('videoInput').click()"
-data-i18n="addVideos"
->
-🎥 Add Project Videos
-</button>
-
-
-<button
-class="danger"
-onclick="removeAddedVideos()"
-data-i18n="removeVideos"
->
-🗑️ Remove Added Videos
-</button>
-
-
-<input
-type="file"
-id="videoInput"
-accept="video/*"
-multiple
-style="display:none"
-onchange="addVideos(event)"
->
-
-</div>
-
 
 <div class="admin-section">
 
@@ -2904,49 +1869,29 @@ onchange="addVideos(event)"
 ✏️ Edit Text
 </h3>
 
-
 <p class="admin-note" data-i18n="editTextNote">
 Click any outlined text on the website and type your changes.
 </p>
 
-
-<button
-class="success"
-onclick="saveAll()"
-data-i18n="saveChanges"
->
+<button class="success" onclick="saveAll()" data-i18n="saveChanges">
 💾 Save Changes
 </button>
 
 </div>
 
-
 <div class="admin-section">
 
-<button
-onclick="logoutAdmin()"
-data-i18n="closeEdit"
->
+<button onclick="logoutAdmin()" data-i18n="closeEdit">
 🔒 Close Edit Mode
 </button>
 
-
-<button
-class="danger"
-onclick="resetWebsite()"
-data-i18n="resetWebsite"
->
+<button class="danger" onclick="resetWebsite()" data-i18n="resetWebsite">
 ↻ Reset Website
 </button>
 
 </div>
 
 </div>
-
-
-<!-- =====================================================
-     LOGIN
-===================================================== -->
 
 <div id="loginOverlay" class="login-overlay">
 
@@ -2956,11 +1901,9 @@ data-i18n="resetWebsite"
 🔐 Admin Login
 </h2>
 
-
 <p data-i18n="loginText">
 Enter your administrator password.
 </p>
-
 
 <input
 type="password"
@@ -2968,47 +1911,23 @@ id="adminPassword"
 data-placeholder="passwordPlaceholder"
 placeholder="Admin Password"
 autocomplete="current-password"
-onkeydown="
-if(event.key==='Enter'){
-loginAdmin();
-}
-"
+onkeydown="if(event.key==='Enter'){loginAdmin();}"
 >
 
-
-<button
-onclick="loginAdmin()"
-data-i18n="loginButton"
->
+<button onclick="loginAdmin()" data-i18n="loginButton">
 Login & Edit
 </button>
 
-
-<button
-class="cancel"
-onclick="closeLogin()"
-data-i18n="cancelButton"
->
+<button class="cancel" onclick="closeLogin()" data-i18n="cancelButton">
 Cancel
 </button>
 
 </div>
-
 </div>
 
-
-<!-- =====================================================
-     LIGHTBOX
-===================================================== -->
-
-<div
-id="lightbox"
-class="lightbox"
-onclick="closeLightbox()"
->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
 
 <div class="lightbox-close">×</div>
-
 
 <img
 id="lightboxImage"
@@ -3019,32 +1938,21 @@ onclick="event.stopPropagation()"
 
 </div>
 
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
 <script>
+const ADMIN_PASSWORD="1234";
 
-/* =====================================================
-   ADMIN
-===================================================== */
+let arabicMode=false;
+let heroIndex=0;
 
-const ADMIN_PASSWORD = "1234";
+const heroBackgrounds=[
+    "6mm mirror with design LED LIGHT.jpeg",
+    "design mirror with light back.jpeg",
+    "10mm clear glass temper stair with wooden handle.jpeg"
+];
 
-let heroBackgrounds = [];
-let heroIndex = 0;
-let arabicMode = false;
-
-
-/* =====================================================
-   TRANSLATIONS
-===================================================== */
-
-const translations = {
+const translations={
 
 en:{
-
 navHome:"Home",
 navAbout:"About",
 navServices:"Services",
@@ -3064,9 +1972,6 @@ whySmall:"WHY CHOOSE US",
 contactSmall:"GET IN TOUCH",
 instagramSmall:"FOLLOW OUR WORK",
 
-projectVideos:"Project Videos",
-videosWillAppear:"Project videos will appear here.",
-
 gallery1:"Custom Mirror & LED Light",
 gallery2:"Black Tempered Glass Staircase",
 gallery3:"Tempered Shower Glass",
@@ -3078,6 +1983,8 @@ gallery8:"Shower Glass With Golden Frame",
 gallery9:"Sliding Glass Door",
 gallery10:"Glass Staircase With Wooden Handle",
 gallery11:"Clear Glass Staircase",
+
+video1Title:"Glass Staircase Project",
 
 contactCompany:"Contact Design Glass & Mirror",
 phone:"PHONE",
@@ -3107,20 +2014,8 @@ adminNote:"Only use this panel when you want to edit your website. Customers wil
 adminActive:"✓ Admin Mode Active",
 
 heroBackground:"🖼️ Hero Background",
-backgroundNote:"Choose up to",
-backgroundNote2:"pictures. They automatically change every 5 seconds.",
-replaceBackground:"📸 Replace Background Pictures",
-removeBackground:"🗑️ Remove Background",
-
-adminGallery:"📸 Gallery",
-adminGalleryNote:"Add project pictures to the gallery.",
-addGallery:"📸 Add Gallery Pictures",
-removeGallery:"🗑️ Remove Added Pictures",
-
-adminVideos:"🎥 Project Videos",
-adminVideosNote:"Upload your project videos here. Videos will autoplay muted and loop.",
-addVideos:"🎥 Add Project Videos",
-removeVideos:"🗑️ Remove Added Videos",
+backgroundAdminNote:"The public hero background uses images already uploaded to GitHub. To change them for all customers, upload the new image to the repository and change the image filename in index.html.",
+showBackground:"🖼️ Show Current Backgrounds",
 
 editText:"✏️ Edit Text",
 editTextNote:"Click any outlined text on the website and type your changes.",
@@ -3137,11 +2032,9 @@ namePlaceholder:"Your Name",
 phonePlaceholder:"Phone Number",
 messagePlaceholder:"Tell us about your project...",
 passwordPlaceholder:"Admin Password"
-
 },
 
 ar:{
-
 navHome:"الرئيسية",
 navAbout:"من نحن",
 navServices:"خدماتنا",
@@ -3161,9 +2054,6 @@ whySmall:"لماذا تختارنا",
 contactSmall:"تواصل معنا",
 instagramSmall:"تابع أعمالنا",
 
-projectVideos:"فيديوهات المشاريع",
-videosWillAppear:"ستظهر فيديوهات المشاريع هنا.",
-
 gallery1:"مرآة مخصصة مع إضاءة LED",
 gallery2:"درج زجاج مقسى أسود",
 gallery3:"زجاج دش مقسى",
@@ -3175,6 +2065,8 @@ gallery8:"زجاج دش بإطار ذهبي",
 gallery9:"باب زجاجي سحاب",
 gallery10:"درج زجاجي بمقبض خشبي",
 gallery11:"درج زجاجي شفاف",
+
+video1Title:"مشروع درج زجاجي",
 
 contactCompany:"تواصل مع ديزاين جلاس وميرور",
 phone:"الهاتف",
@@ -3204,20 +2096,8 @@ adminNote:"استخدم هذه اللوحة فقط عندما تريد تعدي�
 adminActive:"✓ وضع الإدارة مفعل",
 
 heroBackground:"🖼️ خلفية الصفحة الرئيسية",
-backgroundNote:"اختر حتى",
-backgroundNote2:"صور. سيتم تغييرها تلقائياً كل 5 ثوانٍ.",
-replaceBackground:"📸 استبدال صور الخلفية",
-removeBackground:"🗑️ حذف الخلفية",
-
-adminGallery:"📸 المعرض",
-adminGalleryNote:"أضف صور المشاريع إلى المعرض.",
-addGallery:"📸 إضافة صور للمعرض",
-removeGallery:"🗑️ حذف الصور المضافة",
-
-adminVideos:"🎥 فيديوهات المشاريع",
-adminVideosNote:"ارفع فيديوهات مشاريعك هنا. سيتم تشغيل الفيديوهات تلقائياً بدون صوت وبشكل متكرر.",
-addVideos:"🎥 إضافة فيديوهات المشاريع",
-removeVideos:"🗑️ حذف الفيديوهات المضافة",
+backgroundAdminNote:"تستخدم الخلفية العامة صوراً موجودة في GitHub. لتغييرها لجميع العملاء، ارفع الصورة الجديدة إلى المستودع ثم غيّر اسم ملف الصورة داخل index.html.",
+showBackground:"🖼️ عرض الخلفيات الحالية",
 
 editText:"✏️ تعديل النص",
 editTextNote:"اضغط على أي نص محدد في الموقع واكتب التعديل الذي تريده.",
@@ -3234,17 +2114,10 @@ namePlaceholder:"اسمك",
 phonePlaceholder:"رقم الهاتف",
 messagePlaceholder:"اكتب تفاصيل مشروعك...",
 passwordPlaceholder:"كلمة مرور الإدارة"
-
 }
-
 };
 
-
-/* =====================================================
-   EDITABLE TRANSLATIONS
-===================================================== */
-
-const editableTranslations = {
+const editableTranslations={
 
 heroSmall:{
 en:"PROFESSIONAL GLASS & MIRROR WORKS IN KUWAIT",
@@ -3450,13 +2323,7 @@ instagramText:{
 en:"See more glass and mirror projects, designs and updates on our Instagram page.",
 ar:"شاهد المزيد من مشاريع الزجاج والمرايا والتصاميم والتحديثات على صفحتنا في إنستغرام."
 }
-
 };
-
-
-/* =====================================================
-   MENU
-===================================================== */
 
 function toggleMenu(){
 
@@ -3467,169 +2334,93 @@ function toggleMenu(){
 
     const open=nav.classList.contains("mobile-open");
 
-    button.setAttribute(
-        "aria-expanded",
-        open ? "true" : "false"
-    );
-
+    button.setAttribute("aria-expanded",open?"true":"false");
 }
-
-
-/* =====================================================
-   LANGUAGE
-===================================================== */
 
 function getLanguage(){
-
     return arabicMode ? "ar" : "en";
-
 }
-
 
 function applyTranslations(){
 
     const language=getLanguage();
-
     const data=translations[language];
 
+    document.querySelectorAll("[data-i18n]").forEach(function(element){
 
-    /* Normal text */
+        const key=element.dataset.i18n;
 
-    document
-        .querySelectorAll("[data-i18n]")
-        .forEach(function(element){
+        if(data[key] !== undefined){
+            element.textContent=data[key];
+        }
 
-            const key=element.dataset.i18n;
+    });
 
-            if(data[key] !== undefined){
+    document.querySelectorAll(".editable[data-key]").forEach(function(element){
 
-                element.textContent=data[key];
+        const key=element.dataset.key;
 
-            }
+        const saved=localStorage.getItem(
+            "dgm_text_"+language+"_"+key
+        );
 
-        });
+        if(saved !== null){
+            element.innerHTML=saved;
+        }
+        else if(editableTranslations[key]){
+            element.innerHTML=editableTranslations[key][language];
+        }
+    });
 
+    document.querySelectorAll("[data-placeholder]").forEach(function(element){
 
-    /* Editable text */
+        const key=element.dataset.placeholder;
 
-    document
-        .querySelectorAll(".editable[data-key]")
-        .forEach(function(element){
-
-            const key=element.dataset.key;
-
-            const saved=localStorage.getItem(
-                "dgm_text_" + language + "_" + key
-            );
-
-            if(saved !== null){
-
-                element.innerHTML=saved;
-
-            }
-            else if(editableTranslations[key]){
-
-                element.innerHTML=
-                    editableTranslations[key][language];
-
-            }
-
-        });
-
-
-    /* Placeholders */
-
-    document
-        .querySelectorAll("[data-placeholder]")
-        .forEach(function(element){
-
-            const key=element.dataset.placeholder;
-
-            if(data[key]){
-
-                element.placeholder=data[key];
-
-            }
-
-        });
-
+        if(data[key]){
+            element.placeholder=data[key];
+        }
+    });
 
     document.documentElement.lang=language;
 
     document.documentElement.dir=
-        language === "ar" ? "rtl" : "ltr";
+        language==="ar" ? "rtl" : "ltr";
 
-
-    document.getElementById(
-        "languageButton"
-    ).textContent=
-        language === "ar"
-            ? "English"
-            : "العربية";
-
+    document.getElementById("languageButton").textContent=
+        language==="ar" ? "English" : "العربية";
 
     document.title=
-        language === "ar"
+        language==="ar"
             ? "ديزاين جلاس وميرور الكويت | أعمال الزجاج والمرايا"
             : "Design Glass & Mirror Kuwait | Glass & Mirror Works";
-
 }
-
 
 function toggleLanguage(){
 
     arabicMode=!arabicMode;
 
     applyTranslations();
-
-    renderVideos();
-
 }
-
-
-/* =====================================================
-   LOGIN
-===================================================== */
 
 function openLogin(){
 
-    document
-        .getElementById("loginOverlay")
-        .classList
-        .add("active");
+    document.getElementById("loginOverlay").classList.add("active");
 
     setTimeout(function(){
-
-        document
-            .getElementById("adminPassword")
-            .focus();
-
+        document.getElementById("adminPassword").focus();
     },100);
-
 }
-
 
 function closeLogin(){
 
-    document
-        .getElementById("loginOverlay")
-        .classList
-        .remove("active");
+    document.getElementById("loginOverlay").classList.remove("active");
 
-    document
-        .getElementById("adminPassword")
-        .value="";
-
+    document.getElementById("adminPassword").value="";
 }
-
 
 function loginAdmin(){
 
-    const password=
-        document
-        .getElementById("adminPassword")
-        .value;
-
+    const password=document.getElementById("adminPassword").value;
 
     if(password!==ADMIN_PASSWORD){
 
@@ -3640,146 +2431,75 @@ function loginAdmin(){
         );
 
         return;
-
     }
-
 
     closeLogin();
 
-
-    document
-        .body
-        .classList
-        .add("admin-mode");
-
+    document.body.classList.add("admin-mode");
 
     makeEditable();
-
 
     sessionStorage.setItem(
         "designGlassAdmin",
         "true"
     );
-
 }
-
 
 function logoutAdmin(){
 
-    document
-        .body
-        .classList
-        .remove("admin-mode");
-
+    document.body.classList.remove("admin-mode");
 
     lockEditable();
-
 
     sessionStorage.removeItem(
         "designGlassAdmin"
     );
-
 }
-
-
-/* =====================================================
-   TEXT EDITING
-===================================================== */
 
 function makeEditable(){
 
-    document
-        .querySelectorAll(".editable")
-        .forEach(function(element){
+    document.querySelectorAll(".editable").forEach(function(element){
 
-            element.contentEditable="true";
+        element.contentEditable="true";
 
+        if(element.dataset.editListener==="true"){
+            return;
+        }
 
-            if(element.dataset.editListener==="true"){
+        element.dataset.editListener="true";
 
+        element.addEventListener("input",function(){
+
+            if(!document.body.classList.contains("admin-mode")){
                 return;
-
             }
 
+            const key=element.dataset.key;
 
-            element.dataset.editListener="true";
+            if(!key){
+                return;
+            }
 
+            const language=getLanguage();
 
-            element.addEventListener(
-                "input",
-                function(){
-
-                    if(
-                        !document.body.classList.contains(
-                            "admin-mode"
-                        )
-                    ){
-
-                        return;
-
-                    }
-
-
-                    const key=element.dataset.key;
-
-
-                    if(!key){
-
-                        return;
-
-                    }
-
-
-                    const language=getLanguage();
-
-
-                    localStorage.setItem(
-                        "dgm_text_" +
-                        language +
-                        "_" +
-                        key,
-                        element.innerHTML
-                    );
-
-                }
+            localStorage.setItem(
+                "dgm_text_"+language+"_"+key,
+                element.innerHTML
             );
-
         });
-
+    });
 }
-
 
 function lockEditable(){
 
-    document
-        .querySelectorAll(".editable")
-        .forEach(function(element){
-
-            element.contentEditable="false";
-
-        });
-
+    document.querySelectorAll(".editable").forEach(function(element){
+        element.contentEditable="false";
+    });
 }
-
-
-function loadSavedText(){
-
-    applyTranslations();
-
-}
-
-
-/* =====================================================
-   SAVE ALL
-===================================================== */
 
 function saveAll(){
 
-    if(
-        !document.body.classList.contains(
-            "admin-mode"
-        )
-    ){
+    if(!document.body.classList.contains("admin-mode")){
 
         alert(
             arabicMode
@@ -3788,1323 +2508,157 @@ function saveAll(){
         );
 
         return;
-
     }
-
 
     const language=getLanguage();
 
+    document.querySelectorAll(".editable").forEach(function(element){
 
-    document
-        .querySelectorAll(".editable")
-        .forEach(function(element){
+        const key=element.dataset.key;
 
-            const key=element.dataset.key;
+        if(!key){
+            return;
+        }
 
-
-            if(!key){
-
-                return;
-
-            }
-
-
-            localStorage.setItem(
-                "dgm_text_" +
-                language +
-                "_" +
-                key,
-                element.innerHTML
-            );
-
-        });
-
+        localStorage.setItem(
+            "dgm_text_"+language+"_"+key,
+            element.innerHTML
+        );
+    });
 
     alert(
         arabicMode
             ? "✓ تم حفظ جميع تغييرات النص."
             : "✓ All text changes have been saved."
     );
-
 }
-
-
-/* =====================================================
-   INDEXEDDB
-===================================================== */
-
-const DB_NAME="DesignGlassMirrorDB";
-const DB_VERSION=1;
-const BG_STORE="backgrounds";
-
-
-function openImageDatabase(){
-
-    return new Promise(function(resolve,reject){
-
-        const request=
-            indexedDB.open(
-                DB_NAME,
-                DB_VERSION
-            );
-
-
-        request.onupgradeneeded=function(event){
-
-            const db=event.target.result;
-
-
-            if(
-                !db.objectStoreNames.contains(
-                    BG_STORE
-                )
-            ){
-
-                db.createObjectStore(
-                    BG_STORE,
-                    {
-                        keyPath:"id"
-                    }
-                );
-
-            }
-
-        };
-
-
-        request.onsuccess=function(){
-
-            resolve(request.result);
-
-        };
-
-
-        request.onerror=function(){
-
-            reject(request.error);
-
-        };
-
-    });
-
-}
-
-
-/* =====================================================
-   SAVE BACKGROUNDS
-===================================================== */
-
-async function saveBackgroundsToDB(images){
-
-    const db=await openImageDatabase();
-
-
-    return new Promise(function(resolve,reject){
-
-        const transaction=
-            db.transaction(
-                BG_STORE,
-                "readwrite"
-            );
-
-
-        const store=
-            transaction.objectStore(
-                BG_STORE
-            );
-
-
-        store.clear();
-
-
-        images.forEach(function(image,index){
-
-            store.put({
-                id:index,
-                image:image
-            });
-
-        });
-
-
-        transaction.oncomplete=function(){
-
-            db.close();
-
-            resolve();
-
-        };
-
-
-        transaction.onerror=function(){
-
-            db.close();
-
-            reject(transaction.error);
-
-        };
-
-    });
-
-}
-
-
-/* =====================================================
-   LOAD BACKGROUNDS
-===================================================== */
-
-async function loadBackgroundsFromDB(){
-
-    try{
-
-        const db=await openImageDatabase();
-
-
-        return new Promise(function(resolve,reject){
-
-            const transaction=
-                db.transaction(
-                    BG_STORE,
-                    "readonly"
-                );
-
-
-            const store=
-                transaction.objectStore(
-                    BG_STORE
-                );
-
-
-            const request=
-                store.getAll();
-
-
-            request.onsuccess=function(){
-
-                const results=
-                    request.result || [];
-
-
-                results.sort(function(a,b){
-
-                    return a.id-b.id;
-
-                });
-
-
-                const images=
-                    results.map(function(item){
-
-                        return item.image;
-
-                    });
-
-
-                db.close();
-
-                resolve(images);
-
-            };
-
-
-            request.onerror=function(){
-
-                db.close();
-
-                reject(request.error);
-
-            };
-
-        });
-
-    }
-    catch(error){
-
-        console.error(
-            "Background database error:",
-            error
-        );
-
-        return [];
-
-    }
-
-}
-
-
-/* =====================================================
-   CLEAR BACKGROUNDS
-===================================================== */
-
-async function clearBackgroundsFromDB(){
-
-    const db=await openImageDatabase();
-
-
-    return new Promise(function(resolve,reject){
-
-        const transaction=
-            db.transaction(
-                BG_STORE,
-                "readwrite"
-            );
-
-
-        const store=
-            transaction.objectStore(
-                BG_STORE
-            );
-
-
-        store.clear();
-
-
-        transaction.oncomplete=function(){
-
-            db.close();
-
-            resolve();
-
-        };
-
-
-        transaction.onerror=function(){
-
-            db.close();
-
-            reject(transaction.error);
-
-        };
-
-    });
-
-}
-
-
-/* =====================================================
-   FILE READER
-===================================================== */
-
-function readFileAsDataURL(file){
-
-    return new Promise(function(resolve,reject){
-
-        const reader=new FileReader();
-
-
-        reader.onload=function(){
-
-            resolve(reader.result);
-
-        };
-
-
-        reader.onerror=function(){
-
-            reject(reader.error);
-
-        };
-
-
-        reader.readAsDataURL(file);
-
-    });
-
-}
-
-
-/* =====================================================
-   CHANGE BACKGROUND
-===================================================== */
-
-async function changeBackground(event){
-
-    if(
-        !document.body.classList.contains(
-            "admin-mode"
-        )
-    ){
-
-        alert(
-            arabicMode
-                ? "يرجى تسجيل الدخول كمسؤول أولاً."
-                : "Please login as Admin first."
-        );
-
-        event.target.value="";
-
-        return;
-
-    }
-
-
-    const files=
-        Array.from(event.target.files);
-
-
-    if(files.length===0){
-
-        return;
-
-    }
-
-
-    if(files.length>3){
-
-        alert(
-            arabicMode
-                ? "يسمح بحد أقصى 3 صور للخلفية. سيتم استخدام أول 3 صور فقط."
-                : "Maximum 3 background pictures allowed. Only the first 3 will be used."
-        );
-
-    }
-
-
-    const selected=files.slice(0,3);
-
-    const newImages=[];
-
-
-    try{
-
-        for(const file of selected){
-
-            if(!file.type.startsWith("image/")){
-
-                continue;
-
-            }
-
-
-            const data=
-                await readFileAsDataURL(file);
-
-
-            newImages.push(data);
-
-        }
-
-
-        if(newImages.length===0){
-
-            alert(
-                arabicMode
-                    ? "لم يتم اختيار صور صالحة."
-                    : "No valid image files were selected."
-            );
-
-            return;
-
-        }
-
-
-        await saveBackgroundsToDB(newImages);
-
-
-        heroBackgrounds=newImages;
-
-        heroIndex=0;
-
-
-        updateHero();
-
-        showBackgroundPreview();
-
-
-        alert(
-            arabicMode
-                ? "✓ تم حفظ صور الخلفية بنجاح."
-                : "✓ Background pictures saved successfully."
-        );
-
-    }
-    catch(error){
-
-        console.error(error);
-
-
-        alert(
-            arabicMode
-                ? "تعذر حفظ صور الخلفية."
-                : "The background pictures could not be saved."
-        );
-
-    }
-
-
-    event.target.value="";
-
-}
-
-
-/* =====================================================
-   LOAD BACKGROUNDS
-===================================================== */
-
-async function loadBackgrounds(){
-
-    try{
-
-        heroBackgrounds=
-            await loadBackgroundsFromDB();
-
-    }
-    catch(error){
-
-        console.error(error);
-
-        heroBackgrounds=[];
-
-    }
-
-
-    heroIndex=0;
-
-    showBackgroundPreview();
-
-    updateHero();
-
-}
-
-
-/* =====================================================
-   HERO
-===================================================== */
 
 function updateHero(){
 
-    const hero=
-        document.querySelector(".hero");
-
+    const hero=document.querySelector(".hero");
 
     if(!hero){
-
         return;
-
     }
 
+    const image=heroBackgrounds[heroIndex];
 
-    if(heroBackgrounds.length===0){
-
-        hero.style.backgroundImage=
+    hero.style.backgroundImage=
         `
         linear-gradient(
-            rgba(4,25,45,.60),
-            rgba(5,60,90,.58)
-        ),
-        linear-gradient(
-            135deg,
-            #0c6d9e,
-            #102d52
-        )
-        `;
-
-    }
-    else{
-
-        const image=
-            heroBackgrounds[heroIndex];
-
-
-        hero.style.backgroundImage=
-        `
-        linear-gradient(
-            rgba(4,25,45,.48),
-            rgba(5,60,90,.42)
+            rgba(4,25,45,.50),
+            rgba(5,60,90,.48)
         ),
         url("${image}")
         `;
 
-    }
-
-
     updateHeroDots();
-
 }
-
 
 function nextHeroBackground(){
 
     if(heroBackgrounds.length<2){
-
         return;
-
     }
-
 
     heroIndex++;
 
-
-    if(
-        heroIndex>=heroBackgrounds.length
-    ){
-
+    if(heroIndex>=heroBackgrounds.length){
         heroIndex=0;
-
     }
 
-
     updateHero();
-
 }
-
 
 function updateHeroDots(){
 
-    const dots=
-        document.getElementById(
-            "heroDots"
-        );
-
+    const dots=document.getElementById("heroDots");
 
     if(!dots){
-
         return;
-
     }
-
 
     dots.innerHTML="";
 
-
     heroBackgrounds.forEach(function(_,index){
 
-        const dot=
-            document.createElement("div");
-
+        const dot=document.createElement("div");
 
         dot.className="hero-dot";
 
-
         if(index===heroIndex){
-
             dot.classList.add("active");
-
         }
-
 
         dots.appendChild(dot);
-
     });
-
 }
 
-
-function showBackgroundPreview(){
-
-    const container=
-        document.getElementById(
-            "backgroundPreview"
-        );
-
-
-    if(!container){
-
-        return;
-
-    }
-
-
-    container.innerHTML="";
-
-
-    heroBackgrounds.forEach(function(src){
-
-        const img=
-            document.createElement("img");
-
-
-        img.src=src;
-
-        img.className="bg-preview";
-
-
-        container.appendChild(img);
-
-    });
-
-}
-
-
-async function removeBackgrounds(){
-
-    if(
-        !document.body.classList.contains(
-            "admin-mode"
-        )
-    ){
-
-        alert(
-            arabicMode
-                ? "يرجى تسجيل الدخول كمسؤول أولاً."
-                : "Please login as Admin first."
-        );
-
-        return;
-
-    }
-
-
-    if(
-        !confirm(
-            arabicMode
-                ? "هل تريد حذف جميع صور الخلفية المخصصة؟"
-                : "Remove all custom background pictures?"
-        )
-    ){
-
-        return;
-
-    }
-
-
-    try{
-
-        await clearBackgroundsFromDB();
-
-
-        heroBackgrounds=[];
-
-        heroIndex=0;
-
-
-        updateHero();
-
-        showBackgroundPreview();
-
-
-        alert(
-            arabicMode
-                ? "✓ تم حذف صور الخلفية."
-                : "✓ Background pictures removed."
-        );
-
-    }
-    catch(error){
-
-        console.error(error);
-
-
-        alert(
-            arabicMode
-                ? "تعذر حذف صور الخلفية."
-                : "Could not remove the background pictures."
-        );
-
-    }
-
-}
-
-
-/* =====================================================
-   GALLERY
-===================================================== */
-
-async function addGalleryImages(event){
-
-    if(
-        !document.body.classList.contains(
-            "admin-mode"
-        )
-    ){
-
-        alert(
-            arabicMode
-                ? "يرجى تسجيل الدخول كمسؤول أولاً."
-                : "Please login as Admin first."
-        );
-
-        event.target.value="";
-
-        return;
-
-    }
-
-
-    const files=
-        Array.from(event.target.files);
-
-
-    if(files.length===0){
-
-        return;
-
-    }
-
-
-    const saved=
-        JSON.parse(
-            localStorage.getItem(
-                "dgm_gallery"
-            ) || "[]"
-        );
-
-
-    for(const file of files){
-
-        const src=
-            await readFileAsDataURL(file);
-
-
-        saved.push({
-
-            src:src,
-
-            caption:
-                arabicMode
-                    ? "مشروع زجاج ومرايا جديد"
-                    : "New Glass & Mirror Project"
-
-        });
-
-    }
-
-
-    try{
-
-        localStorage.setItem(
-            "dgm_gallery",
-            JSON.stringify(saved)
-        );
-
-    }
-    catch(error){
-
-        alert(
-            arabicMode
-                ? "مساحة تخزين المعرض ممتلئة."
-                : "The gallery storage is full."
-        );
-
-        return;
-
-    }
-
-
-    renderAddedGallery();
-
-    event.target.value="";
-
-}
-
-
-function renderAddedGallery(){
-
-    document
-        .querySelectorAll(".added-gallery")
-        .forEach(function(card){
-
-            card.remove();
-
-        });
-
-
-    const saved=
-        JSON.parse(
-            localStorage.getItem(
-                "dgm_gallery"
-            ) || "[]"
-        );
-
-
-    const gallery=
-        document.getElementById(
-            "galleryGrid"
-        );
-
-
-    if(!gallery){
-
-        return;
-
-    }
-
-
-    saved.forEach(function(item){
-
-        const card=
-            document.createElement("div");
-
-
-        card.className=
-            "gallery-card added-gallery";
-
-
-        const image=
-            document.createElement("img");
-
-
-        image.src=item.src;
-
-        image.alt=
-            arabicMode
-                ? "مشروع زجاج ومرايا"
-                : "Glass and mirror project";
-
-        image.loading="lazy";
-
-
-        const caption=
-            document.createElement("div");
-
-
-        caption.className="gallery-caption";
-
-
-        caption.textContent=
-            item.caption;
-
-
-        card.appendChild(image);
-
-        card.appendChild(caption);
-
-        gallery.appendChild(card);
-
-    });
-
-}
-
-
-function removeAddedGallery(){
-
-    if(
-        !document.body.classList.contains(
-            "admin-mode"
-        )
-    ){
-
-        alert(
-            arabicMode
-                ? "يرجى تسجيل الدخول كمسؤول أولاً."
-                : "Please login as Admin first."
-        );
-
-        return;
-
-    }
-
-
-    if(
-        !confirm(
-            arabicMode
-                ? "هل تريد حذف جميع صور المعرض المضافة من لوحة الإدارة؟"
-                : "Remove all gallery pictures added through Admin?"
-        )
-    ){
-
-        return;
-
-    }
-
-
-    localStorage.removeItem(
-        "dgm_gallery"
+function showCurrentBackgrounds(){
+
+    alert(
+        arabicMode
+            ? "الخلفيات الحالية: "+heroBackgrounds.join(" | ")
+            : "Current backgrounds: "+heroBackgrounds.join(" | ")
     );
-
-
-    document
-        .querySelectorAll(".added-gallery")
-        .forEach(function(card){
-
-            card.remove();
-
-        });
-
 }
 
+document.addEventListener("click",function(event){
 
-/* =====================================================
-   VIDEOS
-===================================================== */
+    const image=event.target.closest(".gallery-card img");
 
-async function addVideos(event){
-
-    if(
-        !document.body.classList.contains(
-            "admin-mode"
-        )
-    ){
-
-        alert(
-            arabicMode
-                ? "يرجى تسجيل الدخول كمسؤول أولاً."
-                : "Please login as Admin first."
-        );
-
-        event.target.value="";
-
+    if(!image){
         return;
-
     }
 
+    document.getElementById("lightboxImage").src=image.src;
 
-    const files=
-        Array.from(event.target.files);
-
-
-    if(files.length===0){
-
-        return;
-
-    }
-
-
-    const saved=
-        JSON.parse(
-            localStorage.getItem(
-                "dgm_videos"
-            ) || "[]"
-        );
-
-
-    for(const file of files){
-
-        const src=
-            await readFileAsDataURL(file);
-
-
-        saved.push(src);
-
-    }
-
-
-    try{
-
-        localStorage.setItem(
-            "dgm_videos",
-            JSON.stringify(saved)
-        );
-
-    }
-    catch(error){
-
-        alert(
-            arabicMode
-                ? "مساحة تخزين الفيديوهات ممتلئة."
-                : "The video storage is full."
-        );
-
-        return;
-
-    }
-
-
-    renderVideos();
-
-    event.target.value="";
-
-}
-
-
-function renderVideos(){
-
-    const grid=
-        document.getElementById(
-            "videoGrid"
-        );
-
-
-    if(!grid){
-
-        return;
-
-    }
-
-
-    document
-        .querySelectorAll(".added-video")
-        .forEach(function(card){
-
-            card.remove();
-
-        });
-
-
-    const saved=
-        JSON.parse(
-            localStorage.getItem(
-                "dgm_videos"
-            ) || "[]"
-        );
-
-
-    const empty=
-        document.getElementById(
-            "videoEmpty"
-        );
-
-
-    if(saved.length>0){
-
-        if(empty){
-
-            empty.remove();
-
-        }
-
-    }
-    else{
-
-        if(!empty){
-
-            const emptyBox=
-                document.createElement("div");
-
-
-            emptyBox.id="videoEmpty";
-
-            emptyBox.className="video-empty";
-
-
-            emptyBox.innerHTML=`
-                <div>
-                    <div class="play-icon">▶</div>
-                    <h3>${arabicMode ? "فيديوهات المشاريع" : "Project Videos"}</h3>
-                    <p>${arabicMode ? "ستظهر فيديوهات المشاريع هنا." : "Project videos will appear here."}</p>
-                </div>
-            `;
-
-
-            grid.appendChild(emptyBox);
-
-        }
-
-
-        return;
-
-    }
-
-
-    saved.forEach(function(src,index){
-
-        const card=
-            document.createElement("div");
-
-
-        card.className=
-            "video-card added-video";
-
-
-        const video=
-            document.createElement("video");
-
-
-        video.src=src;
-
-        video.controls=true;
-
-        video.autoplay=true;
-
-        video.muted=true;
-
-        video.loop=true;
-
-        video.playsInline=true;
-
-
-        const title=
-            document.createElement("h3");
-
-
-        title.textContent=
-            arabicMode
-                ? "فيديو المشروع " + (index+1)
-                : "Project Video " + (index+1);
-
-
-        card.appendChild(video);
-
-        card.appendChild(title);
-
-        grid.appendChild(card);
-
-
-        video.play().catch(function(){});
-
-    });
-
-}
-
-
-function removeAddedVideos(){
-
-    if(
-        !document.body.classList.contains(
-            "admin-mode"
-        )
-    ){
-
-        alert(
-            arabicMode
-                ? "يرجى تسجيل الدخول كمسؤول أولاً."
-                : "Please login as Admin first."
-        );
-
-        return;
-
-    }
-
-
-    if(
-        !confirm(
-            arabicMode
-                ? "هل تريد حذف جميع الفيديوهات المضافة من لوحة الإدارة؟"
-                : "Remove all videos added through Admin?"
-        )
-    ){
-
-        return;
-
-    }
-
-
-    localStorage.removeItem(
-        "dgm_videos"
-    );
-
-
-    renderVideos();
-
-}
-
-
-/* =====================================================
-   LIGHTBOX
-===================================================== */
-
-document.addEventListener(
-    "click",
-    function(event){
-
-        const image=
-            event.target.closest(
-                ".gallery-card img"
-            );
-
-
-        if(!image){
-
-            return;
-
-        }
-
-
-        document
-            .getElementById(
-                "lightboxImage"
-            )
-            .src=image.src;
-
-
-        document
-            .getElementById(
-                "lightbox"
-            )
-            .classList
-            .add("active");
-
-    }
-);
-
+    document.getElementById("lightbox").classList.add("active");
+});
 
 function closeLightbox(){
 
-    document
-        .getElementById(
-            "lightbox"
-        )
-        .classList
-        .remove("active");
-
+    document.getElementById("lightbox").classList.remove("active");
 }
-
-
-/* =====================================================
-   WHATSAPP
-===================================================== */
 
 function sendWhatsApp(event){
 
     event.preventDefault();
 
-
-    const name=
-        document
-        .getElementById(
-            "customerName"
-        ).value;
-
-
-    const phone=
-        document
-        .getElementById(
-            "customerPhone"
-        ).value;
-
-
-    const message=
-        document
-        .getElementById(
-            "customerMessage"
-        ).value;
-
+    const name=document.getElementById("customerName").value;
+    const phone=document.getElementById("customerPhone").value;
+    const message=document.getElementById("customerMessage").value;
 
     let text;
-
 
     if(arabicMode){
 
         text=
-            "مرحباً ديزاين جلاس وميرور الكويت،\n\n" +
-
-            "الاسم: " +
-            name +
-
-            "\nرقم الهاتف: " +
-            phone +
-
-            "\nالمشروع: " +
-            message;
+            "مرحباً ديزاين جلاس وميرور الكويت،\n\n"+
+            "الاسم: "+name+
+            "\nرقم الهاتف: "+phone+
+            "\nالمشروع: "+message;
 
     }
     else{
 
         text=
-            "Hello Design Glass & Mirror Kuwait,\n\n" +
-
-            "Name: " +
-            name +
-
-            "\nPhone: " +
-            phone +
-
-            "\nProject: " +
-            message;
-
+            "Hello Design Glass & Mirror Kuwait,\n\n"+
+            "Name: "+name+
+            "\nPhone: "+phone+
+            "\nProject: "+message;
     }
 
-
     window.open(
-        "https://wa.me/96555507290?text=" +
+        "https://wa.me/96555507290?text="+
         encodeURIComponent(text),
         "_blank"
     );
-
 }
 
+function resetWebsite(){
 
-/* =====================================================
-   RESET
-===================================================== */
-
-async function resetWebsite(){
-
-    if(
-        !document.body.classList.contains(
-            "admin-mode"
-        )
-    ){
+    if(!document.body.classList.contains("admin-mode")){
 
         alert(
             arabicMode
@@ -5113,200 +2667,65 @@ async function resetWebsite(){
         );
 
         return;
-
     }
 
-
-    if(
-        !confirm(
-            arabicMode
-                ? "هل تريد إعادة ضبط تعديلات الموقع والخلفيات وصور المعرض والفيديوهات؟"
-                : "Reset saved website edits, backgrounds, gallery additions and videos?"
-        )
-    ){
-
+    if(!confirm(
+        arabicMode
+            ? "هل تريد إعادة ضبط تعديلات النصوص؟"
+            : "Reset saved text edits?"
+    )){
         return;
-
     }
 
-
-    localStorage.clear();
-
-
-    try{
-
-        await clearBackgroundsFromDB();
-
-    }
-    catch(error){
-
-        console.error(error);
-
-    }
-
-
-    sessionStorage.clear();
-
+    Object.keys(localStorage)
+        .filter(function(key){
+            return key.indexOf("dgm_text_")===0;
+        })
+        .forEach(function(key){
+            localStorage.removeItem(key);
+        });
 
     location.reload();
-
 }
 
+document.addEventListener("DOMContentLoaded",function(){
 
-/* =====================================================
-   START
-===================================================== */
+    applyTranslations();
 
-document.addEventListener(
-    "DOMContentLoaded",
-    async function(){
+    lockEditable();
 
-        /*
-           Start in English.
-        */
+    updateHero();
 
-        arabicMode=false;
+    setInterval(
+        nextHeroBackground,
+        5000
+    );
 
+    if(
+        sessionStorage.getItem(
+            "designGlassAdmin"
+        )==="true"
+    ){
 
-        /*
-           Load translations.
-        */
+        document.body.classList.add("admin-mode");
 
-        loadSavedText();
-
-
-        /*
-           Lock editing.
-        */
-
-        lockEditable();
-
-
-        /*
-           Load backgrounds.
-        */
-
-        await loadBackgrounds();
-
-
-        /*
-           Load gallery.
-        */
-
-        renderAddedGallery();
-
-
-        /*
-           Load videos.
-        */
-
-        renderVideos();
-
-
-        /*
-           Restore admin session.
-        */
-
-        if(
-            sessionStorage.getItem(
-                "designGlassAdmin"
-            )==="true"
-        ){
-
-            document
-                .body
-                .classList
-                .add("admin-mode");
-
-
-            makeEditable();
-
-        }
-
-
-        /*
-           Change hero every 5 seconds.
-        */
-
-        setInterval(
-            nextHeroBackground,
-            5000
-        );
-
-
-        /*
-           Close mobile menu after
-           navigation click.
-        */
-
-        document
-            .querySelectorAll(
-                "#mainNav a"
-            )
-            .forEach(function(link){
-
-                link.addEventListener(
-                    "click",
-                    function(){
-
-                        document
-                            .getElementById(
-                                "mainNav"
-                            )
-                            .classList
-                            .remove(
-                                "mobile-open"
-                            );
-
-                    }
-                );
-
-            });
-
-
-        /*
-           Mobile menu accessibility.
-        */
-
-        const menuButton=
-            document.querySelector(
-                ".menu-toggle"
-            );
-
-
-        const nav=
-            document.getElementById(
-                "mainNav"
-            );
-
-
-        if(menuButton){
-
-            menuButton.addEventListener(
-                "click",
-                function(){
-
-                    const isOpen=
-                        nav.classList.contains(
-                            "mobile-open"
-                        );
-
-
-                    menuButton.setAttribute(
-                        "aria-expanded",
-                        isOpen
-                            ? "true"
-                            : "false"
-                    );
-
-                }
-            );
-
-        }
-
+        makeEditable();
     }
-);
 
+    document.querySelectorAll("#mainNav a").forEach(function(link){
+
+        link.addEventListener("click",function(){
+
+            document.getElementById("mainNav")
+                .classList
+                .remove("mobile-open");
+
+            document.querySelector(".menu-toggle")
+                .setAttribute("aria-expanded","false");
+        });
+    });
+
+});
 </script>
 
 </body>
