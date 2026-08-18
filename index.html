@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+>
 
-<title>Design Glass & Mirror Kuwait | Glass, Mirror & Tempered Glass</title>
+<title>
+Design Glass & Mirror Kuwait | Glass, Mirror & Tempered Glass
+</title>
 
 <meta
 name="description"
-content="Design Glass & Mirror Kuwait provides glass, mirrors, tempered glass, laminated glass, double glass, shower glass, partitions, railings, staircase glass, office glass and aluminum works in Kuwait. Call +965 5550 7290."
+content="Design Glass & Mirror Kuwait provides professional glass, mirrors, tempered glass, laminated glass, double glass, shower glass, partitions, railings, staircase glass, office glass and aluminum works in Kuwait."
 >
 
 <meta
@@ -36,7 +41,7 @@ content="Design Glass & Mirror Kuwait"
 
 <meta
 property="og:description"
-content="Glass, mirrors, tempered glass, laminated glass, double glass, shower glass, partitions, railings and aluminum works in Kuwait."
+content="Glass, mirror, tempered glass, laminated glass, double glass, shower glass, partitions, railings and aluminum works in Kuwait."
 >
 
 <meta
@@ -47,11 +52,6 @@ content="website"
 <meta
 property="og:url"
 content="https://muhmmadayub-ui.github.io/design-glass-mirror-kuwait/"
->
-
-<meta
-property="og:image"
-content="https://muhmmadayub-ui.github.io/design-glass-mirror-kuwait/6mm%20mirror%20with%20design%20LED%20LIGHT.jpeg"
 >
 
 <meta
@@ -67,7 +67,7 @@ content="#091423"
   "url":"https://muhmmadayub-ui.github.io/design-glass-mirror-kuwait/",
   "telephone":"+96555507290",
   "email":"designglassmirror@gmail.com",
-  "description":"Glass and mirror company in Kuwait providing tempered glass, laminated glass, double glass, shower glass, partitions, glass railings, staircase glass, mirrors, office glass and aluminum works.",
+  "description":"Professional glass and mirror services in Kuwait including tempered glass, laminated glass, double glass, shower glass, partitions, railings, staircase glass, office glass, mirrors and aluminum works.",
   "areaServed":{
     "@type":"Country",
     "name":"Kuwait"
@@ -115,11 +115,14 @@ a{
 
 button,
 input,
-textarea{
+textarea,
+select{
     font-family:inherit;
 }
 
-/* HEADER */
+/* =========================================================
+   HEADER
+========================================================= */
 
 header{
     position:sticky;
@@ -195,7 +198,9 @@ nav a:hover{
     cursor:pointer;
 }
 
-/* HERO */
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero{
     position:relative;
@@ -212,7 +217,7 @@ nav a:hover{
             rgba(4,25,45,.54),
             rgba(5,60,90,.50)
         ),
-        url("6mm mirror with design LED LIGHT.jpeg");
+        url("twist out building.jpg");
 
     background-size:cover;
     background-position:center;
@@ -236,15 +241,8 @@ nav a:hover{
     position:relative;
     z-index:2;
     width:100%;
-    max-width:950px;
+    max-width:1000px;
     padding:65px 18px 95px;
-}
-
-.hero h1{
-    font-size:clamp(38px,6vw,68px);
-    line-height:1.08;
-    margin-bottom:20px;
-    text-shadow:0 3px 18px rgba(0,0,0,.4);
 }
 
 .hero-subtitle{
@@ -253,6 +251,15 @@ nav a:hover{
     color:#b9edff;
     font-weight:bold;
     margin-bottom:14px;
+    transition:.2s;
+}
+
+.hero h1{
+    font-size:clamp(38px,6vw,68px);
+    line-height:1.08;
+    margin-bottom:20px;
+    text-shadow:0 3px 18px rgba(0,0,0,.40);
+    transition:.2s;
 }
 
 .hero-text{
@@ -260,6 +267,7 @@ nav a:hover{
     margin:0 auto 28px;
     font-size:18px;
     color:#f4fbff;
+    transition:.2s;
 }
 
 .hero-buttons{
@@ -316,7 +324,9 @@ nav a:hover{
     transform:scale(1.25);
 }
 
-/* GENERAL */
+/* =========================================================
+   SECTIONS
+========================================================= */
 
 .section{
     padding:75px 6%;
@@ -354,7 +364,9 @@ nav a:hover{
     border-radius:10px;
 }
 
-/* ABOUT */
+/* =========================================================
+   ABOUT
+========================================================= */
 
 .about{
     background:#fff;
@@ -398,14 +410,12 @@ nav a:hover{
     display:flex;
     flex-direction:column;
     justify-content:center;
-
     background:
         linear-gradient(
             135deg,
             #dff7ff,
             #eef6ff
         );
-
     box-shadow:
         0 20px 50px
         rgba(20,70,100,.12);
@@ -422,7 +432,9 @@ nav a:hover{
     font-size:24px;
 }
 
-/* SERVICES */
+/* =========================================================
+   SERVICES
+========================================================= */
 
 .services{
     background:#f4f9fc;
@@ -472,7 +484,9 @@ nav a:hover{
     color:#697586;
 }
 
-/* GALLERY */
+/* =========================================================
+   GALLERY
+========================================================= */
 
 .gallery{
     background:#fff;
@@ -522,13 +536,16 @@ nav a:hover{
     color:#fff;
     font-size:14px;
     font-weight:bold;
-    background:linear-gradient(
-        transparent,
-        rgba(0,0,0,.86)
-    );
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,.86)
+        );
 }
 
-/* VIDEOS */
+/* =========================================================
+   VIDEOS
+========================================================= */
 
 .videos{
     background:#f4f9fc;
@@ -544,7 +561,9 @@ nav a:hover{
     background:#10233d;
     border-radius:18px;
     overflow:hidden;
-    box-shadow:0 12px 35px rgba(10,30,50,.15);
+    box-shadow:
+        0 12px 35px
+        rgba(10,30,50,.15);
 }
 
 .video-card video{
@@ -560,7 +579,9 @@ nav a:hover{
     padding:13px 16px;
 }
 
-/* WHY */
+/* =========================================================
+   WHY
+========================================================= */
 
 .why{
     background:#10233d;
@@ -600,7 +621,9 @@ nav a:hover{
     color:#bdc9d7;
 }
 
-/* CONTACT */
+/* =========================================================
+   CONTACT
+========================================================= */
 
 .contact{
     background:#fff;
@@ -704,7 +727,9 @@ form button{
     cursor:pointer;
 }
 
-/* INSTAGRAM */
+/* =========================================================
+   INSTAGRAM
+========================================================= */
 
 .instagram{
     background:#f4f9fc;
@@ -717,7 +742,9 @@ form button{
     border-radius:20px;
     text-align:center;
     background:#fff;
-    box-shadow:0 10px 35px rgba(20,60,90,.08);
+    box-shadow:
+        0 10px 35px
+        rgba(20,60,90,.08);
 }
 
 .instagram-box p{
@@ -734,7 +761,9 @@ form button{
     font-weight:bold;
 }
 
-/* FOOTER */
+/* =========================================================
+   FOOTER
+========================================================= */
 
 footer{
     background:#081426;
@@ -759,64 +788,88 @@ footer p{
     color:#8edfff;
 }
 
-/* MOBILE ACTIONS */
+/* =========================================================
+   MOBILE ACTIONS
+========================================================= */
 
 .mobile-actions{
     display:none;
 }
 
-/* WHATSAPP */
+/* =========================================================
+   ADMIN ACCESS
+========================================================= */
 
-.floating-whatsapp{
+/*
+   IMPORTANT:
+   The Admin launcher is HIDDEN on the normal public URL.
+
+   Open:
+   ?admin=1
+
+   to reveal it.
+*/
+
+.admin-launcher{
+    display:none;
     position:fixed;
-    right:20px;
-    bottom:20px;
-    width:58px;
-    height:58px;
-    border-radius:50%;
-    background:#25d366;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:27px;
-    box-shadow:0 8px 25px rgba(0,0,0,.25);
-    z-index:900;
-}
-
-/* ADMIN BUTTON */
-
-.admin-button{
-    position:fixed;
-    left:18px;
+    left:14px;
     bottom:18px;
-    z-index:5000;
+    z-index:6000;
     border:0;
-    padding:10px 15px;
-    border-radius:9px;
+    padding:10px 14px;
+    border-radius:10px;
     background:#111d2e;
     color:#fff;
     font-weight:bold;
     cursor:pointer;
-    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,.25);
 }
 
-/* ADMIN PANEL */
+body.admin-link-visible .admin-launcher{
+    display:block;
+}
+
+/* =========================================================
+   ADMIN PANEL
+========================================================= */
 
 .admin-panel{
     display:none;
+
     position:fixed;
-    top:70px;
-    right:15px;
-    width:min(470px,calc(100vw - 30px));
-    max-height:calc(100vh - 85px);
+
+    top:65px;
+
+    right:12px;
+
+    width:min(
+        500px,
+        calc(100vw - 24px)
+    );
+
+    max-height:
+        calc(100vh - 78px);
+
     overflow-y:auto;
-    z-index:4500;
+
+    z-index:5500;
+
     background:#fff;
+
     border-radius:18px;
-    padding:20px;
-    box-shadow:0 20px 70px rgba(0,0,0,.30);
-    border:1px solid #dce8ef;
+
+    padding:18px;
+
+    box-shadow:
+        0 20px 70px
+        rgba(0,0,0,.30);
+
+    border:
+        1px solid
+        #dce8ef;
 }
 
 body.admin-mode .admin-panel{
@@ -830,25 +883,29 @@ body.admin-mode .admin-panel{
 
 .admin-panel h3{
     color:#126e9c;
-    margin-top:16px;
-    margin-bottom:8px;
+    margin-top:17px;
+    margin-bottom:7px;
 }
 
 .admin-note{
     color:#697586;
     font-size:13px;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 .admin-section{
-    border-top:1px solid #e3ebf0;
+    border-top:
+        1px solid
+        #e3ebf0;
+
     padding-top:13px;
+
     margin-top:13px;
 }
 
 .admin-panel button{
     border:0;
-    border-radius:8px;
+    border-radius:9px;
     padding:10px 13px;
     margin:4px 3px;
     background:#10233d;
@@ -861,21 +918,34 @@ body.admin-mode .admin-panel{
     background:#087cac;
 }
 
-.admin-panel .success{
+.admin-panel button.success{
     background:#18864b;
 }
 
-.admin-panel .danger{
+.admin-panel button.danger{
     background:#b3261e;
 }
 
+.admin-panel button.gray{
+    background:#5f6b7a;
+}
+
 .admin-panel input[type="password"],
-.admin-panel input[type="file"]{
+.admin-panel input[type="text"],
+.admin-panel input[type="file"],
+.admin-panel select{
     width:100%;
     padding:10px;
-    margin:6px 0;
-    border:1px solid #d5e1e8;
+    margin:5px 0;
+    border:
+        1px solid
+        #d5e1e8;
     border-radius:9px;
+    background:#fff;
+}
+
+.admin-panel input[type="range"]{
+    width:100%;
 }
 
 .admin-status{
@@ -884,7 +954,19 @@ body.admin-mode .admin-panel{
     background:#edf8fc;
     color:#126e9c;
     font-size:13px;
-    margin-top:10px;
+    margin-top:8px;
+}
+
+.admin-warning{
+    background:#fff4d6;
+    color:#805b00;
+    border:
+        1px solid
+        #efd98d;
+    border-radius:10px;
+    padding:10px;
+    font-size:12px;
+    margin:9px 0;
 }
 
 .upload-status{
@@ -897,33 +979,70 @@ body.admin-mode .admin-panel{
     white-space:pre-wrap;
 }
 
-.admin-warning{
-    background:#fff4d6;
-    color:#805b00;
-    border:1px solid #efd98d;
+.control-row{
+    display:grid;
+    grid-template-columns:
+        1fr
+        1fr;
+    gap:9px;
+}
+
+.check-row{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:8px 0;
+    color:#26374a;
+    font-size:14px;
+}
+
+.check-row input{
+    width:18px;
+    height:18px;
+}
+
+.size-label{
+    display:flex;
+    justify-content:space-between;
+    color:#526174;
+    font-size:12px;
+    margin-top:6px;
+}
+
+.edit-guide{
+    background:#f4f9fc;
     border-radius:10px;
     padding:11px;
     font-size:13px;
-    margin:10px 0;
+    color:#526174;
 }
 
-/* EDITABLE TEXT */
+/* =========================================================
+   EDITABLE
+========================================================= */
 
 .editable{
     outline:none;
 }
 
 body.admin-mode .editable{
-    outline:2px dashed rgba(8,124,172,.45);
+    outline:
+        2px dashed
+        rgba(8,124,172,.45);
+
     outline-offset:4px;
+
     cursor:text;
 }
 
 body.admin-mode .editable:hover{
-    background:rgba(8,124,172,.08);
+    background:
+        rgba(8,124,172,.08);
 }
 
-/* LOGIN */
+/* =========================================================
+   LOGIN
+========================================================= */
 
 .login-overlay{
     display:none;
@@ -945,7 +1064,9 @@ body.admin-mode .editable:hover{
     background:#fff;
     border-radius:18px;
     padding:30px;
-    box-shadow:0 25px 80px rgba(0,0,0,.35);
+    box-shadow:
+        0 25px 80px
+        rgba(0,0,0,.35);
     text-align:center;
 }
 
@@ -956,13 +1077,16 @@ body.admin-mode .editable:hover{
 
 .login-box p{
     color:#697586;
+    font-size:14px;
     margin-bottom:20px;
 }
 
 .login-box input{
     width:100%;
     padding:13px;
-    border:1px solid #d5e1e8;
+    border:
+        1px solid
+        #d5e1e8;
     border-radius:9px;
     margin-bottom:12px;
 }
@@ -984,7 +1108,9 @@ body.admin-mode .editable:hover{
     color:#243447;
 }
 
-/* LIGHTBOX */
+/* =========================================================
+   LIGHTBOX
+========================================================= */
 
 .lightbox{
     display:none;
@@ -1017,7 +1143,9 @@ body.admin-mode .editable:hover{
     cursor:pointer;
 }
 
-/* RTL */
+/* =========================================================
+   RTL
+========================================================= */
 
 html[dir="rtl"] body{
     text-align:right;
@@ -1040,18 +1168,13 @@ html[dir="rtl"] .contact-item{
     direction:rtl;
 }
 
-html[dir="rtl"] .floating-whatsapp{
-    left:20px;
-    right:auto;
-}
-
-html[dir="rtl"] .admin-button{
-    right:18px;
+html[dir="rtl"] .admin-launcher{
+    right:14px;
     left:auto;
 }
 
 html[dir="rtl"] .admin-panel{
-    left:15px;
+    left:12px;
     right:auto;
 }
 
@@ -1060,7 +1183,9 @@ html[dir="rtl"] .lightbox-close{
     right:auto;
 }
 
-/* TABLET */
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media(max-width:950px){
 
@@ -1079,7 +1204,9 @@ html[dir="rtl"] .lightbox-close{
         flex-direction:column;
         gap:15px;
         text-align:center;
-        box-shadow:0 10px 25px rgba(0,0,0,.2);
+        box-shadow:
+            0 10px 25px
+            rgba(0,0,0,.20);
     }
 
     nav.mobile-open{
@@ -1092,15 +1219,18 @@ html[dir="rtl"] .lightbox-close{
     }
 
     .services-grid{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:
+            repeat(2,1fr);
     }
 
     .gallery-grid{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:
+            repeat(2,1fr);
     }
 
     .why-grid{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:
+            repeat(2,1fr);
     }
 
     .video-grid{
@@ -1108,13 +1238,15 @@ html[dir="rtl"] .lightbox-close{
     }
 }
 
-/* PHONE */
+/* =========================================================
+   PHONE
+========================================================= */
 
 @media(max-width:600px){
 
     body{
         font-size:15px;
-        padding-bottom:70px;
+        padding-bottom:72px;
     }
 
     header{
@@ -1134,7 +1266,10 @@ html[dir="rtl"] .lightbox-close{
     }
 
     .hero-content{
-        padding:50px 15px 95px;
+        padding:
+            50px
+            15px
+            95px;
     }
 
     .hero-subtitle{
@@ -1143,12 +1278,16 @@ html[dir="rtl"] .lightbox-close{
     }
 
     .hero h1{
-        font-size:clamp(34px,10vw,44px);
+        font-size:
+            clamp(
+                34px,
+                10vw,
+                44px
+            );
     }
 
     .hero-text{
         font-size:16px;
-        line-height:1.6;
     }
 
     .hero-buttons{
@@ -1165,14 +1304,6 @@ html[dir="rtl"] .lightbox-close{
 
     .section{
         padding:55px 5%;
-    }
-
-    .section-heading{
-        margin-bottom:30px;
-    }
-
-    .section-heading h2{
-        font-size:30px;
     }
 
     .services-grid,
@@ -1197,20 +1328,6 @@ html[dir="rtl"] .lightbox-close{
         display:none;
     }
 
-    .admin-button{
-        left:10px;
-        bottom:82px;
-        padding:9px 12px;
-    }
-
-    .admin-panel{
-        top:65px;
-        right:8px;
-        width:calc(100vw - 16px);
-        max-height:calc(100vh - 78px);
-        padding:15px;
-    }
-
     .mobile-actions{
         position:fixed;
         left:0;
@@ -1219,8 +1336,22 @@ html[dir="rtl"] .lightbox-close{
         z-index:3000;
         display:flex;
         gap:8px;
-        padding:8px 10px;
-        background:rgba(8,20,38,.97);
+        padding:
+            8px
+            10px
+            calc(
+                8px +
+                env(
+                    safe-area-inset-bottom
+                )
+            );
+        background:
+            rgba(
+                8,
+                20,
+                38,
+                .97
+            );
     }
 
     .mobile-actions a{
@@ -1240,6 +1371,24 @@ html[dir="rtl"] .lightbox-close{
 
     .mobile-whatsapp{
         background:#25d366;
+    }
+
+    .admin-panel{
+        top:62px;
+        right:8px;
+        width:
+            calc(
+                100vw - 16px
+            );
+        max-height:
+            calc(
+                100vh - 72px
+            );
+        padding:15px;
+    }
+
+    .control-row{
+        grid-template-columns:1fr;
     }
 }
 
@@ -1272,11 +1421,15 @@ html[dir="rtl"] .lightbox-close{
 
 <div class="nav-container">
 
-<a href="#home" class="logo">
+<a
+href="#home"
+class="logo">
 
 Design Glass & Mirror
 
-<span>KUWAIT</span>
+<span>
+KUWAIT
+</span>
 
 </a>
 
@@ -1292,31 +1445,31 @@ aria-label="Open menu">
 
 <nav id="mainNav">
 
-<a href="#home" data-i18n="home">
+<a href="#home">
 Home
 </a>
 
-<a href="#about" data-i18n="about">
+<a href="#about">
 About
 </a>
 
-<a href="#services" data-i18n="services">
+<a href="#services">
 Services
 </a>
 
-<a href="#gallery" data-i18n="gallery">
+<a href="#gallery">
 Gallery
 </a>
 
-<a href="#videos" data-i18n="videos">
+<a href="#videos">
 Videos
 </a>
 
-<a href="#why" data-i18n="why">
+<a href="#why">
 Why Us
 </a>
 
-<a href="#contact" data-i18n="contact">
+<a href="#contact">
 Contact
 </a>
 
@@ -1335,6 +1488,10 @@ id="languageButton">
 
 </header>
 
+<!-- =========================================================
+     HERO
+========================================================= -->
+
 <section
 id="home"
 class="hero">
@@ -1342,6 +1499,7 @@ class="hero">
 <div class="hero-content">
 
 <div
+id="heroSubtitle"
 class="hero-subtitle editable"
 data-key="heroSubtitle">
 
@@ -1350,6 +1508,7 @@ PROFESSIONAL GLASS & MIRROR WORKS IN KUWAIT
 </div>
 
 <h1
+id="heroTitle"
 class="editable"
 data-key="heroTitle">
 
@@ -1358,6 +1517,7 @@ Design Glass & Mirror Kuwait
 </h1>
 
 <p
+id="heroText"
 class="hero-text editable"
 data-key="heroText">
 
@@ -1373,10 +1533,7 @@ offices, shops and commercial projects in Kuwait.
 href="tel:+96555507290"
 class="btn call-btn">
 
-📞
-<span data-i18n="callNow">
-Call Now
-</span>
+📞 Call Now
 
 </a>
 
@@ -1386,10 +1543,7 @@ target="_blank"
 rel="noopener"
 class="btn whatsapp-btn">
 
-💬
-<span data-i18n="whatsapp">
-WhatsApp
-</span>
+💬 WhatsApp
 
 </a>
 
@@ -1403,6 +1557,10 @@ class="hero-dots">
 </div>
 
 </section>
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
 
 <section
 id="about"
@@ -1520,6 +1678,10 @@ Tempered • Laminated • Double Glass • Mirrors
 
 </section>
 
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
 <section
 id="services"
 class="section services">
@@ -1615,7 +1777,7 @@ class="editable"
 data-key="service3Text">
 
 Double glass and double glazing solutions
-for homes, offices and commercial buildings.
+for homes, offices and buildings.
 
 </p>
 
@@ -1702,6 +1864,10 @@ aluminum works.
 
 </section>
 
+<!-- =========================================================
+     GALLERY
+========================================================= -->
+
 <section
 id="gallery"
 class="section gallery">
@@ -1745,6 +1911,10 @@ class="gallery-grid">
 
 </section>
 
+<!-- =========================================================
+     VIDEOS
+========================================================= -->
+
 <section
 id="videos"
 class="section videos">
@@ -1777,6 +1947,10 @@ class="video-grid">
 </div>
 
 </section>
+
+<!-- =========================================================
+     WHY
+========================================================= -->
 
 <section
 id="why"
@@ -1905,6 +2079,10 @@ We work closely with our customers.
 </div>
 
 </section>
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
 
 <section
 id="contact"
@@ -2070,7 +2248,8 @@ required
 id="customerMessage"
 rows="5"
 placeholder="Tell us about your project..."
-required></textarea>
+required>
+</textarea>
 
 <button type="submit">
 
@@ -2087,6 +2266,10 @@ Send Request on WhatsApp
 </div>
 
 </section>
+
+<!-- =========================================================
+     INSTAGRAM
+========================================================= -->
 
 <section
 class="section instagram">
@@ -2130,6 +2313,10 @@ class="instagram-button">
 
 </section>
 
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
 <footer>
 
 <h3>
@@ -2150,7 +2337,9 @@ Glass • Mirror • Tempered • Laminated • Double Glass • Kuwait
 href="https://wa.me/96555507290"
 target="_blank"
 rel="noopener">
+
 💬 WhatsApp
+
 </a>
 
 <a href="mailto:designglassmirror@gmail.com">
@@ -2161,7 +2350,9 @@ rel="noopener">
 href="https://www.instagram.com/design_glass_mirror/"
 target="_blank"
 rel="noopener">
+
 📷 Instagram
+
 </a>
 
 </div>
@@ -2172,6 +2363,10 @@ All Rights Reserved.
 </p>
 
 </footer>
+
+<!-- =========================================================
+     MOBILE ACTIONS
+========================================================= -->
 
 <div class="mobile-actions">
 
@@ -2195,31 +2390,26 @@ class="mobile-whatsapp">
 
 </div>
 
-<a
-href="https://wa.me/96555507290"
-target="_blank"
-rel="noopener"
-class="floating-whatsapp">
-
-💬
-
-</a>
-
-<!-- ADMIN BUTTON -->
+<!-- =========================================================
+     ADMIN LAUNCHER
+========================================================= -->
 
 <button
-class="admin-button"
+id="adminLauncher"
+class="admin-launcher"
 onclick="openLogin()">
 
 🔐 Admin
 
 </button>
 
-<!-- ADMIN PANEL -->
+<!-- =========================================================
+     ADMIN PANEL
+========================================================= -->
 
 <div
-class="admin-panel"
-id="adminPanel">
+id="adminPanel"
+class="admin-panel">
 
 <h2>
 🔐 Easy Website Editor
@@ -2227,20 +2417,27 @@ id="adminPanel">
 
 <p class="admin-note">
 
-From here you can change text, Hero pictures,
-gallery pictures and videos without editing code.
+Only you should open this page.
+Customers normally will not see Admin.
 
 </p>
 
-<div class="admin-status">
-✓ Admin Mode Active
-</div>
-
 <div class="admin-warning">
 
-Your GitHub token is used only for the current page session.
-Never share it with anyone.
+Public website:
+<br>
+https://muhmmadayub-ui.github.io/design-glass-mirror-kuwait/
 
+<br><br>
+
+Your Admin page:
+<br>
+https://muhmmadayub-ui.github.io/design-glass-mirror-kuwait/?admin=1
+
+</div>
+
+<div class="admin-status">
+✓ Admin Mode Active
 </div>
 
 <!-- TOKEN -->
@@ -2251,16 +2448,34 @@ Never share it with anyone.
 🔑 GitHub Connection
 </h3>
 
+<p class="admin-note">
+
+Paste your GitHub fine-grained token here.
+Never send it to anyone.
+
+</p>
+
 <input
 type="password"
 id="githubToken"
-placeholder="Paste your GitHub token here"
+placeholder="GitHub token"
 autocomplete="off"
 >
 
+<label class="check-row">
+
+<input
+type="checkbox"
+id="rememberToken"
+>
+
+Remember token on this device
+
+</label>
+
 <button
-onclick="saveToken()"
-class="success">
+class="success"
+onclick="connectGithub()">
 
 🔐 Connect GitHub
 
@@ -2268,7 +2483,132 @@ class="success">
 
 </div>
 
-<!-- HERO -->
+<!-- HERO TEXT -->
+
+<div class="admin-section">
+
+<h3>
+📝 Hero Text
+</h3>
+
+<div class="edit-guide">
+
+Click the text directly on the website and type what you want.
+
+You can also choose which lines are visible.
+
+</div>
+
+<label class="check-row">
+
+<input
+type="checkbox"
+id="showHeroSubtitle"
+onchange="previewHeroOptions()"
+>
+
+Show small Hero text
+
+</label>
+
+<label class="check-row">
+
+<input
+type="checkbox"
+id="showHeroTitle"
+onchange="previewHeroOptions()"
+>
+
+Show big Hero title
+
+</label>
+
+<label class="check-row">
+
+<input
+type="checkbox"
+id="showHeroText"
+onchange="previewHeroOptions()"
+>
+
+Show Hero description
+
+</label>
+
+<div class="size-label">
+
+<span>
+Big title size
+</span>
+
+<span id="heroTitleSizeValue">
+68px
+</span>
+
+</div>
+
+<input
+type="range"
+id="heroTitleSize"
+min="28"
+max="90"
+value="68"
+oninput="previewHeroOptions()"
+>
+
+<div class="size-label">
+
+<span>
+Small text size
+</span>
+
+<span id="heroSubtitleSizeValue">
+13px
+</span>
+
+</div>
+
+<input
+type="range"
+id="heroSubtitleSize"
+min="8"
+max="24"
+value="13"
+oninput="previewHeroOptions()"
+>
+
+<div class="size-label">
+
+<span>
+Description size
+</span>
+
+<span id="heroTextSizeValue">
+18px
+</span>
+
+</div>
+
+<input
+type="range"
+id="heroTextSize"
+min="12"
+max="30"
+value="18"
+oninput="previewHeroOptions()"
+>
+
+<button
+class="success"
+onclick="saveHeroSettings()">
+
+💾 Save Hero Settings
+
+</button>
+
+</div>
+
+<!-- HERO PICTURES -->
 
 <div class="admin-section">
 
@@ -2279,7 +2619,7 @@ class="success">
 <p class="admin-note">
 
 Choose up to 3 pictures.
-They will rotate automatically every 5 seconds.
+They automatically rotate every 5 seconds.
 
 </p>
 
@@ -2291,10 +2631,18 @@ multiple
 >
 
 <button
-onclick="uploadHero()"
-class="success">
+class="success"
+onclick="uploadHeroPictures()">
 
 📤 Save Hero Pictures
+
+</button>
+
+<button
+class="gray"
+onclick="resetHeroPictures()">
+
+↺ Use Current Pictures
 
 </button>
 
@@ -2310,7 +2658,8 @@ class="success">
 
 <p class="admin-note">
 
-Choose one or more pictures to add to your gallery.
+Choose one or more pictures and they will be added
+to the public gallery.
 
 </p>
 
@@ -2322,8 +2671,8 @@ multiple
 >
 
 <button
-onclick="uploadGallery()"
-class="success">
+class="success"
+onclick="uploadGalleryPictures()">
 
 📤 Add Gallery Pictures
 
@@ -2331,13 +2680,19 @@ class="success">
 
 </div>
 
-<!-- VIDEOS -->
+<!-- VIDEO -->
 
 <div class="admin-section">
 
 <h3>
 🎥 Project Videos
 </h3>
+
+<p class="admin-note">
+
+Choose project videos from your PC or phone.
+
+</p>
 
 <input
 type="file"
@@ -2347,8 +2702,8 @@ multiple
 >
 
 <button
-onclick="uploadVideo()"
-class="success">
+class="success"
+onclick="uploadVideos()">
 
 📤 Add Project Videos
 
@@ -2356,26 +2711,26 @@ class="success">
 
 </div>
 
-<!-- TEXT -->
+<!-- GENERAL TEXT -->
 
 <div class="admin-section">
 
 <h3>
-✏️ Edit Any Text
+✏️ Edit Website Text
 </h3>
 
 <p class="admin-note">
 
-While Admin Mode is active, tap or click any
-outlined text on the website and type your change.
+With Admin Mode active, click any outlined text
+on the website, change it, then save it here.
 
 </p>
 
 <button
-onclick="saveTexts()"
-class="success">
+class="success"
+onclick="saveAllText()">
 
-💾 Save Text Changes
+💾 Save All Text
 
 </button>
 
@@ -2392,18 +2747,10 @@ onclick="logoutAdmin()">
 
 </button>
 
-<button
-onclick="resetLocalText()"
-class="danger">
-
-↻ Reset Local Text
-
-</button>
-
 </div>
 
 <div
-id="uploadStatus"
+id="adminStatus"
 class="upload-status">
 
 Ready.
@@ -2412,7 +2759,9 @@ Ready.
 
 </div>
 
-<!-- LOGIN -->
+<!-- =========================================================
+     LOGIN
+========================================================= -->
 
 <div
 id="loginOverlay"
@@ -2425,7 +2774,7 @@ class="login-overlay">
 </h2>
 
 <p>
-Enter your website admin password.
+Enter your website Admin password.
 </p>
 
 <input
@@ -2458,14 +2807,18 @@ Cancel
 
 </div>
 
-<!-- LIGHTBOX -->
+<!-- =========================================================
+     LIGHTBOX
+========================================================= -->
 
 <div
 id="lightbox"
 class="lightbox"
 onclick="closeLightbox()">
 
-<div class="lightbox-close">
+<div
+class="lightbox-close">
+
 ×
 </div>
 
@@ -2481,7 +2834,7 @@ onclick="event.stopPropagation()"
 <script>
 
 /* =========================================================
-   SETTINGS
+   BASIC SETTINGS
 ========================================================= */
 
 const ADMIN_PASSWORD="1234";
@@ -2495,8 +2848,8 @@ const GITHUB_REPO=
 const GITHUB_BRANCH=
     "main";
 
-const CONFIG_FILE=
-    "site-media.json";
+const SETTINGS_FILE=
+    "site-settings.json";
 
 let githubToken="";
 
@@ -2504,14 +2857,30 @@ let arabicMode=false;
 
 let heroIndex=0;
 
+let adminLinkMode=false;
+
 
 /* =========================================================
-   DEFAULT CONFIG
+   DEFAULT SETTINGS
 ========================================================= */
 
-let siteConfig={
+let siteSettings={
 
-heroImages:[
+hero:{
+
+showSubtitle:true,
+
+showTitle:true,
+
+showText:true,
+
+titleSize:68,
+
+subtitleSize:13,
+
+textSize:18,
+
+images:[
 
 "twist out building.jpg",
 
@@ -2519,7 +2888,17 @@ heroImages:[
 
 "clear blue pic.jpg"
 
-],
+]
+
+},
+
+texts:{
+
+en:{},
+
+ar:{}
+
+},
 
 gallery:[
 
@@ -2679,518 +3058,263 @@ ar:"مشروع درج زجاجي"
 }
 }
 
-],
-
-texts:{
-en:{},
-ar:{}
-}
+]
 
 };
 
 
 /* =========================================================
-   LANGUAGE
+   APPLY REMOTE SETTINGS
 ========================================================= */
 
-const translations={
-
-en:{
-home:"Home",
-about:"About",
-services:"Services",
-gallery:"Gallery",
-videos:"Videos",
-why:"Why Us",
-contact:"Contact",
-callNow:"Call Now",
-whatsapp:"WhatsApp"
-},
-
-ar:{
-home:"الرئيسية",
-about:"من نحن",
-services:"خدماتنا",
-gallery:"المعرض",
-videos:"الفيديوهات",
-why:"لماذا نحن",
-contact:"اتصل بنا",
-callNow:"اتصل الآن",
-whatsapp:"واتساب"
-}
-
-};
-
-function lang(){
-
-    return arabicMode
-        ? "ar"
-        : "en";
-}
-
-
-/* =========================================================
-   LOAD CONFIG
-========================================================= */
-
-async function loadSiteConfig(){
+async function loadSettings(){
 
     try{
 
         const response=
             await fetch(
-                CONFIG_FILE+
+                SETTINGS_FILE+
                 "?v="+
                 Date.now()
             );
 
         if(!response.ok){
+
             return;
         }
 
         const remote=
             await response.json();
 
-        siteConfig={
-            ...siteConfig,
-            ...remote
-        };
+        if(remote.hero){
 
-        siteConfig.texts =
-            remote.texts ||
-            {
-                en:{},
-                ar:{}
+            siteSettings.hero={
+                ...siteSettings.hero,
+                ...remote.hero
             };
-
-        if(!Array.isArray(siteConfig.heroImages)){
-            siteConfig.heroImages=[];
         }
 
-        if(!Array.isArray(siteConfig.gallery)){
-            siteConfig.gallery=[];
+        if(remote.texts){
+
+            siteSettings.texts={
+                ...siteSettings.texts,
+                ...remote.texts
+            };
         }
 
-        if(!Array.isArray(siteConfig.videos)){
-            siteConfig.videos=[];
+        if(
+            Array.isArray(
+                remote.gallery
+            )
+        ){
+
+            siteSettings.gallery=
+                remote.gallery;
+        }
+
+        if(
+            Array.isArray(
+                remote.videos
+            )
+        ){
+
+            siteSettings.videos=
+                remote.videos;
         }
 
     }catch(error){
 
         console.log(
-            "Using default configuration."
+            "Using default website settings."
         );
     }
 }
 
 
 /* =========================================================
-   GITHUB TOKEN
+   LANGUAGE
 ========================================================= */
 
-function saveToken(){
+function currentLanguage(){
 
-    const value=
-        document
-        .getElementById(
-            "githubToken"
-        )
-        .value
-        .trim();
-
-    if(!value){
-
-        alert(
-            "Please paste your GitHub token."
-        );
-
-        return;
-    }
-
-    githubToken=
-        value;
-
-    sessionStorage.setItem(
-        "dgm_github_token",
-        value
-    );
-
-    showStatus(
-        "✓ GitHub connected for this session."
-    );
+    return arabicMode
+        ? "ar"
+        : "en";
 }
 
-function getToken(){
+function toggleLanguage(){
 
-    if(githubToken){
-        return githubToken;
-    }
+    arabicMode=
+        !arabicMode;
 
-    const stored=
-        sessionStorage.getItem(
-            "dgm_github_token"
-        );
+    applyTextSettings();
 
-    if(stored){
+    renderGallery();
 
-        githubToken=
-            stored;
+    renderVideos();
 
-        return stored;
-    }
-
-    const input=
-        document
-        .getElementById(
-            "githubToken"
-        )
-        .value
-        .trim();
-
-    if(input){
-
-        githubToken=
-            input;
-
-        return input;
-    }
-
-    throw new Error(
-        "Please enter your GitHub token first."
-    );
+    updateHero();
 }
 
 
 /* =========================================================
-   GITHUB GET
+   APPLY HERO
 ========================================================= */
 
-async function githubGet(path){
+function applyHeroSettings(){
 
-    const token=
-        getToken();
-
-    const response=
-        await fetch(
-
-            "https://api.github.com/repos/"+
-            GITHUB_OWNER+
-            "/"+
-            GITHUB_REPO+
-            "/contents/"+
-            path+
-            "?ref="+
-            GITHUB_BRANCH,
-
-            {
-                headers:{
-                    "Accept":
-                        "application/vnd.github+json",
-
-                    "Authorization":
-                        "Bearer "+
-                        token,
-
-                    "X-GitHub-Api-Version":
-                        "2026-03-10"
-                }
-            }
+    const subtitle=
+        document.getElementById(
+            "heroSubtitle"
         );
 
-    if(
-        response.status===404
-    ){
-        return null;
-    }
-
-    if(
-        !response.ok
-    ){
-
-        throw new Error(
-            "GitHub read failed: "+
-            response.status
+    const title=
+        document.getElementById(
+            "heroTitle"
         );
-    }
 
-    return await response.json();
+    const text=
+        document.getElementById(
+            "heroText"
+        );
+
+    subtitle.style.display=
+        siteSettings.hero.showSubtitle
+            ? ""
+            : "none";
+
+    title.style.display=
+        siteSettings.hero.showTitle
+            ? ""
+            : "none";
+
+    text.style.display=
+        siteSettings.hero.showText
+            ? ""
+            : "none";
+
+    title.style.fontSize=
+        siteSettings.hero.titleSize+
+        "px";
+
+    subtitle.style.fontSize=
+        siteSettings.hero.subtitleSize+
+        "px";
+
+    text.style.fontSize=
+        siteSettings.hero.textSize+
+        "px";
+
+    document.getElementById(
+        "showHeroSubtitle"
+    ).checked=
+        siteSettings.hero.showSubtitle;
+
+    document.getElementById(
+        "showHeroTitle"
+    ).checked=
+        siteSettings.hero.showTitle;
+
+    document.getElementById(
+        "showHeroText"
+    ).checked=
+        siteSettings.hero.showText;
+
+    document.getElementById(
+        "heroTitleSize"
+    ).value=
+        siteSettings.hero.titleSize;
+
+    document.getElementById(
+        "heroSubtitleSize"
+    ).value=
+        siteSettings.hero.subtitleSize;
+
+    document.getElementById(
+        "heroTextSize"
+    ).value=
+        siteSettings.hero.textSize;
+
+    document.getElementById(
+        "heroTitleSizeValue"
+    ).textContent=
+        siteSettings.hero.titleSize+
+        "px";
+
+    document.getElementById(
+        "heroSubtitleSizeValue"
+    ).textContent=
+        siteSettings.hero.subtitleSize+
+        "px";
+
+    document.getElementById(
+        "heroTextSizeValue"
+    ).textContent=
+        siteSettings.hero.textSize+
+        "px";
 }
 
 
 /* =========================================================
-   GITHUB PUT
+   PREVIEW HERO OPTIONS
 ========================================================= */
 
-async function githubPut(
-    path,
-    base64,
-    message,
-    sha
-){
+function previewHeroOptions(){
 
-    const token=
-        getToken();
+    siteSettings.hero.showSubtitle=
+        document.getElementById(
+            "showHeroSubtitle"
+        ).checked;
 
-    const body={
+    siteSettings.hero.showTitle=
+        document.getElementById(
+            "showHeroTitle"
+        ).checked;
 
-        message:
-            message,
+    siteSettings.hero.showText=
+        document.getElementById(
+            "showHeroText"
+        ).checked;
 
-        content:
-            base64,
-
-        branch:
-            GITHUB_BRANCH
-    };
-
-    if(sha){
-        body.sha=sha;
-    }
-
-    const response=
-        await fetch(
-
-            "https://api.github.com/repos/"+
-            GITHUB_OWNER+
-            "/"+
-            GITHUB_REPO+
-            "/contents/"+
-            path,
-
-            {
-                method:"PUT",
-
-                headers:{
-
-                    "Accept":
-                        "application/vnd.github+json",
-
-                    "Authorization":
-                        "Bearer "+
-                        token,
-
-                    "Content-Type":
-                        "application/json",
-
-                    "X-GitHub-Api-Version":
-                        "2026-03-10"
-                },
-
-                body:
-                    JSON.stringify(
-                        body
-                    )
-            }
+    siteSettings.hero.titleSize=
+        Number(
+            document.getElementById(
+                "heroTitleSize"
+            ).value
         );
 
-    if(
-        !response.ok
-    ){
-
-        throw new Error(
-            "GitHub write failed: "+
-            response.status+
-            " "+
-            await response.text()
+    siteSettings.hero.subtitleSize=
+        Number(
+            document.getElementById(
+                "heroSubtitleSize"
+            ).value
         );
-    }
 
-    return await response.json();
+    siteSettings.hero.textSize=
+        Number(
+            document.getElementById(
+                "heroTextSize"
+            ).value
+        );
+
+    applyHeroSettings();
 }
 
 
 /* =========================================================
-   ENCODE
+   TEXT SETTINGS
 ========================================================= */
 
-function fileBase64(file){
-
-    return new Promise(
-        function(
-            resolve,
-            reject
-        ){
-
-            const reader=
-                new FileReader();
-
-            reader.onload=
-                function(){
-
-                    const result=
-                        reader.result;
-
-                    resolve(
-                        result
-                        .split(",")[1]
-                    );
-                };
-
-            reader.onerror=
-                function(){
-
-                    reject(
-                        reader.error
-                    );
-                };
-
-            reader.readAsDataURL(
-                file
-            );
-        }
-    );
-}
-
-function textBase64(text){
-
-    const bytes=
-        new TextEncoder()
-        .encode(text);
-
-    let binary="";
-
-    const size=
-        0x8000;
-
-    for(
-        let i=0;
-        i<bytes.length;
-        i+=size
-    ){
-
-        binary+=
-            String.fromCharCode(
-                ...bytes.subarray(
-                    i,
-                    i+size
-                )
-            );
-    }
-
-    return btoa(binary);
-}
-
-function fileName(name){
-
-    const ext=
-        name.includes(".")
-            ? "."+
-              name
-              .split(".")
-              .pop()
-              .toLowerCase()
-            : "";
-
-    const base=
-        name
-        .replace(
-            /\.[^/.]+$/,
-            ""
-        )
-        .normalize(
-            "NFKD"
-        )
-        .replace(
-            /[^\w\s-]/g,
-            ""
-        )
-        .trim()
-        .replace(
-            /\s+/g,
-            "-"
-        )
-        .toLowerCase()
-        .slice(
-            0,
-            60
-        );
-
-    return (
-        Date.now()+
-        "-"+
-        (base||"file")+
-        ext
-    );
-}
-
-
-/* =========================================================
-   SAVE WHOLE CONFIG
-========================================================= */
-
-async function saveConfig(){
-
-    const json=
-        JSON.stringify(
-            siteConfig,
-            null,
-            2
-        );
-
-    const base64=
-        textBase64(
-            json
-        );
-
-    const current=
-        await githubGet(
-            CONFIG_FILE
-        );
-
-    await githubPut(
-
-        CONFIG_FILE,
-
-        base64,
-
-        "Update website settings",
-
-        current
-            ? current.sha
-            : undefined
-    );
-}
-
-
-/* =========================================================
-   TEXT
-========================================================= */
-
-function applyTexts(){
+function applyTextSettings(){
 
     const language=
-        lang();
+        currentLanguage();
 
     const saved=
-        siteConfig
+        siteSettings
         .texts
-        ? siteConfig
-          .texts[language]
-        : {};
-
-    document
-        .querySelectorAll(
-            "[data-i18n]"
-        )
-        .forEach(
-            function(element){
-
-                const key=
-                    element.dataset.i18n;
-
-                if(
-                    translations[
-                        language
-                    ][key]
-                ){
-
-                    element.textContent=
-                        translations[
-                            language
-                        ][key];
-                }
-            }
-        );
+        [language]
+        || {};
 
     document
         .querySelectorAll(
@@ -3203,19 +3327,12 @@ function applyTexts(){
                     element.dataset.key;
 
                 if(
-                    saved &&
-                    saved[key] !== undefined
+                    saved[key] !==
+                    undefined
                 ){
 
                     element.innerHTML=
                         saved[key];
-
-                }else if(
-                    !element.dataset.defaultText
-                ){
-
-                    element.dataset.defaultText=
-                        element.innerHTML;
                 }
             }
         );
@@ -3228,17 +3345,20 @@ function applyTexts(){
             ? "rtl"
             : "ltr";
 
-    document
-        .getElementById(
-            "languageButton"
-        )
-        .textContent=
+    document.getElementById(
+        "languageButton"
+    ).textContent=
         language==="ar"
             ? "English"
             : "العربية";
 }
 
-function makeEditable(){
+
+/* =========================================================
+   EDIT MODE
+========================================================= */
+
+function enableEditing(){
 
     document
         .querySelectorAll(
@@ -3249,37 +3369,38 @@ function makeEditable(){
 
                 element.contentEditable=
                     "true";
-
-                if(
-                    !element.dataset.defaultText
-                ){
-
-                    element.dataset.defaultText=
-                        element.innerHTML;
-                }
             }
         );
 }
 
-async function saveTexts(){
+function disableEditing(){
+
+    document
+        .querySelectorAll(
+            ".editable[data-key]"
+        )
+        .forEach(
+            function(element){
+
+                element.contentEditable=
+                    "false";
+            }
+        );
+}
+
+async function saveAllText(){
 
     try{
 
         const language=
-            lang();
-
-        if(!siteConfig.texts){
-            siteConfig.texts={
-                en:{},
-                ar:{}
-            };
-        }
+            currentLanguage();
 
         if(
-            !siteConfig.texts[language]
+            !siteSettings.texts[language]
         ){
 
-            siteConfig.texts[language]={};
+            siteSettings.texts[language]=
+                {};
         }
 
         document
@@ -3289,7 +3410,7 @@ async function saveTexts(){
             .forEach(
                 function(element){
 
-                    siteConfig
+                    siteSettings
                     .texts
                     [language]
                     [element.dataset.key]=
@@ -3297,14 +3418,14 @@ async function saveTexts(){
                 }
             );
 
+        await saveSettingsToGithub();
+
         showStatus(
-            "Saving text to GitHub..."
+            "✓ All text changes saved for every device."
         );
 
-        await saveConfig();
-
-        showStatus(
-            "✓ Text changes saved to GitHub."
+        alert(
+            "✓ Text changes are now saved to the website."
         );
 
     }catch(error){
@@ -3323,6 +3444,41 @@ async function saveTexts(){
 
 
 /* =========================================================
+   HERO SAVE
+========================================================= */
+
+async function saveHeroSettings(){
+
+    try{
+
+        previewHeroOptions();
+
+        await saveSettingsToGithub();
+
+        showStatus(
+            "✓ Hero settings saved for PC and phone."
+        );
+
+        alert(
+            "✓ Hero settings saved."
+        );
+
+    }catch(error){
+
+        showStatus(
+            "Hero settings save failed:\n"+
+            error.message
+        );
+
+        alert(
+            "Hero settings save failed:\n\n"+
+            error.message
+        );
+    }
+}
+
+
+/* =========================================================
    HERO
 ========================================================= */
 
@@ -3334,17 +3490,24 @@ function updateHero(){
         );
 
     if(!hero){
+
         return;
     }
 
     if(
-        !siteConfig.heroImages.length
+        !siteSettings
+        .hero
+        .images
+        .length
     ){
+
         return;
     }
 
     const image=
-        siteConfig.heroImages[
+        siteSettings
+        .hero
+        .images[
             heroIndex
         ];
 
@@ -3364,7 +3527,9 @@ function updateHero(){
 
     dots.innerHTML="";
 
-    siteConfig.heroImages
+    siteSettings
+        .hero
+        .images
         .forEach(
             function(
                 _,
@@ -3399,8 +3564,12 @@ function updateHero(){
 function nextHero(){
 
     if(
-        siteConfig.heroImages.length<2
+        siteSettings
+        .hero
+        .images
+        .length<2
     ){
+
         return;
     }
 
@@ -3408,7 +3577,10 @@ function nextHero(){
 
     if(
         heroIndex>=
-        siteConfig.heroImages.length
+        siteSettings
+        .hero
+        .images
+        .length
     ){
 
         heroIndex=0;
@@ -3430,12 +3602,14 @@ function renderGallery(){
         );
 
     if(!grid){
+
         return;
     }
 
     grid.innerHTML="";
 
-    siteConfig.gallery
+    siteSettings
+        .gallery
         .forEach(
             function(item){
 
@@ -3447,41 +3621,41 @@ function renderGallery(){
                 card.className=
                     "gallery-card";
 
-                const img=
+                const image=
                     document.createElement(
                         "img"
                     );
 
-                img.src=
+                image.src=
                     item.src;
 
-                img.loading=
+                image.loading=
                     "lazy";
 
-                img.alt=
+                image.alt=
                     arabicMode
                         ? "مشروع زجاج ومرايا في الكويت"
                         : "Glass and mirror project in Kuwait";
 
-                const cap=
+                const caption=
                     document.createElement(
                         "div"
                     );
 
-                cap.className=
+                caption.className=
                     "gallery-caption";
 
-                cap.textContent=
+                caption.textContent=
                     item.caption[
-                        lang()
+                        currentLanguage()
                     ];
 
                 card.appendChild(
-                    img
+                    image
                 );
 
                 card.appendChild(
-                    cap
+                    caption
                 );
 
                 grid.appendChild(
@@ -3504,12 +3678,14 @@ function renderVideos(){
         );
 
     if(!grid){
+
         return;
     }
 
     grid.innerHTML="";
 
-    siteConfig.videos
+    siteSettings
+        .videos
         .forEach(
             function(item){
 
@@ -3561,7 +3737,7 @@ function renderVideos(){
 
                 title.textContent=
                     item.title[
-                        lang()
+                        currentLanguage()
                     ];
 
                 card.appendChild(
@@ -3587,14 +3763,399 @@ function renderVideos(){
 
 
 /* =========================================================
+   TOKEN
+========================================================= */
+
+function connectGithub(){
+
+    const token=
+        document
+        .getElementById(
+            "githubToken"
+        )
+        .value
+        .trim();
+
+    if(!token){
+
+        alert(
+            "Paste your GitHub token first."
+        );
+
+        return;
+    }
+
+    githubToken=
+        token;
+
+    const remember=
+        document
+        .getElementById(
+            "rememberToken"
+        )
+        .checked;
+
+    if(remember){
+
+        localStorage.setItem(
+            "dgm_github_token",
+            token
+        );
+
+    }else{
+
+        sessionStorage.setItem(
+            "dgm_github_token",
+            token
+        );
+    }
+
+    showStatus(
+        "✓ GitHub token loaded. You can now save changes."
+    );
+}
+
+function getGithubToken(){
+
+    if(githubToken){
+
+        return githubToken;
+    }
+
+    const local=
+        localStorage.getItem(
+            "dgm_github_token"
+        );
+
+    const session=
+        sessionStorage.getItem(
+            "dgm_github_token"
+        );
+
+    const token=
+        local ||
+        session ||
+        document
+        .getElementById(
+            "githubToken"
+        )
+        .value
+        .trim();
+
+    if(!token){
+
+        throw new Error(
+            "Please enter your GitHub token in Admin."
+        );
+    }
+
+    githubToken=
+        token;
+
+    return token;
+}
+
+
+/* =========================================================
+   GITHUB API
+========================================================= */
+
+async function githubGetFile(path){
+
+    const token=
+        getGithubToken();
+
+    const response=
+        await fetch(
+
+            "https://api.github.com/repos/"+
+            GITHUB_OWNER+
+            "/"+
+            GITHUB_REPO+
+            "/contents/"+
+            path+
+            "?ref="+
+            GITHUB_BRANCH,
+
+            {
+                headers:{
+                    "Accept":
+                        "application/vnd.github+json",
+
+                    "Authorization":
+                        "Bearer "+
+                        token,
+
+                    "X-GitHub-Api-Version":
+                        "2022-11-28"
+                }
+            }
+        );
+
+    if(
+        response.status===404
+    ){
+
+        return null;
+    }
+
+    if(
+        !response.ok
+    ){
+
+        throw new Error(
+            "GitHub read error "+
+            response.status+
+            ". Check your token and repository permission."
+        );
+    }
+
+    return await response.json();
+}
+
+async function githubPutFile(
+    path,
+    base64,
+    message,
+    sha
+){
+
+    const token=
+        getGithubToken();
+
+    const body={
+        message:
+            message,
+
+        content:
+            base64,
+
+        branch:
+            GITHUB_BRANCH
+    };
+
+    if(sha){
+
+        body.sha=
+            sha;
+    }
+
+    const response=
+        await fetch(
+
+            "https://api.github.com/repos/"+
+            GITHUB_OWNER+
+            "/"+
+            GITHUB_REPO+
+            "/contents/"+
+            path,
+
+            {
+                method:"PUT",
+
+                headers:{
+                    "Accept":
+                        "application/vnd.github+json",
+
+                    "Authorization":
+                        "Bearer "+
+                        token,
+
+                    "Content-Type":
+                        "application/json",
+
+                    "X-GitHub-Api-Version":
+                        "2022-11-28"
+                },
+
+                body:
+                    JSON.stringify(
+                        body
+                    )
+            }
+        );
+
+    if(
+        !response.ok
+    ){
+
+        const errorText=
+            await response.text();
+
+        throw new Error(
+            "GitHub save error "+
+            response.status+
+            ": "+
+            errorText
+        );
+    }
+
+    return await response.json();
+}
+
+
+/* =========================================================
+   FILE HELPERS
+========================================================= */
+
+function fileToBase64(file){
+
+    return new Promise(
+        function(
+            resolve,
+            reject
+        ){
+
+            const reader=
+                new FileReader();
+
+            reader.onload=
+                function(){
+
+                    resolve(
+                        reader
+                        .result
+                        .split(",")[1]
+                    );
+                };
+
+            reader.onerror=
+                function(){
+
+                    reject(
+                        reader.error
+                    );
+                };
+
+            reader.readAsDataURL(
+                file
+            );
+        }
+    );
+}
+
+function textToBase64(text){
+
+    const bytes=
+        new TextEncoder()
+        .encode(
+            text
+        );
+
+    let binary="";
+
+    const chunk=
+        0x8000;
+
+    for(
+        let i=0;
+        i<bytes.length;
+        i+=chunk
+    ){
+
+        binary+=
+            String.fromCharCode(
+                ...bytes.subarray(
+                    i,
+                    i+chunk
+                )
+            );
+    }
+
+    return btoa(binary);
+}
+
+function safeFileName(name){
+
+    const extension=
+        name.includes(".")
+            ? "."+
+              name
+              .split(".")
+              .pop()
+              .toLowerCase()
+            : "";
+
+    const base=
+        name
+        .replace(
+            /\.[^/.]+$/,
+            ""
+        )
+        .normalize(
+            "NFKD"
+        )
+        .replace(
+            /[^\w\s-]/g,
+            ""
+        )
+        .trim()
+        .replace(
+            /\s+/g,
+            "-"
+        )
+        .toLowerCase()
+        .slice(
+            0,
+            70
+        );
+
+    return (
+        Date.now()+
+        "-"+
+        (base||"file")+
+        extension
+    );
+}
+
+
+/* =========================================================
+   SAVE SETTINGS FILE
+========================================================= */
+
+async function saveSettingsToGithub(){
+
+    const json=
+        JSON.stringify(
+            siteSettings,
+            null,
+            2
+        );
+
+    const base64=
+        textToBase64(
+            json
+        );
+
+    const existing=
+        await githubGetFile(
+            SETTINGS_FILE
+        );
+
+    await githubPutFile(
+
+        SETTINGS_FILE,
+
+        base64,
+
+        "Update website settings",
+
+        existing
+            ? existing.sha
+            : undefined
+    );
+}
+
+
+/* =========================================================
    HERO UPLOAD
 ========================================================= */
 
-async function uploadHero(){
+async function uploadHeroPictures(){
 
     try{
 
-        getToken();
+        getGithubToken();
 
         const input=
             document.getElementById(
@@ -3606,12 +4167,10 @@ async function uploadHero(){
                 input.files
             );
 
-        if(
-            files.length===0
-        ){
+        if(!files.length){
 
             alert(
-                "Please choose Hero pictures first."
+                "Choose Hero pictures first."
             );
 
             return;
@@ -3636,16 +4195,16 @@ async function uploadHero(){
 
             const path=
                 "media/hero-"+
-                fileName(
+                safeFileName(
                     file.name
                 );
 
             const base64=
-                await fileBase64(
+                await fileToBase64(
                     file
                 );
 
-            await githubPut(
+            await githubPutFile(
                 path,
                 base64,
                 "Upload Hero picture"
@@ -3656,23 +4215,25 @@ async function uploadHero(){
             );
         }
 
-        siteConfig.heroImages=
-            paths;
-
-        await saveConfig();
+        siteSettings
+            .hero
+            .images=
+                paths;
 
         heroIndex=0;
+
+        await saveSettingsToGithub();
 
         updateHero();
 
         input.value="";
 
         showStatus(
-            "✓ Hero pictures saved."
+            "✓ Hero pictures saved for PC and phone."
         );
 
         alert(
-            "✓ Hero pictures saved to your website."
+            "✓ Hero pictures are saved."
         );
 
     }catch(error){
@@ -3691,14 +4252,53 @@ async function uploadHero(){
 
 
 /* =========================================================
-   GALLERY UPLOAD
+   RESET HERO TO CURRENT REPOSITORY PICTURES
 ========================================================= */
 
-async function uploadGallery(){
+async function resetHeroPictures(){
+
+    siteSettings
+        .hero
+        .images=[
+
+            "twist out building.jpg",
+
+            "blue glass.avif",
+
+            "clear blue pic.jpg"
+        ];
+
+    heroIndex=0;
 
     try{
 
-        getToken();
+        await saveSettingsToGithub();
+
+        updateHero();
+
+        showStatus(
+            "✓ Hero pictures reset."
+        );
+
+    }catch(error){
+
+        showStatus(
+            "Reset failed:\n"+
+            error.message
+        );
+    }
+}
+
+
+/* =========================================================
+   GALLERY UPLOAD
+========================================================= */
+
+async function uploadGalleryPictures(){
+
+    try{
+
+        getGithubToken();
 
         const input=
             document.getElementById(
@@ -3710,12 +4310,10 @@ async function uploadGallery(){
                 input.files
             );
 
-        if(
-            files.length===0
-        ){
+        if(!files.length){
 
             alert(
-                "Please choose gallery pictures first."
+                "Choose gallery pictures first."
             );
 
             return;
@@ -3732,47 +4330,49 @@ async function uploadGallery(){
 
             const path=
                 "media/gallery-"+
-                fileName(
+                safeFileName(
                     file.name
                 );
 
             const base64=
-                await fileBase64(
+                await fileToBase64(
                     file
                 );
 
-            await githubPut(
+            await githubPutFile(
                 path,
                 base64,
-                "Add gallery picture"
+                "Add Gallery picture"
             );
 
-            siteConfig.gallery.push({
+            siteSettings
+                .gallery
+                .push({
 
-                src:path,
+                    src:path,
 
-                caption:{
-                    en:
-                        "New Glass & Mirror Project",
+                    caption:{
+                        en:
+                            "New Glass & Mirror Project",
 
-                    ar:
-                        "مشروع زجاج ومرايا جديد"
-                }
-            });
+                        ar:
+                            "مشروع زجاج ومرايا جديد"
+                    }
+                });
         }
 
-        await saveConfig();
+        await saveSettingsToGithub();
 
         renderGallery();
 
         input.value="";
 
         showStatus(
-            "✓ Gallery pictures added."
+            "✓ Gallery pictures saved."
         );
 
         alert(
-            "✓ Gallery pictures added to your website."
+            "✓ Gallery pictures added."
         );
 
     }catch(error){
@@ -3794,11 +4394,11 @@ async function uploadGallery(){
    VIDEO UPLOAD
 ========================================================= */
 
-async function uploadVideo(){
+async function uploadVideos(){
 
     try{
 
-        getToken();
+        getGithubToken();
 
         const input=
             document.getElementById(
@@ -3810,12 +4410,10 @@ async function uploadVideo(){
                 input.files
             );
 
-        if(
-            files.length===0
-        ){
+        if(!files.length){
 
             alert(
-                "Please choose a video first."
+                "Choose a video first."
             );
 
             return;
@@ -3831,7 +4429,25 @@ async function uploadVideo(){
                     "video/"
                 )
             ){
+
                 continue;
+            }
+
+            const sizeMB=
+                file.size/
+                (
+                    1024*
+                    1024
+                );
+
+            if(
+                sizeMB>80
+            ){
+
+                throw new Error(
+                    file.name+
+                    " is larger than 80 MB. Please make the video smaller."
+                );
             }
 
             showStatus(
@@ -3840,47 +4456,49 @@ async function uploadVideo(){
 
             const path=
                 "media/video-"+
-                fileName(
+                safeFileName(
                     file.name
                 );
 
             const base64=
-                await fileBase64(
+                await fileToBase64(
                     file
                 );
 
-            await githubPut(
+            await githubPutFile(
                 path,
                 base64,
                 "Add project video"
             );
 
-            siteConfig.videos.push({
+            siteSettings
+                .videos
+                .push({
 
-                src:path,
+                    src:path,
 
-                title:{
-                    en:
-                        "Project Video",
+                    title:{
+                        en:
+                            "Project Video",
 
-                    ar:
-                        "فيديو المشروع"
-                }
-            });
+                        ar:
+                            "فيديو المشروع"
+                    }
+                });
         }
 
-        await saveConfig();
+        await saveSettingsToGithub();
 
         renderVideos();
 
         input.value="";
 
         showStatus(
-            "✓ Project videos added."
+            "✓ Project videos saved."
         );
 
         alert(
-            "✓ Project videos added to your website."
+            "✓ Project videos added."
         );
 
     }catch(error){
@@ -3899,53 +4517,32 @@ async function uploadVideo(){
 
 
 /* =========================================================
-   LANGUAGE
+   ADMIN ACCESS
 ========================================================= */
 
-function toggleLanguage(){
+function checkAdminLink(){
 
-    arabicMode=
-        !arabicMode;
-
-    applyTexts();
-
-    renderGallery();
-
-    renderVideos();
-
-    updateHero();
-}
-
-
-/* =========================================================
-   MENU
-========================================================= */
-
-function toggleMenu(){
-
-    const nav=
-        document.getElementById(
-            "mainNav"
+    const params=
+        new URLSearchParams(
+            window.location.search
         );
 
-    const button=
-        document.querySelector(
-            ".menu-toggle"
+    adminLinkMode=
+        params.get("admin")===
+        "1";
+
+    if(adminLinkMode){
+
+        document.body.classList.add(
+            "admin-link-visible"
         );
 
-    nav.classList.toggle(
-        "mobile-open"
-    );
+    }else{
 
-    button.setAttribute(
-        "aria-expanded",
-
-        nav.classList.contains(
-            "mobile-open"
-        )
-            ? "true"
-            : "false"
-    );
+        document.body.classList.remove(
+            "admin-link-visible"
+        );
+    }
 }
 
 
@@ -3993,9 +4590,7 @@ function loginAdmin(){
     ){
 
         alert(
-            arabicMode
-                ? "كلمة المرور غير صحيحة."
-                : "Incorrect admin password."
+            "Incorrect Admin password."
         );
 
         return;
@@ -4007,50 +4602,94 @@ function loginAdmin(){
         "admin-mode"
     );
 
-    makeEditable();
+    enableEditing();
 
-    const savedToken=
-        sessionStorage.getItem(
-            "dgm_github_token"
-        );
+    loadAdminControls();
 
-    if(savedToken){
-
-        githubToken=
-            savedToken;
-
-        document
-            .getElementById(
-                "githubToken"
-            )
-            .value=
-                savedToken;
-    }
+    showStatus(
+        "✓ Admin Mode Active"
+    );
 }
 
 function logoutAdmin(){
-
-    githubToken="";
-
-    sessionStorage.removeItem(
-        "dgm_github_token"
-    );
 
     document.body.classList.remove(
         "admin-mode"
     );
 
-    document
-        .querySelectorAll(
-            ".editable"
-        )
-        .forEach(
-            function(element){
+    disableEditing();
+}
 
-                element.contentEditable=
-                    "false";
-            }
+
+/* =========================================================
+   ADMIN CONTROLS
+========================================================= */
+
+function loadAdminControls(){
+
+    document.getElementById(
+        "showHeroSubtitle"
+    ).checked=
+        siteSettings.hero.showSubtitle;
+
+    document.getElementById(
+        "showHeroTitle"
+    ).checked=
+        siteSettings.hero.showTitle;
+
+    document.getElementById(
+        "showHeroText"
+    ).checked=
+        siteSettings.hero.showText;
+
+    document.getElementById(
+        "heroTitleSize"
+    ).value=
+        siteSettings.hero.titleSize;
+
+    document.getElementById(
+        "heroSubtitleSize"
+    ).value=
+        siteSettings.hero.subtitleSize;
+
+    document.getElementById(
+        "heroTextSize"
+    ).value=
+        siteSettings.hero.textSize;
+
+    applyHeroSettings();
+
+    const local=
+        localStorage.getItem(
+            "dgm_github_token"
         );
+
+    const session=
+        sessionStorage.getItem(
+            "dgm_github_token"
+        );
+
+    const token=
+        local ||
+        session;
+
+    if(token){
+
+        githubToken=
+            token;
+
+        document.getElementById(
+            "githubToken"
+        ).value=
+            token;
+
+        if(local){
+
+            document.getElementById(
+                "rememberToken"
+            ).checked=true;
+        }
+    }
 }
 
 
@@ -4126,6 +4765,7 @@ document.addEventListener(
             );
 
         if(!image){
+
             return;
         }
 
@@ -4157,6 +4797,38 @@ function closeLightbox(){
 
 
 /* =========================================================
+   MENU
+========================================================= */
+
+function toggleMenu(){
+
+    const nav=
+        document.getElementById(
+            "mainNav"
+        );
+
+    const button=
+        document.querySelector(
+            ".menu-toggle"
+        );
+
+    nav.classList.toggle(
+        "mobile-open"
+    );
+
+    button.setAttribute(
+        "aria-expanded",
+
+        nav.classList.contains(
+            "mobile-open"
+        )
+            ? "true"
+            : "false"
+    );
+}
+
+
+/* =========================================================
    STATUS
 ========================================================= */
 
@@ -4164,7 +4836,7 @@ function showStatus(message){
 
     document
         .getElementById(
-            "uploadStatus"
+            "adminStatus"
         )
         .textContent=
             message;
@@ -4179,28 +4851,17 @@ document.addEventListener(
     "DOMContentLoaded",
     async function(){
 
-        const savedToken=
-            sessionStorage.getItem(
-                "dgm_github_token"
-            );
+        checkAdminLink();
 
-        if(savedToken){
+        await loadSettings();
 
-            githubToken=
-                savedToken;
-        }
+        applyTextSettings();
 
-        await loadSiteConfig();
-
-        applyTexts();
-
-        lockEditableInitial();
+        applyHeroSettings();
 
         renderGallery();
 
         renderVideos();
-
-        heroIndex=0;
 
         updateHero();
 
@@ -4221,43 +4882,23 @@ document.addEventListener(
                         function(){
 
                             document
-                            .getElementById(
-                                "mainNav"
-                            )
-                            .classList
-                            .remove(
-                                "mobile-open"
-                            );
+                                .getElementById(
+                                    "mainNav"
+                                )
+                                .classList
+                                .remove(
+                                    "mobile-open"
+                                );
                         }
                     );
                 }
             );
+
     }
 );
-
-function lockEditableInitial(){
-
-    document
-        .querySelectorAll(
-            ".editable"
-        )
-        .forEach(
-            function(element){
-
-                element.contentEditable=
-                    "false";
-            }
-        );
-}
-
-function resetLocalText(){
-
-    alert(
-        "This editor saves your text directly to GitHub. To undo a saved change, enter Admin mode, change the text again, then press Save Text Changes."
-    );
-}
 
 </script>
 
 </body>
+
 </html>
