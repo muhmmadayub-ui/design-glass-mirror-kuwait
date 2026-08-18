@@ -1,8 +1,8 @@
 {
   "hero": {
-    "showSubtitle": false,
+    "showSubtitle": true,
     "showTitle": true,
-    "showDescription": false,
+    "showDescription": true,
     "titleSize": 58,
     "subtitleSize": 13,
     "descriptionSize": 18,
@@ -10,19 +10,53 @@
       "twist out building.jpg",
       "blue glass.avif",
       "clear blue pic.jpg"
-    ]
+    ],
+    "showText": false,
+    "textSize": 18
   },
   "texts": {
     "en": {
-      "heroSubtitle": "PROFESSIONAL GLASS & MIRROR WORKS IN KUWAIT",
-      "heroTitle": "Design Glass & Mirror Kuwait",
-      "heroText": "Professional glass, mirrors, tempered glass, laminated glass and double glazing for homes, offices, shops and commercial projects in Kuwait."
+      "heroSubtitle": "<br>",
+      "heroTitle": "<span style=\"color: rgb(185, 237, 255); font-size: 13px; letter-spacing: 2px;\">PROFESSIONAL GLASS &amp; MIRROR WORKS IN KUWAIT</span>",
+      "heroText": "\n\nProfessional glass, mirrors, tempered glass,\nlaminated glass and double glazing for homes,\noffices, shops and commercial projects in Kuwait.\n\n",
+      "aboutTitle": "\n\nDesign Glass &amp; Mirror Kuwait\n\n",
+      "aboutHeading": "\n\nProfessional Glass and Mirror work in Kuwait\n\n",
+      "aboutText": "\n\nDesign Glass &amp; Mirror provides professional\nglass, mirror, tempered glass, laminated glass,\ndouble glass, shower glass, glass partitions,\nglass railings, staircase glass, office glass\nand aluminum works in Kuwait.\n\n",
+      "point1": "\n\n✓ Quality Work\n\n",
+      "point2": "\n\n✓ Modern Designs\n\n",
+      "point3": "\n\n✓ Professional Service\n\n",
+      "point4": "\n\n✓ Kuwait Service\n\n",
+      "aboutCardTitle": "\n\nGlass &amp; Mirror Experts\n\n",
+      "aboutCardText": "\n\nTempered • Laminated • Double Glass • Mirrors\n\n",
+      "servicesTitle": "\n\nGlass &amp; Mirror Services\n\n",
+      "service1Title": "\n\nTempered Glass\n\n",
+      "service1Text": "\n\nTempered and toughened glass for doors,\npartitions, stairs, shops and offices.\n\n",
+      "service2Title": "\n\nLaminated Glass\n\n",
+      "service2Text": "\n\nLaminated safety glass for projects\nrequiring additional protection.\n\n",
+      "service3Title": "\n\nDouble Glass\n\n",
+      "service3Text": "\n\nDouble glass and double glazing solutions\nfor homes, offices and buildings.\n\n",
+      "service4Title": "\n\nShower Glass\n\n",
+      "service4Text": "\n\nModern shower glass doors and bathroom\nglass solutions in Kuwait.\n\n",
+      "service5Title": "\n\nGlass Partitions &amp; Railings\n\n",
+      "service5Text": "\n\nGlass partitions and railings for\noffices, homes, stairs and balconies.\n\n",
+      "service6Title": "\n\nCustom Mirrors &amp; Aluminum\n\n",
+      "service6Text": "\n\nCustom mirrors, LED mirrors and\naluminum works.\n\n",
+      "galleryTitle": "\n\nGlass &amp; Mirror Project Gallery\n\n",
+      "galleryDescription": "\n\nTempered glass, laminated glass, double glass,\nmirrors, shower glass, partitions, railings,\nstairs, doors and interior projects in Kuwait.\n\n",
+      "videosTitle": "\n\nProject Videos\n\n",
+      "whyTitle": "\n\nWhy Design Glass &amp; Mirror?\n\n",
+      "why1Title": "\n\nProfessional Work\n\n",
+      "why1Text": "\n\nClean and professional finishing.\n\n",
+      "why2Title": "\n\nModern Designs\n\n",
+      "why2Text": "\n\nBeautiful modern solutions.\n\n",
+      "why3Title": "\n\nQuality Materials\n\n",
+      "why3Text": "\n\nTempered, laminated and double glass.\n\n",
+      "why4Title": "\n\nCustomer Service\n\n",
+      "why4Text": "\n\nWe work closely with our customers.\n\n",
+      "contactHeading": "\n\nContact Design Glass &amp; Mirror Kuwait\n\n",
+      "contactText": "\n\nContact us for tempered glass,\ntoughened glass, laminated glass,\ndouble glass, shower glass,\npartitions, railings, staircase glass,\nmirrors, office glass and aluminum works.\n\n"
     },
-    "ar": {
-      "heroSubtitle": "أعمال الزجاج والمرايا الاحترافية في الكويت",
-      "heroTitle": "ديزاين جلاس وميرور الكويت",
-      "heroText": "حلول احترافية للزجاج والمرايا والزجاج المقسى والزجاج المصفح والزجاج المزدوج للمنازل والمكاتب والمحلات والمشاريع التجارية في الكويت."
-    }
+    "ar": {}
   },
   "gallery": [
     {
