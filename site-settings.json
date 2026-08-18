@@ -1,18 +1,20 @@
 {
   "hero": {
-    "showSubtitle": true,
+    "showKicker": true,
     "showTitle": true,
-    "showDescription": true,
+    "showText": false,
+    "kickerSize": 12,
     "titleSize": 58,
-    "subtitleSize": 13,
-    "descriptionSize": 18,
+    "textSize": 18,
     "images": [
       "twist out building.jpg",
       "blue glass.avif",
       "clear blue pic.jpg"
     ],
-    "showText": false,
-    "textSize": 18
+    "showSubtitle": true,
+    "showDescription": true,
+    "subtitleSize": 13,
+    "descriptionSize": 18
   },
   "texts": {
     "en": {
@@ -58,132 +60,182 @@
     },
     "ar": {}
   },
-  "gallery": [
+  "categories": [
     {
-      "src": "6mm mirror with design LED LIGHT.jpeg",
-      "caption": {
-        "en": "Custom Mirror & LED Light",
-        "ar": "مرآة مخصصة مع إضاءة LED"
-      }
+      "id": "tempered",
+      "titleEn": "Tempered Glass",
+      "titleAr": "زجاج سيكوريت ومقسى",
+      "descEn": "Strong, clean and modern tempered glass solutions.",
+      "descAr": "حلول زجاج سيكوريت ومقسى قوية وعصرية.",
+      "image": "10mm clear glass temper sliding door.jpeg",
+      "detailEn": "Tempered glass for doors, partitions, stairs, shops, offices and residential projects.",
+      "detailAr": "زجاج سيكوريت للأبواب والقواطع والسلالم والمحلات والمكاتب والمشاريع السكنية."
     },
     {
-      "src": "10mm black glass temper staircas kloudy.jpeg",
-      "caption": {
-        "en": "Black Tempered Glass Staircase",
-        "ar": "درج زجاج مقسى أسود"
-      }
+      "id": "laminated",
+      "titleEn": "Laminated Glass",
+      "titleAr": "زجاج مصفح",
+      "descEn": "Safety laminated glass for added protection.",
+      "descAr": "زجاج مصفح آمن يوفر حماية إضافية.",
+      "image": "10mm sandblast glass temper fixed in stanless steel.jpeg",
+      "detailEn": "Laminated glass solutions for projects where safety and protection are important.",
+      "detailAr": "حلول الزجاج المصفح للمشاريع التي تحتاج إلى الأمان والحماية."
     },
     {
-      "src": "10mm bowns glass temper shower.jpeg",
-      "caption": {
-        "en": "Tempered Shower Glass",
-        "ar": "زجاج دش مقسى"
-      }
+      "id": "double",
+      "titleEn": "Double Glass",
+      "titleAr": "زجاج مزدوج ودبل جلاس",
+      "descEn": "Modern double glazing for buildings and interiors.",
+      "descAr": "حلول الزجاج المزدوج للمباني والديكورات.",
+      "image": "blue building 2.jpg",
+      "detailEn": "Double glazing solutions for homes, offices and commercial spaces.",
+      "detailAr": "حلول الزجاج المزدوج للمنازل والمكاتب والمساحات التجارية."
     },
     {
-      "src": "10mm browns glass temper amood fix.jpeg",
-      "caption": {
-        "en": "Brown Tempered Glass",
-        "ar": "زجاج مقسى بني"
-      }
+      "id": "shower",
+      "titleEn": "Shower Glass",
+      "titleAr": "زجاج الحمامات والدش",
+      "descEn": "Elegant shower glass doors and bathroom solutions.",
+      "descAr": "أبواب زجاجية أنيقة وحلول للحمامات.",
+      "image": "10mm clear glass temper shower with golden frame.jpeg",
+      "detailEn": "Modern shower enclosures, glass doors and custom bathroom glass.",
+      "detailAr": "كبائن دش وأبواب زجاجية وحلول زجاجية مخصصة للحمامات."
     },
     {
-      "src": "10mm browns glass temper staircas.jpeg",
-      "caption": {
-        "en": "Brown Glass Staircase",
-        "ar": "درج زجاجي بني"
-      }
+      "id": "partitions",
+      "titleEn": "Glass Partitions",
+      "titleAr": "القواطع الزجاجية",
+      "descEn": "Clean glass partitions for homes and offices.",
+      "descAr": "قواطع زجاجية أنيقة للمنازل والمكاتب.",
+      "image": "10mm clear glass temper fix in black spider system.jpeg",
+      "detailEn": "Glass partition systems for offices, homes, shops and commercial spaces.",
+      "detailAr": "أنظمة قواطع زجاجية للمكاتب والمنازل والمحلات والمساحات التجارية."
     },
     {
-      "src": "10mm clear glass temper fix in black spider system.jpeg",
-      "caption": {
-        "en": "Clear Glass Spider System",
-        "ar": "زجاج شفاف بنظام سبايدر"
-      }
+      "id": "railings",
+      "titleEn": "Glass Railings",
+      "titleAr": "الدرابزين الزجاجي",
+      "descEn": "Modern railings for stairs and balconies.",
+      "descAr": "درابزين عصري للسلالم والشرفات.",
+      "image": "10mm black glass temper staircas kloudy.jpeg",
+      "detailEn": "Glass railing systems for staircases, balconies and modern interiors.",
+      "detailAr": "أنظمة درابزين زجاجية للسلالم والشرفات والديكورات العصرية."
     },
     {
-      "src": "10mm clear glass temper pool.jpeg",
-      "caption": {
-        "en": "Pool Glass",
-        "ar": "زجاج المسابح"
-      }
+      "id": "mirrors",
+      "titleEn": "Custom Mirrors",
+      "titleAr": "المرايا المخصصة",
+      "descEn": "Decorative, LED and custom-size mirrors.",
+      "descAr": "مرايا ديكورية ومرايا LED ومقاسات مخصصة.",
+      "image": "6mm mirror with design LED LIGHT.jpeg",
+      "detailEn": "Custom mirrors, LED mirrors, bathroom mirrors and decorative designs.",
+      "detailAr": "مرايا مخصصة ومرايا LED ومرايا حمامات وتصاميم ديكورية."
     },
     {
-      "src": "10mm clear glass temper shower with golden frame.jpeg",
-      "caption": {
-        "en": "Shower Glass With Golden Frame",
-        "ar": "زجاج دش بإطار ذهبي"
-      }
+      "id": "aluminum",
+      "titleEn": "Aluminum Works",
+      "titleAr": "أعمال الألمنيوم",
+      "descEn": "Modern aluminum finishing and installations.",
+      "descAr": "أعمال وتركيبات ألمنيوم عصرية.",
+      "image": "wood handle colour pictures .jpeg",
+      "detailEn": "Aluminum works and finishing for residential and commercial projects.",
+      "detailAr": "أعمال ألمنيوم وتشطيبات للمشاريع السكنية والتجارية."
+    }
+  ],
+  "projects": [
+    {
+      "id": "mirror-led",
+      "category": "mirrors",
+      "titleEn": "Custom Mirror & LED Light",
+      "titleAr": "مرآة مخصصة مع إضاءة LED",
+      "descEn": "Custom mirror with modern LED lighting.",
+      "descAr": "مرآة مخصصة مع إضاءة LED عصرية.",
+      "images": [
+        "6mm mirror with design LED LIGHT.jpeg",
+        "design mirror with light back.jpeg"
+      ]
     },
     {
-      "src": "10mm clear glass temper sliding door.jpeg",
-      "caption": {
-        "en": "Sliding Glass Door",
-        "ar": "باب زجاجي سحاب"
-      }
+      "id": "black-stair",
+      "category": "railings",
+      "titleEn": "Black Tempered Glass Staircase",
+      "titleAr": "درج زجاج سيكوريت أسود",
+      "descEn": "Black tempered glass staircase installation.",
+      "descAr": "تركيب درج من الزجاج السيكوريت الأسود.",
+      "images": [
+        "10mm black glass temper staircas kloudy.jpeg",
+        "10mm browns glass temper staircas.jpeg"
+      ]
     },
     {
-      "src": "10mm clear glass temper stair with wooden handle.jpeg",
-      "caption": {
-        "en": "Glass Staircase With Wooden Handle",
-        "ar": "درج زجاجي بمقبض خشبي"
-      }
+      "id": "gold-shower",
+      "category": "shower",
+      "titleEn": "Golden Frame Shower Glass",
+      "titleAr": "زجاج دش بإطار ذهبي",
+      "descEn": "Elegant shower glass with a modern golden frame.",
+      "descAr": "زجاج دش أنيق بإطار ذهبي عصري.",
+      "images": [
+        "10mm clear glass temper shower with golden frame.jpeg",
+        "10mm bowns glass temper shower.jpeg"
+      ]
     },
     {
-      "src": "10mm clear glass temper staircas with wooden handle.jpeg",
-      "caption": {
-        "en": "Clear Glass Staircase",
-        "ar": "درج زجاجي شفاف"
-      }
+      "id": "spider",
+      "category": "partitions",
+      "titleEn": "Clear Glass Spider System",
+      "titleAr": "زجاج شفاف بنظام سبايدر",
+      "descEn": "Clear architectural glass using a modern spider system.",
+      "descAr": "زجاج معماري شفاف باستخدام نظام سبايدر عصري.",
+      "images": [
+        "10mm clear glass temper fix in black spider system.jpeg"
+      ]
     },
     {
-      "src": "10mm clear glass temper swiming pool.jpeg",
-      "caption": {
-        "en": "Swimming Pool Glass",
-        "ar": "زجاج المسابح"
-      }
+      "id": "sliding-door",
+      "category": "tempered",
+      "titleEn": "Sliding Glass Door",
+      "titleAr": "باب زجاجي سحاب",
+      "descEn": "Clear tempered sliding glass door.",
+      "descAr": "باب زجاجي سحاب من الزجاج المقسى.",
+      "images": [
+        "10mm clear glass temper sliding door.jpeg"
+      ]
     },
     {
-      "src": "10mm clear glass temper with normal doors shop.jpeg",
-      "caption": {
-        "en": "Shop Glass Doors",
-        "ar": "أبواب زجاجية للمحلات"
-      }
+      "id": "pool",
+      "category": "tempered",
+      "titleEn": "Swimming Pool Glass",
+      "titleAr": "زجاج المسابح",
+      "descEn": "Clear safety glass for swimming pool areas.",
+      "descAr": "زجاج أمان شفاف لمناطق المسابح.",
+      "images": [
+        "10mm clear glass temper swimming pool.jpeg",
+        "10mm clear glass temper pool.jpeg"
+      ]
     },
     {
-      "src": "10mm sandblast glass stair with standsteel handle.jpeg",
-      "caption": {
-        "en": "Sandblast Glass Staircase",
-        "ar": "درج زجاجي ساندبلاست"
-      }
+      "id": "sandblast",
+      "category": "tempered",
+      "titleEn": "Sandblast Glass Staircase",
+      "titleAr": "درج زجاج ساندبلاست",
+      "descEn": "Sandblast glass staircase with stainless steel details.",
+      "descAr": "درج زجاج ساندبلاست مع تفاصيل من الستانلس ستيل.",
+      "images": [
+        "10mm sandblast glass stair with standsteel handle.jpeg",
+        "10mm sandblast glass temper fixed in stanless steel.jpeg"
+      ]
     },
     {
-      "src": "10mm sandblast glass temper fixed in stanless steel.jpeg",
-      "caption": {
-        "en": "Sandblast Tempered Glass",
-        "ar": "زجاج مقسى ساندبلاست"
-      }
-    },
-    {
-      "src": "D shave mirror.jpeg",
-      "caption": {
-        "en": "D Shave Mirror",
-        "ar": "مرآة D Shave"
-      }
-    },
-    {
-      "src": "design mirror with light back.jpeg",
-      "caption": {
-        "en": "Design Mirror With Back Light",
-        "ar": "مرآة ديزاين بإضاءة خلفية"
-      }
-    },
-    {
-      "src": "wood handle colour pictures .jpeg",
-      "caption": {
-        "en": "Wood Handle Glass Project",
-        "ar": "مشروع زجاج بمقبض خشبي"
-      }
+      "id": "wood-handle",
+      "category": "railings",
+      "titleEn": "Glass Staircase With Wooden Handle",
+      "titleAr": "درج زجاج بمقبض خشبي",
+      "descEn": "Clear glass staircase with a wooden handle.",
+      "descAr": "درج زجاجي شفاف بمقبض خشبي.",
+      "images": [
+        "10mm clear glass temper stair with wooden handle.jpeg",
+        "10mm clear glass temper staircas with wooden handle.jpeg"
+      ]
     }
   ],
   "videos": [
