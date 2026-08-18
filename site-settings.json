@@ -1,250 +1,27 @@
 {
   "hero": {
-    "showKicker": true,
+    "showKicker": false,
     "showTitle": true,
-    "showText": false,
+    "showDescription": false,
     "kickerSize": 12,
-    "titleSize": 58,
-    "textSize": 18,
+    "titleSize": 68,
+    "descriptionSize": 20,
     "images": [
       "twist out building.jpg",
       "blue glass.avif",
       "clear blue pic.jpg"
-    ],
-    "showSubtitle": true,
-    "showDescription": true,
-    "subtitleSize": 13,
-    "descriptionSize": 18
+    ]
   },
   "texts": {
     "en": {
-      "heroSubtitle": "<br>",
-      "heroTitle": "<span style=\"color: rgb(185, 237, 255); font-size: 13px; letter-spacing: 2px;\">PROFESSIONAL GLASS &amp; MIRROR WORKS IN KUWAIT</span>",
-      "heroText": "\n\nProfessional glass, mirrors, tempered glass,\nlaminated glass and double glazing for homes,\noffices, shops and commercial projects in Kuwait.\n\n",
-      "aboutTitle": "\n\nDesign Glass &amp; Mirror Kuwait\n\n",
-      "aboutHeading": "\n\nProfessional Glass and Mirror work in Kuwait\n\n",
-      "aboutText": "\n\nDesign Glass &amp; Mirror provides professional\nglass, mirror, tempered glass, laminated glass,\ndouble glass, shower glass, glass partitions,\nglass railings, staircase glass, office glass\nand aluminum works in Kuwait.\n\n",
-      "point1": "\n\n✓ Quality Work\n\n",
-      "point2": "\n\n✓ Modern Designs\n\n",
-      "point3": "\n\n✓ Professional Service\n\n",
-      "point4": "\n\n✓ Kuwait Service\n\n",
-      "aboutCardTitle": "\n\nGlass &amp; Mirror Experts\n\n",
-      "aboutCardText": "\n\nTempered • Laminated • Double Glass • Mirrors\n\n",
-      "servicesTitle": "\n\nGlass &amp; Mirror Services\n\n",
-      "service1Title": "\n\nTempered Glass\n\n",
-      "service1Text": "\n\nTempered and toughened glass for doors,\npartitions, stairs, shops and offices.\n\n",
-      "service2Title": "\n\nLaminated Glass\n\n",
-      "service2Text": "\n\nLaminated safety glass for projects\nrequiring additional protection.\n\n",
-      "service3Title": "\n\nDouble Glass\n\n",
-      "service3Text": "\n\nDouble glass and double glazing solutions\nfor homes, offices and buildings.\n\n",
-      "service4Title": "\n\nShower Glass\n\n",
-      "service4Text": "\n\nModern shower glass doors and bathroom\nglass solutions in Kuwait.\n\n",
-      "service5Title": "\n\nGlass Partitions &amp; Railings\n\n",
-      "service5Text": "\n\nGlass partitions and railings for\noffices, homes, stairs and balconies.\n\n",
-      "service6Title": "\n\nCustom Mirrors &amp; Aluminum\n\n",
-      "service6Text": "\n\nCustom mirrors, LED mirrors and\naluminum works.\n\n",
-      "galleryTitle": "\n\nGlass &amp; Mirror Project Gallery\n\n",
-      "galleryDescription": "\n\nTempered glass, laminated glass, double glass,\nmirrors, shower glass, partitions, railings,\nstairs, doors and interior projects in Kuwait.\n\n",
-      "videosTitle": "\n\nProject Videos\n\n",
-      "whyTitle": "\n\nWhy Design Glass &amp; Mirror?\n\n",
-      "why1Title": "\n\nProfessional Work\n\n",
-      "why1Text": "\n\nClean and professional finishing.\n\n",
-      "why2Title": "\n\nModern Designs\n\n",
-      "why2Text": "\n\nBeautiful modern solutions.\n\n",
-      "why3Title": "\n\nQuality Materials\n\n",
-      "why3Text": "\n\nTempered, laminated and double glass.\n\n",
-      "why4Title": "\n\nCustomer Service\n\n",
-      "why4Text": "\n\nWe work closely with our customers.\n\n",
-      "contactHeading": "\n\nContact Design Glass &amp; Mirror Kuwait\n\n",
-      "contactText": "\n\nContact us for tempered glass,\ntoughened glass, laminated glass,\ndouble glass, shower glass,\npartitions, railings, staircase glass,\nmirrors, office glass and aluminum works.\n\n"
+      "heroTitle": "Design Glass & Mirror Kuwait",
+      "heroDescription": "Tempered glass, laminated glass, double glass, mirrors, shower glass, partitions, railings and custom glass solutions in Kuwait.",
+      "aboutDescription": "Design Glass & Mirror provides professional glass, mirror, tempered glass, laminated glass, double glass, shower glass, partitions, railings, staircase glass and aluminum works for homes, offices, shops and commercial projects in Kuwait."
     },
-    "ar": {}
-  },
-  "categories": [
-    {
-      "id": "tempered",
-      "titleEn": "Tempered Glass",
-      "titleAr": "زجاج سيكوريت ومقسى",
-      "descEn": "Strong, clean and modern tempered glass solutions.",
-      "descAr": "حلول زجاج سيكوريت ومقسى قوية وعصرية.",
-      "image": "10mm clear glass temper sliding door.jpeg",
-      "detailEn": "Tempered glass for doors, partitions, stairs, shops, offices and residential projects.",
-      "detailAr": "زجاج سيكوريت للأبواب والقواطع والسلالم والمحلات والمكاتب والمشاريع السكنية."
-    },
-    {
-      "id": "laminated",
-      "titleEn": "Laminated Glass",
-      "titleAr": "زجاج مصفح",
-      "descEn": "Safety laminated glass for added protection.",
-      "descAr": "زجاج مصفح آمن يوفر حماية إضافية.",
-      "image": "10mm sandblast glass temper fixed in stanless steel.jpeg",
-      "detailEn": "Laminated glass solutions for projects where safety and protection are important.",
-      "detailAr": "حلول الزجاج المصفح للمشاريع التي تحتاج إلى الأمان والحماية."
-    },
-    {
-      "id": "double",
-      "titleEn": "Double Glass",
-      "titleAr": "زجاج مزدوج ودبل جلاس",
-      "descEn": "Modern double glazing for buildings and interiors.",
-      "descAr": "حلول الزجاج المزدوج للمباني والديكورات.",
-      "image": "blue building 2.jpg",
-      "detailEn": "Double glazing solutions for homes, offices and commercial spaces.",
-      "detailAr": "حلول الزجاج المزدوج للمنازل والمكاتب والمساحات التجارية."
-    },
-    {
-      "id": "shower",
-      "titleEn": "Shower Glass",
-      "titleAr": "زجاج الحمامات والدش",
-      "descEn": "Elegant shower glass doors and bathroom solutions.",
-      "descAr": "أبواب زجاجية أنيقة وحلول للحمامات.",
-      "image": "10mm clear glass temper shower with golden frame.jpeg",
-      "detailEn": "Modern shower enclosures, glass doors and custom bathroom glass.",
-      "detailAr": "كبائن دش وأبواب زجاجية وحلول زجاجية مخصصة للحمامات."
-    },
-    {
-      "id": "partitions",
-      "titleEn": "Glass Partitions",
-      "titleAr": "القواطع الزجاجية",
-      "descEn": "Clean glass partitions for homes and offices.",
-      "descAr": "قواطع زجاجية أنيقة للمنازل والمكاتب.",
-      "image": "10mm clear glass temper fix in black spider system.jpeg",
-      "detailEn": "Glass partition systems for offices, homes, shops and commercial spaces.",
-      "detailAr": "أنظمة قواطع زجاجية للمكاتب والمنازل والمحلات والمساحات التجارية."
-    },
-    {
-      "id": "railings",
-      "titleEn": "Glass Railings",
-      "titleAr": "الدرابزين الزجاجي",
-      "descEn": "Modern railings for stairs and balconies.",
-      "descAr": "درابزين عصري للسلالم والشرفات.",
-      "image": "10mm black glass temper staircas kloudy.jpeg",
-      "detailEn": "Glass railing systems for staircases, balconies and modern interiors.",
-      "detailAr": "أنظمة درابزين زجاجية للسلالم والشرفات والديكورات العصرية."
-    },
-    {
-      "id": "mirrors",
-      "titleEn": "Custom Mirrors",
-      "titleAr": "المرايا المخصصة",
-      "descEn": "Decorative, LED and custom-size mirrors.",
-      "descAr": "مرايا ديكورية ومرايا LED ومقاسات مخصصة.",
-      "image": "6mm mirror with design LED LIGHT.jpeg",
-      "detailEn": "Custom mirrors, LED mirrors, bathroom mirrors and decorative designs.",
-      "detailAr": "مرايا مخصصة ومرايا LED ومرايا حمامات وتصاميم ديكورية."
-    },
-    {
-      "id": "aluminum",
-      "titleEn": "Aluminum Works",
-      "titleAr": "أعمال الألمنيوم",
-      "descEn": "Modern aluminum finishing and installations.",
-      "descAr": "أعمال وتركيبات ألمنيوم عصرية.",
-      "image": "wood handle colour pictures .jpeg",
-      "detailEn": "Aluminum works and finishing for residential and commercial projects.",
-      "detailAr": "أعمال ألمنيوم وتشطيبات للمشاريع السكنية والتجارية."
+    "ar": {
+      "heroTitle": "ديزاين جلاس وميرور الكويت",
+      "heroDescription": "زجاج سيكوريت وزجاج مصفح وزجاج مزدوج ومرايا وزجاج حمامات وقواطع ودرابزين وحلول زجاجية مخصصة في الكويت.",
+      "aboutDescription": "توفر ديزاين جلاس وميرور خدمات احترافية للزجاج والمرايا والزجاج السيكوريت والزجاج المصفح والزجاج المزدوج وزجاج الحمامات والقواطع والدرابزين وزجاج السلالم وأعمال الألمنيوم للمنازل والمكاتب والمحلات والمشاريع التجارية في الكويت."
     }
-  ],
-  "projects": [
-    {
-      "id": "mirror-led",
-      "category": "mirrors",
-      "titleEn": "Custom Mirror & LED Light",
-      "titleAr": "مرآة مخصصة مع إضاءة LED",
-      "descEn": "Custom mirror with modern LED lighting.",
-      "descAr": "مرآة مخصصة مع إضاءة LED عصرية.",
-      "images": [
-        "6mm mirror with design LED LIGHT.jpeg",
-        "design mirror with light back.jpeg"
-      ]
-    },
-    {
-      "id": "black-stair",
-      "category": "railings",
-      "titleEn": "Black Tempered Glass Staircase",
-      "titleAr": "درج زجاج سيكوريت أسود",
-      "descEn": "Black tempered glass staircase installation.",
-      "descAr": "تركيب درج من الزجاج السيكوريت الأسود.",
-      "images": [
-        "10mm black glass temper staircas kloudy.jpeg",
-        "10mm browns glass temper staircas.jpeg"
-      ]
-    },
-    {
-      "id": "gold-shower",
-      "category": "shower",
-      "titleEn": "Golden Frame Shower Glass",
-      "titleAr": "زجاج دش بإطار ذهبي",
-      "descEn": "Elegant shower glass with a modern golden frame.",
-      "descAr": "زجاج دش أنيق بإطار ذهبي عصري.",
-      "images": [
-        "10mm clear glass temper shower with golden frame.jpeg",
-        "10mm bowns glass temper shower.jpeg"
-      ]
-    },
-    {
-      "id": "spider",
-      "category": "partitions",
-      "titleEn": "Clear Glass Spider System",
-      "titleAr": "زجاج شفاف بنظام سبايدر",
-      "descEn": "Clear architectural glass using a modern spider system.",
-      "descAr": "زجاج معماري شفاف باستخدام نظام سبايدر عصري.",
-      "images": [
-        "10mm clear glass temper fix in black spider system.jpeg"
-      ]
-    },
-    {
-      "id": "sliding-door",
-      "category": "tempered",
-      "titleEn": "Sliding Glass Door",
-      "titleAr": "باب زجاجي سحاب",
-      "descEn": "Clear tempered sliding glass door.",
-      "descAr": "باب زجاجي سحاب من الزجاج المقسى.",
-      "images": [
-        "10mm clear glass temper sliding door.jpeg"
-      ]
-    },
-    {
-      "id": "pool",
-      "category": "tempered",
-      "titleEn": "Swimming Pool Glass",
-      "titleAr": "زجاج المسابح",
-      "descEn": "Clear safety glass for swimming pool areas.",
-      "descAr": "زجاج أمان شفاف لمناطق المسابح.",
-      "images": [
-        "10mm clear glass temper swimming pool.jpeg",
-        "10mm clear glass temper pool.jpeg"
-      ]
-    },
-    {
-      "id": "sandblast",
-      "category": "tempered",
-      "titleEn": "Sandblast Glass Staircase",
-      "titleAr": "درج زجاج ساندبلاست",
-      "descEn": "Sandblast glass staircase with stainless steel details.",
-      "descAr": "درج زجاج ساندبلاست مع تفاصيل من الستانلس ستيل.",
-      "images": [
-        "10mm sandblast glass stair with standsteel handle.jpeg",
-        "10mm sandblast glass temper fixed in stanless steel.jpeg"
-      ]
-    },
-    {
-      "id": "wood-handle",
-      "category": "railings",
-      "titleEn": "Glass Staircase With Wooden Handle",
-      "titleAr": "درج زجاج بمقبض خشبي",
-      "descEn": "Clear glass staircase with a wooden handle.",
-      "descAr": "درج زجاجي شفاف بمقبض خشبي.",
-      "images": [
-        "10mm clear glass temper stair with wooden handle.jpeg",
-        "10mm clear glass temper staircas with wooden handle.jpeg"
-      ]
-    }
-  ],
-  "videos": [
-    {
-      "src": "staircase clear ggm.mp4",
-      "title": {
-        "en": "Glass Staircase Project",
-        "ar": "مشروع درج زجاجي"
-      }
-    }
-  ]
+  }
 }
