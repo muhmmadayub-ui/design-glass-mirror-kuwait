@@ -1,16 +1,18 @@
 {
   "hero": {
     "showSubtitle": true,
-    "showTitle": false,
-    "showText": false,
-    "titleSize": 68,
+    "showTitle": true,
+    "showDescription": true,
+    "titleSize": 58,
     "subtitleSize": 13,
-    "textSize": 18,
+    "descriptionSize": 18,
     "images": [
       "twist out building.jpg",
       "blue glass.avif",
       "clear blue pic.jpg"
-    ]
+    ],
+    "showText": false,
+    "textSize": 18
   },
   "texts": {
     "en": {
