@@ -16,12 +16,12 @@ Design Glass & Mirror Kuwait | Glass, Mirror & Tempered Glass
 
 <meta
 name="description"
-content="Design Glass & Mirror Kuwait provides professional glass, mirrors, tempered glass, laminated glass, double glass, shower glass, partitions, railings, staircase glass, office glass and aluminum works in Kuwait."
+content="Design Glass & Mirror Kuwait provides glass, mirrors, tempered glass, laminated glass, double glass, shower glass, partitions, railings, staircase glass, office glass and aluminum works in Kuwait."
 >
 
 <meta
 name="robots"
-content="index, follow, max-image-preview:large"
+content="index,follow,max-image-preview:large"
 >
 
 <meta
@@ -41,7 +41,7 @@ content="Design Glass & Mirror Kuwait"
 
 <meta
 property="og:description"
-content="Glass, mirror, tempered glass, laminated glass, double glass, shower glass, partitions, railings and aluminum works in Kuwait."
+content="Professional glass and mirror services in Kuwait."
 >
 
 <meta
@@ -67,7 +67,7 @@ content="#091423"
   "url":"https://muhmmadayub-ui.github.io/design-glass-mirror-kuwait/",
   "telephone":"+96555507290",
   "email":"designglassmirror@gmail.com",
-  "description":"Professional glass and mirror services in Kuwait including tempered glass, laminated glass, double glass, shower glass, partitions, railings, staircase glass, office glass, mirrors and aluminum works.",
+  "description":"Professional glass and mirror company in Kuwait providing tempered glass, laminated glass, double glass, shower glass, partitions, railings, staircase glass, mirrors and aluminum works.",
   "areaServed":{
     "@type":"Country",
     "name":"Kuwait"
@@ -93,7 +93,7 @@ content="#091423"
 
 html{
     scroll-behavior:smooth;
-    scroll-padding-top:72px;
+    scroll-padding-top:70px;
 }
 
 body{
@@ -120,21 +120,14 @@ select{
     font-family:inherit;
 }
 
-/* =========================================================
-   HEADER
-========================================================= */
-
 header{
     position:sticky;
     top:0;
     z-index:1000;
-    min-height:64px;
-    padding:9px 5%;
     background:rgba(9,20,35,.97);
     color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    min-height:64px;
+    padding:9px 5%;
     box-shadow:0 4px 20px rgba(0,0,0,.15);
 }
 
@@ -172,7 +165,6 @@ nav a{
     color:#fff;
     font-size:14px;
     font-weight:bold;
-    transition:.2s;
 }
 
 nav a:hover{
@@ -198,9 +190,7 @@ nav a:hover{
     cursor:pointer;
 }
 
-/* =========================================================
-   HERO
-========================================================= */
+/* HERO */
 
 .hero{
     position:relative;
@@ -211,55 +201,38 @@ nav a:hover{
     text-align:center;
     color:#fff;
     overflow:hidden;
-
     background:
         linear-gradient(
             rgba(4,25,45,.54),
             rgba(5,60,90,.50)
         ),
         url("twist out building.jpg");
-
     background-size:cover;
     background-position:center;
     transition:background-image .8s ease;
-}
-
-.hero::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:
-        linear-gradient(
-            180deg,
-            rgba(0,0,0,.08),
-            rgba(0,0,0,.24)
-        );
-    pointer-events:none;
 }
 
 .hero-content{
     position:relative;
     z-index:2;
     width:100%;
-    max-width:1000px;
-    padding:65px 18px 95px;
+    max-width:950px;
+    padding:60px 18px 95px;
 }
 
 .hero-subtitle{
+    color:#b9edff;
     font-size:13px;
     letter-spacing:2px;
-    color:#b9edff;
     font-weight:bold;
     margin-bottom:14px;
-    transition:.2s;
 }
 
 .hero h1{
-    font-size:clamp(38px,6vw,68px);
+    font-size:58px;
     line-height:1.08;
     margin-bottom:20px;
-    text-shadow:0 3px 18px rgba(0,0,0,.40);
-    transition:.2s;
+    text-shadow:0 3px 18px rgba(0,0,0,.4);
 }
 
 .hero-text{
@@ -267,7 +240,6 @@ nav a:hover{
     margin:0 auto 28px;
     font-size:18px;
     color:#f4fbff;
-    transition:.2s;
 }
 
 .hero-buttons{
@@ -285,11 +257,6 @@ nav a:hover{
     padding:13px 25px;
     border-radius:35px;
     font-weight:bold;
-    transition:.25s;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
 }
 
 .call-btn{
@@ -321,12 +288,10 @@ nav a:hover{
 
 .hero-dot.active{
     background:#fff;
-    transform:scale(1.25);
+    transform:scale(1.2);
 }
 
-/* =========================================================
-   SECTIONS
-========================================================= */
+/* SECTIONS */
 
 .section{
     padding:75px 6%;
@@ -351,9 +316,9 @@ nav a:hover{
 
 .section-heading h2{
     margin-top:7px;
-    font-size:clamp(29px,4vw,42px);
-    line-height:1.2;
+    font-size:42px;
     color:#10203a;
+    line-height:1.2;
 }
 
 .heading-line{
@@ -364,9 +329,7 @@ nav a:hover{
     border-radius:10px;
 }
 
-/* =========================================================
-   ABOUT
-========================================================= */
+/* ABOUT */
 
 .about{
     background:#fff;
@@ -410,15 +373,8 @@ nav a:hover{
     display:flex;
     flex-direction:column;
     justify-content:center;
-    background:
-        linear-gradient(
-            135deg,
-            #dff7ff,
-            #eef6ff
-        );
-    box-shadow:
-        0 20px 50px
-        rgba(20,70,100,.12);
+    background:linear-gradient(135deg,#dff7ff,#eef6ff);
+    box-shadow:0 20px 50px rgba(20,70,100,.12);
 }
 
 .about-symbol{
@@ -432,17 +388,13 @@ nav a:hover{
     font-size:24px;
 }
 
-/* =========================================================
-   SERVICES
-========================================================= */
+/* SERVICES */
 
 .services{
     background:#f4f9fc;
 }
 
 .services-grid{
-    max-width:1200px;
-    margin:auto;
     display:grid;
     grid-template-columns:repeat(3,minmax(0,1fr));
     gap:22px;
@@ -454,11 +406,6 @@ nav a:hover{
     border-radius:18px;
     border:1px solid #e4eef5;
     box-shadow:0 10px 35px rgba(20,60,90,.08);
-    transition:.25s;
-}
-
-.service:hover{
-    transform:translateY(-6px);
 }
 
 .service-icon{
@@ -476,7 +423,6 @@ nav a:hover{
 
 .service h3{
     color:#183556;
-    line-height:1.3;
     margin-bottom:8px;
 }
 
@@ -484,9 +430,7 @@ nav a:hover{
     color:#697586;
 }
 
-/* =========================================================
-   GALLERY
-========================================================= */
+/* GALLERY */
 
 .gallery{
     background:#fff;
@@ -536,16 +480,13 @@ nav a:hover{
     color:#fff;
     font-size:14px;
     font-weight:bold;
-    background:
-        linear-gradient(
-            transparent,
-            rgba(0,0,0,.86)
-        );
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.86)
+    );
 }
 
-/* =========================================================
-   VIDEOS
-========================================================= */
+/* VIDEOS */
 
 .videos{
     background:#f4f9fc;
@@ -561,17 +502,14 @@ nav a:hover{
     background:#10233d;
     border-radius:18px;
     overflow:hidden;
-    box-shadow:
-        0 12px 35px
-        rgba(10,30,50,.15);
 }
 
 .video-card video{
     width:100%;
     display:block;
-    background:#071525;
     aspect-ratio:16/9;
     object-fit:cover;
+    background:#071525;
 }
 
 .video-card h3{
@@ -579,9 +517,7 @@ nav a:hover{
     padding:13px 16px;
 }
 
-/* =========================================================
-   WHY
-========================================================= */
+/* WHY */
 
 .why{
     background:#10233d;
@@ -621,13 +557,7 @@ nav a:hover{
     color:#bdc9d7;
 }
 
-/* =========================================================
-   CONTACT
-========================================================= */
-
-.contact{
-    background:#fff;
-}
+/* CONTACT */
 
 .contact-grid{
     max-width:1100px;
@@ -639,7 +569,6 @@ nav a:hover{
 
 .contact-info h3{
     font-size:28px;
-    line-height:1.25;
     margin-bottom:12px;
 }
 
@@ -679,7 +608,6 @@ nav a:hover{
 .contact-item strong{
     color:#126e9c;
     font-weight:bold;
-    word-break:break-word;
 }
 
 .contact-card{
@@ -687,16 +615,6 @@ nav a:hover{
     padding:30px;
     border-radius:20px;
     border:1px solid #e0edf4;
-}
-
-.contact-card h3{
-    font-size:26px;
-    margin-bottom:5px;
-}
-
-.contact-card>p{
-    color:#697586;
-    margin-bottom:20px;
 }
 
 form{
@@ -712,7 +630,6 @@ form textarea{
     border-radius:10px;
     padding:13px;
     font-size:15px;
-    outline:none;
     background:#fff;
 }
 
@@ -722,14 +639,11 @@ form button{
     padding:14px;
     background:#087cac;
     color:#fff;
-    font-size:15px;
     font-weight:bold;
     cursor:pointer;
 }
 
-/* =========================================================
-   INSTAGRAM
-========================================================= */
+/* INSTAGRAM */
 
 .instagram{
     background:#f4f9fc;
@@ -742,9 +656,7 @@ form button{
     border-radius:20px;
     text-align:center;
     background:#fff;
-    box-shadow:
-        0 10px 35px
-        rgba(20,60,90,.08);
+    box-shadow:0 10px 35px rgba(20,60,90,.08);
 }
 
 .instagram-box p{
@@ -761,9 +673,7 @@ form button{
     font-weight:bold;
 }
 
-/* =========================================================
-   FOOTER
-========================================================= */
+/* FOOTER */
 
 footer{
     background:#081426;
@@ -788,32 +698,30 @@ footer p{
     color:#8edfff;
 }
 
-/* =========================================================
-   MOBILE ACTIONS
-========================================================= */
+/* MOBILE */
 
 .mobile-actions{
     display:none;
 }
 
-/* =========================================================
-   ADMIN ACCESS
-========================================================= */
+/* EDITABLE */
 
-/*
-   IMPORTANT:
-   The Admin launcher is HIDDEN on the normal public URL.
+.editable{
+    outline:none;
+}
 
-   Open:
-   ?admin=1
+body.admin-mode .editable{
+    outline:2px dashed rgba(8,124,172,.45);
+    outline-offset:4px;
+    cursor:text;
+}
 
-   to reveal it.
-*/
+/* ADMIN LAUNCHER */
 
 .admin-launcher{
     display:none;
     position:fixed;
-    left:14px;
+    left:12px;
     bottom:18px;
     z-index:6000;
     border:0;
@@ -823,53 +731,28 @@ footer p{
     color:#fff;
     font-weight:bold;
     cursor:pointer;
-    box-shadow:
-        0 5px 20px
-        rgba(0,0,0,.25);
 }
 
-body.admin-link-visible .admin-launcher{
+body.admin-link .admin-launcher{
     display:block;
 }
 
-/* =========================================================
-   ADMIN PANEL
-========================================================= */
+/* ADMIN PANEL */
 
 .admin-panel{
     display:none;
-
     position:fixed;
-
-    top:65px;
-
+    top:62px;
     right:12px;
-
-    width:min(
-        500px,
-        calc(100vw - 24px)
-    );
-
-    max-height:
-        calc(100vh - 78px);
-
+    width:min(500px,calc(100vw - 24px));
+    max-height:calc(100vh - 74px);
     overflow-y:auto;
-
     z-index:5500;
-
     background:#fff;
-
     border-radius:18px;
-
     padding:18px;
-
-    box-shadow:
-        0 20px 70px
-        rgba(0,0,0,.30);
-
-    border:
-        1px solid
-        #dce8ef;
+    box-shadow:0 20px 70px rgba(0,0,0,.3);
+    border:1px solid #dce8ef;
 }
 
 body.admin-mode .admin-panel{
@@ -878,28 +761,22 @@ body.admin-mode .admin-panel{
 
 .admin-panel h2{
     color:#10233d;
-    margin-bottom:5px;
 }
 
 .admin-panel h3{
     color:#126e9c;
-    margin-top:17px;
-    margin-bottom:7px;
+    margin-top:16px;
+    margin-bottom:8px;
 }
 
 .admin-note{
     color:#697586;
     font-size:13px;
-    margin-bottom:8px;
 }
 
 .admin-section{
-    border-top:
-        1px solid
-        #e3ebf0;
-
+    border-top:1px solid #e3ebf0;
     padding-top:13px;
-
     margin-top:13px;
 }
 
@@ -914,77 +791,41 @@ body.admin-mode .admin-panel{
     font-weight:bold;
 }
 
-.admin-panel button:hover{
-    background:#087cac;
-}
-
-.admin-panel button.success{
+.admin-panel .success{
     background:#18864b;
 }
 
-.admin-panel button.danger{
+.admin-panel .danger{
     background:#b3261e;
 }
 
-.admin-panel button.gray{
-    background:#5f6b7a;
-}
-
 .admin-panel input[type="password"],
-.admin-panel input[type="text"],
-.admin-panel input[type="file"],
-.admin-panel select{
+.admin-panel input[type="file"]{
     width:100%;
     padding:10px;
     margin:5px 0;
-    border:
-        1px solid
-        #d5e1e8;
+    border:1px solid #d5e1e8;
     border-radius:9px;
-    background:#fff;
-}
-
-.admin-panel input[type="range"]{
-    width:100%;
 }
 
 .admin-status{
     padding:10px;
-    border-radius:8px;
+    margin-top:9px;
     background:#edf8fc;
     color:#126e9c;
-    font-size:13px;
-    margin-top:8px;
-}
-
-.admin-warning{
-    background:#fff4d6;
-    color:#805b00;
-    border:
-        1px solid
-        #efd98d;
-    border-radius:10px;
-    padding:10px;
-    font-size:12px;
-    margin:9px 0;
-}
-
-.upload-status{
-    padding:10px;
     border-radius:8px;
-    background:#f1f5f9;
-    color:#334155;
     font-size:13px;
-    margin-top:10px;
     white-space:pre-wrap;
 }
 
-.control-row{
-    display:grid;
-    grid-template-columns:
-        1fr
-        1fr;
-    gap:9px;
+.admin-warning{
+    padding:10px;
+    margin-top:8px;
+    background:#fff4d6;
+    color:#805b00;
+    border:1px solid #efd98d;
+    border-radius:8px;
+    font-size:12px;
 }
 
 .check-row{
@@ -992,7 +833,6 @@ body.admin-mode .admin-panel{
     align-items:center;
     gap:8px;
     margin:8px 0;
-    color:#26374a;
     font-size:14px;
 }
 
@@ -1001,48 +841,30 @@ body.admin-mode .admin-panel{
     height:18px;
 }
 
-.size-label{
+.size-row{
+    margin-top:8px;
+}
+
+.size-row div{
     display:flex;
     justify-content:space-between;
-    color:#526174;
     font-size:12px;
-    margin-top:6px;
-}
-
-.edit-guide{
-    background:#f4f9fc;
-    border-radius:10px;
-    padding:11px;
-    font-size:13px;
     color:#526174;
 }
 
-/* =========================================================
-   EDITABLE
-========================================================= */
-
-.editable{
-    outline:none;
+.size-row input{
+    width:100%;
 }
 
-body.admin-mode .editable{
-    outline:
-        2px dashed
-        rgba(8,124,172,.45);
-
-    outline-offset:4px;
-
-    cursor:text;
+.edit-help{
+    background:#f4f9fc;
+    padding:10px;
+    border-radius:8px;
+    color:#526174;
+    font-size:13px;
 }
 
-body.admin-mode .editable:hover{
-    background:
-        rgba(8,124,172,.08);
-}
-
-/* =========================================================
-   LOGIN
-========================================================= */
+/* LOGIN */
 
 .login-overlay{
     display:none;
@@ -1060,47 +882,31 @@ body.admin-mode .editable:hover{
 }
 
 .login-box{
-    width:min(420px,100%);
+    width:min(400px,100%);
     background:#fff;
+    padding:28px;
     border-radius:18px;
-    padding:30px;
-    box-shadow:
-        0 25px 80px
-        rgba(0,0,0,.35);
     text-align:center;
-}
-
-.login-box h2{
-    color:#10233d;
-    margin-bottom:8px;
-}
-
-.login-box p{
-    color:#697586;
-    font-size:14px;
-    margin-bottom:20px;
 }
 
 .login-box input{
     width:100%;
     padding:13px;
-    border:
-        1px solid
-        #d5e1e8;
+    margin:10px 0;
+    border:1px solid #d5e1e8;
     border-radius:9px;
-    margin-bottom:12px;
 }
 
 .login-box button{
     width:100%;
     border:0;
     padding:13px;
+    margin-top:7px;
     border-radius:9px;
     background:#087cac;
     color:#fff;
     font-weight:bold;
     cursor:pointer;
-    margin-top:6px;
 }
 
 .login-box .cancel{
@@ -1108,9 +914,7 @@ body.admin-mode .editable:hover{
     color:#243447;
 }
 
-/* =========================================================
-   LIGHTBOX
-========================================================= */
+/* LIGHTBOX */
 
 .lightbox{
     display:none;
@@ -1120,7 +924,6 @@ body.admin-mode .editable:hover{
     background:rgba(0,0,0,.9);
     align-items:center;
     justify-content:center;
-    padding:25px;
 }
 
 .lightbox.active{
@@ -1131,36 +934,20 @@ body.admin-mode .editable:hover{
     max-width:95vw;
     max-height:90vh;
     object-fit:contain;
-    border-radius:8px;
 }
 
 .lightbox-close{
     position:absolute;
-    top:15px;
-    right:25px;
+    top:12px;
+    right:24px;
     color:#fff;
     font-size:42px;
     cursor:pointer;
 }
 
-/* =========================================================
-   RTL
-========================================================= */
+/* RTL */
 
 html[dir="rtl"] body{
-    text-align:right;
-}
-
-html[dir="rtl"] nav{
-    direction:rtl;
-}
-
-html[dir="rtl"] .nav-container{
-    direction:rtl;
-}
-
-html[dir="rtl"] input,
-html[dir="rtl"] textarea{
     text-align:right;
 }
 
@@ -1169,7 +956,7 @@ html[dir="rtl"] .contact-item{
 }
 
 html[dir="rtl"] .admin-launcher{
-    right:14px;
+    right:12px;
     left:auto;
 }
 
@@ -1179,13 +966,11 @@ html[dir="rtl"] .admin-panel{
 }
 
 html[dir="rtl"] .lightbox-close{
-    left:25px;
+    left:24px;
     right:auto;
 }
 
-/* =========================================================
-   TABLET
-========================================================= */
+/* TABLET */
 
 @media(max-width:950px){
 
@@ -1203,10 +988,6 @@ html[dir="rtl"] .lightbox-close{
         padding:18px;
         flex-direction:column;
         gap:15px;
-        text-align:center;
-        box-shadow:
-            0 10px 25px
-            rgba(0,0,0,.20);
     }
 
     nav.mobile-open{
@@ -1219,18 +1000,15 @@ html[dir="rtl"] .lightbox-close{
     }
 
     .services-grid{
-        grid-template-columns:
-            repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
     }
 
     .gallery-grid{
-        grid-template-columns:
-            repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
     }
 
     .why-grid{
-        grid-template-columns:
-            repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
     }
 
     .video-grid{
@@ -1238,19 +1016,13 @@ html[dir="rtl"] .lightbox-close{
     }
 }
 
-/* =========================================================
-   PHONE
-========================================================= */
+/* PHONE */
 
 @media(max-width:600px){
 
     body{
         font-size:15px;
-        padding-bottom:72px;
-    }
-
-    header{
-        padding:8px 14px;
+        padding-bottom:70px;
     }
 
     .logo{
@@ -1266,24 +1038,11 @@ html[dir="rtl"] .lightbox-close{
     }
 
     .hero-content{
-        padding:
-            50px
-            15px
-            95px;
-    }
-
-    .hero-subtitle{
-        font-size:10px;
-        letter-spacing:1.4px;
+        padding:50px 15px 95px;
     }
 
     .hero h1{
-        font-size:
-            clamp(
-                34px,
-                10vw,
-                44px
-            );
+        font-size:42px;
     }
 
     .hero-text{
@@ -1292,18 +1051,20 @@ html[dir="rtl"] .lightbox-close{
 
     .hero-buttons{
         flex-direction:column;
-        align-items:stretch;
         max-width:320px;
         margin:auto;
     }
 
     .btn{
         width:100%;
-        min-height:52px;
     }
 
     .section{
         padding:55px 5%;
+    }
+
+    .section-heading h2{
+        font-size:30px;
     }
 
     .services-grid,
@@ -1320,10 +1081,6 @@ html[dir="rtl"] .lightbox-close{
         grid-template-columns:1fr;
     }
 
-    .contact-card{
-        padding:22px;
-    }
-
     .floating-whatsapp{
         display:none;
     }
@@ -1336,32 +1093,18 @@ html[dir="rtl"] .lightbox-close{
         z-index:3000;
         display:flex;
         gap:8px;
-        padding:
-            8px
-            10px
-            calc(
-                8px +
-                env(
-                    safe-area-inset-bottom
-                )
-            );
-        background:
-            rgba(
-                8,
-                20,
-                38,
-                .97
-            );
+        padding:8px 10px;
+        background:rgba(8,20,38,.97);
     }
 
     .mobile-actions a{
         flex:1;
         min-height:48px;
-        border-radius:12px;
         display:flex;
         align-items:center;
         justify-content:center;
         color:#fff;
+        border-radius:12px;
         font-weight:bold;
     }
 
@@ -1374,40 +1117,10 @@ html[dir="rtl"] .lightbox-close{
     }
 
     .admin-panel{
-        top:62px;
+        width:calc(100vw - 16px);
         right:8px;
-        width:
-            calc(
-                100vw - 16px
-            );
-        max-height:
-            calc(
-                100vh - 72px
-            );
-        padding:15px;
-    }
-
-    .control-row{
-        grid-template-columns:1fr;
-    }
-}
-
-@media(max-width:380px){
-
-    .hero h1{
-        font-size:34px;
-    }
-
-    .hero-text{
-        font-size:15px;
-    }
-
-    .section-heading h2{
-        font-size:27px;
-    }
-
-    .gallery-card{
-        height:220px;
+        top:60px;
+        max-height:calc(100vh - 70px);
     }
 }
 
@@ -1421,65 +1134,34 @@ html[dir="rtl"] .lightbox-close{
 
 <div class="nav-container">
 
-<a
-href="#home"
-class="logo">
-
+<a href="#home" class="logo">
 Design Glass & Mirror
-
-<span>
-KUWAIT
-</span>
-
+<span>KUWAIT</span>
 </a>
 
 <button
 class="menu-toggle"
 onclick="toggleMenu()"
-aria-expanded="false"
-aria-label="Open menu">
-
+aria-label="Open menu"
+aria-expanded="false">
 ☰
-
 </button>
 
 <nav id="mainNav">
 
-<a href="#home">
-Home
-</a>
-
-<a href="#about">
-About
-</a>
-
-<a href="#services">
-Services
-</a>
-
-<a href="#gallery">
-Gallery
-</a>
-
-<a href="#videos">
-Videos
-</a>
-
-<a href="#why">
-Why Us
-</a>
-
-<a href="#contact">
-Contact
-</a>
+<a href="#home" data-i18n="navHome">Home</a>
+<a href="#about" data-i18n="navAbout">About</a>
+<a href="#services" data-i18n="navServices">Services</a>
+<a href="#gallery" data-i18n="navGallery">Gallery</a>
+<a href="#videos" data-i18n="navVideos">Videos</a>
+<a href="#why" data-i18n="navWhy">Why Us</a>
+<a href="#contact" data-i18n="navContact">Contact</a>
 
 <button
 class="language-btn"
 onclick="toggleLanguage()"
 id="languageButton">
-
 العربية
-
 </button>
 
 </nav>
@@ -1488,98 +1170,76 @@ id="languageButton">
 
 </header>
 
-<!-- =========================================================
-     HERO
-========================================================= -->
+<!-- HERO -->
 
-<section
-id="home"
-class="hero">
+<section id="home" class="hero">
 
 <div class="hero-content">
 
 <div
 id="heroSubtitle"
 class="hero-subtitle editable"
-data-key="heroSubtitle">
-
+data-key="heroSubtitle"
+data-i18n-edit="true">
 PROFESSIONAL GLASS & MIRROR WORKS IN KUWAIT
-
 </div>
 
 <h1
 id="heroTitle"
 class="editable"
 data-key="heroTitle">
-
 Design Glass & Mirror Kuwait
-
 </h1>
 
 <p
 id="heroText"
 class="hero-text editable"
 data-key="heroText">
-
 Professional glass, mirrors, tempered glass,
 laminated glass and double glazing for homes,
 offices, shops and commercial projects in Kuwait.
-
 </p>
 
 <div class="hero-buttons">
 
 <a
 href="tel:+96555507290"
-class="btn call-btn">
-
+class="btn call-btn"
+data-i18n="callNow">
 📞 Call Now
-
 </a>
 
 <a
 href="https://wa.me/96555507290"
 target="_blank"
 rel="noopener"
-class="btn whatsapp-btn">
-
+class="btn whatsapp-btn"
+data-i18n="whatsapp">
 💬 WhatsApp
-
 </a>
 
 </div>
 
 </div>
 
-<div
-id="heroDots"
-class="hero-dots">
-</div>
+<div id="heroDots" class="hero-dots"></div>
 
 </section>
 
-<!-- =========================================================
-     ABOUT
-========================================================= -->
+<!-- ABOUT -->
 
-<section
-id="about"
-class="section about">
+<section id="about" class="section about">
 
 <div class="section-inner">
 
 <div class="section-heading">
 
-<small>
+<small data-i18n="aboutSmall">
 ABOUT US
 </small>
 
-<h2
-class="editable"
-data-key="aboutTitle">
-
+<h2 class="editable" data-key="aboutTitle">
 Design Glass & Mirror Kuwait
-
 </h2>
 
 <div class="heading-line"></div>
@@ -1590,58 +1250,34 @@ Design Glass & Mirror Kuwait
 
 <div class="about-text">
 
-<h3
-class="editable"
-data-key="aboutHeading">
-
+<h3 class="editable" data-key="aboutHeading">
 Professional Glass and Mirror Company in Kuwait
-
 </h3>
 
-<p
-class="editable"
-data-key="aboutText">
-
+<p class="editable" data-key="aboutText">
 Design Glass & Mirror provides professional
 glass, mirror, tempered glass, laminated glass,
 double glass, shower glass, glass partitions,
 glass railings, staircase glass, office glass
 and aluminum works in Kuwait.
-
 </p>
 
 <div class="points">
 
-<div
-class="editable"
-data-key="point1">
-
+<div class="editable" data-key="point1">
 ✓ Quality Work
-
 </div>
 
-<div
-class="editable"
-data-key="point2">
-
+<div class="editable" data-key="point2">
 ✓ Modern Designs
-
 </div>
 
-<div
-class="editable"
-data-key="point3">
-
+<div class="editable" data-key="point3">
 ✓ Professional Service
-
 </div>
 
-<div
-class="editable"
-data-key="point4">
-
+<div class="editable" data-key="point4">
 ✓ Kuwait Service
-
 </div>
 
 </div>
@@ -1654,20 +1290,12 @@ data-key="point4">
 ◈
 </div>
 
-<h3
-class="editable"
-data-key="aboutCardTitle">
-
+<h3 class="editable" data-key="aboutCardTitle">
 Glass & Mirror Experts
-
 </h3>
 
-<p
-class="editable"
-data-key="aboutCardText">
-
+<p class="editable" data-key="aboutCardText">
 Tempered • Laminated • Double Glass • Mirrors
-
 </p>
 
 </div>
@@ -1678,28 +1306,20 @@ Tempered • Laminated • Double Glass • Mirrors
 
 </section>
 
-<!-- =========================================================
-     SERVICES
-========================================================= -->
+<!-- SERVICES -->
 
-<section
-id="services"
-class="section services">
+<section id="services" class="section services">
 
 <div class="section-inner">
 
 <div class="section-heading">
 
-<small>
+<small data-i18n="servicesSmall">
 GLASS SERVICES IN KUWAIT
 </small>
 
-<h2
-class="editable"
-data-key="servicesTitle">
-
+<h2 class="editable" data-key="servicesTitle">
 Glass & Mirror Services
-
 </h2>
 
 <div class="heading-line"></div>
@@ -1710,150 +1330,90 @@ Glass & Mirror Services
 
 <div class="service">
 
-<div class="service-icon">
-◇
-</div>
+<div class="service-icon">◇</div>
 
-<h3
-class="editable"
-data-key="service1Title">
-
+<h3 class="editable" data-key="service1Title">
 Tempered Glass
-
 </h3>
 
-<p
-class="editable"
-data-key="service1Text">
-
+<p class="editable" data-key="service1Text">
 Tempered and toughened glass for doors,
 partitions, stairs, shops and offices.
-
 </p>
 
 </div>
 
 <div class="service">
 
-<div class="service-icon">
-◈
-</div>
+<div class="service-icon">◈</div>
 
-<h3
-class="editable"
-data-key="service2Title">
-
+<h3 class="editable" data-key="service2Title">
 Laminated Glass
-
 </h3>
 
-<p
-class="editable"
-data-key="service2Text">
-
+<p class="editable" data-key="service2Text">
 Laminated safety glass for projects
 requiring additional protection.
-
 </p>
 
 </div>
 
 <div class="service">
 
-<div class="service-icon">
-▣
-</div>
+<div class="service-icon">▣</div>
 
-<h3
-class="editable"
-data-key="service3Title">
-
+<h3 class="editable" data-key="service3Title">
 Double Glass
-
 </h3>
 
-<p
-class="editable"
-data-key="service3Text">
-
+<p class="editable" data-key="service3Text">
 Double glass and double glazing solutions
 for homes, offices and buildings.
-
 </p>
 
 </div>
 
 <div class="service">
 
-<div class="service-icon">
-▤
-</div>
+<div class="service-icon">▤</div>
 
-<h3
-class="editable"
-data-key="service4Title">
-
+<h3 class="editable" data-key="service4Title">
 Shower Glass
-
 </h3>
 
-<p
-class="editable"
-data-key="service4Text">
-
+<p class="editable" data-key="service4Text">
 Modern shower glass doors and bathroom
 glass solutions in Kuwait.
-
 </p>
 
 </div>
 
 <div class="service">
 
-<div class="service-icon">
-║
-</div>
+<div class="service-icon">║</div>
 
-<h3
-class="editable"
-data-key="service5Title">
-
+<h3 class="editable" data-key="service5Title">
 Glass Partitions & Railings
-
 </h3>
 
-<p
-class="editable"
-data-key="service5Text">
-
+<p class="editable" data-key="service5Text">
 Glass partitions and railings for
 offices, homes, stairs and balconies.
-
 </p>
 
 </div>
 
 <div class="service">
 
-<div class="service-icon">
-▥
-</div>
+<div class="service-icon">▥</div>
 
-<h3
-class="editable"
-data-key="service6Title">
-
+<h3 class="editable" data-key="service6Title">
 Custom Mirrors & Aluminum
-
 </h3>
 
-<p
-class="editable"
-data-key="service6Text">
-
+<p class="editable" data-key="service6Text">
 Custom mirrors, LED mirrors and
 aluminum works.
-
 </p>
 
 </div>
@@ -1864,28 +1424,20 @@ aluminum works.
 
 </section>
 
-<!-- =========================================================
-     GALLERY
-========================================================= -->
+<!-- GALLERY -->
 
-<section
-id="gallery"
-class="section gallery">
+<section id="gallery" class="section gallery">
 
 <div class="section-inner">
 
 <div class="section-heading">
 
-<small>
+<small data-i18n="gallerySmall">
 OUR WORK
 </small>
 
-<h2
-class="editable"
-data-key="galleryTitle">
-
+<h2 class="editable" data-key="galleryTitle">
 Glass & Mirror Project Gallery
-
 </h2>
 
 <div class="heading-line"></div>
@@ -1902,74 +1454,52 @@ stairs, doors and interior projects in Kuwait.
 
 </p>
 
-<div
-id="galleryGrid"
-class="gallery-grid">
-</div>
+<div id="galleryGrid" class="gallery-grid"></div>
 
 </div>
 
 </section>
 
-<!-- =========================================================
-     VIDEOS
-========================================================= -->
+<!-- VIDEOS -->
 
-<section
-id="videos"
-class="section videos">
+<section id="videos" class="section videos">
 
 <div class="section-inner">
 
 <div class="section-heading">
 
-<small>
+<small data-i18n="videosSmall">
 OUR PROJECTS
 </small>
 
-<h2
-class="editable"
-data-key="videosTitle">
-
+<h2 class="editable" data-key="videosTitle">
 Project Videos
-
 </h2>
 
 <div class="heading-line"></div>
 
 </div>
 
-<div
-id="videoGrid"
-class="video-grid">
-</div>
+<div id="videoGrid" class="video-grid"></div>
 
 </div>
 
 </section>
 
-<!-- =========================================================
-     WHY
-========================================================= -->
+<!-- WHY -->
 
-<section
-id="why"
-class="section why">
+<section id="why" class="section why">
 
 <div class="section-inner">
 
 <div class="section-heading">
 
-<small>
+<small data-i18n="whySmall">
 WHY CHOOSE US
 </small>
 
-<h2
-class="editable"
-data-key="whyTitle">
-
+<h2 class="editable" data-key="whyTitle">
 Why Design Glass & Mirror?
-
 </h2>
 
 <div class="heading-line"></div>
@@ -1980,96 +1510,56 @@ Why Design Glass & Mirror?
 
 <div class="why-item">
 
-<strong>
-01
-</strong>
+<strong>01</strong>
 
-<h3
-class="editable"
-data-key="why1Title">
-
+<h3 class="editable" data-key="why1Title">
 Professional Work
-
 </h3>
 
-<p
-class="editable"
-data-key="why1Text">
-
+<p class="editable" data-key="why1Text">
 Clean and professional finishing.
-
 </p>
 
 </div>
 
 <div class="why-item">
 
-<strong>
-02
-</strong>
+<strong>02</strong>
 
-<h3
-class="editable"
-data-key="why2Title">
-
+<h3 class="editable" data-key="why2Title">
 Modern Designs
-
 </h3>
 
-<p
-class="editable"
-data-key="why2Text">
-
+<p class="editable" data-key="why2Text">
 Beautiful modern solutions.
-
 </p>
 
 </div>
 
 <div class="why-item">
 
-<strong>
-03
-</strong>
+<strong>03</strong>
 
-<h3
-class="editable"
-data-key="why3Title">
-
+<h3 class="editable" data-key="why3Title">
 Quality Materials
-
 </h3>
 
-<p
-class="editable"
-data-key="why3Text">
-
+<p class="editable" data-key="why3Text">
 Tempered, laminated and double glass.
-
 </p>
 
 </div>
 
 <div class="why-item">
 
-<strong>
-04
-</strong>
+<strong>04</strong>
 
-<h3
-class="editable"
-data-key="why4Title">
-
+<h3 class="editable" data-key="why4Title">
 Customer Service
-
 </h3>
 
-<p
-class="editable"
-data-key="why4Text">
-
+<p class="editable" data-key="why4Text">
 We work closely with our customers.
-
 </p>
 
 </div>
@@ -2080,28 +1570,20 @@ We work closely with our customers.
 
 </section>
 
-<!-- =========================================================
-     CONTACT
-========================================================= -->
+<!-- CONTACT -->
 
-<section
-id="contact"
-class="section contact">
+<section id="contact" class="section contact">
 
 <div class="section-inner">
 
 <div class="section-heading">
 
-<small>
+<small data-i18n="contactSmall">
 CONTACT US
 </small>
 
-<h2
-class="editable"
-data-key="contactHeading">
-
+<h2 class="editable" data-key="contactHeading">
 Contact Design Glass & Mirror Kuwait
-
 </h2>
 
 <div class="heading-line"></div>
@@ -2112,31 +1594,25 @@ Contact Design Glass & Mirror Kuwait
 
 <div class="contact-info">
 
-<h3>
+<h3 data-i18n="contactCompany">
 Glass & Mirror Company in Kuwait
 </h3>
 
-<p
-class="editable"
-data-key="contactText">
-
+<p class="editable" data-key="contactText">
 Contact us for tempered glass,
 toughened glass, laminated glass,
 double glass, shower glass,
 partitions, railings, staircase glass,
 mirrors, office glass and aluminum works.
-
 </p>
 
 <div class="contact-item">
 
-<div class="contact-icon">
-📞
-</div>
+<div class="contact-icon">📞</div>
 
 <div>
 
-<small>
+<small data-i18n="phone">
 PHONE
 </small>
 
@@ -2150,23 +1626,20 @@ PHONE
 
 <div class="contact-item">
 
-<div class="contact-icon">
-💬
-</div>
+<div class="contact-icon">💬</div>
 
 <div>
 
-<small>
+<small data-i18n="whatsappSmall">
 WHATSAPP
 </small>
 
 <a
 href="https://wa.me/96555507290"
 target="_blank"
-rel="noopener">
-
+rel="noopener"
+data-i18n="chatWhatsApp">
 Chat on WhatsApp
-
 </a>
 
 </div>
@@ -2175,20 +1648,16 @@ Chat on WhatsApp
 
 <div class="contact-item">
 
-<div class="contact-icon">
-✉
-</div>
+<div class="contact-icon">✉</div>
 
 <div>
 
-<small>
+<small data-i18n="email">
 EMAIL
 </small>
 
 <a href="mailto:designglassmirror@gmail.com">
-
 designglassmirror@gmail.com
-
 </a>
 
 </div>
@@ -2197,17 +1666,15 @@ designglassmirror@gmail.com
 
 <div class="contact-item">
 
-<div class="contact-icon">
-📍
-</div>
+<div class="contact-icon">📍</div>
 
 <div>
 
-<small>
+<small data-i18n="location">
 LOCATION
 </small>
 
-<strong>
+<strong data-i18n="kuwait">
 Kuwait
 </strong>
 
@@ -2219,20 +1686,20 @@ Kuwait
 
 <div class="contact-card">
 
-<h3>
+<h3 data-i18n="quoteTitle">
 Request a Quote
 </h3>
 
-<p>
+<p data-i18n="quoteText">
 Tell us about your project.
 </p>
 
-<form
-onsubmit="sendWhatsApp(event)">
+<form onsubmit="sendWhatsApp(event)">
 
 <input
 type="text"
 id="customerName"
+data-placeholder="namePlaceholder"
 placeholder="Your Name"
 required
 >
@@ -2240,21 +1707,23 @@ required
 <input
 type="tel"
 id="customerPhone"
+data-placeholder="phonePlaceholder"
 placeholder="Phone Number"
 required
 >
 
 <textarea
 id="customerMessage"
+data-placeholder="messagePlaceholder"
 rows="5"
 placeholder="Tell us about your project..."
 required>
 </textarea>
 
-<button type="submit">
-
+<button
+type="submit"
+data-i18n="sendRequest">
 Send Request on WhatsApp
-
 </button>
 
 </form>
@@ -2267,22 +1736,19 @@ Send Request on WhatsApp
 
 </section>
 
-<!-- =========================================================
-     INSTAGRAM
-========================================================= -->
+<!-- INSTAGRAM -->
 
-<section
-class="section instagram">
+<section class="section instagram">
 
 <div class="section-inner">
 
 <div class="section-heading">
 
-<small>
+<small data-i18n="instagramSmall">
 FOLLOW OUR WORK
 </small>
 
-<h2>
+<h2 data-i18n="instagramTitle">
 Instagram
 </h2>
 
@@ -2292,7 +1758,7 @@ Instagram
 
 <div class="instagram-box">
 
-<p>
+<p data-i18n="instagramText">
 See more glass and mirror projects,
 designs and updates on Instagram.
 </p>
@@ -2301,10 +1767,9 @@ designs and updates on Instagram.
 href="https://www.instagram.com/design_glass_mirror/"
 target="_blank"
 rel="noopener"
-class="instagram-button">
-
+class="instagram-button"
+data-i18n="instagramButton">
 📷 Follow Design Glass & Mirror
-
 </a>
 
 </div>
@@ -2313,131 +1778,117 @@ class="instagram-button">
 
 </section>
 
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
 <footer>
 
 <h3>
 Design Glass & Mirror
 </h3>
 
-<p>
+<p data-i18n="footerText">
 Glass • Mirror • Tempered • Laminated • Double Glass • Kuwait
 </p>
 
 <div class="footer-links">
 
-<a href="tel:+96555507290">
+<a href="tel:+96555507290" data-i18n="footerCall">
 📞 Call
-</a>
-
-<a
-href="https://wa.me/96555507290"
-target="_blank"
-rel="noopener">
-
-💬 WhatsApp
-
-</a>
-
-<a href="mailto:designglassmirror@gmail.com">
-✉ Email
-</a>
-
-<a
-href="https://www.instagram.com/design_glass_mirror/"
-target="_blank"
-rel="noopener">
-
-📷 Instagram
-
-</a>
-
-</div>
-
-<p>
-© 2026 Design Glass & Mirror Kuwait.
-All Rights Reserved.
-</p>
-
-</footer>
-
-<!-- =========================================================
-     MOBILE ACTIONS
-========================================================= -->
-
-<div class="mobile-actions">
-
-<a
-href="tel:+96555507290"
-class="mobile-call">
-
-📞 Call
-
 </a>
 
 <a
 href="https://wa.me/96555507290"
 target="_blank"
 rel="noopener"
-class="mobile-whatsapp">
-
+data-i18n="footerWhatsApp">
 💬 WhatsApp
+</a>
 
+<a
+href="mailto:designglassmirror@gmail.com"
+data-i18n="footerEmail">
+✉ Email
+</a>
+
+<a
+href="https://www.instagram.com/design_glass_mirror/"
+target="_blank"
+rel="noopener"
+data-i18n="footerInstagram">
+📷 Instagram
 </a>
 
 </div>
 
-<!-- =========================================================
-     ADMIN LAUNCHER
-========================================================= -->
+<p>
+© 2026 Design Glass & Mirror Kuwait.
+<span data-i18n="rights">
+All Rights Reserved.
+</span>
+</p>
+
+</footer>
+
+<!-- MOBILE ACTIONS -->
+
+<div class="mobile-actions">
+
+<a
+href="tel:+96555507290"
+class="mobile-call"
+data-i18n="mobileCall">
+📞 Call
+</a>
+
+<a
+href="https://wa.me/96555507290"
+target="_blank"
+rel="noopener"
+class="mobile-whatsapp"
+data-i18n="mobileWhatsApp">
+💬 WhatsApp
+</a>
+
+</div>
+
+<!-- ADMIN LAUNCHER -->
 
 <button
 id="adminLauncher"
 class="admin-launcher"
 onclick="openLogin()">
-
 🔐 Admin
-
 </button>
 
-<!-- =========================================================
-     ADMIN PANEL
-========================================================= -->
+<!-- ADMIN PANEL -->
 
-<div
-id="adminPanel"
-class="admin-panel">
+<div id="adminPanel" class="admin-panel">
 
 <h2>
 🔐 Easy Website Editor
 </h2>
 
 <p class="admin-note">
-
-Only you should open this page.
-Customers normally will not see Admin.
-
+Only you use this page.
+Customers normally use the public link without admin=1.
 </p>
 
 <div class="admin-warning">
 
-Public website:
-<br>
-https://muhmmadayub-ui.github.io/design-glass-mirror-kuwait/
-
-<br><br>
-
-Your Admin page:
+Private Admin link:
 <br>
 https://muhmmadayub-ui.github.io/design-glass-mirror-kuwait/?admin=1
 
+<br><br>
+
+Public customer link:
+<br>
+https://muhmmadayub-ui.github.io/design-glass-mirror-kuwait/
+
 </div>
 
-<div class="admin-status">
-✓ Admin Mode Active
+<div
+id="adminStatus"
+class="admin-status">
+Ready.
 </div>
 
 <!-- TOKEN -->
@@ -2448,17 +1899,10 @@ https://muhmmadayub-ui.github.io/design-glass-mirror-kuwait/?admin=1
 🔑 GitHub Connection
 </h3>
 
-<p class="admin-note">
-
-Paste your GitHub fine-grained token here.
-Never send it to anyone.
-
-</p>
-
 <input
 type="password"
 id="githubToken"
-placeholder="GitHub token"
+placeholder="Paste your GitHub token"
 autocomplete="off"
 >
 
@@ -2476,139 +1920,105 @@ Remember token on this device
 <button
 class="success"
 onclick="connectGithub()">
-
 🔐 Connect GitHub
-
 </button>
 
 </div>
 
-<!-- HERO TEXT -->
+<!-- HERO SETTINGS -->
 
 <div class="admin-section">
 
 <h3>
-📝 Hero Text
+🖼️ Hero Text — Optional
 </h3>
 
-<div class="edit-guide">
-
-Click the text directly on the website and type what you want.
-
-You can also choose which lines are visible.
-
+<div class="edit-help">
+You can show, hide, or resize each Hero line.
+After changing the text, click Save Text.
 </div>
 
 <label class="check-row">
-
 <input
 type="checkbox"
-id="showHeroSubtitle"
-onchange="previewHeroOptions()"
->
-
-Show small Hero text
-
+id="heroSubtitleVisible">
+Show small text
 </label>
 
 <label class="check-row">
-
 <input
 type="checkbox"
-id="showHeroTitle"
-onchange="previewHeroOptions()"
->
-
-Show big Hero title
-
+id="heroTitleVisible">
+Show big title
 </label>
 
 <label class="check-row">
-
 <input
 type="checkbox"
-id="showHeroText"
-onchange="previewHeroOptions()"
->
-
-Show Hero description
-
+id="heroDescriptionVisible">
+Show description
 </label>
 
-<div class="size-label">
+<div class="size-row">
 
-<span>
-Big title size
-</span>
-
-<span id="heroTitleSizeValue">
-68px
-</span>
-
+<div>
+<span>Big title</span>
+<span id="heroTitleSizeLabel">58px</span>
 </div>
 
 <input
 type="range"
 id="heroTitleSize"
-min="28"
+min="25"
 max="90"
-value="68"
-oninput="previewHeroOptions()"
+value="58"
 >
 
-<div class="size-label">
+</div>
 
-<span>
-Small text size
-</span>
+<div class="size-row">
 
-<span id="heroSubtitleSizeValue">
-13px
-</span>
-
+<div>
+<span>Small text</span>
+<span id="heroSubtitleSizeLabel">13px</span>
 </div>
 
 <input
 type="range"
 id="heroSubtitleSize"
 min="8"
-max="24"
+max="25"
 value="13"
-oninput="previewHeroOptions()"
 >
 
-<div class="size-label">
+</div>
 
-<span>
-Description size
-</span>
+<div class="size-row">
 
-<span id="heroTextSizeValue">
-18px
-</span>
-
+<div>
+<span>Description</span>
+<span id="heroDescriptionSizeLabel">18px</span>
 </div>
 
 <input
 type="range"
-id="heroTextSize"
+id="heroDescriptionSize"
 min="12"
 max="30"
 value="18"
-oninput="previewHeroOptions()"
 >
+
+</div>
 
 <button
 class="success"
 onclick="saveHeroSettings()">
-
 💾 Save Hero Settings
-
 </button>
 
 </div>
 
-<!-- HERO PICTURES -->
+<!-- HERO IMAGES -->
 
 <div class="admin-section">
 
@@ -2617,10 +2027,7 @@ onclick="saveHeroSettings()">
 </h3>
 
 <p class="admin-note">
-
 Choose up to 3 pictures.
-They automatically rotate every 5 seconds.
-
 </p>
 
 <input
@@ -2633,17 +2040,7 @@ multiple
 <button
 class="success"
 onclick="uploadHeroPictures()">
-
 📤 Save Hero Pictures
-
-</button>
-
-<button
-class="gray"
-onclick="resetHeroPictures()">
-
-↺ Use Current Pictures
-
 </button>
 
 </div>
@@ -2653,15 +2050,8 @@ onclick="resetHeroPictures()">
 <div class="admin-section">
 
 <h3>
-📸 Gallery Pictures
+📸 Gallery
 </h3>
-
-<p class="admin-note">
-
-Choose one or more pictures and they will be added
-to the public gallery.
-
-</p>
 
 <input
 type="file"
@@ -2673,9 +2063,7 @@ multiple
 <button
 class="success"
 onclick="uploadGalleryPictures()">
-
 📤 Add Gallery Pictures
-
 </button>
 
 </div>
@@ -2685,14 +2073,8 @@ onclick="uploadGalleryPictures()">
 <div class="admin-section">
 
 <h3>
-🎥 Project Videos
+🎥 Videos
 </h3>
-
-<p class="admin-note">
-
-Choose project videos from your PC or phone.
-
-</p>
 
 <input
 type="file"
@@ -2704,14 +2086,12 @@ multiple
 <button
 class="success"
 onclick="uploadVideos()">
-
 📤 Add Project Videos
-
 </button>
 
 </div>
 
-<!-- GENERAL TEXT -->
+<!-- TEXT -->
 
 <div class="admin-section">
 
@@ -2719,49 +2099,27 @@ onclick="uploadVideos()">
 ✏️ Edit Website Text
 </h3>
 
-<p class="admin-note">
-
-With Admin Mode active, click any outlined text
-on the website, change it, then save it here.
-
-</p>
+<div class="edit-help">
+With Admin mode active, click any outlined text,
+change it, then press Save Text.
+</div>
 
 <button
 class="success"
 onclick="saveAllText()">
-
-💾 Save All Text
-
+💾 Save Text
 </button>
 
 </div>
-
-<!-- CLOSE -->
-
-<div class="admin-section">
 
 <button
 onclick="logoutAdmin()">
-
 🔒 Close Admin
-
 </button>
 
 </div>
 
-<div
-id="adminStatus"
-class="upload-status">
-
-Ready.
-
-</div>
-
-</div>
-
-<!-- =========================================================
-     LOGIN
-========================================================= -->
+<!-- LOGIN -->
 
 <div
 id="loginOverlay"
@@ -2774,7 +2132,7 @@ class="login-overlay">
 </h2>
 
 <p>
-Enter your website Admin password.
+Enter Admin password.
 </p>
 
 <input
@@ -2790,26 +2148,20 @@ loginAdmin();
 
 <button
 onclick="loginAdmin()">
-
 Login & Edit
-
 </button>
 
 <button
 class="cancel"
 onclick="closeLogin()">
-
 Cancel
-
 </button>
 
 </div>
 
 </div>
 
-<!-- =========================================================
-     LIGHTBOX
-========================================================= -->
+<!-- LIGHTBOX -->
 
 <div
 id="lightbox"
@@ -2818,7 +2170,6 @@ onclick="closeLightbox()">
 
 <div
 class="lightbox-close">
-
 ×
 </div>
 
@@ -2834,22 +2185,18 @@ onclick="event.stopPropagation()"
 <script>
 
 /* =========================================================
-   BASIC SETTINGS
+   BASIC
 ========================================================= */
 
 const ADMIN_PASSWORD="1234";
 
-const GITHUB_OWNER=
-    "muhmmadayub-ui";
+const OWNER="muhmmadayub-ui";
 
-const GITHUB_REPO=
-    "design-glass-mirror-kuwait";
+const REPO="design-glass-mirror-kuwait";
 
-const GITHUB_BRANCH=
-    "main";
+const BRANCH="main";
 
-const SETTINGS_FILE=
-    "site-settings.json";
+const SETTINGS_FILE="site-settings.json";
 
 let githubToken="";
 
@@ -2857,51 +2204,35 @@ let arabicMode=false;
 
 let heroIndex=0;
 
-let adminLinkMode=false;
-
 
 /* =========================================================
    DEFAULT SETTINGS
+   These are used until GitHub has saved settings.
 ========================================================= */
 
-let siteSettings={
+let settings={
 
 hero:{
-
-showSubtitle:true,
-
+showSubtitle:false,
 showTitle:true,
-
-showText:true,
-
-titleSize:68,
-
+showDescription:false,
+titleSize:58,
 subtitleSize:13,
-
-textSize:18,
+descriptionSize:18,
 
 images:[
-
 "twist out building.jpg",
-
 "blue glass.avif",
-
 "clear blue pic.jpg"
-
 ]
-
 },
 
 texts:{
-
 en:{},
-
 ar:{}
-
 },
 
 gallery:[
-
 {
 src:"6mm mirror with design LED LIGHT.jpeg",
 caption:{
@@ -2909,7 +2240,6 @@ en:"Custom Mirror & LED Light",
 ar:"مرآة مخصصة مع إضاءة LED"
 }
 },
-
 {
 src:"10mm black glass temper staircas kloudy.jpeg",
 caption:{
@@ -2917,7 +2247,6 @@ en:"Black Tempered Glass Staircase",
 ar:"درج زجاج مقسى أسود"
 }
 },
-
 {
 src:"10mm bowns glass temper shower.jpeg",
 caption:{
@@ -2925,7 +2254,6 @@ en:"Tempered Shower Glass",
 ar:"زجاج دش مقسى"
 }
 },
-
 {
 src:"10mm browns glass temper amood fix.jpeg",
 caption:{
@@ -2933,7 +2261,6 @@ en:"Brown Tempered Glass",
 ar:"زجاج مقسى بني"
 }
 },
-
 {
 src:"10mm browns glass temper staircas.jpeg",
 caption:{
@@ -2941,7 +2268,6 @@ en:"Brown Glass Staircase",
 ar:"درج زجاجي بني"
 }
 },
-
 {
 src:"10mm clear glass temper fix in black spider system.jpeg",
 caption:{
@@ -2949,7 +2275,6 @@ en:"Clear Glass Spider System",
 ar:"زجاج شفاف بنظام سبايدر"
 }
 },
-
 {
 src:"10mm clear glass temper pool.jpeg",
 caption:{
@@ -2957,7 +2282,6 @@ en:"Pool Glass",
 ar:"زجاج المسابح"
 }
 },
-
 {
 src:"10mm clear glass temper shower with golden frame.jpeg",
 caption:{
@@ -2965,7 +2289,6 @@ en:"Shower Glass With Golden Frame",
 ar:"زجاج دش بإطار ذهبي"
 }
 },
-
 {
 src:"10mm clear glass temper sliding door.jpeg",
 caption:{
@@ -2973,7 +2296,6 @@ en:"Sliding Glass Door",
 ar:"باب زجاجي سحاب"
 }
 },
-
 {
 src:"10mm clear glass temper stair with wooden handle.jpeg",
 caption:{
@@ -2981,7 +2303,6 @@ en:"Glass Staircase With Wooden Handle",
 ar:"درج زجاجي بمقبض خشبي"
 }
 },
-
 {
 src:"10mm clear glass temper staircas with wooden handle.jpeg",
 caption:{
@@ -2989,7 +2310,6 @@ en:"Clear Glass Staircase",
 ar:"درج زجاجي شفاف"
 }
 },
-
 {
 src:"10mm clear glass temper swiming pool.jpeg",
 caption:{
@@ -2997,7 +2317,6 @@ en:"Swimming Pool Glass",
 ar:"زجاج المسابح"
 }
 },
-
 {
 src:"10mm clear glass temper with normal doors shop.jpeg",
 caption:{
@@ -3005,7 +2324,6 @@ en:"Shop Glass Doors",
 ar:"أبواب زجاجية للمحلات"
 }
 },
-
 {
 src:"10mm sandblast glass stair with standsteel handle.jpeg",
 caption:{
@@ -3013,7 +2331,6 @@ en:"Sandblast Glass Staircase",
 ar:"درج زجاجي ساندبلاست"
 }
 },
-
 {
 src:"10mm sandblast glass temper fixed in stanless steel.jpeg",
 caption:{
@@ -3021,7 +2338,6 @@ en:"Sandblast Tempered Glass",
 ar:"زجاج مقسى ساندبلاست"
 }
 },
-
 {
 src:"D shave mirror.jpeg",
 caption:{
@@ -3029,7 +2345,6 @@ en:"D Shave Mirror",
 ar:"مرآة D Shave"
 }
 },
-
 {
 src:"design mirror with light back.jpeg",
 caption:{
@@ -3037,7 +2352,6 @@ en:"Design Mirror With Back Light",
 ar:"مرآة ديزاين بإضاءة خلفية"
 }
 },
-
 {
 src:"wood handle colour pictures .jpeg",
 caption:{
@@ -3045,11 +2359,9 @@ en:"Wood Handle Glass Project",
 ar:"مشروع زجاج بمقبض خشبي"
 }
 }
-
 ],
 
 videos:[
-
 {
 src:"staircase clear ggm.mp4",
 title:{
@@ -3057,78 +2369,331 @@ en:"Glass Staircase Project",
 ar:"مشروع درج زجاجي"
 }
 }
-
 ]
 
 };
 
 
 /* =========================================================
-   APPLY REMOTE SETTINGS
+   TRANSLATIONS
 ========================================================= */
 
-async function loadSettings(){
+const translations={
 
-    try{
+en:{
 
-        const response=
-            await fetch(
-                SETTINGS_FILE+
-                "?v="+
-                Date.now()
-            );
+navHome:"Home",
+navAbout:"About",
+navServices:"Services",
+navGallery:"Gallery",
+navVideos:"Videos",
+navWhy:"Why Us",
+navContact:"Contact",
 
-        if(!response.ok){
+callNow:"📞 Call Now",
+whatsapp:"💬 WhatsApp",
 
-            return;
-        }
+aboutSmall:"ABOUT US",
+servicesSmall:"GLASS SERVICES IN KUWAIT",
+gallerySmall:"OUR WORK",
+videosSmall:"OUR PROJECTS",
+whySmall:"WHY CHOOSE US",
+contactSmall:"CONTACT US",
 
-        const remote=
-            await response.json();
+contactCompany:"Glass & Mirror Company in Kuwait",
+phone:"PHONE",
+whatsappSmall:"WHATSAPP",
+chatWhatsApp:"Chat on WhatsApp",
+email:"EMAIL",
+location:"LOCATION",
+kuwait:"Kuwait",
 
-        if(remote.hero){
+quoteTitle:"Request a Quote",
+quoteText:"Tell us about your project.",
+sendRequest:"Send Request on WhatsApp",
 
-            siteSettings.hero={
-                ...siteSettings.hero,
-                ...remote.hero
-            };
-        }
+instagramSmall:"FOLLOW OUR WORK",
+instagramTitle:"Instagram",
+instagramText:"See more glass and mirror projects, designs and updates on Instagram.",
+instagramButton:"📷 Follow Design Glass & Mirror",
 
-        if(remote.texts){
+footerText:"Glass • Mirror • Tempered • Laminated • Double Glass • Kuwait",
+footerCall:"📞 Call",
+footerWhatsApp:"💬 WhatsApp",
+footerEmail:"✉ Email",
+footerInstagram:"📷 Instagram",
+rights:"All Rights Reserved.",
 
-            siteSettings.texts={
-                ...siteSettings.texts,
-                ...remote.texts
-            };
-        }
+mobileCall:"📞 Call",
+mobileWhatsApp:"💬 WhatsApp",
 
-        if(
-            Array.isArray(
-                remote.gallery
-            )
-        ){
+namePlaceholder:"Your Name",
+phonePlaceholder:"Phone Number",
+messagePlaceholder:"Tell us about your project..."
+},
 
-            siteSettings.gallery=
-                remote.gallery;
-        }
+ar:{
 
-        if(
-            Array.isArray(
-                remote.videos
-            )
-        ){
+navHome:"الرئيسية",
+navAbout:"من نحن",
+navServices:"خدماتنا",
+navGallery:"المعرض",
+navVideos:"الفيديوهات",
+navWhy:"لماذا نحن",
+navContact:"اتصل بنا",
 
-            siteSettings.videos=
-                remote.videos;
-        }
+callNow:"📞 اتصل الآن",
+whatsapp:"💬 واتساب",
 
-    }catch(error){
+aboutSmall:"من نحن",
+servicesSmall:"خدمات الزجاج في الكويت",
+gallerySmall:"أعمالنا",
+videosSmall:"مشاريعنا",
+whySmall:"لماذا تختارنا",
+contactSmall:"تواصل معنا",
 
-        console.log(
-            "Using default website settings."
-        );
-    }
+contactCompany:"شركة الزجاج والمرايا في الكويت",
+phone:"الهاتف",
+whatsappSmall:"واتساب",
+chatWhatsApp:"تواصل عبر واتساب",
+email:"البريد الإلكتروني",
+location:"الموقع",
+kuwait:"الكويت",
+
+quoteTitle:"اطلب عرض سعر",
+quoteText:"أخبرنا عن مشروعك.",
+sendRequest:"إرسال الطلب عبر واتساب",
+
+instagramSmall:"تابع أعمالنا",
+instagramTitle:"إنستغرام",
+instagramText:"شاهد المزيد من مشاريع الزجاج والمرايا والتصاميم والتحديثات على إنستغرام.",
+instagramButton:"📷 تابع ديزاين جلاس وميرور",
+
+footerText:"زجاج • مرايا • سيكوريت • مصفح • زجاج مزدوج • الكويت",
+footerCall:"📞 اتصال",
+footerWhatsApp:"💬 واتساب",
+footerEmail:"✉ البريد",
+footerInstagram:"📷 إنستغرام",
+rights:"جميع الحقوق محفوظة.",
+
+mobileCall:"📞 اتصال",
+mobileWhatsApp:"💬 واتساب",
+
+namePlaceholder:"اسمك",
+phonePlaceholder:"رقم الهاتف",
+messagePlaceholder:"اكتب تفاصيل مشروعك..."
 }
+
+};
+
+
+/* =========================================================
+   EDITABLE TRANSLATIONS
+========================================================= */
+
+const defaultEditable={
+
+heroSubtitle:{
+en:"PROFESSIONAL GLASS & MIRROR WORKS IN KUWAIT",
+ar:"أعمال الزجاج والمرايا الاحترافية في الكويت"
+},
+
+heroTitle:{
+en:"Design Glass & Mirror Kuwait",
+ar:"ديزاين جلاس وميرور الكويت"
+},
+
+heroText:{
+en:"Professional glass, mirrors, tempered glass, laminated glass and double glazing for homes, offices, shops and commercial projects in Kuwait.",
+ar:"حلول احترافية للزجاج والمرايا والزجاج المقسى والزجاج المصفح والزجاج المزدوج للمنازل والمكاتب والمحلات والمشاريع التجارية في الكويت."
+},
+
+aboutTitle:{
+en:"Design Glass & Mirror Kuwait",
+ar:"ديزاين جلاس وميرور الكويت"
+},
+
+aboutHeading:{
+en:"Professional Glass and Mirror Company in Kuwait",
+ar:"شركة متخصصة في الزجاج والمرايا في الكويت"
+},
+
+aboutText:{
+en:"Design Glass & Mirror provides professional glass, mirror, tempered glass, laminated glass, double glass, shower glass, glass partitions, glass railings, staircase glass, office glass and aluminum works in Kuwait.",
+ar:"توفر ديزاين جلاس وميرور خدمات احترافية للزجاج والمرايا والزجاج السيكوريت والزجاج المقسى والزجاج المصفح والزجاج المزدوج وزجاج الحمامات والقواطع الزجاجية والدرابزين وزجاج السلالم وزجاج المكاتب وأعمال الألمنيوم في الكويت."
+},
+
+point1:{
+en:"✓ Quality Work",
+ar:"✓ جودة العمل"
+},
+
+point2:{
+en:"✓ Modern Designs",
+ar:"✓ تصاميم عصرية"
+},
+
+point3:{
+en:"✓ Professional Service",
+ar:"✓ خدمة احترافية"
+},
+
+point4:{
+en:"✓ Kuwait Service",
+ar:"✓ خدمة داخل الكويت"
+},
+
+aboutCardTitle:{
+en:"Glass & Mirror Experts",
+ar:"خبراء الزجاج والمرايا"
+},
+
+aboutCardText:{
+en:"Tempered • Laminated • Double Glass • Mirrors",
+ar:"سيكوريت • مصفح • زجاج مزدوج • مرايا"
+},
+
+servicesTitle:{
+en:"Glass & Mirror Services",
+ar:"خدمات الزجاج والمرايا"
+},
+
+service1Title:{
+en:"Tempered Glass",
+ar:"زجاج سيكوريت ومقسى"
+},
+
+service1Text:{
+en:"Tempered and toughened glass for doors, partitions, stairs, shops and offices.",
+ar:"زجاج سيكوريت وزجاج مقسى للأبواب والقواطع والسلالم والمحلات والمكاتب."
+},
+
+service2Title:{
+en:"Laminated Glass",
+ar:"زجاج مصفح"
+},
+
+service2Text:{
+en:"Laminated safety glass for projects requiring additional protection.",
+ar:"زجاج مصفح للمشاريع التي تحتاج إلى حماية إضافية."
+},
+
+service3Title:{
+en:"Double Glass",
+ar:"زجاج مزدوج ودبل جلاس"
+},
+
+service3Text:{
+en:"Double glass and double glazing solutions for homes, offices and buildings.",
+ar:"حلول الزجاج المزدوج والدبل جلاس للمنازل والمكاتب والمباني."
+},
+
+service4Title:{
+en:"Shower Glass",
+ar:"زجاج الحمامات والدش"
+},
+
+service4Text:{
+en:"Modern shower glass doors and bathroom glass solutions in Kuwait.",
+ar:"أبواب زجاجية حديثة للحمامات وحلول زجاجية للحمامات في الكويت."
+},
+
+service5Title:{
+en:"Glass Partitions & Railings",
+ar:"القواطع والدرابزين الزجاجي"
+},
+
+service5Text:{
+en:"Glass partitions and railings for offices, homes, stairs and balconies.",
+ar:"قواطع زجاجية ودرابزين للمكاتب والمنازل والسلالم والشرفات."
+},
+
+service6Title:{
+en:"Custom Mirrors & Aluminum",
+ar:"المرايا المخصصة وأعمال الألمنيوم"
+},
+
+service6Text:{
+en:"Custom mirrors, LED mirrors and aluminum works.",
+ar:"مرايا مخصصة ومرايا بإضاءة LED وأعمال ألمنيوم."
+},
+
+galleryTitle:{
+en:"Glass & Mirror Project Gallery",
+ar:"معرض مشاريع الزجاج والمرايا"
+},
+
+galleryDescription:{
+en:"Tempered glass, laminated glass, double glass, mirrors, shower glass, partitions, railings, stairs, doors and interior projects in Kuwait.",
+ar:"زجاج سيكوريت وزجاج مصفح وزجاج مزدوج ومرايا وزجاج حمامات وقواطع ودرابزين وسلالم وأبواب ومشاريع ديكور في الكويت."
+},
+
+videosTitle:{
+en:"Project Videos",
+ar:"فيديوهات المشاريع"
+},
+
+whyTitle:{
+en:"Why Design Glass & Mirror?",
+ar:"لماذا ديزاين جلاس وميرور؟"
+},
+
+why1Title:{
+en:"Professional Work",
+ar:"عمل احترافي"
+},
+
+why1Text:{
+en:"Clean and professional finishing.",
+ar:"تشطيب نظيف واحترافي."
+},
+
+why2Title:{
+en:"Modern Designs",
+ar:"تصاميم عصرية"
+},
+
+why2Text:{
+en:"Beautiful modern solutions.",
+ar:"حلول عصرية جميلة."
+},
+
+why3Title:{
+en:"Quality Materials",
+ar:"مواد عالية الجودة"
+},
+
+why3Text:{
+en:"Tempered, laminated and double glass.",
+ar:"زجاج مقسى ومصفح ومزدوج."
+},
+
+why4Title:{
+en:"Customer Service",
+ar:"خدمة العملاء"
+},
+
+why4Text:{
+en:"We work closely with our customers.",
+ar:"نعمل بشكل قريب مع عملائنا."
+},
+
+contactHeading:{
+en:"Contact Design Glass & Mirror Kuwait",
+ar:"تواصل مع ديزاين جلاس وميرور الكويت"
+},
+
+contactText:{
+en:"Contact us for tempered glass, toughened glass, laminated glass, double glass, shower glass, partitions, railings, staircase glass, mirrors, office glass and aluminum works.",
+ar:"تواصل معنا لأعمال الزجاج السيكوريت والزجاج المقسى والزجاج المصفح والزجاج المزدوج وزجاج الحمامات والقواطع والدرابزين وزجاج السلالم والمرايا وزجاج المكاتب وأعمال الألمنيوم."
+},
+
+instagramText:{
+en:"See more glass and mirror projects, designs and updates on Instagram.",
+ar:"شاهد المزيد من مشاريع الزجاج والمرايا والتصاميم والتحديثات على إنستغرام."
+}
+
+};
 
 
 /* =========================================================
@@ -3142,176 +2707,58 @@ function currentLanguage(){
         : "en";
 }
 
-function toggleLanguage(){
 
-    arabicMode=
-        !arabicMode;
-
-    applyTextSettings();
-
-    renderGallery();
-
-    renderVideos();
-
-    updateHero();
-}
-
-
-/* =========================================================
-   APPLY HERO
-========================================================= */
-
-function applyHeroSettings(){
-
-    const subtitle=
-        document.getElementById(
-            "heroSubtitle"
-        );
-
-    const title=
-        document.getElementById(
-            "heroTitle"
-        );
-
-    const text=
-        document.getElementById(
-            "heroText"
-        );
-
-    subtitle.style.display=
-        siteSettings.hero.showSubtitle
-            ? ""
-            : "none";
-
-    title.style.display=
-        siteSettings.hero.showTitle
-            ? ""
-            : "none";
-
-    text.style.display=
-        siteSettings.hero.showText
-            ? ""
-            : "none";
-
-    title.style.fontSize=
-        siteSettings.hero.titleSize+
-        "px";
-
-    subtitle.style.fontSize=
-        siteSettings.hero.subtitleSize+
-        "px";
-
-    text.style.fontSize=
-        siteSettings.hero.textSize+
-        "px";
-
-    document.getElementById(
-        "showHeroSubtitle"
-    ).checked=
-        siteSettings.hero.showSubtitle;
-
-    document.getElementById(
-        "showHeroTitle"
-    ).checked=
-        siteSettings.hero.showTitle;
-
-    document.getElementById(
-        "showHeroText"
-    ).checked=
-        siteSettings.hero.showText;
-
-    document.getElementById(
-        "heroTitleSize"
-    ).value=
-        siteSettings.hero.titleSize;
-
-    document.getElementById(
-        "heroSubtitleSize"
-    ).value=
-        siteSettings.hero.subtitleSize;
-
-    document.getElementById(
-        "heroTextSize"
-    ).value=
-        siteSettings.hero.textSize;
-
-    document.getElementById(
-        "heroTitleSizeValue"
-    ).textContent=
-        siteSettings.hero.titleSize+
-        "px";
-
-    document.getElementById(
-        "heroSubtitleSizeValue"
-    ).textContent=
-        siteSettings.hero.subtitleSize+
-        "px";
-
-    document.getElementById(
-        "heroTextSizeValue"
-    ).textContent=
-        siteSettings.hero.textSize+
-        "px";
-}
-
-
-/* =========================================================
-   PREVIEW HERO OPTIONS
-========================================================= */
-
-function previewHeroOptions(){
-
-    siteSettings.hero.showSubtitle=
-        document.getElementById(
-            "showHeroSubtitle"
-        ).checked;
-
-    siteSettings.hero.showTitle=
-        document.getElementById(
-            "showHeroTitle"
-        ).checked;
-
-    siteSettings.hero.showText=
-        document.getElementById(
-            "showHeroText"
-        ).checked;
-
-    siteSettings.hero.titleSize=
-        Number(
-            document.getElementById(
-                "heroTitleSize"
-            ).value
-        );
-
-    siteSettings.hero.subtitleSize=
-        Number(
-            document.getElementById(
-                "heroSubtitleSize"
-            ).value
-        );
-
-    siteSettings.hero.textSize=
-        Number(
-            document.getElementById(
-                "heroTextSize"
-            ).value
-        );
-
-    applyHeroSettings();
-}
-
-
-/* =========================================================
-   TEXT SETTINGS
-========================================================= */
-
-function applyTextSettings(){
+function applyLanguage(){
 
     const language=
         currentLanguage();
 
+    const langData=
+        translations[language];
+
+    document
+        .querySelectorAll(
+            "[data-i18n]"
+        )
+        .forEach(
+            function(el){
+
+                const key=
+                    el.dataset.i18n;
+
+                if(
+                    langData[key] !==
+                    undefined
+                ){
+
+                    el.textContent=
+                        langData[key];
+                }
+            }
+        );
+
+    document
+        .querySelectorAll(
+            "[data-placeholder]"
+        )
+        .forEach(
+            function(el){
+
+                const key=
+                    el.dataset.placeholder;
+
+                if(
+                    langData[key]
+                ){
+
+                    el.placeholder=
+                        langData[key];
+                }
+            }
+        );
+
     const saved=
-        siteSettings
+        settings
         .texts
         [language]
         || {};
@@ -3321,18 +2768,26 @@ function applyTextSettings(){
             ".editable[data-key]"
         )
         .forEach(
-            function(element){
+            function(el){
 
                 const key=
-                    element.dataset.key;
+                    el.dataset.key;
 
                 if(
                     saved[key] !==
                     undefined
                 ){
 
-                    element.innerHTML=
+                    el.innerHTML=
                         saved[key];
+
+                }else if(
+                    defaultEditable[key]
+                ){
+
+                    el.innerHTML=
+                        defaultEditable[key]
+                        [language];
                 }
             }
         );
@@ -3351,11 +2806,194 @@ function applyTextSettings(){
         language==="ar"
             ? "English"
             : "العربية";
+
+    renderGallery();
+
+    renderVideos();
+}
+
+
+function toggleLanguage(){
+
+    arabicMode=
+        !arabicMode;
+
+    applyLanguage();
 }
 
 
 /* =========================================================
-   EDIT MODE
+   HERO OPTIONS
+========================================================= */
+
+function updateHeroOptionsUI(){
+
+    document.getElementById(
+        "heroSubtitleVisible"
+    ).checked=
+        settings.hero.showSubtitle;
+
+    document.getElementById(
+        "heroTitleVisible"
+    ).checked=
+        settings.hero.showTitle;
+
+    document.getElementById(
+        "heroDescriptionVisible"
+    ).checked=
+        settings.hero.showDescription;
+
+    document.getElementById(
+        "heroTitleSize"
+    ).value=
+        settings.hero.titleSize;
+
+    document.getElementById(
+        "heroSubtitleSize"
+    ).value=
+        settings.hero.subtitleSize;
+
+    document.getElementById(
+        "heroDescriptionSize"
+    ).value=
+        settings.hero.descriptionSize;
+
+    document.getElementById(
+        "heroTitleSizeLabel"
+    ).textContent=
+        settings.hero.titleSize+
+        "px";
+
+    document.getElementById(
+        "heroSubtitleSizeLabel"
+    ).textContent=
+        settings.hero.subtitleSize+
+        "px";
+
+    document.getElementById(
+        "heroDescriptionSizeLabel"
+    ).textContent=
+        settings.hero.descriptionSize+
+        "px";
+}
+
+
+function previewHero(){
+
+    settings.hero.showSubtitle=
+        document.getElementById(
+            "heroSubtitleVisible"
+        ).checked;
+
+    settings.hero.showTitle=
+        document.getElementById(
+            "heroTitleVisible"
+        ).checked;
+
+    settings.hero.showDescription=
+        document.getElementById(
+            "heroDescriptionVisible"
+        ).checked;
+
+    settings.hero.titleSize=
+        Number(
+            document.getElementById(
+                "heroTitleSize"
+            ).value
+        );
+
+    settings.hero.subtitleSize=
+        Number(
+            document.getElementById(
+                "heroSubtitleSize"
+            ).value
+        );
+
+    settings.hero.descriptionSize=
+        Number(
+            document.getElementById(
+                "heroDescriptionSize"
+            ).value
+        );
+
+    const sub=
+        document.getElementById(
+            "heroSubtitle"
+        );
+
+    const title=
+        document.getElementById(
+            "heroTitle"
+        );
+
+    const desc=
+        document.getElementById(
+            "heroText"
+        );
+
+    sub.style.display=
+        settings.hero.showSubtitle
+            ? ""
+            : "none";
+
+    title.style.display=
+        settings.hero.showTitle
+            ? ""
+            : "none";
+
+    desc.style.display=
+        settings.hero.showDescription
+            ? ""
+            : "none";
+
+    title.style.fontSize=
+        settings.hero.titleSize+
+        "px";
+
+    sub.style.fontSize=
+        settings.hero.subtitleSize+
+        "px";
+
+    desc.style.fontSize=
+        settings.hero.descriptionSize+
+        "px";
+
+    updateHeroOptionsUI();
+}
+
+
+/* connect preview controls */
+
+[
+"heroSubtitleVisible",
+"heroTitleVisible",
+"heroDescriptionVisible",
+"heroTitleSize",
+"heroSubtitleSize",
+"heroDescriptionSize"
+]
+.forEach(
+    function(id){
+
+        document
+        .getElementById(id)
+        .addEventListener(
+            "input",
+            previewHero
+        );
+
+        document
+        .getElementById(id)
+        .addEventListener(
+            "change",
+            previewHero
+        );
+    }
+);
+
+
+/* =========================================================
+   ADMIN TEXT EDITING
 ========================================================= */
 
 function enableEditing(){
@@ -3365,13 +3003,14 @@ function enableEditing(){
             ".editable[data-key]"
         )
         .forEach(
-            function(element){
+            function(el){
 
-                element.contentEditable=
+                el.contentEditable=
                     "true";
             }
         );
 }
+
 
 function disableEditing(){
 
@@ -3380,390 +3019,17 @@ function disableEditing(){
             ".editable[data-key]"
         )
         .forEach(
-            function(element){
+            function(el){
 
-                element.contentEditable=
+                el.contentEditable=
                     "false";
             }
         );
 }
 
-async function saveAllText(){
-
-    try{
-
-        const language=
-            currentLanguage();
-
-        if(
-            !siteSettings.texts[language]
-        ){
-
-            siteSettings.texts[language]=
-                {};
-        }
-
-        document
-            .querySelectorAll(
-                ".editable[data-key]"
-            )
-            .forEach(
-                function(element){
-
-                    siteSettings
-                    .texts
-                    [language]
-                    [element.dataset.key]=
-                        element.innerHTML;
-                }
-            );
-
-        await saveSettingsToGithub();
-
-        showStatus(
-            "✓ All text changes saved for every device."
-        );
-
-        alert(
-            "✓ Text changes are now saved to the website."
-        );
-
-    }catch(error){
-
-        showStatus(
-            "Text save failed:\n"+
-            error.message
-        );
-
-        alert(
-            "Text save failed:\n\n"+
-            error.message
-        );
-    }
-}
-
 
 /* =========================================================
-   HERO SAVE
-========================================================= */
-
-async function saveHeroSettings(){
-
-    try{
-
-        previewHeroOptions();
-
-        await saveSettingsToGithub();
-
-        showStatus(
-            "✓ Hero settings saved for PC and phone."
-        );
-
-        alert(
-            "✓ Hero settings saved."
-        );
-
-    }catch(error){
-
-        showStatus(
-            "Hero settings save failed:\n"+
-            error.message
-        );
-
-        alert(
-            "Hero settings save failed:\n\n"+
-            error.message
-        );
-    }
-}
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
-function updateHero(){
-
-    const hero=
-        document.querySelector(
-            ".hero"
-        );
-
-    if(!hero){
-
-        return;
-    }
-
-    if(
-        !siteSettings
-        .hero
-        .images
-        .length
-    ){
-
-        return;
-    }
-
-    const image=
-        siteSettings
-        .hero
-        .images[
-            heroIndex
-        ];
-
-    hero.style.backgroundImage=
-        `
-        linear-gradient(
-            rgba(4,25,45,.54),
-            rgba(5,60,90,.50)
-        ),
-        url("${image}")
-        `;
-
-    const dots=
-        document.getElementById(
-            "heroDots"
-        );
-
-    dots.innerHTML="";
-
-    siteSettings
-        .hero
-        .images
-        .forEach(
-            function(
-                _,
-                index
-            ){
-
-                const dot=
-                    document.createElement(
-                        "div"
-                    );
-
-                dot.className=
-                    "hero-dot";
-
-                if(
-                    index===
-                    heroIndex
-                ){
-
-                    dot.classList.add(
-                        "active"
-                    );
-                }
-
-                dots.appendChild(
-                    dot
-                );
-            }
-        );
-}
-
-function nextHero(){
-
-    if(
-        siteSettings
-        .hero
-        .images
-        .length<2
-    ){
-
-        return;
-    }
-
-    heroIndex++;
-
-    if(
-        heroIndex>=
-        siteSettings
-        .hero
-        .images
-        .length
-    ){
-
-        heroIndex=0;
-    }
-
-    updateHero();
-}
-
-
-/* =========================================================
-   GALLERY
-========================================================= */
-
-function renderGallery(){
-
-    const grid=
-        document.getElementById(
-            "galleryGrid"
-        );
-
-    if(!grid){
-
-        return;
-    }
-
-    grid.innerHTML="";
-
-    siteSettings
-        .gallery
-        .forEach(
-            function(item){
-
-                const card=
-                    document.createElement(
-                        "div"
-                    );
-
-                card.className=
-                    "gallery-card";
-
-                const image=
-                    document.createElement(
-                        "img"
-                    );
-
-                image.src=
-                    item.src;
-
-                image.loading=
-                    "lazy";
-
-                image.alt=
-                    arabicMode
-                        ? "مشروع زجاج ومرايا في الكويت"
-                        : "Glass and mirror project in Kuwait";
-
-                const caption=
-                    document.createElement(
-                        "div"
-                    );
-
-                caption.className=
-                    "gallery-caption";
-
-                caption.textContent=
-                    item.caption[
-                        currentLanguage()
-                    ];
-
-                card.appendChild(
-                    image
-                );
-
-                card.appendChild(
-                    caption
-                );
-
-                grid.appendChild(
-                    card
-                );
-            }
-        );
-}
-
-
-/* =========================================================
-   VIDEOS
-========================================================= */
-
-function renderVideos(){
-
-    const grid=
-        document.getElementById(
-            "videoGrid"
-        );
-
-    if(!grid){
-
-        return;
-    }
-
-    grid.innerHTML="";
-
-    siteSettings
-        .videos
-        .forEach(
-            function(item){
-
-                const card=
-                    document.createElement(
-                        "div"
-                    );
-
-                card.className=
-                    "video-card";
-
-                const video=
-                    document.createElement(
-                        "video"
-                    );
-
-                video.controls=true;
-                video.autoplay=true;
-                video.muted=true;
-                video.loop=true;
-                video.playsInline=true;
-                video.preload="metadata";
-
-                const source=
-                    document.createElement(
-                        "source"
-                    );
-
-                source.src=
-                    item.src;
-
-                source.type=
-                    item.src
-                    .toLowerCase()
-                    .endsWith(
-                        ".webm"
-                    )
-                    ? "video/webm"
-                    : "video/mp4";
-
-                video.appendChild(
-                    source
-                );
-
-                const title=
-                    document.createElement(
-                        "h3"
-                    );
-
-                title.textContent=
-                    item.title[
-                        currentLanguage()
-                    ];
-
-                card.appendChild(
-                    video
-                );
-
-                card.appendChild(
-                    title
-                );
-
-                grid.appendChild(
-                    card
-                );
-
-                video
-                .play()
-                .catch(
-                    function(){}
-                );
-            }
-        );
-}
-
-
-/* =========================================================
-   TOKEN
+   GITHUB TOKEN
 ========================================================= */
 
 function connectGithub(){
@@ -3778,8 +3044,8 @@ function connectGithub(){
 
     if(!token){
 
-        alert(
-            "Paste your GitHub token first."
+        showStatus(
+            "Please paste your GitHub token first."
         );
 
         return;
@@ -3811,9 +3077,10 @@ function connectGithub(){
     }
 
     showStatus(
-        "✓ GitHub token loaded. You can now save changes."
+        "✓ GitHub token ready."
     );
 }
+
 
 function getGithubToken(){
 
@@ -3832,9 +3099,7 @@ function getGithubToken(){
             "dgm_github_token"
         );
 
-    const token=
-        local ||
-        session ||
+    const typed=
         document
         .getElementById(
             "githubToken"
@@ -3842,10 +3107,15 @@ function getGithubToken(){
         .value
         .trim();
 
+    const token=
+        local ||
+        session ||
+        typed;
+
     if(!token){
 
         throw new Error(
-            "Please enter your GitHub token in Admin."
+            "No GitHub token. Paste your token in Admin first."
         );
     }
 
@@ -3857,10 +3127,10 @@ function getGithubToken(){
 
 
 /* =========================================================
-   GITHUB API
+   GITHUB READ
 ========================================================= */
 
-async function githubGetFile(path){
+async function githubRead(path){
 
     const token=
         getGithubToken();
@@ -3869,13 +3139,13 @@ async function githubGetFile(path){
         await fetch(
 
             "https://api.github.com/repos/"+
-            GITHUB_OWNER+
+            OWNER+
             "/"+
-            GITHUB_REPO+
+            REPO+
             "/contents/"+
             path+
             "?ref="+
-            GITHUB_BRANCH,
+            BRANCH,
 
             {
                 headers:{
@@ -3903,17 +3173,27 @@ async function githubGetFile(path){
         !response.ok
     ){
 
+        const error=
+            await response.text();
+
         throw new Error(
-            "GitHub read error "+
+            "GitHub read "+
+
             response.status+
-            ". Check your token and repository permission."
+            ": "+
+            error
         );
     }
 
     return await response.json();
 }
 
-async function githubPutFile(
+
+/* =========================================================
+   GITHUB WRITE
+========================================================= */
+
+async function githubWrite(
     path,
     base64,
     message,
@@ -3931,7 +3211,7 @@ async function githubPutFile(
             base64,
 
         branch:
-            GITHUB_BRANCH
+            BRANCH
     };
 
     if(sha){
@@ -3944,9 +3224,9 @@ async function githubPutFile(
         await fetch(
 
             "https://api.github.com/repos/"+
-            GITHUB_OWNER+
+            OWNER+
             "/"+
-            GITHUB_REPO+
+            REPO+
             "/contents/"+
             path,
 
@@ -3979,14 +3259,14 @@ async function githubPutFile(
         !response.ok
     ){
 
-        const errorText=
+        const error=
             await response.text();
 
         throw new Error(
-            "GitHub save error "+
+            "GitHub write "+
             response.status+
             ": "+
-            errorText
+            error
         );
     }
 
@@ -3995,8 +3275,38 @@ async function githubPutFile(
 
 
 /* =========================================================
-   FILE HELPERS
+   BASE64
 ========================================================= */
+
+function textToBase64(text){
+
+    const bytes=
+        new TextEncoder()
+        .encode(text);
+
+    let binary="";
+
+    const size=
+        0x8000;
+
+    for(
+        let i=0;
+        i<bytes.length;
+        i+=size
+    ){
+
+        binary+=
+            String.fromCharCode(
+                ...bytes.subarray(
+                    i,
+                    i+size
+                )
+            );
+    }
+
+    return btoa(binary);
+}
+
 
 function fileToBase64(file){
 
@@ -4013,8 +3323,7 @@ function fileToBase64(file){
                 function(){
 
                     resolve(
-                        reader
-                        .result
+                        reader.result
                         .split(",")[1]
                     );
                 };
@@ -4034,40 +3343,10 @@ function fileToBase64(file){
     );
 }
 
-function textToBase64(text){
-
-    const bytes=
-        new TextEncoder()
-        .encode(
-            text
-        );
-
-    let binary="";
-
-    const chunk=
-        0x8000;
-
-    for(
-        let i=0;
-        i<bytes.length;
-        i+=chunk
-    ){
-
-        binary+=
-            String.fromCharCode(
-                ...bytes.subarray(
-                    i,
-                    i+chunk
-                )
-            );
-    }
-
-    return btoa(binary);
-}
 
 function safeFileName(name){
 
-    const extension=
+    const ext=
         name.includes(".")
             ? "."+
               name
@@ -4082,9 +3361,7 @@ function safeFileName(name){
             /\.[^/.]+$/,
             ""
         )
-        .normalize(
-            "NFKD"
-        )
+        .normalize("NFKD")
         .replace(
             /[^\w\s-]/g,
             ""
@@ -4097,27 +3374,96 @@ function safeFileName(name){
         .toLowerCase()
         .slice(
             0,
-            70
+            60
         );
 
-    return (
-        Date.now()+
+    return Date.now()+
         "-"+
         (base||"file")+
-        extension
-    );
+        ext;
 }
 
 
 /* =========================================================
-   SAVE SETTINGS FILE
+   LOAD SHARED SETTINGS
 ========================================================= */
 
-async function saveSettingsToGithub(){
+async function loadSharedSettings(){
+
+    try{
+
+        const response=
+            await fetch(
+                SETTINGS_FILE+
+                "?v="+
+                Date.now()
+            );
+
+        if(
+            !response.ok
+        ){
+
+            return;
+        }
+
+        const remote=
+            await response.json();
+
+        if(remote.hero){
+
+            settings.hero={
+                ...settings.hero,
+                ...remote.hero
+            };
+        }
+
+        if(remote.texts){
+
+            settings.texts={
+                ...settings.texts,
+                ...remote.texts
+            };
+        }
+
+        if(
+            Array.isArray(
+                remote.gallery
+            )
+        ){
+
+            settings.gallery=
+                remote.gallery;
+        }
+
+        if(
+            Array.isArray(
+                remote.videos
+            )
+        ){
+
+            settings.videos=
+                remote.videos;
+        }
+
+    }catch(error){
+
+        console.log(
+            "Default settings used."
+        );
+    }
+}
+
+
+/* =========================================================
+   SAVE SHARED SETTINGS
+   This creates site-settings.json if missing.
+========================================================= */
+
+async function saveSharedSettings(){
 
     const json=
         JSON.stringify(
-            siteSettings,
+            settings,
             null,
             2
         );
@@ -4128,11 +3474,11 @@ async function saveSettingsToGithub(){
         );
 
     const existing=
-        await githubGetFile(
+        await githubRead(
             SETTINGS_FILE
         );
 
-    await githubPutFile(
+    await githubWrite(
 
         SETTINGS_FILE,
 
@@ -4148,7 +3494,365 @@ async function saveSettingsToGithub(){
 
 
 /* =========================================================
-   HERO UPLOAD
+   SAVE HERO SETTINGS
+========================================================= */
+
+async function saveHeroSettings(){
+
+    try{
+
+        previewHero();
+
+        showStatus(
+            "Saving Hero settings..."
+        );
+
+        await saveSharedSettings();
+
+        showStatus(
+            "✓ Hero settings saved. PC and phone will use the same settings."
+        );
+
+    }catch(error){
+
+        showStatus(
+            "❌ Hero save failed:\n"+
+            error.message
+        );
+    }
+}
+
+
+/* =========================================================
+   SAVE TEXT
+========================================================= */
+
+async function saveAllText(){
+
+    try{
+
+        const language=
+            currentLanguage();
+
+        if(
+            !settings.texts[language]
+        ){
+
+            settings.texts[language]=
+                {};
+        }
+
+        document
+            .querySelectorAll(
+                ".editable[data-key]"
+            )
+            .forEach(
+                function(el){
+
+                    settings
+                    .texts
+                    [language]
+                    [el.dataset.key]=
+                        el.innerHTML;
+                }
+            );
+
+        showStatus(
+            "Saving text..."
+        );
+
+        await saveSharedSettings();
+
+        showStatus(
+            "✓ Text saved to GitHub for "+
+            (
+                language==="ar"
+                    ? "Arabic"
+                    : "English"
+            )+
+            "."
+        );
+
+    }catch(error){
+
+        showStatus(
+            "❌ Text save failed:\n"+
+            error.message
+        );
+    }
+}
+
+
+/* =========================================================
+   HERO DISPLAY
+========================================================= */
+
+function updateHero(){
+
+    const hero=
+        document.querySelector(
+            ".hero"
+        );
+
+    if(!hero){
+
+        return;
+    }
+
+    const images=
+        settings.hero.images;
+
+    if(!images.length){
+
+        return;
+    }
+
+    if(
+        heroIndex>=
+        images.length
+    ){
+
+        heroIndex=0;
+    }
+
+    hero.style.backgroundImage=
+        `
+        linear-gradient(
+            rgba(4,25,45,.54),
+            rgba(5,60,90,.50)
+        ),
+        url("${images[heroIndex]}")
+        `;
+
+    const dots=
+        document.getElementById(
+            "heroDots"
+        );
+
+    dots.innerHTML="";
+
+    images.forEach(
+        function(
+            _,
+            index
+        ){
+
+            const dot=
+                document.createElement(
+                    "div"
+                );
+
+            dot.className=
+                "hero-dot";
+
+            if(
+                index===
+                heroIndex
+            ){
+
+                dot.classList.add(
+                    "active"
+                );
+            }
+
+            dots.appendChild(
+                dot
+            );
+        }
+    );
+
+    previewHero();
+}
+
+
+function nextHero(){
+
+    if(
+        settings
+        .hero
+        .images
+        .length<2
+    ){
+
+        return;
+    }
+
+    heroIndex++;
+
+    if(
+        heroIndex>=
+        settings.hero.images.length
+    ){
+
+        heroIndex=0;
+    }
+
+    updateHero();
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+function renderGallery(){
+
+    const grid=
+        document.getElementById(
+            "galleryGrid"
+        );
+
+    if(!grid){
+
+        return;
+    }
+
+    grid.innerHTML="";
+
+    settings.gallery.forEach(
+        function(item){
+
+            const card=
+                document.createElement(
+                    "div"
+                );
+
+            card.className=
+                "gallery-card";
+
+            const img=
+                document.createElement(
+                    "img"
+                );
+
+            img.src=
+                item.src;
+
+            img.loading=
+                "lazy";
+
+            img.alt=
+                arabicMode
+                    ? "مشروع زجاج ومرايا في الكويت"
+                    : "Glass and mirror project in Kuwait";
+
+            const caption=
+                document.createElement(
+                    "div"
+                );
+
+            caption.className=
+                "gallery-caption";
+
+            caption.textContent=
+                item.caption[
+                    currentLanguage()
+                ];
+
+            card.appendChild(img);
+
+            card.appendChild(caption);
+
+            grid.appendChild(card);
+        }
+    );
+}
+
+
+/* =========================================================
+   VIDEOS
+========================================================= */
+
+function renderVideos(){
+
+    const grid=
+        document.getElementById(
+            "videoGrid"
+        );
+
+    if(!grid){
+
+        return;
+    }
+
+    grid.innerHTML="";
+
+    settings.videos.forEach(
+        function(item){
+
+            const card=
+                document.createElement(
+                    "div"
+                );
+
+            card.className=
+                "video-card";
+
+            const video=
+                document.createElement(
+                    "video"
+                );
+
+            video.controls=true;
+            video.autoplay=true;
+            video.muted=true;
+            video.loop=true;
+            video.playsInline=true;
+            video.preload="metadata";
+
+            const source=
+                document.createElement(
+                    "source"
+                );
+
+            source.src=
+                item.src;
+
+            source.type=
+                item.src
+                .toLowerCase()
+                .endsWith(".webm")
+                    ? "video/webm"
+                    : "video/mp4";
+
+            video.appendChild(
+                source
+            );
+
+            const title=
+                document.createElement(
+                    "h3"
+                );
+
+            title.textContent=
+                item.title[
+                    currentLanguage()
+                ];
+
+            card.appendChild(
+                video
+            );
+
+            card.appendChild(
+                title
+            );
+
+            grid.appendChild(
+                card
+            );
+
+            video
+            .play()
+            .catch(
+                function(){}
+            );
+        }
+    );
+}
+
+
+/* =========================================================
+   UPLOAD HERO
 ========================================================= */
 
 async function uploadHeroPictures(){
@@ -4167,9 +3871,11 @@ async function uploadHeroPictures(){
                 input.files
             );
 
-        if(!files.length){
+        if(
+            !files.length
+        ){
 
-            alert(
+            showStatus(
                 "Choose Hero pictures first."
             );
 
@@ -4190,7 +3896,9 @@ async function uploadHeroPictures(){
         ){
 
             showStatus(
-                "Uploading "+file.name+"..."
+                "Uploading "+
+                file.name+
+                "..."
             );
 
             const path=
@@ -4204,7 +3912,7 @@ async function uploadHeroPictures(){
                     file
                 );
 
-            await githubPutFile(
+            await githubWrite(
                 path,
                 base64,
                 "Upload Hero picture"
@@ -4215,36 +3923,25 @@ async function uploadHeroPictures(){
             );
         }
 
-        siteSettings
-            .hero
-            .images=
-                paths;
+        settings.hero.images=
+            paths;
 
         heroIndex=0;
 
-        await saveSettingsToGithub();
+        await saveSharedSettings();
 
         updateHero();
 
         input.value="";
 
         showStatus(
-            "✓ Hero pictures saved for PC and phone."
-        );
-
-        alert(
-            "✓ Hero pictures are saved."
+            "✓ Hero pictures saved."
         );
 
     }catch(error){
 
         showStatus(
-            "Hero upload failed:\n"+
-            error.message
-        );
-
-        alert(
-            "Hero upload failed:\n\n"+
+            "❌ Hero upload failed:\n"+
             error.message
         );
     }
@@ -4252,46 +3949,7 @@ async function uploadHeroPictures(){
 
 
 /* =========================================================
-   RESET HERO TO CURRENT REPOSITORY PICTURES
-========================================================= */
-
-async function resetHeroPictures(){
-
-    siteSettings
-        .hero
-        .images=[
-
-            "twist out building.jpg",
-
-            "blue glass.avif",
-
-            "clear blue pic.jpg"
-        ];
-
-    heroIndex=0;
-
-    try{
-
-        await saveSettingsToGithub();
-
-        updateHero();
-
-        showStatus(
-            "✓ Hero pictures reset."
-        );
-
-    }catch(error){
-
-        showStatus(
-            "Reset failed:\n"+
-            error.message
-        );
-    }
-}
-
-
-/* =========================================================
-   GALLERY UPLOAD
+   UPLOAD GALLERY
 ========================================================= */
 
 async function uploadGalleryPictures(){
@@ -4310,9 +3968,11 @@ async function uploadGalleryPictures(){
                 input.files
             );
 
-        if(!files.length){
+        if(
+            !files.length
+        ){
 
-            alert(
+            showStatus(
                 "Choose gallery pictures first."
             );
 
@@ -4325,7 +3985,9 @@ async function uploadGalleryPictures(){
         ){
 
             showStatus(
-                "Uploading "+file.name+"..."
+                "Uploading "+
+                file.name+
+                "..."
             );
 
             const path=
@@ -4339,29 +4001,27 @@ async function uploadGalleryPictures(){
                     file
                 );
 
-            await githubPutFile(
+            await githubWrite(
                 path,
                 base64,
-                "Add Gallery picture"
+                "Add gallery picture"
             );
 
-            siteSettings
-                .gallery
-                .push({
+            settings.gallery.push({
 
-                    src:path,
+                src:path,
 
-                    caption:{
-                        en:
-                            "New Glass & Mirror Project",
+                caption:{
+                    en:
+                        "New Glass & Mirror Project",
 
-                        ar:
-                            "مشروع زجاج ومرايا جديد"
-                    }
-                });
+                    ar:
+                        "مشروع زجاج ومرايا جديد"
+                }
+            });
         }
 
-        await saveSettingsToGithub();
+        await saveSharedSettings();
 
         renderGallery();
 
@@ -4371,19 +4031,10 @@ async function uploadGalleryPictures(){
             "✓ Gallery pictures saved."
         );
 
-        alert(
-            "✓ Gallery pictures added."
-        );
-
     }catch(error){
 
         showStatus(
-            "Gallery upload failed:\n"+
-            error.message
-        );
-
-        alert(
-            "Gallery upload failed:\n\n"+
+            "❌ Gallery upload failed:\n"+
             error.message
         );
     }
@@ -4391,7 +4042,7 @@ async function uploadGalleryPictures(){
 
 
 /* =========================================================
-   VIDEO UPLOAD
+   UPLOAD VIDEOS
 ========================================================= */
 
 async function uploadVideos(){
@@ -4410,9 +4061,11 @@ async function uploadVideos(){
                 input.files
             );
 
-        if(!files.length){
+        if(
+            !files.length
+        ){
 
-            alert(
+            showStatus(
                 "Choose a video first."
             );
 
@@ -4433,83 +4086,57 @@ async function uploadVideos(){
                 continue;
             }
 
-            const sizeMB=
-                file.size/
-                (
-                    1024*
-                    1024
-                );
-
-            if(
-                sizeMB>80
-            ){
-
-                throw new Error(
-                    file.name+
-                    " is larger than 80 MB. Please make the video smaller."
-                );
-            }
-
-            showStatus(
-                "Uploading "+file.name+"..."
-            );
-
             const path=
                 "media/video-"+
                 safeFileName(
                     file.name
                 );
 
+            showStatus(
+                "Uploading "+
+                file.name+
+                "..."
+            );
+
             const base64=
                 await fileToBase64(
                     file
                 );
 
-            await githubPutFile(
+            await githubWrite(
                 path,
                 base64,
                 "Add project video"
             );
 
-            siteSettings
-                .videos
-                .push({
+            settings.videos.push({
 
-                    src:path,
+                src:path,
 
-                    title:{
-                        en:
-                            "Project Video",
+                title:{
+                    en:
+                        "Project Video",
 
-                        ar:
-                            "فيديو المشروع"
-                    }
-                });
+                    ar:
+                        "فيديو المشروع"
+                }
+            });
         }
 
-        await saveSettingsToGithub();
+        await saveSharedSettings();
 
         renderVideos();
 
         input.value="";
 
         showStatus(
-            "✓ Project videos saved."
-        );
-
-        alert(
-            "✓ Project videos added."
+            "✓ Videos saved."
         );
 
     }catch(error){
 
         showStatus(
-            "Video upload failed:\n"+
-            error.message
-        );
-
-        alert(
-            "Video upload failed:\n\n"+
+            "❌ Video upload failed:\n"+
             error.message
         );
     }
@@ -4517,30 +4144,22 @@ async function uploadVideos(){
 
 
 /* =========================================================
-   ADMIN ACCESS
+   ADMIN URL
 ========================================================= */
 
-function checkAdminLink(){
+function setupAdminURL(){
 
     const params=
         new URLSearchParams(
             window.location.search
         );
 
-    adminLinkMode=
-        params.get("admin")===
-        "1";
-
-    if(adminLinkMode){
+    if(
+        params.get("admin")==="1"
+    ){
 
         document.body.classList.add(
-            "admin-link-visible"
-        );
-
-    }else{
-
-        document.body.classList.remove(
-            "admin-link-visible"
+            "admin-link"
         );
     }
 }
@@ -4560,6 +4179,7 @@ function openLogin(){
         .add("active");
 }
 
+
 function closeLogin(){
 
     document
@@ -4576,6 +4196,7 @@ function closeLogin(){
         .value="";
 }
 
+
 function loginAdmin(){
 
     const password=
@@ -4586,7 +4207,8 @@ function loginAdmin(){
         .value;
 
     if(
-        password!==ADMIN_PASSWORD
+        password!==
+        ADMIN_PASSWORD
     ){
 
         alert(
@@ -4604,12 +4226,43 @@ function loginAdmin(){
 
     enableEditing();
 
-    loadAdminControls();
+    updateHeroOptionsUI();
 
-    showStatus(
-        "✓ Admin Mode Active"
-    );
+    const saved=
+        localStorage.getItem(
+            "dgm_github_token"
+        );
+
+    const session=
+        sessionStorage.getItem(
+            "dgm_github_token"
+        );
+
+    const token=
+        saved ||
+        session;
+
+    if(token){
+
+        githubToken=
+            token;
+
+        document
+            .getElementById(
+                "githubToken"
+            )
+            .value=
+                token;
+
+        document
+            .getElementById(
+                "rememberToken"
+            )
+            .checked=
+                !!saved;
+    }
 }
+
 
 function logoutAdmin(){
 
@@ -4622,74 +4275,34 @@ function logoutAdmin(){
 
 
 /* =========================================================
-   ADMIN CONTROLS
+   MENU
 ========================================================= */
 
-function loadAdminControls(){
+function toggleMenu(){
 
-    document.getElementById(
-        "showHeroSubtitle"
-    ).checked=
-        siteSettings.hero.showSubtitle;
-
-    document.getElementById(
-        "showHeroTitle"
-    ).checked=
-        siteSettings.hero.showTitle;
-
-    document.getElementById(
-        "showHeroText"
-    ).checked=
-        siteSettings.hero.showText;
-
-    document.getElementById(
-        "heroTitleSize"
-    ).value=
-        siteSettings.hero.titleSize;
-
-    document.getElementById(
-        "heroSubtitleSize"
-    ).value=
-        siteSettings.hero.subtitleSize;
-
-    document.getElementById(
-        "heroTextSize"
-    ).value=
-        siteSettings.hero.textSize;
-
-    applyHeroSettings();
-
-    const local=
-        localStorage.getItem(
-            "dgm_github_token"
-        );
-
-    const session=
-        sessionStorage.getItem(
-            "dgm_github_token"
-        );
-
-    const token=
-        local ||
-        session;
-
-    if(token){
-
-        githubToken=
-            token;
-
+    const nav=
         document.getElementById(
-            "githubToken"
-        ).value=
-            token;
+            "mainNav"
+        );
 
-        if(local){
+    const button=
+        document.querySelector(
+            ".menu-toggle"
+        );
 
-            document.getElementById(
-                "rememberToken"
-            ).checked=true;
-        }
-    }
+    nav.classList.toggle(
+        "mobile-open"
+    );
+
+    button.setAttribute(
+        "aria-expanded",
+
+        nav.classList.contains(
+            "mobile-open"
+        )
+            ? "true"
+            : "false"
+    );
 }
 
 
@@ -4719,33 +4332,25 @@ function sendWhatsApp(event){
     const text=
         arabicMode
 
-        ?
+        ? "مرحباً ديزاين جلاس وميرور الكويت،\n\n"+
+          "الاسم: "+
+          name+
+          "\nرقم الهاتف: "+
+          phone+
+          "\nالمشروع: "+
+          message
 
-        "مرحباً ديزاين جلاس وميرور الكويت،\n\n"+
-        "الاسم: "+
-        name+
-        "\nرقم الهاتف: "+
-        phone+
-        "\nالمشروع: "+
-        message
-
-        :
-
-        "Hello Design Glass & Mirror Kuwait,\n\n"+
-        "Name: "+
-        name+
-        "\nPhone: "+
-        phone+
-        "\nProject: "+
-        message;
+        : "Hello Design Glass & Mirror Kuwait,\n\n"+
+          "Name: "+
+          name+
+          "\nPhone: "+
+          phone+
+          "\nProject: "+
+          message;
 
     window.open(
-
         "https://wa.me/96555507290?text="+
-        encodeURIComponent(
-            text
-        ),
-
+        encodeURIComponent(text),
         "_blank"
     );
 }
@@ -4785,6 +4390,7 @@ document.addEventListener(
     }
 );
 
+
 function closeLightbox(){
 
     document
@@ -4797,49 +4403,17 @@ function closeLightbox(){
 
 
 /* =========================================================
-   MENU
-========================================================= */
-
-function toggleMenu(){
-
-    const nav=
-        document.getElementById(
-            "mainNav"
-        );
-
-    const button=
-        document.querySelector(
-            ".menu-toggle"
-        );
-
-    nav.classList.toggle(
-        "mobile-open"
-    );
-
-    button.setAttribute(
-        "aria-expanded",
-
-        nav.classList.contains(
-            "mobile-open"
-        )
-            ? "true"
-            : "false"
-    );
-}
-
-
-/* =========================================================
    STATUS
 ========================================================= */
 
-function showStatus(message){
+function showStatus(text){
 
     document
         .getElementById(
             "adminStatus"
         )
         .textContent=
-            message;
+            text;
 }
 
 
@@ -4851,19 +4425,34 @@ document.addEventListener(
     "DOMContentLoaded",
     async function(){
 
-        checkAdminLink();
+        setupAdminURL();
 
-        await loadSettings();
+        await loadSharedSettings();
 
-        applyTextSettings();
+        applyLanguage();
 
-        applyHeroSettings();
+        applyHeroLoaded();
 
         renderGallery();
 
         renderVideos();
 
         updateHero();
+
+        const saved=
+            localStorage.getItem(
+                "dgm_github_token"
+            );
+
+        const session=
+            sessionStorage.getItem(
+                "dgm_github_token"
+            );
+
+        githubToken=
+            saved ||
+            session ||
+            "";
 
         setInterval(
             nextHero,
@@ -4893,12 +4482,69 @@ document.addEventListener(
                     );
                 }
             );
-
     }
 );
+
+
+/* =========================================================
+   APPLY HERO AFTER SETTINGS LOAD
+========================================================= */
+
+function applyHeroLoaded(){
+
+    document
+        .getElementById(
+            "heroSubtitle"
+        )
+        .style.display=
+            settings.hero.showSubtitle
+                ? ""
+                : "none";
+
+    document
+        .getElementById(
+            "heroTitle"
+        )
+        .style.display=
+            settings.hero.showTitle
+                ? ""
+                : "none";
+
+    document
+        .getElementById(
+            "heroText"
+        )
+        .style.display=
+            settings.hero.showDescription
+                ? ""
+                : "none";
+
+    document
+        .getElementById(
+            "heroTitle"
+        )
+        .style.fontSize=
+            settings.hero.titleSize+
+            "px";
+
+    document
+        .getElementById(
+            "heroSubtitle"
+        )
+        .style.fontSize=
+            settings.hero.subtitleSize+
+            "px";
+
+    document
+        .getElementById(
+            "heroText"
+        )
+        .style.fontSize=
+            settings.hero.descriptionSize+
+            "px";
+}
 
 </script>
 
 </body>
-
 </html>
