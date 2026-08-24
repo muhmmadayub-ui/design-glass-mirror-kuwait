@@ -1,1844 +1,1201 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Design Glass & Mirror Kuwait</title>
 
-<meta name="description"
-content="Design Glass & Mirror Kuwait - Professional glass, mirror, tempered glass, shower glass, partitions, railings, staircases and custom mirror solutions.">
+<meta name="description" content="Design Glass & Mirror Kuwait - Professional glass, mirror and architectural glass solutions.">
 
 <style>
-
 :root{
-    --dark:#071827;
-    --dark2:#0d2639;
-    --blue:#0ca6dc;
-    --cyan:#55d7ff;
-    --gold:#f4b860;
-    --white:#fff;
-    --soft:#f5f9fc;
-    --text:#142133;
-    --muted:#697789;
-    --line:#dfeaf1;
-    --green:#25d366;
+--dark:#071827;
+--blue:#08a8df;
+--cyan:#5edcff;
+--green:#25d366;
+--gold:#f4b860;
+--white:#fff;
+--text:#172534;
+--muted:#667585;
+--line:#dce7ed;
 }
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
-html{
-    scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    color:var(--text);
-    background:#fff;
-    line-height:1.6;
-    overflow-x:hidden;
+font-family:Arial,Helvetica,sans-serif;
+color:var(--text);
+background:#fff;
+line-height:1.6;
+overflow-x:hidden;
 }
 
-img,video{
-    max-width:100%;
-}
+img,video{max-width:100%}
 
-a{
-    text-decoration:none;
-}
+a{text-decoration:none}
 
-button,input,textarea{
-    font:inherit;
-}
+button,input,textarea{font:inherit}
 
-button{
-    cursor:pointer;
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
+/* ================= HEADER ================= */
 
 header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(7,24,39,.97);
-    border-bottom:1px solid rgba(255,255,255,.1);
-    backdrop-filter:blur(12px);
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(7,24,39,.96);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,.12);
 }
 
-.nav-wrap{
-    max-width:1300px;
-    margin:auto;
-    min-height:78px;
-    padding:8px 24px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
+.nav{
+max-width:1300px;
+margin:auto;
+min-height:78px;
+padding:8px 22px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px;
 }
 
-.logo-area{
-    display:flex;
-    align-items:center;
-    gap:12px;
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
 }
 
-.logo-area img{
-    width:145px;
-    max-height:64px;
-    object-fit:contain;
-    display:block;
+.logo img{
+width:140px;
+height:60px;
+object-fit:contain;
 }
 
-.logo-text{
-    color:white;
-    font-size:12px;
-    font-weight:700;
-    line-height:1.2;
+.logo span{
+color:#fff;
+font-weight:800;
+font-size:11px;
+line-height:1.2;
 }
 
-.logo-text span{
-    display:block;
-    color:var(--cyan);
-    font-size:9px;
-    letter-spacing:2px;
-    margin-top:3px;
+.logo small{
+display:block;
+color:var(--cyan);
+font-size:9px;
+letter-spacing:2px;
 }
 
 nav{
-    display:flex;
-    align-items:center;
-    gap:5px;
+display:flex;
+gap:4px;
+align-items:center;
 }
 
 nav a{
-    color:white;
-    padding:9px 11px;
-    border-radius:8px;
-    font-size:13px;
-    font-weight:700;
+color:white;
+padding:9px 10px;
+border-radius:8px;
+font-size:13px;
+font-weight:bold;
 }
 
 nav a:hover{
-    background:rgba(255,255,255,.1);
+background:rgba(255,255,255,.1);
 }
 
-.header-buttons{
-    display:flex;
-    align-items:center;
-    gap:8px;
+.header-right{
+display:flex;
+gap:7px;
+align-items:center;
 }
 
-.language-btn,
+.lang-btn,.admin-btn,.menu-btn{
+border:1px solid rgba(255,255,255,.3);
+background:transparent;
+color:#fff;
+border-radius:20px;
+padding:8px 11px;
+font-weight:bold;
+cursor:pointer;
+}
+
 .admin-btn{
-    border:1px solid rgba(255,255,255,.3);
-    background:transparent;
-    color:white;
-    border-radius:20px;
-    padding:8px 12px;
-    font-weight:700;
-}
-
-.admin-btn{
-    background:rgba(12,166,220,.18);
+background:rgba(8,168,223,.18);
 }
 
 .menu-btn{
-    display:none;
-    border:0;
-    background:transparent;
-    color:white;
-    font-size:28px;
+display:none;
+font-size:23px;
 }
 
-
-/* =========================================================
-   HERO
-========================================================= */
+/* ================= HERO ================= */
 
 .hero{
-    min-height:720px;
-    position:relative;
-    overflow:hidden;
-    color:white;
-
-    display:flex;
-    align-items:flex-end;
-
-    background-image:
-        linear-gradient(
-            180deg,
-            rgba(0,0,0,.05),
-            rgba(0,0,0,.25)
-        ),
-        url("twist%20out%20building.jpg");
-
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-
-    animation:heroZoom 18s ease-in-out infinite alternate;
+height:700px;
+min-height:620px;
+position:relative;
+overflow:hidden;
+display:flex;
+align-items:flex-end;
+color:#fff;
+background:#17364a;
 }
 
-/* Slow professional movement */
-
-@keyframes heroZoom{
-
-    0%{
-        background-position:center center;
-        background-size:100%;
-    }
-
-    100%{
-        background-position:center 45%;
-        background-size:108%;
-    }
-
+.hero-bg{
+position:absolute;
+inset:-35px;
+background-image:url("twist%20out%20building.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+animation:slowMove 18s ease-in-out infinite alternate;
+z-index:0;
 }
 
-
-/* Very light bottom gradient only */
-
-.hero::after{
-    content:"";
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    height:250px;
-
-    background:linear-gradient(
-        to top,
-        rgba(0,0,0,.65),
-        rgba(0,0,0,.12),
-        transparent
-    );
-
-    pointer-events:none;
+@keyframes slowMove{
+0%{
+transform:scale(1);
+background-position:45% 50%;
+}
+100%{
+transform:scale(1.06);
+background-position:55% 48%;
+}
 }
 
+/* light overlay - NOT dark */
 
-/* HERO CONTENT IS NOW AT THE BOTTOM */
+.hero-overlay{
+position:absolute;
+inset:0;
+background:
+linear-gradient(
+to bottom,
+rgba(0,20,35,.12),
+rgba(0,20,35,.18) 50%,
+rgba(0,15,25,.58) 100%
+);
+z-index:1;
+}
 
 .hero-content{
-    position:relative;
-    z-index:2;
-
-    width:100%;
-    max-width:1300px;
-
-    margin:auto;
-
-    padding:
-        40px 30px 35px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
+position:relative;
+z-index:2;
+width:100%;
+max-width:1250px;
+margin:auto;
+padding:30px 30px 32px;
 }
 
-
-/* REMOVED HERO TITLE */
-
-.hero p{
-    max-width:850px;
-
-    font-size:clamp(17px,2vw,22px);
-
-    color:#fff;
-
-    text-shadow:
-        0 2px 8px rgba(0,0,0,.65);
-
-    margin-bottom:25px;
+.hero-label{
+display:inline-block;
+font-size:12px;
+font-weight:800;
+letter-spacing:2px;
+padding:7px 13px;
+border-radius:30px;
+background:rgba(0,0,0,.28);
+border:1px solid rgba(255,255,255,.35);
+margin-bottom:10px;
+animation:dropIn .9s ease both;
 }
 
+.hero-text{
+max-width:650px;
+font-size:clamp(16px,2vw,20px);
+font-weight:500;
+text-shadow:0 2px 8px rgba(0,0,0,.5);
+animation:dropIn 1.1s ease .15s both;
+}
 
-/* BUTTONS AT BOTTOM */
+@keyframes dropIn{
+from{
+opacity:0;
+transform:translateY(-70px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* buttons at END of hero */
 
 .hero-buttons{
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
-
-    flex-wrap:wrap;
-
-    gap:12px;
-
-    margin-top:5px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:20px;
 }
 
 .hero-btn{
-    display:inline-flex;
-
-    align-items:center;
-    justify-content:center;
-
-    min-height:52px;
-
-    padding:13px 24px;
-
-    border-radius:30px;
-
-    font-weight:800;
-
-    box-shadow:
-        0 8px 25px rgba(0,0,0,.25);
-
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+min-width:145px;
+padding:12px 20px;
+border-radius:30px;
+font-weight:800;
+font-size:14px;
+transition:.25s;
+box-shadow:0 7px 20px rgba(0,0,0,.2);
 }
 
 .hero-btn:hover{
-    transform:translateY(-3px);
-
-    box-shadow:
-        0 12px 30px rgba(0,0,0,.35);
+transform:translateY(-3px);
 }
 
-.primary{
-    background:linear-gradient(
-        135deg,
-        var(--blue),
-        #0877a8
-    );
-
-    color:white;
-}
-
-.secondary{
-    background:white;
-    color:#10253a;
+.call{
+background:#fff;
+color:#102437;
 }
 
 .whatsapp{
-    background:var(--green);
-    color:white;
+background:var(--green);
+color:#fff;
 }
 
+.work{
+background:var(--blue);
+color:#fff;
+}
 
-/* =========================================================
-   GENERAL SECTIONS
-========================================================= */
+/* ================= GENERAL ================= */
 
 .section{
-    padding:85px 6%;
+padding:80px 6%;
 }
 
 .container{
-    max-width:1280px;
-    margin:auto;
+max-width:1280px;
+margin:auto;
 }
 
-.section-top{
-    max-width:800px;
-    margin:0 auto 45px;
-    text-align:center;
+.section-head{
+max-width:800px;
+margin:0 auto 40px;
+text-align:center;
 }
 
 .eyebrow{
-    color:var(--blue);
-    font-size:12px;
-    font-weight:900;
-    letter-spacing:3px;
-    text-transform:uppercase;
+color:var(--blue);
+font-size:12px;
+font-weight:900;
+letter-spacing:3px;
 }
 
-.section-title{
-    margin-top:8px;
-    color:var(--dark);
-    font-size:clamp(32px,4vw,48px);
-    line-height:1.12;
+.title{
+font-size:clamp(30px,4vw,48px);
+line-height:1.1;
+color:var(--dark);
+margin-top:7px;
 }
 
-.section-text{
-    margin-top:14px;
-    color:var(--muted);
-    font-size:17px;
+.subtitle{
+color:var(--muted);
+margin-top:12px;
+font-size:16px;
 }
-
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
-.about{
-    background:linear-gradient(
-        135deg,
-        #eff9fd,
-        #fff
-    );
-}
-
-.about-layout{
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:50px;
-    align-items:center;
-}
-
-.about-copy h2{
-    font-size:40px;
-    line-height:1.1;
-    margin-bottom:18px;
-    color:var(--dark);
-}
-
-.about-copy p{
-    color:var(--muted);
-    margin-bottom:15px;
-}
-
-.about-points{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-    margin-top:22px;
-}
-
-.about-point{
-    padding:12px 14px;
-    background:white;
-    border:1px solid var(--line);
-    border-radius:12px;
-    font-weight:700;
-    color:#24546b;
-}
-
-.about-image img{
-    width:100%;
-    height:450px;
-    object-fit:cover;
-    border-radius:28px;
-}
-
-
-/* =========================================================
-   SERVICES
-========================================================= */
-
-.services{
-    background:linear-gradient(
-        180deg,
-        #fff,
-        #f3f9fc
-    );
-}
-
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.service-card{
-    position:relative;
-    min-height:300px;
-    border-radius:22px;
-    overflow:hidden;
-    background:#102b41;
-    color:white;
-    box-shadow:0 15px 45px rgba(10,35,50,.12);
-}
-
-.service-card img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    display:block;
-    transition:transform .5s ease;
-}
-
-.service-card:hover img{
-    transform:scale(1.06);
-}
-
-.service-card::after{
-    content:"";
-    position:absolute;
-    inset:0;
-
-    background:
-        linear-gradient(
-            to top,
-            rgba(2,15,26,.9),
-            rgba(2,15,26,.05)
-        );
-}
-
-.service-info{
-    position:absolute;
-    left:22px;
-    right:22px;
-    bottom:20px;
-    z-index:2;
-}
-
-.service-info h3{
-    font-size:24px;
-    margin-bottom:4px;
-}
-
-.service-info p{
-    font-size:13px;
-    color:#d9edf7;
-}
-
-
-/* =========================================================
-   FEATURES
-========================================================= */
-
-.features{
-    background:var(--dark);
-    color:white;
-}
-
-.feature-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-}
-
-.feature{
-    padding:28px 22px;
-    border:1px solid rgba(255,255,255,.12);
-    border-radius:18px;
-    background:rgba(255,255,255,.035);
-}
-
-.feature-number{
-    color:var(--gold);
-    font-weight:900;
-    font-size:12px;
-    letter-spacing:2px;
-}
-
-.feature h3{
-    margin:8px 0;
-}
-
-.feature p{
-    color:#b9cbd6;
-    font-size:14px;
-}
-
-
-/* =========================================================
-   GALLERY
-========================================================= */
-
-.gallery{
-    background:white;
-}
-
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.gallery-card{
-    background:white;
-    border:1px solid var(--line);
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 12px 35px rgba(15,45,65,.08);
-    cursor:pointer;
-    transition:.25s;
-}
-
-.gallery-card:hover{
-    transform:translateY(-5px);
-}
-
-.gallery-card img{
-    width:100%;
-    height:270px;
-    object-fit:cover;
-    display:block;
-}
-
-.gallery-caption{
-    padding:15px;
-    font-weight:800;
-    color:var(--dark);
-}
-
-
-/* =========================================================
-   VIDEO
-========================================================= */
-
-.video-section{
-    background:
-        linear-gradient(
-            135deg,
-            #081d2d,
-            #0d3e59
-        );
-
-    color:white;
-}
-
-.video-layout{
-    display:grid;
-    grid-template-columns:.8fr 1.2fr;
-    gap:40px;
-    align-items:center;
-}
-
-.video-copy h2{
-    font-size:clamp(34px,4vw,52px);
-    line-height:1.05;
-    margin-bottom:15px;
-}
-
-.video-copy p{
-    color:#c2d7e2;
-}
-
-.video-frame{
-    overflow:hidden;
-    border-radius:24px;
-    border:1px solid rgba(255,255,255,.15);
-    background:black;
-}
-
-.video-frame video{
-    width:100%;
-    display:block;
-}
-
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
-.contact{
-    background:#f5f9fc;
-}
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-}
-
-.contact-box{
-    padding:30px;
-    background:white;
-    border:1px solid var(--line);
-    border-radius:20px;
-}
-
-.contact-box h3{
-    color:var(--dark);
-    margin-bottom:18px;
-}
-
-.contact-item{
-    padding:12px 0;
-    border-bottom:1px solid var(--line);
-}
-
-.contact-item strong{
-    display:block;
-    color:var(--blue);
-    font-size:12px;
-    letter-spacing:1px;
-}
-
-.contact-item a{
-    color:var(--text);
-    font-weight:700;
-}
-
-.quote-form{
-    display:grid;
-    gap:12px;
-}
-
-.quote-form input,
-.quote-form textarea{
-    width:100%;
-    border:1px solid var(--line);
-    border-radius:12px;
-    padding:13px;
-    outline:none;
-}
-
-.quote-form textarea{
-    min-height:130px;
-    resize:vertical;
-}
-
-.quote-form button{
-    border:0;
-    padding:14px;
-    border-radius:30px;
-    background:var(--green);
-    color:white;
-    font-weight:800;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer{
-    background:var(--dark);
-    color:white;
-    padding:35px 6%;
-}
-
-.footer-inner{
-    max-width:1280px;
-    margin:auto;
-
-    display:flex;
-    justify-content:space-between;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.footer-inner p{
-    color:#b9cbd6;
-}
-
-.footer-links{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.footer-links a{
-    color:white;
-}
-
-
-/* =========================================================
-   LIGHTBOX
-========================================================= */
-
-.lightbox{
-    position:fixed;
-    inset:0;
-    z-index:5000;
-
-    display:none;
-
-    align-items:center;
-    justify-content:center;
-
-    padding:25px;
-
-    background:rgba(0,0,0,.92);
-}
-
-.lightbox.show{
-    display:flex;
-}
-
-.lightbox img{
-    max-width:95vw;
-    max-height:90vh;
-    object-fit:contain;
-}
-
-.close-lightbox{
-    position:absolute;
-    top:20px;
-    right:25px;
-
-    border:0;
-    background:transparent;
-    color:white;
-    font-size:40px;
-}
-
-
-/* =========================================================
-   ADMIN
-========================================================= */
-
-.admin-panel{
-    position:fixed;
-
-    right:20px;
-    bottom:20px;
-
-    z-index:4000;
-
-    width:360px;
-    max-width:calc(100vw - 40px);
-
-    background:white;
-
-    border-radius:20px;
-
-    box-shadow:0 20px 60px rgba(0,0,0,.3);
-
-    padding:20px;
-
-    display:none;
-}
-
-body.admin-mode .admin-panel{
-    display:block;
-}
-
-.admin-panel h3{
-    color:var(--dark);
-    margin-bottom:8px;
-}
-
-.admin-panel p{
-    color:var(--muted);
-    font-size:13px;
-    margin-bottom:12px;
-}
-
-.admin-panel label{
-    display:block;
-
-    color:var(--dark);
-
-    font-size:12px;
-    font-weight:800;
-
-    margin-top:10px;
-}
-
-.admin-panel input{
-    width:100%;
-    padding:10px;
-    border:1px solid var(--line);
-    border-radius:9px;
-}
-
-.admin-actions{
-    display:grid;
-    gap:8px;
-    margin-top:15px;
-}
-
-.admin-actions button{
-    border:0;
-    padding:10px;
-    border-radius:10px;
-    font-weight:800;
-}
-
-.save-admin{
-    background:var(--blue);
-    color:white;
-}
-
-.close-admin{
-    background:#eee;
-    color:var(--text);
-}
-
-
-/* EDIT MODE */
 
 .editable{
-    transition:
-        outline .2s ease,
-        background .2s ease;
+cursor:default;
 }
 
 body.admin-mode .editable{
-    outline:2px dashed rgba(12,166,220,.55);
-    outline-offset:5px;
-    cursor:text;
+outline:2px dashed rgba(8,168,223,.6);
+outline-offset:4px;
+cursor:text;
 }
 
-body.admin-mode .editable:hover{
-    background:rgba(12,166,220,.08);
+/* ================= ABOUT ================= */
+
+.about{
+background:linear-gradient(135deg,#eef9fd,#fff);
 }
 
-
-/* =========================================================
-   LOGIN
-========================================================= */
-
-.login-overlay{
-    position:fixed;
-    inset:0;
-    z-index:6000;
-
-    display:none;
-
-    align-items:center;
-    justify-content:center;
-
-    padding:20px;
-
-    background:rgba(0,0,0,.7);
+.about-grid{
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:45px;
+align-items:center;
 }
 
-.login-overlay.show{
-    display:flex;
+.about-copy h2{
+font-size:40px;
+line-height:1.1;
+color:var(--dark);
+margin-bottom:16px;
+}
+
+.about-copy p{
+color:var(--muted);
+margin-bottom:14px;
+}
+
+.about-img img{
+width:100%;
+height:430px;
+object-fit:cover;
+border-radius:25px;
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+background:#f5f9fc;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+position:relative;
+height:300px;
+overflow:hidden;
+border-radius:20px;
+background:#102b41;
+box-shadow:0 12px 35px rgba(10,35,50,.12);
+}
+
+.card img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.5s;
+}
+
+.card:hover img{
+transform:scale(1.06);
+}
+
+.card-info{
+position:absolute;
+z-index:2;
+left:20px;
+right:20px;
+bottom:18px;
+color:#fff;
+}
+
+.card-info h3{
+font-size:23px;
+}
+
+.card-info p{
+font-size:13px;
+color:#e4f4fa;
+}
+
+.card:after{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(to top,rgba(0,0,0,.8),transparent 65%);
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+background:var(--dark);
+color:#fff;
+}
+
+.features .title{
+color:#fff;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.feature{
+padding:25px;
+border:1px solid rgba(255,255,255,.12);
+border-radius:18px;
+background:rgba(255,255,255,.04);
+}
+
+.feature-number{
+color:var(--gold);
+font-weight:bold;
+}
+
+.feature h3{
+margin:7px 0;
+}
+
+.feature p{
+font-size:14px;
+color:#bcd0db;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.gallery-card{
+border:1px solid var(--line);
+border-radius:18px;
+overflow:hidden;
+background:#fff;
+box-shadow:0 10px 30px rgba(15,45,65,.08);
+cursor:pointer;
+transition:.25s;
+}
+
+.gallery-card:hover{
+transform:translateY(-5px);
+}
+
+.gallery-card img{
+width:100%;
+height:260px;
+object-fit:cover;
+display:block;
+}
+
+.caption{
+padding:14px;
+font-weight:bold;
+}
+
+/* ================= VIDEO ================= */
+
+.video-section{
+background:linear-gradient(135deg,#081d2d,#0d405a);
+color:#fff;
+}
+
+.video-grid{
+display:grid;
+grid-template-columns:.8fr 1.2fr;
+gap:40px;
+align-items:center;
+}
+
+.video-grid h2{
+font-size:clamp(34px,4vw,52px);
+line-height:1.05;
+margin-bottom:15px;
+}
+
+.video-grid p{
+color:#c5d8e2;
+}
+
+.video-box{
+background:#000;
+border-radius:22px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.15);
+}
+
+.video-box video{
+width:100%;
+display:block;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+background:#f5f9fc;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+}
+
+.contact-box{
+background:#fff;
+border:1px solid var(--line);
+border-radius:20px;
+padding:28px;
+}
+
+.contact-box h3{
+margin-bottom:15px;
+}
+
+.contact-item{
+padding:11px 0;
+border-bottom:1px solid var(--line);
+}
+
+.contact-item strong{
+display:block;
+font-size:11px;
+color:var(--blue);
+letter-spacing:1px;
+}
+
+.contact-item a{
+color:var(--text);
+font-weight:bold;
+}
+
+.form{
+display:grid;
+gap:10px;
+}
+
+.form input,.form textarea{
+width:100%;
+padding:12px;
+border:1px solid var(--line);
+border-radius:10px;
+}
+
+.form textarea{
+min-height:120px;
+}
+
+.form button{
+border:0;
+padding:13px;
+border-radius:25px;
+background:var(--green);
+color:#fff;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+background:var(--dark);
+color:#fff;
+padding:30px 6%;
+}
+
+.footer{
+max-width:1280px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.footer p{
+color:#b9cbd6;
+}
+
+.footer a{
+color:#fff;
+margin-left:12px;
+}
+
+/* ================= LIGHTBOX ================= */
+
+.lightbox{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.92);
+z-index:5000;
+display:none;
+align-items:center;
+justify-content:center;
+padding:20px;
+}
+
+.lightbox.show{
+display:flex;
+}
+
+.lightbox img{
+max-width:95vw;
+max-height:90vh;
+object-fit:contain;
+}
+
+.close{
+position:absolute;
+right:25px;
+top:15px;
+font-size:40px;
+color:#fff;
+background:none;
+border:0;
+cursor:pointer;
+}
+
+/* ================= LOGIN ================= */
+
+.login{
+position:fixed;
+inset:0;
+z-index:6000;
+display:none;
+align-items:center;
+justify-content:center;
+background:rgba(0,0,0,.7);
+padding:20px;
+}
+
+.login.show{
+display:flex;
 }
 
 .login-box{
-    width:380px;
-    max-width:100%;
-
-    background:white;
-
-    border-radius:20px;
-
-    padding:30px;
-
-    box-shadow:0 25px 70px rgba(0,0,0,.4);
+background:#fff;
+padding:28px;
+border-radius:20px;
+width:370px;
+max-width:100%;
 }
 
 .login-box h2{
-    margin-bottom:10px;
+margin-bottom:8px;
 }
 
 .login-box p{
-    color:var(--muted);
-    margin-bottom:18px;
+font-size:13px;
+color:var(--muted);
+margin-bottom:15px;
 }
 
 .login-box input{
-    width:100%;
-    padding:13px;
-    border:1px solid var(--line);
-    border-radius:10px;
-    margin-bottom:12px;
+width:100%;
+padding:12px;
+border:1px solid var(--line);
+border-radius:10px;
+margin-bottom:10px;
 }
 
 .login-box button{
-    width:100%;
-    border:0;
-    padding:13px;
-    border-radius:10px;
-    background:var(--blue);
-    color:white;
-    font-weight:800;
+width:100%;
+padding:12px;
+border:0;
+border-radius:10px;
+background:var(--blue);
+color:#fff;
+font-weight:bold;
+cursor:pointer;
 }
 
-.cancel-login{
-    margin-top:8px;
-    background:#eee !important;
-    color:var(--text) !important;
+.login-box .cancel{
+margin-top:8px;
+background:#eee;
+color:#222;
 }
 
+/* ================= ADMIN ================= */
 
-/* =========================================================
-   MOBILE
-========================================================= */
+.admin-panel{
+position:fixed;
+right:18px;
+bottom:18px;
+z-index:4000;
+width:350px;
+max-width:calc(100vw - 36px);
+background:#fff;
+border-radius:20px;
+box-shadow:0 20px 60px rgba(0,0,0,.3);
+padding:20px;
+display:none;
+max-height:85vh;
+overflow:auto;
+}
+
+body.admin-mode .admin-panel{
+display:block;
+}
+
+.admin-panel h3{
+color:var(--dark);
+margin-bottom:6px;
+}
+
+.admin-panel p{
+font-size:12px;
+color:var(--muted);
+margin-bottom:12px;
+}
+
+.admin-panel label{
+font-size:11px;
+font-weight:bold;
+display:block;
+margin-top:9px;
+}
+
+.admin-panel input{
+width:100%;
+padding:9px;
+border:1px solid var(--line);
+border-radius:8px;
+}
+
+.admin-actions{
+display:grid;
+gap:8px;
+margin-top:15px;
+}
+
+.admin-actions button{
+border:0;
+padding:11px;
+border-radius:10px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.save{
+background:var(--blue);
+color:#fff;
+}
+
+.reset{
+background:#eee;
+}
+
+.close-admin{
+background:var(--dark);
+color:#fff;
+}
+
+/* ================= MOBILE ================= */
 
 @media(max-width:900px){
 
-    nav{
-        display:none;
-    }
-
-    .menu-btn{
-        display:block;
-    }
-
-    nav.mobile-open{
-        display:flex;
-
-        position:absolute;
-
-        left:0;
-        right:0;
-        top:78px;
-
-        background:var(--dark);
-
-        padding:15px;
-
-        flex-direction:column;
-    }
-
-    .service-grid,
-    .gallery-grid,
-    .feature-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .about-layout,
-    .video-layout,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
+nav{
+display:none;
 }
 
+.menu-btn{
+display:block;
+}
+
+nav.open{
+display:flex;
+position:absolute;
+left:0;
+right:0;
+top:78px;
+background:var(--dark);
+flex-direction:column;
+padding:15px;
+}
+
+.grid,.gallery-grid,.feature-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.about-grid,.video-grid,.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
 
 @media(max-width:600px){
 
-    .nav-wrap{
-        padding:7px 15px;
-    }
-
-    .logo-area img{
-        width:120px;
-    }
-
-    .logo-text{
-        display:none;
-    }
-
-    .header-buttons{
-        gap:5px;
-    }
-
-    .language-btn,
-    .admin-btn{
-        padding:7px 9px;
-        font-size:11px;
-    }
-
-    .hero{
-        min-height:650px;
-    }
-
-    .hero-content{
-        padding:
-            40px 20px 28px;
-    }
-
-    .hero p{
-        font-size:16px;
-        margin-bottom:18px;
-    }
-
-    .hero-buttons{
-        gap:9px;
-    }
-
-    .hero-btn{
-        min-height:48px;
-        padding:11px 16px;
-        font-size:13px;
-    }
-
-    .section{
-        padding:65px 20px;
-    }
-
-    .service-grid,
-    .gallery-grid,
-    .feature-grid,
-    .about-points{
-        grid-template-columns:1fr;
-    }
-
-    .about-image img{
-        height:330px;
-    }
-
-    .admin-panel{
-        right:10px;
-        bottom:10px;
-        max-width:calc(100vw - 20px);
-    }
-
+.logo img{
+width:110px;
 }
 
-
-/* =========================================================
-   RTL / ARABIC
-========================================================= */
-
-html[dir="rtl"] body{
-    text-align:right;
+.logo span{
+display:none;
 }
 
-html[dir="rtl"] .hero-content{
-    direction:rtl;
+.hero{
+height:650px;
+min-height:600px;
 }
 
-html[dir="rtl"] .hero-buttons{
-    justify-content:flex-start;
+.hero-content{
+padding:20px;
 }
 
-html[dir="rtl"] .nav-wrap{
-    direction:rtl;
+.hero-label{
+font-size:10px;
 }
 
-html[dir="rtl"] nav{
-    direction:rtl;
+.hero-text{
+font-size:15px;
+max-width:100%;
 }
 
-html[dir="rtl"] .about-layout,
-html[dir="rtl"] .video-layout,
-html[dir="rtl"] .contact-grid{
-    direction:rtl;
+.hero-buttons{
+gap:8px;
 }
 
+.hero-btn{
+min-width:0;
+flex:1;
+padding:11px 12px;
+font-size:12px;
+}
+
+.grid,.gallery-grid,.feature-grid{
+grid-template-columns:1fr;
+}
+
+.section{
+padding:65px 20px;
+}
+
+.about-img img{
+height:320px;
+}
+
+.admin-panel{
+right:10px;
+bottom:10px;
+}
+
+}
 </style>
 </head>
 
-
 <body>
 
-
-<!-- =====================================================
-HEADER
-===================================================== -->
-
+<!-- HEADER -->
 <header>
+<div class="nav">
 
-<div class="nav-wrap">
-
-<a href="#home" class="logo-area">
-
-<img
-src="design%20logo.jpeg"
-alt="Design Glass & Mirror Kuwait Logo">
-
-<div class="logo-text">
+<a href="#home" class="logo">
+<img src="design%20logo.jpeg" alt="Design Glass & Mirror Kuwait">
+<span>
 DESIGN GLASS & MIRROR
-<span>KUWAIT</span>
-</div>
-
+<small>KUWAIT</small>
+</span>
 </a>
 
-
-<nav id="mainNav">
-
+<nav id="nav">
 <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
-
 <a href="#about" data-en="About" data-ar="من نحن">About</a>
-
 <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
-
 <a href="#gallery" data-en="Our Work" data-ar="أعمالنا">Our Work</a>
-
 <a href="#videos" data-en="Videos" data-ar="الفيديوهات">Videos</a>
-
 <a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
-
 </nav>
 
+<div class="header-right">
 
-<div class="header-buttons">
+<button class="lang-btn" id="langBtn" onclick="toggleLanguage()">العربية</button>
 
-<button
-class="language-btn"
-onclick="toggleLanguage()"
-id="languageButton">
-العربية
-</button>
+<button class="admin-btn" onclick="openLogin()">🔐 Admin</button>
 
-<button
-class="admin-btn"
-onclick="openLogin()">
-🔐 Admin
-</button>
-
-<button
-class="menu-btn"
-onclick="toggleMobileMenu()">
-☰
-</button>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
 
 </div>
-
 </div>
-
 </header>
 
-
-<!-- =====================================================
-HERO
-===================================================== -->
-
+<!-- HERO -->
 <section class="hero" id="home">
+
+<div class="hero-bg" id="heroBg"></div>
+<div class="hero-overlay"></div>
 
 <div class="hero-content">
 
-<!-- IMPORTANT:
-     HERO TITLE "Glass That Defines Your Space."
-     HAS BEEN REMOVED.
--->
+<div class="hero-label editable" data-key="heroLabel">
+DESIGN GLASS & MIRROR KUWAIT
+</div>
 
-<p
-class="editable"
-data-key="heroText"
-data-en="Professional glass, mirror and architectural glass solutions for homes, shops, offices and modern buildings across Kuwait."
-data-ar="حلول احترافية للزجاج والمرايا والزجاج المعماري للمنازل والمحلات والمكاتب والمباني الحديثة في جميع أنحاء الكويت.">
-
-Professional glass, mirror and architectural glass solutions
-for homes, shops, offices and modern buildings across Kuwait.
-
-</p>
-
-
-<!-- BUTTONS ARE NOW AT THE BOTTOM -->
+<div class="hero-text editable" data-key="heroText">
+Professional glass, mirror and architectural glass solutions for homes, shops, offices and modern buildings across Kuwait.
+</div>
 
 <div class="hero-buttons">
 
-<a
-href="tel:+96555507290"
-class="hero-btn primary"
-data-en="📞 Call Now"
-data-ar="📞 اتصل الآن">
+<a class="hero-btn call" href="tel:+96555507290">
 📞 Call Now
 </a>
 
-
-<a
-href="https://wa.me/96555507290"
-target="_blank"
-class="hero-btn whatsapp"
-data-en="💬 WhatsApp"
-data-ar="💬 واتساب">
+<a class="hero-btn whatsapp" href="https://wa.me/96555507290" target="_blank">
 💬 WhatsApp
 </a>
 
-
-<a
-href="#gallery"
-class="hero-btn secondary"
-data-en="View Our Work"
-data-ar="شاهد أعمالنا">
+<a class="hero-btn work" href="#gallery">
 View Our Work
 </a>
 
 </div>
 
 </div>
-
 </section>
 
-
-<!-- =====================================================
-ABOUT
-===================================================== -->
-
+<!-- ABOUT -->
 <section class="section about" id="about">
 
 <div class="container">
 
-<div class="section-top">
+<div class="section-head">
 
-<div class="eyebrow">
-ABOUT US
-</div>
+<div class="eyebrow">ABOUT US</div>
 
-<h2
-class="section-title editable"
-data-key="aboutTitle">
+<h2 class="title editable" data-key="aboutTitle">
 Design Glass & Mirror Kuwait
 </h2>
 
-<p
-class="section-text editable"
-data-key="aboutIntro">
-Professional glass and mirror solutions designed for quality,
-safety and modern architectural style.
+<p class="subtitle editable" data-key="aboutIntro">
+Professional glass and mirror solutions designed for quality, safety and modern architectural style.
 </p>
 
 </div>
 
-
-<div class="about-layout">
+<div class="about-grid">
 
 <div class="about-copy">
 
-<h2
-class="editable"
-data-key="aboutHeading">
+<h2 class="editable" data-key="aboutHeading">
 Quality Glass. Beautiful Results.
 </h2>
 
-<p
-class="editable"
-data-key="aboutText1">
-We provide custom glass and mirror solutions for residential,
-commercial and architectural projects.
+<p class="editable" data-key="aboutText1">
+We provide custom glass and mirror solutions for residential, commercial and architectural projects.
 </p>
 
-<p
-class="editable"
-data-key="aboutText2">
-From tempered glass and shower enclosures to staircases,
-partitions, railings and custom mirrors, our goal is to deliver
-clean workmanship and a professional finish.
+<p class="editable" data-key="aboutText2">
+From tempered glass and shower enclosures to staircases, partitions, railings and custom mirrors, our goal is to deliver clean workmanship and a professional finish.
 </p>
 
-
-<div class="about-points">
-
-<div class="about-point">
-✓ Tempered Glass
 </div>
 
-<div class="about-point">
-✓ Custom Mirrors
-</div>
-
-<div class="about-point">
-✓ Glass Railings
-</div>
-
-<div class="about-point">
-✓ Shower Glass
-</div>
-
-<div class="about-point">
-✓ Glass Partitions
-</div>
-
-<div class="about-point">
-✓ Architectural Glass
+<div class="about-img">
+<img src="blue%20building%202.jpg" alt="Glass building project">
 </div>
 
 </div>
-
 </div>
-
-
-<div class="about-image">
-
-<img
-src="blue%20building%202.jpg"
-alt="Glass building project"
-loading="lazy">
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-
-<!-- =====================================================
-SERVICES
-===================================================== -->
-
+<!-- SERVICES -->
 <section class="section services" id="services">
 
 <div class="container">
 
-<div class="section-top">
+<div class="section-head">
+<div class="eyebrow">WHAT WE DO</div>
 
-<div class="eyebrow">
-WHAT WE DO
-</div>
-
-<h2
-class="section-title editable"
-data-key="servicesTitle">
+<h2 class="title editable" data-key="servicesTitle">
 Our Glass & Mirror Services
 </h2>
 
-<p
-class="section-text editable"
-data-key="servicesText">
-Complete glass solutions for modern homes, commercial spaces
-and architectural projects.
+<p class="subtitle editable" data-key="servicesText">
+Complete glass solutions for modern homes, commercial spaces and architectural projects.
 </p>
-
 </div>
 
+<div class="grid">
 
-<div class="service-grid">
-
-
-<div class="service-card">
-
-<img
-src="10mm%20clear%20glass%20temper%20shower%20with%20golden%20frame.jpeg"
-alt="Glass shower"
-loading="lazy">
-
-<div class="service-info">
-
-<h3 class="editable">
-Shower Glass
-</h3>
-
-<p class="editable">
-Modern tempered glass shower enclosures.
-</p>
-
+<div class="card">
+<img src="10mm%20clear%20glass%20temper%20shower%20with%20golden%20frame.jpeg" alt="Glass shower">
+<div class="card-info">
+<h3 class="editable">Shower Glass</h3>
+<p class="editable">Modern tempered glass shower enclosures.</p>
+</div>
 </div>
 
+<div class="card">
+<img src="10mm%20clear%20glass%20temper%20stair%20with%20wooden%20handle.jpeg" alt="Glass staircase">
+<div class="card-info">
+<h3 class="editable">Staircase Glass</h3>
+<p class="editable">Safe and stylish glass staircase solutions.</p>
+</div>
 </div>
 
-
-<div class="service-card">
-
-<img
-src="10mm%20clear%20glass%20temper%20stair%20with%20wooden%20handle.jpeg"
-alt="Glass staircase"
-loading="lazy">
-
-<div class="service-info">
-
-<h3 class="editable">
-Staircase Glass
-</h3>
-
-<p class="editable">
-Safe and stylish glass staircase solutions.
-</p>
-
+<div class="card">
+<img src="10mm%20clear%20glass%20temper%20fix%20in%20black%20spider%20system.jpeg" alt="Architectural glass">
+<div class="card-info">
+<h3 class="editable">Architectural Glass</h3>
+<p class="editable">Modern glass systems for buildings and offices.</p>
+</div>
 </div>
 
+<div class="card">
+<img src="6mm%20mirror%20with%20design%20LED%20LIGHT.jpeg" alt="LED mirror">
+<div class="card-info">
+<h3 class="editable">Designer Mirrors</h3>
+<p class="editable">Custom mirrors with modern LED lighting.</p>
+</div>
 </div>
 
+<div class="card">
+<img src="10mm%20clear%20glass%20temper%20sliding%20door.jpeg" alt="Glass doors">
+<div class="card-info">
+<h3 class="editable">Glass Doors</h3>
+<p class="editable">Sliding, fixed and custom glass doors.</p>
+</div>
+</div>
 
-<div class="service-card">
-
-<img
-src="10mm%20clear%20glass%20temper%20fix%20in%20black%20spider%20system.jpeg"
-alt="Architectural glass"
-loading="lazy">
-
-<div class="service-info">
-
-<h3 class="editable">
-Architectural Glass
-</h3>
-
-<p class="editable">
-Modern glass systems for buildings and offices.
-</p>
-
+<div class="card">
+<img src="10mm%20sandblast%20glass%20temper%20fixed%20in%20stanless%20steel.jpeg" alt="Sandblast glass">
+<div class="card-info">
+<h3 class="editable">Sandblast Glass</h3>
+<p class="editable">Privacy glass with professional finishing.</p>
+</div>
 </div>
 
 </div>
-
-
-<div class="service-card">
-
-<img
-src="6mm%20mirror%20with%20design%20LED%20LIGHT.jpeg"
-alt="LED mirror"
-loading="lazy">
-
-<div class="service-info">
-
-<h3 class="editable">
-Designer Mirrors
-</h3>
-
-<p class="editable">
-Custom mirrors with modern LED lighting.
-</p>
-
 </div>
-
-</div>
-
-
-<div class="service-card">
-
-<img
-src="10mm%20clear%20glass%20temper%20sliding%20door.jpeg"
-alt="Glass sliding door"
-loading="lazy">
-
-<div class="service-info">
-
-<h3 class="editable">
-Glass Doors
-</h3>
-
-<p class="editable">
-Sliding, fixed and custom glass doors.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<img
-src="10mm%20sandblast%20glass%20temper%20fixed%20in%20stanless%20steel.jpeg"
-alt="Sandblast glass"
-loading="lazy">
-
-<div class="service-info">
-
-<h3 class="editable">
-Sandblast Glass
-</h3>
-
-<p class="editable">
-Privacy glass with professional finishing.
-</p>
-
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
 </section>
 
-
-<!-- =====================================================
-WHY CHOOSE US
-===================================================== -->
-
+<!-- FEATURES -->
 <section class="section features">
 
 <div class="container">
 
-<div class="section-top">
-
-<div
-class="eyebrow"
-style="color:#55d7ff;">
-WHY CHOOSE US
+<div class="section-head">
+<div class="eyebrow" style="color:#5edcff">WHY CHOOSE US</div>
+<h2 class="title">Built Around Quality</h2>
 </div>
-
-<h2
-class="section-title editable"
-style="color:white;">
-Built Around Quality
-</h2>
-
-</div>
-
 
 <div class="feature-grid">
 
 <div class="feature">
-
-<div class="feature-number">
-01
+<div class="feature-number">01</div>
+<h3>Quality Materials</h3>
+<p>Quality glass and mirror materials selected for each application.</p>
 </div>
-
-<h3>
-Quality Materials
-</h3>
-
-<p>
-Quality glass and mirror materials selected for each application.
-</p>
-
-</div>
-
 
 <div class="feature">
-
-<div class="feature-number">
-02
+<div class="feature-number">02</div>
+<h3>Professional Finish</h3>
+<p>Clean installation and attention to detail.</p>
 </div>
-
-<h3>
-Professional Finish
-</h3>
-
-<p>
-Clean installation and attention to detail.
-</p>
-
-</div>
-
 
 <div class="feature">
-
-<div class="feature-number">
-03
+<div class="feature-number">03</div>
+<h3>Custom Design</h3>
+<p>Solutions designed according to your project.</p>
 </div>
-
-<h3>
-Custom Design
-</h3>
-
-<p>
-Solutions designed according to your project.
-</p>
-
-</div>
-
 
 <div class="feature">
-
-<div class="feature-number">
-04
-</div>
-
-<h3>
-Kuwait Service
-</h3>
-
-<p>
-Glass and mirror solutions throughout Kuwait.
-</p>
-
+<div class="feature-number">04</div>
+<h3>Kuwait Service</h3>
+<p>Glass and mirror solutions throughout Kuwait.</p>
 </div>
 
 </div>
-
 </div>
-
 </section>
 
-
-<!-- =====================================================
-GALLERY
-===================================================== -->
-
+<!-- GALLERY -->
 <section class="section gallery" id="gallery">
 
 <div class="container">
 
-<div class="section-top">
+<div class="section-head">
 
-<div class="eyebrow">
-OUR WORK
-</div>
+<div class="eyebrow">OUR WORK</div>
 
-<h2
-class="section-title editable">
+<h2 class="title editable" data-key="galleryTitle">
 Recent Glass & Mirror Projects
 </h2>
 
-<p
-class="section-text editable">
+<p class="subtitle editable" data-key="galleryText">
 Browse examples of our glass, mirror and architectural projects.
 </p>
 
 </div>
 
-
-<div class="gallery-grid">
-
+<div class="gallery-grid" id="galleryGrid">
 
 <div class="gallery-card">
-
-<img
-src="10mm%20black%20glass%20temper%20staircas%20kloudy.jpeg"
-alt="Black glass staircase"
-loading="lazy">
-
-<div class="gallery-caption">
-Black Glass Staircase
+<img src="10mm%20black%20glass%20temper%20staircas%20kloudy.jpeg" alt="Black Glass Staircase">
+<div class="caption">Black Glass Staircase</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="10mm%20bowns%20glass%20temper%20shower.jpeg"
-alt="Brown glass shower"
-loading="lazy">
-
-<div class="gallery-caption">
-Brown Glass Shower
+<img src="10mm%20bowns%20glass%20temper%20shower.jpeg" alt="Brown Glass Shower">
+<div class="caption">Brown Glass Shower</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="10mm%20browns%20glass%20temper%20amood%20fix.jpeg"
-alt="Brown tempered glass"
-loading="lazy">
-
-<div class="gallery-caption">
-Brown Tempered Glass
+<img src="10mm%20browns%20glass%20temper%20amood%20fix.jpeg" alt="Brown Tempered Glass">
+<div class="caption">Brown Tempered Glass</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="10mm%20browns%20glass%20temper%20staircas.jpeg"
-alt="Brown glass staircase"
-loading="lazy">
-
-<div class="gallery-caption">
-Brown Glass Staircase
+<img src="10mm%20browns%20glass%20temper%20staircas.jpeg" alt="Brown Glass Staircase">
+<div class="caption">Brown Glass Staircase</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="10mm%20clear%20glass%20temper%20pool.jpeg"
-alt="Glass pool project"
-loading="lazy">
-
-<div class="gallery-caption">
-Glass Pool Project
+<img src="10mm%20clear%20glass%20temper%20pool.jpeg" alt="Glass Pool">
+<div class="caption">Glass Pool Project</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="10mm%20clear%20glass%20temper%20swiming%20pool.jpeg"
-alt="Swimming pool glass"
-loading="lazy">
-
-<div class="gallery-caption">
-Swimming Pool Glass
+<img src="10mm%20clear%20glass%20temper%20swiming%20pool.jpeg" alt="Swimming Pool Glass">
+<div class="caption">Swimming Pool Glass</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="10mm%20clear%20glass%20temper%20with%20normal%20doors%20shop.jpeg"
-alt="Shop glass"
-loading="lazy">
-
-<div class="gallery-caption">
-Shop Glass
+<img src="10mm%20clear%20glass%20temper%20with%20normal%20doors%20shop.jpeg" alt="Shop Glass">
+<div class="caption">Shop Glass</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="10mm%20sandblast%20glass%20stair%20with%20standsteel%20handle.jpeg"
-alt="Sandblast staircase"
-loading="lazy">
-
-<div class="gallery-caption">
-Sandblast Staircase
+<img src="10mm%20sandblast%20glass%20stair%20with%20standsteel%20handle.jpeg" alt="Sandblast Staircase">
+<div class="caption">Sandblast Staircase</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="design%20mirror%20with%20light%20back.jpeg"
-alt="Designer mirror"
-loading="lazy">
-
-<div class="gallery-caption">
-Designer Mirror
+<img src="design%20mirror%20with%20light%20back.jpeg" alt="Designer Mirror">
+<div class="caption">Designer Mirror</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="D%20shave%20mirror.jpeg"
-alt="Shave mirror"
-loading="lazy">
-
-<div class="gallery-caption">
-Custom Mirror
+<img src="D%20shave%20mirror.jpeg" alt="Custom Mirror">
+<div class="caption">Custom Mirror</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="wood%20handle%20colour%20pictures%20.jpeg"
-alt="Wood handle glass"
-loading="lazy">
-
-<div class="gallery-caption">
-Glass With Wood Handle
+<img src="wood%20handle%20colour%20pictures%20.jpeg" alt="Wood Handle Glass">
+<div class="caption">Glass With Wood Handle</div>
 </div>
-
-</div>
-
 
 <div class="gallery-card">
-
-<img
-src="blue%20glass.avif"
-alt="Blue architectural glass"
-loading="lazy">
-
-<div class="gallery-caption">
-Blue Architectural Glass
+<img src="blue%20glass.avif" alt="Blue Architectural Glass">
+<div class="caption">Blue Architectural Glass</div>
 </div>
 
 </div>
-
-
 </div>
-
-</div>
-
 </section>
 
-
-<!-- =====================================================
-VIDEO
-===================================================== -->
-
+<!-- VIDEO -->
 <section class="section video-section" id="videos">
 
 <div class="container">
 
-<div class="video-layout">
+<div class="video-grid">
 
-<div class="video-copy">
+<div>
 
-<div
-class="eyebrow"
-style="color:#55d7ff;">
-OUR PROJECTS
-</div>
+<div class="eyebrow" style="color:#5edcff">OUR PROJECTS</div>
 
-<h2 class="editable">
+<h2 class="editable" data-key="videoTitle">
 See Our Work In Action
 </h2>
 
-<p class="editable">
-Watch our glass staircase project and see the quality and
-finishing of our work.
+<p class="editable" data-key="videoText">
+Watch our glass staircase project and see the quality and finishing of our work.
 </p>
 
 </div>
 
-
-<div class="video-frame">
+<div class="video-box">
 
 <video
+id="projectVideo"
 controls
 autoplay
 muted
@@ -1846,9 +1203,7 @@ loop
 playsinline
 preload="auto">
 
-<source
-src="staircase%20clear%20ggm.mp4"
-type="video/mp4">
+<source src="staircase%20clear%20ggm.mp4" type="video/mp4">
 
 Your browser does not support video.
 
@@ -1857,1055 +1212,614 @@ Your browser does not support video.
 </div>
 
 </div>
-
 </div>
-
 </section>
 
-
-<!-- =====================================================
-CONTACT
-===================================================== -->
-
+<!-- CONTACT -->
 <section class="section contact" id="contact">
 
 <div class="container">
 
-<div class="section-top">
+<div class="section-head">
 
-<div class="eyebrow">
-GET IN TOUCH
-</div>
+<div class="eyebrow">GET IN TOUCH</div>
 
-<h2 class="section-title editable">
+<h2 class="title editable" data-key="contactTitle">
 Let's Talk About Your Project
 </h2>
 
-<p class="section-text editable">
-Contact us for glass, mirror and architectural glass
-requirements in Kuwait.
+<p class="subtitle editable" data-key="contactText">
+Contact us for glass, mirror and architectural glass requirements in Kuwait.
 </p>
 
 </div>
 
-
 <div class="contact-grid">
 
-
 <div class="contact-box">
 
-<h3>
-Contact Information
-</h3>
-
+<h3>Contact Information</h3>
 
 <div class="contact-item">
-
-<strong>
-PHONE
-</strong>
-
-<a href="tel:+96555507290">
-+965 5550 7290
-</a>
-
+<strong>PHONE</strong>
+<a href="tel:+96555507290">+965 5550 7290</a>
 </div>
 
-
 <div class="contact-item">
-
-<strong>
-WHATSAPP
-</strong>
-
-<a
-href="https://wa.me/96555507290"
-target="_blank">
-WhatsApp
-</a>
-
+<strong>WHATSAPP</strong>
+<a href="https://wa.me/96555507290" target="_blank">WhatsApp</a>
 </div>
 
-
 <div class="contact-item">
-
-<strong>
-EMAIL
-</strong>
-
-<a href="mailto:designglassmirror@gmail.com">
-designglassmirror@gmail.com
-</a>
-
+<strong>EMAIL</strong>
+<a href="mailto:designglassmirror@gmail.com">designglassmirror@gmail.com</a>
 </div>
 
-
 <div class="contact-item">
-
-<strong>
-LOCATION
-</strong>
-
-<span>
+<strong>LOCATION</strong>
 Kuwait
-</span>
-
 </div>
 
-
 <div class="contact-item">
-
-<strong>
-INSTAGRAM
-</strong>
-
-<a
-href="https://www.instagram.com/design_glass_mirror/"
-target="_blank">
+<strong>INSTAGRAM</strong>
+<a href="https://www.instagram.com/design_glass_mirror/" target="_blank">
 @design_glass_mirror
 </a>
-
 </div>
 
 </div>
-
 
 <div class="contact-box">
 
-<h3>
-Request a Quote
-</h3>
+<h3>Request a Quote</h3>
 
+<form class="form" onsubmit="sendWhatsApp(event)">
 
-<form
-class="quote-form"
-onsubmit="sendWhatsApp(event)">
+<input id="name" placeholder="Your Name" required>
 
-<input
-id="customerName"
-type="text"
-placeholder="Your Name"
-required>
+<input id="phone" placeholder="Phone Number" required>
 
-<input
-id="customerPhone"
-type="tel"
-placeholder="Phone Number"
-required>
+<textarea id="message" placeholder="Tell us about your project..." required></textarea>
 
-<textarea
-id="customerMessage"
-placeholder="Tell us about your project..."
-required></textarea>
-
-<button type="submit">
-💬 Send Request on WhatsApp
-</button>
+<button type="submit">💬 Send Request on WhatsApp</button>
 
 </form>
 
 </div>
 
 </div>
-
 </div>
-
 </section>
 
-
-<!-- =====================================================
-FOOTER
-===================================================== -->
-
+<!-- FOOTER -->
 <footer>
 
-<div class="footer-inner">
+<div class="footer">
 
-<p>
-© 2026 Design Glass & Mirror Kuwait.
-All Rights Reserved.
-</p>
+<p>© 2026 Design Glass & Mirror Kuwait. All Rights Reserved.</p>
 
-
-<div class="footer-links">
-
-<a href="#home">
-Home
-</a>
-
-<a href="#about">
-About
-</a>
-
-<a href="#services">
-Services
-</a>
-
-<a href="#gallery">
-Our Work
-</a>
-
-<a href="#contact">
-Contact
-</a>
-
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Our Work</a>
+<a href="#contact">Contact</a>
 </div>
 
 </div>
-
 </footer>
 
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
 
-<!-- =====================================================
-LIGHTBOX
-===================================================== -->
+<button class="close" onclick="closeLightbox()">×</button>
 
-<div
-class="lightbox"
-id="lightbox"
-onclick="closeLightbox()">
-
-<button
-class="close-lightbox"
-onclick="closeLightbox()">
-×
-</button>
-
-<img
-id="lightboxImage"
-src=""
-alt="Project">
+<img id="lightboxImg" src="" alt="Project">
 
 </div>
 
-
-<!-- =====================================================
-LOGIN
-===================================================== -->
-
-<div
-class="login-overlay"
-id="loginOverlay">
+<!-- LOGIN -->
+<div class="login" id="login">
 
 <div class="login-box">
 
-<h2>
-🔐 Admin Login
-</h2>
+<h2>🔐 Admin Login</h2>
 
-<p>
-Enter the admin password to edit the website.
-</p>
+<p>Admin mode lets you edit visible text and website file settings.</p>
 
-<input
-id="adminPassword"
-type="password"
-placeholder="Admin Password"
-onkeydown="
-if(event.key==='Enter') loginAdmin();
-">
+<input id="password" type="password" placeholder="Admin Password">
 
-<button onclick="loginAdmin()">
-Login & Edit
-</button>
+<button onclick="login()">Login & Edit</button>
 
-<button
-class="cancel-login"
-onclick="closeLogin()">
-Cancel
-</button>
+<button class="cancel" onclick="closeLogin()">Cancel</button>
 
 </div>
-
 </div>
 
-
-<!-- =====================================================
-ADMIN PANEL
-===================================================== -->
-
+<!-- ADMIN PANEL - ONLY FOR SAVE SETTINGS -->
 <div class="admin-panel">
 
-<h3>
-🛠️ Admin Save Panel
-</h3>
+<h3>🛠️ Admin Save Panel</h3>
 
 <p>
-Edit the website directly on the page while Admin Mode
-is active. Use this panel only for saving your browser
-settings.
+Edit text directly on the website while Admin Mode is ON.
+Use this small panel only for file settings and saving.
 </p>
 
-<hr>
+<label>Hero Background File</label>
+<input id="backgroundFile" value="twist out building.jpg">
 
+<label>Project Video File</label>
+<input id="videoFile" value="staircase clear ggm.mp4">
 
-<label>
-Hero Background Filename
-</label>
-
-<input
-id="adminBackground"
-value="twist out building.jpg">
-
-
-<label>
-Project Video Filename
-</label>
-
-<input
-id="adminVideo"
-value="staircase clear ggm.mp4">
-
-
-<label>
-Logo Filename
-</label>
-
-<input
-id="adminLogo"
-value="design logo.jpeg">
-
+<label>Logo File</label>
+<input id="logoFile" value="design logo.jpeg">
 
 <div class="admin-actions">
 
-<button
-class="save-admin"
-onclick="saveAdminSettings()">
-💾 SAVE ALL CHANGES
+<button class="save" onclick="saveSettings()">
+💾 SAVE EVERYTHING
 </button>
 
-<button
-class="close-admin"
-onclick="logoutAdmin()">
-🔒 Close Edit Mode
+<button class="reset" onclick="resetSettings()">
+↩ Reset
+</button>
+
+<button class="close-admin" onclick="logout()">
+🔒 Close Admin
 </button>
 
 </div>
 
-
-<p style="margin-top:12px;">
-
+<p style="margin-top:12px">
 <strong>Important:</strong>
-
-Text edits are saved in this browser.
-
-For a new photo, background or video to appear for
-all customers, the actual file must be uploaded to
-GitHub and committed.
-
+New photos/videos must exist in your GitHub repository.
+After uploading them, put the exact filename above and save.
 </p>
 
 </div>
 
-
 <script>
 
-/* =========================================================
-   ADMIN PASSWORD
-========================================================= */
+/* =====================================================
+ADMIN PASSWORD
+===================================================== */
 
-const ADMIN_PASSWORD="1234";
+const ADMIN_PASSWORD = "1234";
 
+/* =====================================================
+DEFAULT FILES
+===================================================== */
 
-/* =========================================================
-   DEFAULT FILES
-========================================================= */
-
-const DEFAULT_SETTINGS={
-
-    logo:"design logo.jpeg",
-
-    background:"twist out building.jpg",
-
-    video:"staircase clear ggm.mp4"
-
+const defaults = {
+background:"twist out building.jpg",
+video:"staircase clear ggm.mp4",
+logo:"design logo.jpeg"
 };
 
+/* =====================================================
+MENU
+===================================================== */
 
-/* =========================================================
-   MOBILE MENU
-========================================================= */
+function toggleMenu(){
 
-function toggleMobileMenu(){
-
-    const nav=document.getElementById("mainNav");
-
-    if(nav){
-        nav.classList.toggle("mobile-open");
-    }
+document.getElementById("nav").classList.toggle("open");
 
 }
 
-
-/* =========================================================
-   LOGIN
-========================================================= */
+/* =====================================================
+LOGIN
+===================================================== */
 
 function openLogin(){
 
-    document
-    .getElementById("loginOverlay")
-    .classList.add("show");
+document.getElementById("login").classList.add("show");
 
-    setTimeout(()=>{
-
-        document
-        .getElementById("adminPassword")
-        .focus();
-
-    },100);
+document.getElementById("password").focus();
 
 }
-
 
 function closeLogin(){
 
-    document
-    .getElementById("loginOverlay")
-    .classList.remove("show");
+document.getElementById("login").classList.remove("show");
 
 }
 
+function login(){
 
-function loginAdmin(){
+const password=document.getElementById("password").value;
 
-    const password=
-    document
-    .getElementById("adminPassword")
-    .value;
+if(password!==ADMIN_PASSWORD){
 
-    if(password!==ADMIN_PASSWORD){
+alert("Wrong admin password.");
 
-        alert("❌ Wrong admin password.");
-
-        return;
-
-    }
-
-    localStorage.setItem(
-        "dgm_admin",
-        "true"
-    );
-
-    document.body.classList.add(
-        "admin-mode"
-    );
-
-    enableEditing();
-
-    closeLogin();
-
-    alert(
-        "✅ Admin Edit Mode is ON.\n\n"+
-        "You can now click the outlined text directly "+
-        "on the website and edit it."
-    );
+return;
 
 }
 
+localStorage.setItem("dgm_admin","true");
 
-/* =========================================================
-   LOGOUT
-========================================================= */
+document.body.classList.add("admin-mode");
 
-function logoutAdmin(){
+enableEditing();
 
-    localStorage.removeItem(
-        "dgm_admin"
-    );
+closeLogin();
 
-    document.body.classList.remove(
-        "admin-mode"
-    );
-
-    disableEditing();
+alert("Admin Mode ON. You can now edit text directly on the page.");
 
 }
 
+/* =====================================================
+LOGOUT
+===================================================== */
 
-/* =========================================================
-   EDITING
-========================================================= */
+function logout(){
+
+saveText();
+
+localStorage.removeItem("dgm_admin");
+
+document.body.classList.remove("admin-mode");
+
+disableEditing();
+
+}
+
+/* =====================================================
+TEXT EDITING
+===================================================== */
 
 function enableEditing(){
 
-    document
-    .querySelectorAll(".editable")
-    .forEach(element=>{
+document.querySelectorAll(".editable").forEach(el=>{
 
-        element.contentEditable="true";
+el.contentEditable="true";
 
-    });
+});
 
 }
-
 
 function disableEditing(){
 
-    document
-    .querySelectorAll(".editable")
-    .forEach(element=>{
+document.querySelectorAll(".editable").forEach(el=>{
 
-        element.contentEditable="false";
+el.contentEditable="false";
 
-    });
+});
 
 }
 
+/* =====================================================
+SAVE TEXT
+===================================================== */
 
-/* =========================================================
-   SAVE TEXT
-========================================================= */
+function saveText(){
 
-function saveTextChanges(){
+const data={};
 
-    const data={};
+document.querySelectorAll(".editable").forEach(el=>{
 
-    document
-    .querySelectorAll(".editable")
-    .forEach(element=>{
+if(el.dataset.key){
 
-        const key=element.dataset.key;
-
-        if(key){
-
-            data[key]=element.innerHTML;
-
-        }
-
-    });
-
-
-    localStorage.setItem(
-        "dgm_text",
-        JSON.stringify(data)
-    );
+data[el.dataset.key]=el.innerHTML;
 
 }
 
+});
 
-/* =========================================================
-   LOAD TEXT
-========================================================= */
-
-function loadTextChanges(){
-
-    const saved=
-    localStorage.getItem(
-        "dgm_text"
-    );
-
-    if(!saved)return;
-
-    try{
-
-        const data=
-        JSON.parse(saved);
-
-        document
-        .querySelectorAll(".editable")
-        .forEach(element=>{
-
-            const key=element.dataset.key;
-
-            if(
-                key &&
-                data[key]!==undefined
-            ){
-
-                element.innerHTML=
-                data[key];
-
-            }
-
-        });
-
-    }catch(error){
-
-        console.log(
-            "Text settings could not be loaded."
-        );
-
-    }
+localStorage.setItem("dgm_text",JSON.stringify(data));
 
 }
 
+/* =====================================================
+LOAD TEXT
+===================================================== */
 
-/* =========================================================
-   ADMIN FILE SETTINGS
-========================================================= */
+function loadText(){
 
-function saveAdminSettings(){
+const saved=localStorage.getItem("dgm_text");
 
-    const background=
-    document
-    .getElementById("adminBackground")
-    .value
-    .trim();
+if(!saved)return;
 
-    const video=
-    document
-    .getElementById("adminVideo")
-    .value
-    .trim();
+try{
 
-    const logo=
-    document
-    .getElementById("adminLogo")
-    .value
-    .trim();
+const data=JSON.parse(saved);
 
+document.querySelectorAll(".editable").forEach(el=>{
 
-    const settings={
+const key=el.dataset.key;
 
-        background:
-        background||DEFAULT_SETTINGS.background,
+if(key && data[key]!==undefined){
 
-        video:
-        video||DEFAULT_SETTINGS.video,
-
-        logo:
-        logo||DEFAULT_SETTINGS.logo
-
-    };
-
-
-    localStorage.setItem(
-        "dgm_settings",
-        JSON.stringify(settings)
-    );
-
-
-    applyAdminSettings(settings);
-
-    saveTextChanges();
-
-
-    alert(
-        "✅ Saved!\n\n"+
-        "Remember: if you changed a photo or video filename, "+
-        "the actual file must exist in your GitHub repository."
-    );
+el.innerHTML=data[key];
 
 }
 
+});
 
-/* =========================================================
-   APPLY SETTINGS
-========================================================= */
-
-function applyAdminSettings(settings){
-
-    if(!settings)return;
-
-
-    /* LOGO */
-
-    const logo=
-    document.querySelector(
-        ".logo-area img"
-    );
-
-    if(logo){
-
-        logo.src=
-        encodeURI(settings.logo);
-
-    }
-
-
-    /* HERO */
-
-    const hero=
-    document.querySelector(
-        ".hero"
-    );
-
-    if(hero){
-
-        hero.style.backgroundImage=
-        "linear-gradient("+
-        "180deg,"+
-        "rgba(0,0,0,.05),"+
-        "rgba(0,0,0,.25)"+
-        "),url('"+
-        encodeURI(settings.background)+
-        "')";
-
-    }
-
-
-    /* VIDEO */
-
-    const source=
-    document.querySelector(
-        ".video-frame video source"
-    );
-
-    if(source){
-
-        source.src=
-        encodeURI(settings.video);
-
-        const video=
-        source.parentElement;
-
-        if(video){
-
-            video.load();
-
-            video.play().catch(
-                ()=>{}
-            );
-
-        }
-
-    }
+}catch(e){}
 
 }
 
+/* =====================================================
+FILE SETTINGS
+===================================================== */
 
-/* =========================================================
-   LOAD SETTINGS
-========================================================= */
+function saveSettings(){
 
-function loadAdminSettings(){
+saveText();
 
-    const saved=
-    localStorage.getItem(
-        "dgm_settings"
-    );
+const settings={
 
-    let settings=
-    {...DEFAULT_SETTINGS};
+background:document.getElementById("backgroundFile").value.trim() || defaults.background,
 
+video:document.getElementById("videoFile").value.trim() || defaults.video,
 
-    if(saved){
+logo:document.getElementById("logoFile").value.trim() || defaults.logo
 
-        try{
+};
 
-            settings={
-                ...DEFAULT_SETTINGS,
-                ...JSON.parse(saved)
-            };
+localStorage.setItem("dgm_settings",JSON.stringify(settings));
 
-        }catch(error){
+applySettings(settings);
 
-            settings=
-            {...DEFAULT_SETTINGS};
-
-        }
-
-    }
-
-
-    const background=
-    document.getElementById(
-        "adminBackground"
-    );
-
-    const video=
-    document.getElementById(
-        "adminVideo"
-    );
-
-    const logo=
-    document.getElementById(
-        "adminLogo"
-    );
-
-
-    if(background)
-        background.value=settings.background;
-
-    if(video)
-        video.value=settings.video;
-
-    if(logo)
-        logo.value=settings.logo;
-
-
-    applyAdminSettings(settings);
+alert(
+"✅ EVERYTHING SAVED\n\n"+
+"Text and settings are saved in this browser.\n"+
+"Remember: new photos/videos must first be uploaded to GitHub."
+);
 
 }
 
+function applySettings(settings){
 
-/* =========================================================
-   ARABIC / ENGLISH
-========================================================= */
+/* HERO */
 
-let currentLanguage=
-localStorage.getItem(
-    "dgm_language"
-)||"en";
+const bg=document.getElementById("heroBg");
 
+bg.style.backgroundImage="url('"+encodeURI(settings.background)+"')";
+
+/* VIDEO */
+
+const video=document.getElementById("projectVideo");
+
+video.src=encodeURI(settings.video);
+
+video.load();
+
+video.play().catch(()=>{});
+
+/* LOGO */
+
+const logo=document.querySelector(".logo img");
+
+logo.src=encodeURI(settings.logo);
+
+}
+
+/* =====================================================
+LOAD SETTINGS
+===================================================== */
+
+function loadSettings(){
+
+let settings=defaults;
+
+const saved=localStorage.getItem("dgm_settings");
+
+if(saved){
+
+try{
+
+settings=Object.assign({},defaults,JSON.parse(saved));
+
+}catch(e){}
+
+}
+
+document.getElementById("backgroundFile").value=settings.background;
+
+document.getElementById("videoFile").value=settings.video;
+
+document.getElementById("logoFile").value=settings.logo;
+
+applySettings(settings);
+
+}
+
+/* =====================================================
+ARABIC TRANSLATION
+===================================================== */
+
+let language=localStorage.getItem("dgm_language") || "en";
+
+const translations={
+
+en:{
+heroLabel:"DESIGN GLASS & MIRROR KUWAIT",
+heroText:"Professional glass, mirror and architectural glass solutions for homes, shops, offices and modern buildings across Kuwait.",
+aboutTitle:"Design Glass & Mirror Kuwait",
+aboutIntro:"Professional glass and mirror solutions designed for quality, safety and modern architectural style.",
+aboutHeading:"Quality Glass. Beautiful Results.",
+aboutText1:"We provide custom glass and mirror solutions for residential, commercial and architectural projects.",
+aboutText2:"From tempered glass and shower enclosures to staircases, partitions, railings and custom mirrors, our goal is to deliver clean workmanship and a professional finish.",
+servicesTitle:"Our Glass & Mirror Services",
+servicesText:"Complete glass solutions for modern homes, commercial spaces and architectural projects.",
+galleryTitle:"Recent Glass & Mirror Projects",
+galleryText:"Browse examples of our glass, mirror and architectural projects.",
+videoTitle:"See Our Work In Action",
+videoText:"Watch our glass staircase project and see the quality and finishing of our work.",
+contactTitle:"Let's Talk About Your Project",
+contactText:"Contact us for glass, mirror and architectural glass requirements in Kuwait."
+},
+
+ar:{
+heroLabel:"ديزاين للزجاج والمرايا الكويت",
+heroText:"حلول احترافية للزجاج والمرايا والزجاج المعماري للمنازل والمحلات والمكاتب والمباني الحديثة في جميع أنحاء الكويت.",
+aboutTitle:"ديزاين للزجاج والمرايا الكويت",
+aboutIntro:"حلول احترافية للزجاج والمرايا مصممة بجودة عالية وأمان ولمسة معمارية عصرية.",
+aboutHeading:"زجاج عالي الجودة. نتائج جميلة.",
+aboutText1:"نقدم حلول الزجاج والمرايا المصممة حسب الطلب للمشاريع السكنية والتجارية والمعمارية.",
+aboutText2:"من الزجاج المقسى وحواجز الاستحمام إلى السلالم والقواطع والدرابزين والمرايا المخصصة، هدفنا تقديم تركيب نظيف وتشطيب احترافي.",
+servicesTitle:"خدمات الزجاج والمرايا",
+servicesText:"حلول زجاج متكاملة للمنازل الحديثة والمساحات التجارية والمشاريع المعمارية.",
+galleryTitle:"أحدث مشاريع الزجاج والمرايا",
+galleryText:"شاهد أمثلة من مشاريع الزجاج والمرايا والزجاج المعماري التي نفذناها.",
+videoTitle:"شاهد أعمالنا",
+videoText:"شاهد مشروع الدرج الزجاجي وتعرف على جودة وتشطيب أعمالنا.",
+contactTitle:"لنتحدث عن مشروعك",
+contactText:"تواصل معنا لجميع احتياجات الزجاج والمرايا والزجاج المعماري في الكويت."
+}
+
+};
 
 function toggleLanguage(){
 
-    currentLanguage=
-    currentLanguage==="en"
-    ?"ar"
-    :"en";
+language=language==="en"?"ar":"en";
 
+localStorage.setItem("dgm_language",language);
 
-    localStorage.setItem(
-        "dgm_language",
-        currentLanguage
-    );
-
-
-    applyLanguage();
+applyLanguage();
 
 }
-
 
 function applyLanguage(){
 
-    const isArabic=
-    currentLanguage==="ar";
+document.documentElement.lang=language;
 
+document.documentElement.dir=language==="ar"?"rtl":"ltr";
 
-    document.documentElement.lang=
-    isArabic?"ar":"en";
+document.getElementById("langBtn").textContent=
+language==="ar"?"English":"العربية";
 
-    document.documentElement.dir=
-    isArabic?"rtl":"ltr";
+/* navigation */
 
+document.querySelectorAll("nav a").forEach(a=>{
 
-    const button=
-    document.getElementById(
-        "languageButton"
-    );
+a.textContent=a.dataset[language];
 
+});
 
-    if(button){
+/* editable translation */
 
-        button.textContent=
-        isArabic
-        ?"English"
-        :"العربية";
+const t=translations[language];
 
-    }
-
-
-    /* NAVIGATION */
-
-    document
-    .querySelectorAll(
-        "#mainNav a"
-    )
-    .forEach(link=>{
-
-        link.textContent=
-        isArabic
-        ?link.dataset.ar
-        :link.dataset.en;
-
-    });
-
-
-    /* HERO TEXT */
-
-    document
-    .querySelectorAll(
-        "[data-en][data-ar]"
-    )
-    .forEach(element=>{
-
-        /*
-         Do not change elements being actively edited.
-        */
-
-        if(
-            element.classList.contains(
-                "editable"
-            )
-        ){
-
-            element.textContent=
-            isArabic
-            ?element.dataset.ar
-            :element.dataset.en;
-
-        }else{
-
-            element.textContent=
-            isArabic
-            ?element.dataset.ar
-            :element.dataset.en;
-
-        }
-
-    });
-
-
-    /* BUTTONS */
-
-    document
-    .querySelectorAll(
-        ".hero-btn[data-en][data-ar]"
-    )
-    .forEach(button=>{
-
-        button.textContent=
-        isArabic
-        ?button.dataset.ar
-        :button.dataset.en;
-
-    });
+document.querySelector('[data-key="heroLabel"]').innerHTML=t.heroLabel;
+document.querySelector('[data-key="heroText"]').innerHTML=t.heroText;
+document.querySelector('[data-key="aboutTitle"]').innerHTML=t.aboutTitle;
+document.querySelector('[data-key="aboutIntro"]').innerHTML=t.aboutIntro;
+document.querySelector('[data-key="aboutHeading"]').innerHTML=t.aboutHeading;
+document.querySelector('[data-key="aboutText1"]').innerHTML=t.aboutText1;
+document.querySelector('[data-key="aboutText2"]').innerHTML=t.aboutText2;
+document.querySelector('[data-key="servicesTitle"]').innerHTML=t.servicesTitle;
+document.querySelector('[data-key="servicesText"]').innerHTML=t.servicesText;
+document.querySelector('[data-key="galleryTitle"]').innerHTML=t.galleryTitle;
+document.querySelector('[data-key="galleryText"]').innerHTML=t.galleryText;
+document.querySelector('[data-key="videoTitle"]').innerHTML=t.videoTitle;
+document.querySelector('[data-key="videoText"]').innerHTML=t.videoText;
+document.querySelector('[data-key="contactTitle"]').innerHTML=t.contactTitle;
+document.querySelector('[data-key="contactText"]').innerHTML=t.contactText;
 
 }
 
+/* =====================================================
+RESET
+===================================================== */
 
-/* =========================================================
-   WHATSAPP FORM
-========================================================= */
+function resetSettings(){
 
-function sendWhatsApp(event){
+localStorage.removeItem("dgm_settings");
 
-    event.preventDefault();
+localStorage.removeItem("dgm_text");
 
-
-    const name=
-    document
-    .getElementById("customerName")
-    .value
-    .trim();
-
-    const phone=
-    document
-    .getElementById("customerPhone")
-    .value
-    .trim();
-
-    const message=
-    document
-    .getElementById("customerMessage")
-    .value
-    .trim();
-
-
-    const text=
-    "Hello Design Glass & Mirror Kuwait,%0A%0A"+
-    "Name: "+
-    encodeURIComponent(name)+
-    "%0APhone: "+
-    encodeURIComponent(phone)+
-    "%0AProject:%0A"+
-    encodeURIComponent(message);
-
-
-    window.open(
-        "https://wa.me/96555507290?text="+text,
-        "_blank"
-    );
+location.reload();
 
 }
 
+/* =====================================================
+WHATSAPP FORM
+===================================================== */
 
-/* =========================================================
-   LIGHTBOX
-========================================================= */
+function sendWhatsApp(e){
 
-document.addEventListener(
-    "click",
-    function(event){
+e.preventDefault();
 
-        const image=
-        event.target.closest(
-            ".gallery-card img"
-        );
+const name=document.getElementById("name").value.trim();
 
-        if(!image)return;
+const phone=document.getElementById("phone").value.trim();
 
+const message=document.getElementById("message").value.trim();
 
-        const lightbox=
-        document.getElementById(
-            "lightbox"
-        );
+const text=
+"Hello Design Glass & Mirror Kuwait\n\n"+
+"Name: "+name+"\n"+
+"Phone: "+phone+"\n"+
+"Project:\n"+message;
 
-        const lightboxImage=
-        document.getElementById(
-            "lightboxImage"
-        );
-
-
-        lightboxImage.src=
-        image.src;
-
-
-        lightbox.classList.add(
-            "show"
-        );
-
-    }
+window.open(
+"https://wa.me/96555507290?text="+encodeURIComponent(text),
+"_blank"
 );
 
+}
+
+/* =====================================================
+LIGHTBOX
+===================================================== */
+
+document.addEventListener("click",function(e){
+
+const image=e.target.closest(".gallery-card img");
+
+if(!image)return;
+
+document.getElementById("lightboxImg").src=image.src;
+
+document.getElementById("lightbox").classList.add("show");
+
+});
 
 function closeLightbox(){
 
-    document
-    .getElementById(
-        "lightbox"
-    )
-    .classList.remove(
-        "show"
-    );
+document.getElementById("lightbox").classList.remove("show");
 
 }
 
+/* =====================================================
+START
+===================================================== */
 
-/* =========================================================
-   START
-========================================================= */
+document.addEventListener("DOMContentLoaded",function(){
 
-document.addEventListener(
-    "DOMContentLoaded",
-    function(){
+loadText();
 
-        loadTextChanges();
+loadSettings();
 
-        loadAdminSettings();
+applyLanguage();
 
-        applyLanguage();
+if(localStorage.getItem("dgm_admin")==="true"){
 
+document.body.classList.add("admin-mode");
 
-        if(
-            localStorage.getItem(
-                "dgm_admin"
-            )==="true"
-        ){
+enableEditing();
 
-            document.body.classList.add(
-                "admin-mode"
-            );
+}
 
-            enableEditing();
+});
 
-        }
+/* ESC */
 
-    }
-);
+document.addEventListener("keydown",function(e){
 
+if(e.key==="Escape"){
 
-/* =========================================================
-   ESCAPE
-========================================================= */
+closeLightbox();
 
-document.addEventListener(
-    "keydown",
-    function(event){
+closeLogin();
 
-        if(event.key==="Escape"){
+}
 
-            closeLightbox();
-
-            closeLogin();
-
-        }
-
-    }
-);
+});
 
 </script>
 
