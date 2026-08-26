@@ -39,10 +39,6 @@ body{
   background:#fff;
 }
 
-body.admin-open{
-  overflow:hidden;
-}
-
 a{
   text-decoration:none;
   color:inherit;
@@ -78,32 +74,43 @@ img{
   left:0;
   right:0;
   z-index:1000;
-  background:rgba(7,27,43,.90);
+
+  background:rgba(7,27,43,.92);
+
   backdrop-filter:blur(15px);
   -webkit-backdrop-filter:blur(15px);
+
   border-bottom:1px solid rgba(255,255,255,.10);
 }
 
 .nav{
   height:78px;
+
   display:flex;
   align-items:center;
+
   gap:25px;
 }
 
 .brand{
   display:flex;
   align-items:center;
+
   gap:12px;
+
   margin-right:auto;
 }
 
 .brand img{
   width:50px;
   height:50px;
+
   object-fit:contain;
+
   background:#fff;
+
   padding:4px;
+
   border-radius:5px;
 }
 
@@ -113,31 +120,44 @@ img{
 
 .brand-text strong{
   display:block;
+
   color:#fff;
+
   font-size:13px;
+
   letter-spacing:.07em;
 }
 
 .brand-text span{
   display:block;
+
   color:#27b7e8;
+
   font-size:11px;
+
   font-weight:800;
+
   letter-spacing:.18em;
+
   margin-top:4px;
 }
 
 .nav-links{
   display:flex;
   align-items:center;
+
   gap:24px;
 }
 
 .nav-links a{
   color:#fff;
+
   font-size:13px;
+
   font-weight:700;
+
   opacity:.92;
+
   transition:.2s;
 }
 
@@ -148,12 +168,23 @@ img{
 .lang-btn,
 .menu-btn{
   border:1px solid rgba(255,255,255,.25);
+
   background:transparent;
+
   color:#fff;
+
   border-radius:999px;
+
   padding:9px 14px;
+
   font-weight:800;
+
   cursor:pointer;
+}
+
+.lang-btn:hover,
+.menu-btn:hover{
+  background:rgba(255,255,255,.10);
 }
 
 .menu-btn{
@@ -166,23 +197,38 @@ img{
 
 .hero{
   position:relative;
+
   min-height:720px;
+
   height:100vh;
+
   max-height:900px;
+
   overflow:hidden;
+
   background:#071b2b;
 }
 
+/*
+  Clear hero pictures.
+  Very light overlay so the actual pictures
+  remain visible.
+*/
+
 .hero-slide{
   position:absolute;
+
   inset:0;
 
   background-size:cover;
+
   background-position:center center;
+
   background-repeat:no-repeat;
 
   opacity:0;
-  transform:scale(1.015);
+
+  transform:scale(1.005);
 
   transition:
     opacity 1.2s ease,
@@ -191,95 +237,139 @@ img{
 
 .hero-slide.active{
   opacity:1;
-  transform:scale(1.045);
+
+  transform:scale(1.025);
 }
+
+/*
+  LIGHT overlay only.
+  This keeps the hero picture clear.
+*/
 
 .hero-slide::after{
   content:"";
+
   position:absolute;
+
   inset:0;
 
   background:
     linear-gradient(
       180deg,
-      rgba(3,17,27,.28) 0%,
-      rgba(3,17,27,.04) 42%,
-      rgba(3,17,27,.34) 100%
+      rgba(3,17,27,.08) 0%,
+      rgba(3,17,27,.00) 50%,
+      rgba(3,17,27,.16) 100%
     );
 }
 
 /*
-  VERY SMALL HERO CONTENT.
-  No giant heading over the picture.
+  Hero content stays at the bottom.
 */
 
 .hero-content{
   position:absolute;
+
   left:0;
   right:0;
-  bottom:55px;
+
+  bottom:58px;
+
   z-index:5;
 }
 
 .hero-mini{
   display:flex;
-  align-items:center;
+
+  align-items:flex-end;
+
   justify-content:space-between;
+
   gap:20px;
 }
 
+/*
+  Small professional caption.
+  NO giant heading.
+*/
+
 .hero-caption{
   color:#fff;
-  max-width:520px;
+
+  max-width:460px;
 }
 
 .hero-caption span{
   display:inline-flex;
-  padding:8px 13px;
+
+  padding:7px 12px;
+
   border-radius:999px;
 
-  background:rgba(7,27,43,.40);
-  border:1px solid rgba(255,255,255,.35);
+  background:rgba(7,27,43,.42);
 
-  backdrop-filter:blur(8px);
-  -webkit-backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.30);
 
-  font-size:11px;
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+
+  font-size:10px;
+
   font-weight:800;
-  letter-spacing:.12em;
+
+  letter-spacing:.10em;
+
   text-transform:uppercase;
 }
 
 .hero-caption p{
-  margin:11px 0 0;
+  margin:9px 0 0;
+
   color:#fff;
-  font-size:14px;
-  line-height:1.6;
-  text-shadow:0 2px 12px rgba(0,0,0,.6);
+
+  font-size:13px;
+
+  line-height:1.55;
+
+  text-shadow:0 2px 10px rgba(0,0,0,.55);
 }
+
+/* =========================
+   HERO BUTTONS
+========================= */
 
 .hero-actions{
   display:flex;
+
   gap:9px;
+
   flex-wrap:wrap;
+
   justify-content:flex-end;
+
+  align-items:center;
 }
 
 .btn{
   min-height:46px;
+
   display:inline-flex;
+
   align-items:center;
+
   justify-content:center;
 
   padding:0 18px;
 
   border-radius:999px;
+
   border:1px solid rgba(255,255,255,.25);
 
   font-size:13px;
+
   font-weight:800;
 
   cursor:pointer;
+
   transition:.25s;
 
   white-space:nowrap;
@@ -291,32 +381,45 @@ img{
 
 .btn-light{
   background:#fff;
+
   color:#102333;
 }
 
 .btn-blue{
   background:#17a9dc;
+
   border-color:#17a9dc;
+
   color:#fff;
 }
 
 .btn-green{
   background:#19c968;
+
   border-color:#19c968;
+
   color:#fff;
 }
 
+/* =========================
+   HERO DOTS
+========================= */
+
 .hero-dots{
   position:absolute;
+
   left:50%;
-  bottom:20px;
+
+  bottom:19px;
 
   transform:translateX(-50%);
 
   z-index:6;
 
   display:flex;
+
   align-items:center;
+
   gap:7px;
 }
 
@@ -325,10 +428,12 @@ img{
   height:7px;
 
   padding:0;
+
   border:0;
+
   border-radius:99px;
 
-  background:rgba(255,255,255,.45);
+  background:rgba(255,255,255,.55);
 
   cursor:pointer;
 
@@ -337,6 +442,7 @@ img{
 
 .hero-dot.active{
   width:25px;
+
   background:#fff;
 }
 
@@ -354,29 +460,41 @@ img{
 
 .section-head{
   max-width:720px;
+
   margin:0 auto 45px;
+
   text-align:center;
 }
 
 .kicker{
   color:var(--accent2);
+
   font-size:11px;
+
   font-weight:900;
+
   letter-spacing:.20em;
+
   text-transform:uppercase;
 }
 
 .section-head h2{
   color:var(--navy);
+
   font-size:clamp(30px,4vw,46px);
+
   letter-spacing:-.03em;
+
   margin:10px 0 13px;
 }
 
 .section-head p{
   color:var(--muted);
+
   font-size:15px;
+
   line-height:1.8;
+
   margin:0;
 }
 
@@ -386,14 +504,17 @@ img{
 
 .stats{
   display:grid;
+
   grid-template-columns:repeat(4,1fr);
 
   border-top:1px solid var(--line);
+
   border-bottom:1px solid var(--line);
 }
 
 .stat{
   padding:27px 20px;
+
   text-align:center;
 
   border-right:1px solid var(--line);
@@ -405,15 +526,21 @@ img{
 
 .stat strong{
   display:block;
+
   color:var(--navy);
+
   font-size:30px;
 }
 
 .stat span{
   display:block;
+
   margin-top:6px;
+
   color:var(--muted);
+
   font-size:12px;
+
   font-weight:700;
 }
 
@@ -423,8 +550,11 @@ img{
 
 .about-grid{
   display:grid;
+
   grid-template-columns:1.05fr .95fr;
+
   gap:55px;
+
   align-items:center;
 }
 
@@ -432,44 +562,59 @@ img{
   min-height:420px;
 
   border-radius:var(--radius);
+
   overflow:hidden;
 
   box-shadow:var(--shadow);
+
   background:#dce5ea;
 }
 
 .about-image img{
   width:100%;
+
   height:100%;
+
   object-fit:cover;
 }
 
 .about-copy h2{
   color:var(--navy);
+
   font-size:42px;
+
   margin:8px 0 18px;
 }
 
 .about-copy p{
   color:var(--muted);
+
   line-height:1.9;
+
   font-size:15px;
 }
 
 .checks{
   display:grid;
+
   grid-template-columns:1fr 1fr;
+
   gap:11px;
+
   margin-top:25px;
 }
 
 .check{
   padding:13px 15px;
+
   border:1px solid var(--line);
+
   border-radius:14px;
+
   background:#fff;
 
   font-size:13px;
+
   font-weight:800;
 }
 
@@ -479,7 +624,9 @@ img{
 
 .cards{
   display:grid;
+
   grid-template-columns:repeat(3,1fr);
+
   gap:18px;
 }
 
@@ -487,18 +634,23 @@ img{
   padding:27px;
 
   background:#fff;
+
   border:1px solid var(--line);
+
   border-radius:18px;
 
   box-shadow:0 8px 30px rgba(7,27,43,.045);
 
   transition:.25s;
+
   cursor:pointer;
 }
 
 .card:hover{
   transform:translateY(-5px);
+
   box-shadow:var(--shadow);
+
   border-color:#cfe6ef;
 }
 
@@ -507,11 +659,13 @@ img{
   height:48px;
 
   display:grid;
+
   place-items:center;
 
   margin-bottom:19px;
 
   background:#eaf7fb;
+
   color:var(--accent2);
 
   border-radius:14px;
@@ -521,23 +675,31 @@ img{
 
 .card h3{
   color:var(--navy);
+
   font-size:19px;
+
   margin:0 0 8px;
 }
 
 .card p{
   color:var(--muted);
+
   font-size:14px;
+
   line-height:1.7;
+
   margin:0;
 }
 
 .card-link{
   display:inline-block;
+
   margin-top:17px;
 
   color:var(--accent2);
+
   font-size:13px;
+
   font-weight:900;
 }
 
@@ -547,7 +709,9 @@ img{
 
 .project-grid{
   display:grid;
+
   grid-template-columns:repeat(4,1fr);
+
   gap:14px;
 }
 
@@ -567,6 +731,7 @@ img{
 
 .project img{
   width:100%;
+
   height:100%;
 
   object-fit:cover;
@@ -580,6 +745,7 @@ img{
 
 .project-overlay{
   position:absolute;
+
   left:0;
   right:0;
   bottom:0;
@@ -600,9 +766,11 @@ img{
 
 .project-overlay span{
   display:block;
+
   margin-top:4px;
 
   font-size:10px;
+
   opacity:.8;
 }
 
@@ -612,6 +780,7 @@ img{
 
 .video-wrap{
   max-width:1000px;
+
   margin:auto;
 
   position:relative;
@@ -627,6 +796,7 @@ img{
 
 .video-wrap video{
   width:100%;
+
   display:block;
 
   max-height:650px;
@@ -642,8 +812,11 @@ img{
 
 .instagram-box{
   display:grid;
+
   grid-template-columns:1fr auto;
+
   gap:30px;
+
   align-items:center;
 
   padding:34px;
@@ -664,6 +837,7 @@ img{
 
 .instagram-box h2{
   margin:0 0 7px;
+
   font-size:29px;
 }
 
@@ -677,7 +851,9 @@ img{
 
 .ig-btn{
   display:inline-flex;
+
   align-items:center;
+
   gap:9px;
 
   padding:14px 20px;
@@ -685,6 +861,7 @@ img{
   border-radius:999px;
 
   background:#fff;
+
   color:#071b2b;
 
   font-weight:900;
@@ -696,7 +873,9 @@ img{
 
 .contact-grid{
   display:grid;
+
   grid-template-columns:.8fr 1.2fr;
+
   gap:25px;
 }
 
@@ -704,6 +883,7 @@ img{
   padding:29px;
 
   border:1px solid var(--line);
+
   border-radius:20px;
 
   background:#fff;
@@ -711,11 +891,13 @@ img{
 
 .contact-card h3{
   color:var(--navy);
+
   margin:0 0 19px;
 }
 
 .contact-row{
   display:flex;
+
   gap:14px;
 
   align-items:flex-start;
@@ -742,11 +924,13 @@ img{
 .contact-row a,
 .contact-row strong{
   color:var(--navy);
+
   font-weight:800;
 }
 
 .form{
   display:grid;
+
   gap:12px;
 }
 
@@ -755,6 +939,7 @@ img{
   width:100%;
 
   border:1px solid var(--line);
+
   border-radius:12px;
 
   padding:14px 15px;
@@ -769,6 +954,7 @@ img{
 
 .form textarea{
   min-height:145px;
+
   resize:vertical;
 }
 
@@ -776,6 +962,7 @@ img{
   border:0;
 
   background:var(--navy);
+
   color:#fff;
 
   padding:15px;
@@ -793,6 +980,7 @@ img{
 
 footer{
   background:#061725;
+
   color:#a9bdc9;
 
   padding:38px 0;
@@ -800,8 +988,11 @@ footer{
 
 .footer{
   display:flex;
+
   justify-content:space-between;
+
   align-items:center;
+
   gap:20px;
 }
 
@@ -811,6 +1002,7 @@ footer{
 
 .footer-links{
   display:flex;
+
   gap:18px;
 
   font-size:12px;
@@ -826,11 +1018,13 @@ footer{
 
 .modal{
   position:fixed;
+
   inset:0;
 
   z-index:2000;
 
   display:none;
+
   place-items:center;
 
   padding:20px;
@@ -858,6 +1052,7 @@ footer{
 
 .modal-card img{
   width:100%;
+
   max-height:480px;
 
   object-fit:cover;
@@ -869,6 +1064,7 @@ footer{
 
 .modal-body h3{
   color:var(--navy);
+
   margin:0 0 10px;
 
   font-size:27px;
@@ -876,6 +1072,7 @@ footer{
 
 .modal-body p{
   color:var(--muted);
+
   line-height:1.8;
 }
 
@@ -891,6 +1088,7 @@ footer{
   height:40px;
 
   border:0;
+
   border-radius:50%;
 
   background:rgba(0,0,0,.65);
@@ -903,248 +1101,6 @@ footer{
 }
 
 /* =========================
-   ADMIN PANEL
-========================= */
-
-.admin-launch{
-  position:fixed;
-
-  right:18px;
-  bottom:18px;
-
-  z-index:1500;
-
-  padding:11px 16px;
-
-  border:1px solid rgba(255,255,255,.18);
-
-  border-radius:999px;
-
-  background:rgba(7,27,43,.92);
-
-  color:#fff;
-
-  font-size:12px;
-  font-weight:900;
-
-  cursor:pointer;
-
-  box-shadow:0 10px 30px rgba(0,0,0,.25);
-
-  backdrop-filter:blur(12px);
-}
-
-.admin-overlay{
-  position:fixed;
-  inset:0;
-
-  z-index:3000;
-
-  display:none;
-
-  background:rgba(0,0,0,.70);
-
-  padding:20px;
-
-  overflow:auto;
-}
-
-.admin-overlay.open{
-  display:block;
-}
-
-.admin-panel{
-  width:min(850px,100%);
-
-  margin:40px auto;
-
-  background:#fff;
-
-  border-radius:22px;
-
-  overflow:hidden;
-
-  box-shadow:0 25px 80px rgba(0,0,0,.35);
-}
-
-.admin-head{
-  padding:22px 24px;
-
-  background:var(--navy);
-
-  color:#fff;
-
-  display:flex;
-
-  justify-content:space-between;
-  align-items:center;
-
-  gap:20px;
-}
-
-.admin-head h2{
-  margin:0;
-  font-size:20px;
-}
-
-.admin-close{
-  width:40px;
-  height:40px;
-
-  border:1px solid rgba(255,255,255,.2);
-
-  border-radius:50%;
-
-  background:transparent;
-
-  color:#fff;
-
-  font-size:22px;
-
-  cursor:pointer;
-}
-
-.admin-body{
-  padding:24px;
-}
-
-.admin-warning{
-  padding:14px 16px;
-
-  margin-bottom:20px;
-
-  border-radius:12px;
-
-  background:#fff7e6;
-
-  border:1px solid #f1d69b;
-
-  color:#795c1c;
-
-  font-size:13px;
-
-  line-height:1.6;
-}
-
-.admin-section{
-  padding:20px 0;
-
-  border-bottom:1px solid var(--line);
-}
-
-.admin-section:last-child{
-  border-bottom:0;
-}
-
-.admin-section h3{
-  margin:0 0 8px;
-
-  color:var(--navy);
-
-  font-size:17px;
-}
-
-.admin-section p{
-  color:var(--muted);
-
-  font-size:13px;
-
-  line-height:1.6;
-
-  margin:0 0 14px;
-}
-
-.admin-file{
-  display:grid;
-
-  grid-template-columns:1fr auto;
-
-  gap:10px;
-
-  align-items:center;
-}
-
-.admin-file input[type="file"]{
-  width:100%;
-
-  padding:10px;
-
-  border:1px solid var(--line);
-
-  border-radius:10px;
-
-  background:#fafcfd;
-}
-
-.admin-button{
-  border:0;
-
-  padding:11px 15px;
-
-  border-radius:10px;
-
-  background:var(--navy);
-
-  color:#fff;
-
-  font-weight:800;
-
-  cursor:pointer;
-}
-
-.admin-button.blue{
-  background:var(--accent2);
-}
-
-.admin-button.red{
-  background:#b42318;
-}
-
-.admin-status{
-  margin-top:10px;
-
-  font-size:12px;
-
-  color:var(--muted);
-}
-
-.admin-preview{
-  margin-top:15px;
-
-  display:grid;
-
-  grid-template-columns:repeat(4,1fr);
-
-  gap:10px;
-}
-
-.admin-preview-item{
-  border:1px solid var(--line);
-
-  border-radius:10px;
-
-  overflow:hidden;
-
-  background:#f5f8fa;
-}
-
-.admin-preview-item img{
-  width:100%;
-  height:100px;
-  object-fit:cover;
-}
-
-.admin-preview-item small{
-  display:block;
-
-  padding:7px;
-
-  font-size:10px;
-
-  color:var(--muted);
-}
-
-/* =========================
    RTL
 ========================= */
 
@@ -1154,6 +1110,10 @@ html[dir="rtl"] body{
 
 html[dir="rtl"] .hero-caption{
   text-align:right;
+}
+
+html[dir="rtl"] .hero-mini{
+  flex-direction:row-reverse;
 }
 
 html[dir="rtl"] .hero-actions{
@@ -1180,6 +1140,7 @@ html[dir="rtl"] .contact-row{
     position:absolute;
 
     top:72px;
+
     left:15px;
     right:15px;
 
@@ -1190,6 +1151,7 @@ html[dir="rtl"] .contact-row{
     border-radius:0 0 16px 16px;
 
     flex-direction:column;
+
     align-items:stretch;
   }
 
@@ -1209,12 +1171,17 @@ html[dir="rtl"] .contact-row{
     min-height:650px;
   }
 
+  .hero-content{
+    bottom:55px;
+  }
+
   .hero-mini{
     display:block;
   }
 
   .hero-caption{
     max-width:100%;
+
     margin-bottom:15px;
   }
 
@@ -1257,17 +1224,16 @@ html[dir="rtl"] .contact-row{
 
   .footer{
     display:block;
+
     text-align:center;
   }
 
   .footer-links{
     justify-content:center;
-    margin-top:15px;
-    flex-wrap:wrap;
-  }
 
-  .admin-preview{
-    grid-template-columns:1fr 1fr;
+    margin-top:15px;
+
+    flex-wrap:wrap;
   }
 }
 
@@ -1294,6 +1260,10 @@ html[dir="rtl"] .contact-row{
     min-height:620px;
   }
 
+  .hero-content{
+    bottom:50px;
+  }
+
   .hero-caption span{
     font-size:9px;
   }
@@ -1302,10 +1272,17 @@ html[dir="rtl"] .contact-row{
     font-size:12px;
   }
 
+  /*
+    Three buttons remain DOWN at the
+    bottom of the hero.
+  */
+
   .hero-actions{
     display:grid;
 
     grid-template-columns:1fr 1fr;
+
+    width:100%;
   }
 
   .hero-actions .btn:last-child{
@@ -1331,15 +1308,6 @@ html[dir="rtl"] .contact-row{
   .about-copy h2{
     font-size:34px;
   }
-
-  .admin-file{
-    grid-template-columns:1fr;
-  }
-
-  .admin-launch{
-    right:10px;
-    bottom:10px;
-  }
 }
 </style>
 </head>
@@ -1362,51 +1330,66 @@ html[dir="rtl"] .contact-row{
       >
 
       <div class="brand-text">
-        <strong>DESIGN GLASS &amp; MIRROR</strong>
-        <span>KUWAIT</span>
+
+        <strong>
+          DESIGN GLASS &amp; MIRROR
+        </strong>
+
+        <span>
+          KUWAIT
+        </span>
+
       </div>
 
     </a>
 
+
     <nav class="nav-links" id="navLinks">
 
-      <a href="#home"
-         data-en="Home"
-         data-ar="الرئيسية">
-         Home
+      <a
+        href="#home"
+        data-en="Home"
+        data-ar="الرئيسية">
+        Home
       </a>
 
-      <a href="#about"
-         data-en="About"
-         data-ar="من نحن">
-         About
+      <a
+        href="#about"
+        data-en="About"
+        data-ar="من نحن">
+        About
       </a>
 
-      <a href="#services"
-         data-en="Services"
-         data-ar="خدماتنا">
-         Services
+      <a
+        href="#services"
+        data-en="Services"
+        data-ar="خدماتنا">
+        Services
       </a>
 
-      <a href="#projects"
-         data-en="Our Work"
-         data-ar="أعمالنا">
-         Our Work
+      <a
+        href="#projects"
+        data-en="Our Work"
+        data-ar="أعمالنا">
+        Our Work
       </a>
 
-      <a href="#video"
-         data-en="Video"
-         data-ar="الفيديو">
-         Video
+      <a
+        href="#video"
+        data-en="Video"
+        data-ar="الفيديو">
+        Video
       </a>
 
-      <a href="#contact"
-         data-en="Contact"
-         data-ar="اتصل بنا">
-         Contact
+      <a
+        href="#contact"
+        data-en="Contact"
+        data-ar="اتصل بنا">
+        Contact
       </a>
 
     </nav>
+
 
     <button
       class="lang-btn"
@@ -1414,6 +1397,7 @@ html[dir="rtl"] .contact-row{
       type="button">
       العربية
     </button>
+
 
     <button
       class="menu-btn"
@@ -1433,9 +1417,9 @@ html[dir="rtl"] .contact-row{
      HERO
 ========================= -->
 
-<section class="hero" id="home">
-
-  <!-- CHANGE THESE FILENAMES TO ANY IMAGE IN YOUR GITHUB REPOSITORY -->
+<section
+  class="hero"
+  id="home">
 
   <div
     class="hero-slide active"
@@ -1458,7 +1442,11 @@ html[dir="rtl"] .contact-row{
   </div>
 
 
-  <!-- SMALL HERO CONTENT ONLY -->
+  <!--
+    NO BIG HERO HEADING.
+    "Glass That Defines Your Space"
+    has been completely removed.
+  -->
 
   <div class="hero-content">
 
@@ -1483,40 +1471,52 @@ html[dir="rtl"] .contact-row{
         </div>
 
 
+        <!-- BUTTONS AT BOTTOM -->
+
         <div class="hero-actions">
 
           <a
             class="btn btn-light"
             href="tel:+96555507290">
+
             📞
+
             <span
               data-en="Call Now"
               data-ar="اتصل الآن">
               Call Now
             </span>
+
           </a>
+
 
           <a
             class="btn btn-green"
             href="https://wa.me/96555507290"
             target="_blank"
             rel="noopener">
+
             💬
+
             <span
               data-en="WhatsApp"
               data-ar="واتساب">
               WhatsApp
             </span>
+
           </a>
+
 
           <a
             class="btn btn-blue"
             href="#projects">
+
             <span
               data-en="View Our Work"
               data-ar="شاهد أعمالنا">
               View Our Work
             </span>
+
           </a>
 
         </div>
@@ -1547,39 +1547,54 @@ html[dir="rtl"] .contact-row{
   <div class="container stats">
 
     <div class="stat">
+
       <strong>100%</strong>
+
       <span
         data-en="Custom Work"
         data-ar="أعمال مخصصة">
         Custom Work
       </span>
+
     </div>
 
+
     <div class="stat">
+
       <strong>24/7</strong>
+
       <span
         data-en="WhatsApp Contact"
         data-ar="تواصل عبر واتساب">
         WhatsApp Contact
       </span>
+
     </div>
 
+
     <div class="stat">
+
       <strong>15+</strong>
+
       <span
         data-en="Glass & Mirror Services"
         data-ar="خدمات الزجاج والمرايا">
         Glass & Mirror Services
       </span>
+
     </div>
 
+
     <div class="stat">
+
       <strong>KUWAIT</strong>
+
       <span
         data-en="Service Across Kuwait"
         data-ar="خدمة في جميع أنحاء الكويت">
         Service Across Kuwait
       </span>
+
     </div>
 
   </div>
@@ -1607,6 +1622,7 @@ html[dir="rtl"] .contact-row{
 
     </div>
 
+
     <div class="about-copy">
 
       <div
@@ -1616,17 +1632,20 @@ html[dir="rtl"] .contact-row{
         About Us
       </div>
 
+
       <h2
         data-en="Glass & Mirror Work Built Around Your Space"
         data-ar="أعمال الزجاج والمرايا المصممة لمساحتك">
         Glass &amp; Mirror Work Built Around Your Space
       </h2>
 
+
       <p
         data-en="Design Glass & Mirror Kuwait provides professional glass, mirror and architectural solutions for homes, offices, shops, staircases, bathrooms and modern commercial spaces."
         data-ar="تقدم ديزاين جلاس وميرور الكويت حلولاً احترافية للزجاج والمرايا والزجاج المعماري للمنازل والمكاتب والمحلات والسلالم والحمامات والمساحات التجارية الحديثة.">
         Design Glass &amp; Mirror Kuwait provides professional glass, mirror and architectural solutions for homes, offices, shops, staircases, bathrooms and modern commercial spaces.
       </p>
+
 
       <div class="checks">
 
@@ -1639,6 +1658,7 @@ html[dir="rtl"] .contact-row{
           </span>
         </div>
 
+
         <div class="check">
           ✓
           <span
@@ -1648,6 +1668,7 @@ html[dir="rtl"] .contact-row{
           </span>
         </div>
 
+
         <div class="check">
           ✓
           <span
@@ -1656,6 +1677,7 @@ html[dir="rtl"] .contact-row{
             Custom sizes
           </span>
         </div>
+
 
         <div class="check">
           ✓
@@ -1694,11 +1716,13 @@ html[dir="rtl"] .contact-row{
         What We Do
       </div>
 
+
       <h2
         data-en="Professional Glass & Mirror Services"
         data-ar="خدمات احترافية للزجاج والمرايا">
         Professional Glass &amp; Mirror Services
       </h2>
+
 
       <p
         data-en="Tap any service to see more information."
@@ -1707,6 +1731,7 @@ html[dir="rtl"] .contact-row{
       </p>
 
     </div>
+
 
     <div
       class="cards"
@@ -1737,11 +1762,13 @@ html[dir="rtl"] .contact-row{
         Our Work
       </div>
 
+
       <h2
         data-en="Selected Glass & Mirror Projects"
         data-ar="مختارات من مشاريع الزجاج والمرايا">
         Selected Glass &amp; Mirror Projects
       </h2>
+
 
       <p
         data-en="Click any project to view the full image."
@@ -1750,6 +1777,7 @@ html[dir="rtl"] .contact-row{
       </p>
 
     </div>
+
 
     <div
       class="project-grid"
@@ -1780,11 +1808,13 @@ html[dir="rtl"] .contact-row{
         Project Video
       </div>
 
+
       <h2
         data-en="See Our Work in Motion"
         data-ar="شاهد أعمالنا بالفيديو">
         See Our Work in Motion
       </h2>
+
 
       <p
         data-en="The video starts automatically without sound and loops continuously."
@@ -1828,8 +1858,7 @@ html[dir="rtl"] .contact-row{
      INSTAGRAM
 ========================= -->
 
-<section
-  class="section soft">
+<section class="section soft">
 
   <div class="container">
 
@@ -1845,7 +1874,11 @@ html[dir="rtl"] .contact-row{
           Follow Our Work
         </div>
 
-        <h2>Instagram</h2>
+
+        <h2>
+          Instagram
+        </h2>
+
 
         <p
           data-en="See more Design Glass & Mirror Kuwait projects, designs and updates on Instagram."
@@ -1854,6 +1887,7 @@ html[dir="rtl"] .contact-row{
         </p>
 
       </div>
+
 
       <a
         class="ig-btn"
@@ -1897,11 +1931,13 @@ html[dir="rtl"] .contact-row{
         Contact
       </div>
 
+
       <h2
         data-en="Let's Discuss Your Project"
         data-ar="لنتحدث عن مشروعك">
         Let's Discuss Your Project
       </h2>
+
 
       <p
         data-en="Send your project details and we can discuss the right glass or mirror solution."
@@ -1920,57 +1956,103 @@ html[dir="rtl"] .contact-row{
           Design Glass &amp; Mirror Kuwait
         </h3>
 
+
         <div class="contact-row">
+
           <div>📞</div>
+
           <div>
-            <b>PHONE</b>
+
+            <b
+              data-en="PHONE"
+              data-ar="الهاتف">
+              PHONE
+            </b>
+
             <a href="tel:+96555507290">
               +965 5550 7290
             </a>
+
           </div>
+
         </div>
 
+
         <div class="contact-row">
+
           <div>💬</div>
+
           <div>
-            <b>WHATSAPP</b>
+
+            <b
+              data-en="WHATSAPP"
+              data-ar="واتساب">
+              WHATSAPP
+            </b>
+
             <a
               href="https://wa.me/96555507290"
               target="_blank"
               rel="noopener">
-              Chat on WhatsApp
+
+              <span
+                data-en="Chat on WhatsApp"
+                data-ar="تواصل عبر واتساب">
+                Chat on WhatsApp
+              </span>
+
             </a>
+
           </div>
+
         </div>
 
+
         <div class="contact-row">
+
           <div>◎</div>
+
           <div>
-            <b>INSTAGRAM</b>
+
+            <b
+              data-en="INSTAGRAM"
+              data-ar="إنستغرام">
+              INSTAGRAM
+            </b>
+
             <a
               href="https://www.instagram.com/design_glass_mirror/"
               target="_blank"
               rel="noopener">
               @design_glass_mirror
             </a>
+
           </div>
+
         </div>
 
+
         <div class="contact-row">
+
           <div>📍</div>
+
           <div>
+
             <b
               data-en="LOCATION"
               data-ar="الموقع">
               LOCATION
             </b>
 
+
             <strong
               data-en="Kuwait"
               data-ar="الكويت">
               Kuwait
             </strong>
+
           </div>
+
         </div>
 
       </div>
@@ -1984,6 +2066,7 @@ html[dir="rtl"] .contact-row{
           Request a Quote
         </h3>
 
+
         <form
           class="form"
           id="quoteForm">
@@ -1995,6 +2078,7 @@ html[dir="rtl"] .contact-row{
             data-placeholder-ar="اسمك"
             placeholder="Your Name">
 
+
           <input
             id="phone"
             required
@@ -2002,12 +2086,14 @@ html[dir="rtl"] .contact-row{
             data-placeholder-ar="رقم الهاتف"
             placeholder="Phone Number">
 
+
           <textarea
             id="message"
             required
             data-placeholder-en="Tell us about your project..."
             data-placeholder-ar="اكتب تفاصيل مشروعك..."
             placeholder="Tell us about your project..."></textarea>
+
 
           <button
             type="submit"
@@ -2053,24 +2139,28 @@ html[dir="rtl"] .contact-row{
 
     </div>
 
+
     <div class="footer-links">
 
-      <a href="#home"
-         data-en="Home"
-         data-ar="الرئيسية">
-         Home
+      <a
+        href="#home"
+        data-en="Home"
+        data-ar="الرئيسية">
+        Home
       </a>
 
-      <a href="#services"
-         data-en="Services"
-         data-ar="خدماتنا">
-         Services
+      <a
+        href="#services"
+        data-en="Services"
+        data-ar="خدماتنا">
+        Services
       </a>
 
-      <a href="#projects"
-         data-en="Our Work"
-         data-ar="أعمالنا">
-         Our Work
+      <a
+        href="#projects"
+        data-en="Our Work"
+        data-ar="أعمالنا">
+        Our Work
       </a>
 
       <a
@@ -2104,10 +2194,12 @@ html[dir="rtl"] .contact-row{
       ×
     </button>
 
+
     <img
       id="modalImage"
       src=""
       alt="">
+
 
     <div class="modal-body">
 
@@ -2115,247 +2207,22 @@ html[dir="rtl"] .contact-row{
 
       <p id="modalText"></p>
 
+
       <a
         class="btn btn-blue"
         href="https://wa.me/96555507290"
         target="_blank"
         rel="noopener">
-        💬 WhatsApp
+
+        💬
+
+        <span
+          data-en="WhatsApp"
+          data-ar="واتساب">
+          WhatsApp
+        </span>
+
       </a>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-<!-- =========================
-     ADMIN BUTTON
-========================= -->
-
-<button
-  class="admin-launch"
-  id="adminLaunch"
-  type="button">
-  ⚙ Admin
-</button>
-
-
-<!-- =========================
-     ADMIN PANEL
-========================= -->
-
-<div
-  class="admin-overlay"
-  id="adminOverlay">
-
-  <div class="admin-panel">
-
-    <div class="admin-head">
-
-      <h2>
-        Website Admin
-      </h2>
-
-      <button
-        class="admin-close"
-        id="adminClose"
-        type="button">
-        ×
-      </button>
-
-    </div>
-
-
-    <div class="admin-body">
-
-      <div class="admin-warning">
-
-        <strong>Important:</strong>
-        This Admin panel can preview replacement pictures and videos in your current browser.
-        GitHub Pages cannot permanently upload files to your repository from this HTML alone.
-        For a permanent customer-visible replacement, upload the file to GitHub and put its filename in this website code.
-
-      </div>
-
-
-      <!-- HERO REPLACEMENT -->
-
-      <div class="admin-section">
-
-        <h3>
-          Replace Hero Pictures
-        </h3>
-
-        <p>
-          Select up to 4 pictures from your computer.
-          They will immediately replace the hero pictures in this browser.
-        </p>
-
-        <div class="admin-file">
-
-          <input
-            id="heroUpload"
-            type="file"
-            accept="image/*"
-            multiple>
-
-          <button
-            class="admin-button blue"
-            id="applyHero"
-            type="button">
-            Apply Hero
-          </button>
-
-        </div>
-
-        <div
-          class="admin-status"
-          id="heroStatus">
-          No replacement selected.
-        </div>
-
-      </div>
-
-
-      <!-- ABOUT IMAGE -->
-
-      <div class="admin-section">
-
-        <h3>
-          Replace About Picture
-        </h3>
-
-        <p>
-          Select one picture to preview it as the About section picture.
-        </p>
-
-        <div class="admin-file">
-
-          <input
-            id="aboutUpload"
-            type="file"
-            accept="image/*">
-
-          <button
-            class="admin-button blue"
-            id="applyAbout"
-            type="button">
-            Apply Picture
-          </button>
-
-        </div>
-
-        <div
-          class="admin-status"
-          id="aboutStatus">
-          No replacement selected.
-        </div>
-
-      </div>
-
-
-      <!-- PROJECT PICTURES -->
-
-      <div class="admin-section">
-
-        <h3>
-          Replace Project Pictures
-        </h3>
-
-        <p>
-          Select project pictures to preview them in the project gallery.
-        </p>
-
-        <div class="admin-file">
-
-          <input
-            id="projectUpload"
-            type="file"
-            accept="image/*"
-            multiple>
-
-          <button
-            class="admin-button blue"
-            id="applyProjects"
-            type="button">
-            Apply Projects
-          </button>
-
-        </div>
-
-        <div
-          class="admin-status"
-          id="projectStatus">
-          No replacement selected.
-        </div>
-
-        <div
-          class="admin-preview"
-          id="adminProjectPreview">
-        </div>
-
-      </div>
-
-
-      <!-- VIDEO -->
-
-      <div class="admin-section">
-
-        <h3>
-          Replace Project Video
-        </h3>
-
-        <p>
-          Select an MP4 video. It will immediately replace the current video in this browser and attempt autoplay muted.
-        </p>
-
-        <div class="admin-file">
-
-          <input
-            id="videoUpload"
-            type="file"
-            accept="video/mp4,video/webm,video/*">
-
-          <button
-            class="admin-button blue"
-            id="applyVideo"
-            type="button">
-            Apply Video
-          </button>
-
-        </div>
-
-        <div
-          class="admin-status"
-          id="videoStatus">
-          No replacement selected.
-        </div>
-
-      </div>
-
-
-      <!-- RESET -->
-
-      <div class="admin-section">
-
-        <h3>
-          Reset Preview
-        </h3>
-
-        <p>
-          Return this browser to the original GitHub website files.
-        </p>
-
-        <button
-          class="admin-button red"
-          id="resetAdmin"
-          type="button">
-          Reset Everything
-        </button>
-
-      </div>
 
     </div>
 
@@ -2374,7 +2241,7 @@ const PHONE = "96555507290";
 
 
 /* =====================================================
-   SAFE ASSET URL
+   ASSET URL
 ===================================================== */
 
 function asset(filename){
@@ -2403,10 +2270,12 @@ function buildHero(){
 
   heroDots.innerHTML = "";
 
+
   heroSlides.forEach((slide,index)=>{
 
     const filename =
       slide.dataset.image;
+
 
     slide.style.backgroundImage =
       `url("${asset(filename)}")`;
@@ -2415,16 +2284,20 @@ function buildHero(){
     const dot =
       document.createElement("button");
 
+
     dot.className =
       "hero-dot" +
       (index === 0 ? " active" : "");
 
+
     dot.type = "button";
+
 
     dot.setAttribute(
       "aria-label",
       "Hero picture " + (index + 1)
     );
+
 
     dot.addEventListener(
       "click",
@@ -2432,6 +2305,7 @@ function buildHero(){
         showHero(index,true);
       }
     );
+
 
     heroDots.appendChild(dot);
 
@@ -2441,6 +2315,11 @@ function buildHero(){
 
 
 function showHero(index,manual=false){
+
+  if(!heroSlides.length){
+    return;
+  }
+
 
   heroIndex =
     (index + heroSlides.length)
@@ -2481,6 +2360,7 @@ function restartHero(){
 
   clearInterval(heroTimer);
 
+
   heroTimer =
     setInterval(
       ()=>{
@@ -2499,6 +2379,7 @@ restartHero();
 
 /* =====================================================
    SERVICES
+   Arabic and English both work.
 ===================================================== */
 
 const services = [
@@ -2552,53 +2433,66 @@ const serviceGrid =
   document.getElementById("serviceGrid");
 
 
-services.forEach((service)=>{
+function renderServices(){
 
-  const card =
-    document.createElement("article");
-
-  card.className = "card";
-
-  card.innerHTML = `
-
-    <div class="card-icon">
-      ${service[0]}
-    </div>
-
-    <h3>
-      ${service[1]}
-    </h3>
-
-    <p>
-      ${service[2]}
-    </p>
-
-    <span
-      class="card-link"
-      data-en="View details →"
-      data-ar="عرض التفاصيل ←">
-      View details →
-    </span>
-
-  `;
+  serviceGrid.innerHTML = "";
 
 
-  card.addEventListener(
-    "click",
-    ()=>{
-      openModal(
-        null,
-        service[1],
-        service[2],
-        service[3]
-      );
-    }
-  );
+  const isArabic =
+    document.documentElement.dir === "rtl";
 
 
-  serviceGrid.appendChild(card);
+  services.forEach((service)=>{
 
-});
+    const card =
+      document.createElement("article");
+
+
+    card.className = "card";
+
+
+    card.innerHTML = `
+
+      <div class="card-icon">
+        ${service[0]}
+      </div>
+
+      <h3>
+        ${isArabic ? service[3] : service[1]}
+      </h3>
+
+      <p>
+        ${isArabic ? service[3] : service[2]}
+      </p>
+
+      <span class="card-link">
+        ${isArabic ? "عرض التفاصيل ←" : "View details →"}
+      </span>
+
+    `;
+
+
+    card.addEventListener(
+      "click",
+      ()=>{
+        openModal(
+          null,
+          isArabic ? service[3] : service[1],
+          service[2],
+          service[3]
+        );
+      }
+    );
+
+
+    serviceGrid.appendChild(card);
+
+  });
+
+}
+
+
+renderServices();
 
 
 /* =====================================================
@@ -2719,15 +2613,20 @@ const projectGrid =
   document.getElementById("projectGrid");
 
 
-function renderProjects(list=projects){
+function renderProjects(){
 
   projectGrid.innerHTML = "";
 
 
-  list.forEach((project)=>{
+  const isArabic =
+    document.documentElement.dir === "rtl";
+
+
+  projects.forEach((project)=>{
 
     const item =
       document.createElement("article");
+
 
     item.className = "project";
 
@@ -2735,11 +2634,14 @@ function renderProjects(list=projects){
     const image =
       document.createElement("img");
 
+
     image.src =
       asset(project[0]);
 
+
     image.alt =
-      project[1];
+      isArabic ? project[3] : project[1];
+
 
     image.loading =
       "lazy";
@@ -2755,13 +2657,15 @@ function renderProjects(list=projects){
     const overlay =
       document.createElement("div");
 
+
     overlay.className =
       "project-overlay";
+
 
     overlay.innerHTML = `
 
       <strong>
-        ${project[1]}
+        ${isArabic ? project[3] : project[1]}
       </strong>
 
       <span>
@@ -2781,7 +2685,7 @@ function renderProjects(list=projects){
       ()=>{
         openModal(
           project[0],
-          project[1],
+          isArabic ? project[3] : project[1],
           project[2],
           project[3]
         );
@@ -2897,6 +2801,7 @@ function applyLanguage(){
   document.documentElement.lang =
     language;
 
+
   document.documentElement.dir =
     language === "ar"
       ? "rtl"
@@ -2907,8 +2812,18 @@ function applyLanguage(){
     .querySelectorAll("[data-en]")
     .forEach(element=>{
 
-      element.textContent =
-        element.dataset[language];
+      const value =
+        language === "ar"
+          ? element.dataset.ar
+          : element.dataset.en;
+
+
+      if(value !== undefined){
+
+        element.textContent =
+          value;
+
+      }
 
     });
 
@@ -2918,9 +2833,9 @@ function applyLanguage(){
     .forEach(element=>{
 
       element.placeholder =
-        element.dataset[
-          "placeholder-" + language
-        ];
+        language === "ar"
+          ? element.dataset.placeholderAr
+          : element.dataset.placeholderEn;
 
     });
 
@@ -2936,6 +2851,16 @@ function applyLanguage(){
     language === "ar"
       ? "ديزاين جلاس وميرور الكويت"
       : "Design Glass & Mirror Kuwait";
+
+
+  /*
+    Re-render dynamic services and projects
+    so Arabic works there too.
+  */
+
+  renderServices();
+
+  renderProjects();
 
 }
 
@@ -3002,6 +2927,7 @@ document
           .classList.remove("open");
 
       }
+
     );
 
   });
@@ -3021,18 +2947,24 @@ document
 
 
       const name =
-        document.getElementById("name")
-          .value.trim();
+        document
+          .getElementById("name")
+          .value
+          .trim();
 
 
       const phone =
-        document.getElementById("phone")
-          .value.trim();
+        document
+          .getElementById("phone")
+          .value
+          .trim();
 
 
       const message =
-        document.getElementById("message")
-          .value.trim();
+        document
+          .getElementById("message")
+          .value
+          .trim();
 
 
       const text =
@@ -3096,8 +3028,9 @@ function tryPlayVideo(){
     promise.catch(()=>{
 
       /*
-        Browser may delay autoplay until
-        the page receives user interaction.
+        Some browsers block autoplay.
+        The video remains available through
+        the controls.
       */
 
     });
@@ -3107,14 +3040,10 @@ function tryPlayVideo(){
 }
 
 
-/*
-  Try several times because some browsers
-  delay media initialization.
-*/
-
 window.addEventListener(
   "load",
   ()=>{
+
     setTimeout(
       tryPlayVideo,
       300
@@ -3129,6 +3058,7 @@ window.addEventListener(
       tryPlayVideo,
       2500
     );
+
   }
 );
 
@@ -3147,11 +3077,16 @@ document.addEventListener(
 );
 
 
+/*
+  Try autoplay again after the first
+  normal user interaction.
+*/
+
 document.addEventListener(
   "click",
   ()=>{
 
-    if(video.paused){
+    if(video && video.paused){
 
       tryPlayVideo();
 
@@ -3160,458 +3095,6 @@ document.addEventListener(
   },
   {once:true}
 );
-
-
-/* =====================================================
-   ADMIN PANEL
-===================================================== */
-
-const adminLaunch =
-  document.getElementById("adminLaunch");
-
-const adminOverlay =
-  document.getElementById("adminOverlay");
-
-const adminClose =
-  document.getElementById("adminClose");
-
-
-adminLaunch.addEventListener(
-  "click",
-  ()=>{
-
-    adminOverlay.classList.add("open");
-
-    document.body.classList.add("admin-open");
-
-  }
-);
-
-
-adminClose.addEventListener(
-  "click",
-  closeAdmin
-);
-
-
-adminOverlay.addEventListener(
-  "click",
-  event=>{
-
-    if(event.target === adminOverlay){
-
-      closeAdmin();
-
-    }
-
-  }
-);
-
-
-function closeAdmin(){
-
-  adminOverlay.classList.remove("open");
-
-  document.body.classList.remove("admin-open");
-
-}
-
-
-/* =====================================================
-   ADMIN — HERO PICTURES
-===================================================== */
-
-const heroUpload =
-  document.getElementById("heroUpload");
-
-const heroStatus =
-  document.getElementById("heroStatus");
-
-const applyHero =
-  document.getElementById("applyHero");
-
-
-let heroObjectUrls = [];
-
-
-applyHero.addEventListener(
-  "click",
-  ()=>{
-
-    const files =
-      [...heroUpload.files]
-        .filter(file =>
-          file.type.startsWith("image/")
-        )
-        .slice(0,4);
-
-
-    if(!files.length){
-
-      heroStatus.textContent =
-        "Please select hero pictures first.";
-
-      return;
-
-    }
-
-
-    heroObjectUrls.forEach(
-      url=>URL.revokeObjectURL(url)
-    );
-
-
-    heroObjectUrls = [];
-
-
-    files.forEach(
-      (file,index)=>{
-
-        const url =
-          URL.createObjectURL(file);
-
-
-        heroObjectUrls.push(url);
-
-
-        heroSlides[index]
-          .style.backgroundImage =
-          `url("${url}")`;
-
-      }
-    );
-
-
-    heroIndex = 0;
-
-    showHero(0);
-
-
-    heroStatus.textContent =
-      files.length +
-      " hero picture(s) applied in this browser.";
-
-  }
-);
-
-
-/* =====================================================
-   ADMIN — ABOUT PICTURE
-===================================================== */
-
-const aboutUpload =
-  document.getElementById("aboutUpload");
-
-const aboutStatus =
-  document.getElementById("aboutStatus");
-
-const applyAbout =
-  document.getElementById("applyAbout");
-
-
-let aboutObjectUrl = null;
-
-
-applyAbout.addEventListener(
-  "click",
-  ()=>{
-
-    const file =
-      aboutUpload.files[0];
-
-
-    if(!file){
-
-      aboutStatus.textContent =
-        "Please select an image first.";
-
-      return;
-
-    }
-
-
-    if(aboutObjectUrl){
-
-      URL.revokeObjectURL(
-        aboutObjectUrl
-      );
-
-    }
-
-
-    aboutObjectUrl =
-      URL.createObjectURL(file);
-
-
-    const aboutImage =
-      document.querySelector(
-        ".about-image img"
-      );
-
-
-    aboutImage.src =
-      aboutObjectUrl;
-
-
-    aboutImage.style.display =
-      "block";
-
-
-    aboutStatus.textContent =
-      "About picture applied in this browser.";
-
-  }
-);
-
-
-/* =====================================================
-   ADMIN — PROJECT PICTURES
-===================================================== */
-
-const projectUpload =
-  document.getElementById("projectUpload");
-
-const projectStatus =
-  document.getElementById("projectStatus");
-
-const projectPreview =
-  document.getElementById("adminProjectPreview");
-
-const applyProjects =
-  document.getElementById("applyProjects");
-
-
-let projectObjectUrls = [];
-
-
-applyProjects.addEventListener(
-  "click",
-  ()=>{
-
-    const files =
-      [...projectUpload.files]
-        .filter(file =>
-          file.type.startsWith("image/")
-        );
-
-
-    if(!files.length){
-
-      projectStatus.textContent =
-        "Please select project pictures first.";
-
-      return;
-
-    }
-
-
-    projectObjectUrls.forEach(
-      url=>URL.revokeObjectURL(url)
-    );
-
-
-    projectObjectUrls = [];
-
-
-    const temporaryProjects =
-      files.map(
-        (file,index)=>{
-
-          const url =
-            URL.createObjectURL(file);
-
-
-          projectObjectUrls.push(url);
-
-
-          return [
-
-            url,
-
-            "New Project " + (index + 1),
-
-            "New Design Glass & Mirror Kuwait project.",
-
-            "مشروع جديد من ديزاين جلاس وميرور الكويت."
-
-          ];
-
-        }
-      );
-
-
-    projectGrid.innerHTML = "";
-
-
-    temporaryProjects.forEach(
-      project=>{
-
-        const item =
-          document.createElement("article");
-
-        item.className =
-          "project";
-
-
-        item.innerHTML = `
-
-          <img
-            src="${project[0]}"
-            alt="${project[1]}">
-
-          <div class="project-overlay">
-
-            <strong>
-              ${project[1]}
-            </strong>
-
-            <span>
-              Design Glass & Mirror Kuwait
-            </span>
-
-          </div>
-
-        `;
-
-
-        projectGrid.appendChild(item);
-
-      }
-    );
-
-
-    projectPreview.innerHTML = "";
-
-
-    temporaryProjects.forEach(
-      project=>{
-
-        const preview =
-          document.createElement("div");
-
-        preview.className =
-          "admin-preview-item";
-
-
-        preview.innerHTML = `
-
-          <img src="${project[0]}">
-
-          <small>
-            ${project[1]}
-          </small>
-
-        `;
-
-
-        projectPreview.appendChild(
-          preview
-        );
-
-      }
-    );
-
-
-    projectStatus.textContent =
-      files.length +
-      " project picture(s) applied in this browser.";
-
-  }
-);
-
-
-/* =====================================================
-   ADMIN — VIDEO
-===================================================== */
-
-const videoUpload =
-  document.getElementById("videoUpload");
-
-const videoStatus =
-  document.getElementById("videoStatus");
-
-const applyVideo =
-  document.getElementById("applyVideo");
-
-
-let videoObjectUrl = null;
-
-
-applyVideo.addEventListener(
-  "click",
-  ()=>{
-
-    const file =
-      videoUpload.files[0];
-
-
-    if(!file){
-
-      videoStatus.textContent =
-        "Please select a video first.";
-
-      return;
-
-    }
-
-
-    if(videoObjectUrl){
-
-      URL.revokeObjectURL(
-        videoObjectUrl
-      );
-
-    }
-
-
-    videoObjectUrl =
-      URL.createObjectURL(file);
-
-
-    video.pause();
-
-
-    video.src =
-      videoObjectUrl;
-
-
-    video.load();
-
-
-    video.muted = true;
-
-    video.defaultMuted = true;
-
-    video.playsInline = true;
-
-
-    videoStatus.textContent =
-      "Video applied. Starting autoplay...";
-
-
-    setTimeout(
-      tryPlayVideo,
-      200
-    );
-
-  }
-);
-
-
-/* =====================================================
-   ADMIN — RESET
-===================================================== */
-
-document
-  .getElementById("resetAdmin")
-  .addEventListener(
-    "click",
-    ()=>{
-
-      location.reload();
-
-    }
-  );
 
 </script>
 
