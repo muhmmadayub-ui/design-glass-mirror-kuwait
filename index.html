@@ -55,18 +55,14 @@ img{
   display:block;
 }
 
-/* =========================
-   CONTAINER
-========================= */
+/* CONTAINER */
 
 .container{
   width:min(1180px,calc(100% - 40px));
   margin:auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 .header{
   position:fixed;
@@ -74,43 +70,32 @@ img{
   left:0;
   right:0;
   z-index:1000;
-
-  background:rgba(7,27,43,.92);
-
+  background:rgba(7,27,43,.90);
   backdrop-filter:blur(15px);
   -webkit-backdrop-filter:blur(15px);
-
   border-bottom:1px solid rgba(255,255,255,.10);
 }
 
 .nav{
   height:78px;
-
   display:flex;
   align-items:center;
-
   gap:25px;
 }
 
 .brand{
   display:flex;
   align-items:center;
-
   gap:12px;
-
   margin-right:auto;
 }
 
 .brand img{
   width:50px;
   height:50px;
-
   object-fit:contain;
-
   background:#fff;
-
   padding:4px;
-
   border-radius:5px;
 }
 
@@ -120,44 +105,31 @@ img{
 
 .brand-text strong{
   display:block;
-
   color:#fff;
-
   font-size:13px;
-
   letter-spacing:.07em;
 }
 
 .brand-text span{
   display:block;
-
   color:#27b7e8;
-
   font-size:11px;
-
   font-weight:800;
-
   letter-spacing:.18em;
-
   margin-top:4px;
 }
 
 .nav-links{
   display:flex;
   align-items:center;
-
   gap:24px;
 }
 
 .nav-links a{
   color:#fff;
-
   font-size:13px;
-
   font-weight:700;
-
   opacity:.92;
-
   transition:.2s;
 }
 
@@ -168,208 +140,141 @@ img{
 .lang-btn,
 .menu-btn{
   border:1px solid rgba(255,255,255,.25);
-
   background:transparent;
-
   color:#fff;
-
   border-radius:999px;
-
   padding:9px 14px;
-
   font-weight:800;
-
   cursor:pointer;
-}
-
-.lang-btn:hover,
-.menu-btn:hover{
-  background:rgba(255,255,255,.10);
 }
 
 .menu-btn{
   display:none;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
   position:relative;
-
   min-height:720px;
-
   height:100vh;
-
   max-height:900px;
-
   overflow:hidden;
-
   background:#071b2b;
 }
 
-/*
-  Clear hero pictures.
-  Very light overlay so the actual pictures
-  remain visible.
-*/
-
 .hero-slide{
   position:absolute;
-
   inset:0;
 
   background-size:cover;
-
   background-position:center center;
-
   background-repeat:no-repeat;
 
   opacity:0;
-
-  transform:scale(1.005);
+  transform:scale(1);
 
   transition:
-    opacity 1.2s ease,
+    opacity 1s ease,
     transform 8s ease;
 }
 
 .hero-slide.active{
   opacity:1;
-
   transform:scale(1.025);
 }
 
 /*
-  LIGHT overlay only.
-  This keeps the hero picture clear.
+  LIGHT OVERLAY ONLY.
+  The pictures remain clear and visible.
 */
 
 .hero-slide::after{
   content:"";
-
   position:absolute;
-
   inset:0;
 
   background:
     linear-gradient(
       180deg,
-      rgba(3,17,27,.08) 0%,
-      rgba(3,17,27,.00) 50%,
-      rgba(3,17,27,.16) 100%
+      rgba(3,17,27,.10) 0%,
+      rgba(3,17,27,0) 48%,
+      rgba(3,17,27,.18) 100%
     );
 }
 
 /*
-  Hero content stays at the bottom.
+  NO BIG HERO TITLE.
 */
 
 .hero-content{
   position:absolute;
-
   left:0;
   right:0;
-
-  bottom:58px;
-
+  bottom:32px;
   z-index:5;
 }
 
 .hero-mini{
   display:flex;
-
   align-items:flex-end;
-
   justify-content:space-between;
-
   gap:20px;
 }
 
-/*
-  Small professional caption.
-  NO giant heading.
-*/
-
 .hero-caption{
   color:#fff;
-
-  max-width:460px;
+  max-width:450px;
 }
 
 .hero-caption span{
   display:inline-flex;
-
   padding:7px 12px;
-
   border-radius:999px;
 
-  background:rgba(7,27,43,.42);
-
+  background:rgba(7,27,43,.30);
   border:1px solid rgba(255,255,255,.30);
 
   backdrop-filter:blur(5px);
   -webkit-backdrop-filter:blur(5px);
 
   font-size:10px;
-
   font-weight:800;
-
   letter-spacing:.10em;
-
   text-transform:uppercase;
 }
 
 .hero-caption p{
-  margin:9px 0 0;
-
+  margin:8px 0 0;
   color:#fff;
-
   font-size:13px;
-
-  line-height:1.55;
-
+  line-height:1.5;
   text-shadow:0 2px 10px rgba(0,0,0,.55);
 }
 
-/* =========================
-   HERO BUTTONS
-========================= */
-
 .hero-actions{
   display:flex;
-
   gap:9px;
-
   flex-wrap:wrap;
-
   justify-content:flex-end;
-
-  align-items:center;
 }
 
 .btn{
-  min-height:46px;
+  min-height:44px;
 
   display:inline-flex;
-
   align-items:center;
-
   justify-content:center;
 
-  padding:0 18px;
+  padding:0 17px;
 
   border-radius:999px;
-
   border:1px solid rgba(255,255,255,.25);
 
   font-size:13px;
-
   font-weight:800;
 
   cursor:pointer;
-
   transition:.25s;
 
   white-space:nowrap;
@@ -381,45 +286,32 @@ img{
 
 .btn-light{
   background:#fff;
-
   color:#102333;
 }
 
 .btn-blue{
   background:#17a9dc;
-
   border-color:#17a9dc;
-
   color:#fff;
 }
 
 .btn-green{
   background:#19c968;
-
   border-color:#19c968;
-
   color:#fff;
 }
 
-/* =========================
-   HERO DOTS
-========================= */
-
 .hero-dots{
   position:absolute;
-
   left:50%;
-
-  bottom:19px;
+  bottom:13px;
 
   transform:translateX(-50%);
 
   z-index:6;
 
   display:flex;
-
   align-items:center;
-
   gap:7px;
 }
 
@@ -428,12 +320,10 @@ img{
   height:7px;
 
   padding:0;
-
   border:0;
-
   border-radius:99px;
 
-  background:rgba(255,255,255,.55);
+  background:rgba(255,255,255,.45);
 
   cursor:pointer;
 
@@ -442,13 +332,10 @@ img{
 
 .hero-dot.active{
   width:25px;
-
   background:#fff;
 }
 
-/* =========================
-   SECTIONS
-========================= */
+/* SECTIONS */
 
 .section{
   padding:90px 0;
@@ -460,61 +347,44 @@ img{
 
 .section-head{
   max-width:720px;
-
   margin:0 auto 45px;
-
   text-align:center;
 }
 
 .kicker{
   color:var(--accent2);
-
   font-size:11px;
-
   font-weight:900;
-
   letter-spacing:.20em;
-
   text-transform:uppercase;
 }
 
 .section-head h2{
   color:var(--navy);
-
   font-size:clamp(30px,4vw,46px);
-
   letter-spacing:-.03em;
-
   margin:10px 0 13px;
 }
 
 .section-head p{
   color:var(--muted);
-
   font-size:15px;
-
   line-height:1.8;
-
   margin:0;
 }
 
-/* =========================
-   STATS
-========================= */
+/* STATS */
 
 .stats{
   display:grid;
-
   grid-template-columns:repeat(4,1fr);
 
   border-top:1px solid var(--line);
-
   border-bottom:1px solid var(--line);
 }
 
 .stat{
   padding:27px 20px;
-
   text-align:center;
 
   border-right:1px solid var(--line);
@@ -526,35 +396,24 @@ img{
 
 .stat strong{
   display:block;
-
   color:var(--navy);
-
   font-size:30px;
 }
 
 .stat span{
   display:block;
-
   margin-top:6px;
-
   color:var(--muted);
-
   font-size:12px;
-
   font-weight:700;
 }
 
-/* =========================
-   ABOUT
-========================= */
+/* ABOUT */
 
 .about-grid{
   display:grid;
-
   grid-template-columns:1.05fr .95fr;
-
   gap:55px;
-
   align-items:center;
 }
 
@@ -562,71 +421,52 @@ img{
   min-height:420px;
 
   border-radius:var(--radius);
-
   overflow:hidden;
 
   box-shadow:var(--shadow);
-
   background:#dce5ea;
 }
 
 .about-image img{
   width:100%;
-
   height:100%;
-
   object-fit:cover;
 }
 
 .about-copy h2{
   color:var(--navy);
-
   font-size:42px;
-
   margin:8px 0 18px;
 }
 
 .about-copy p{
   color:var(--muted);
-
   line-height:1.9;
-
   font-size:15px;
 }
 
 .checks{
   display:grid;
-
   grid-template-columns:1fr 1fr;
-
   gap:11px;
-
   margin-top:25px;
 }
 
 .check{
   padding:13px 15px;
-
   border:1px solid var(--line);
-
   border-radius:14px;
-
   background:#fff;
 
   font-size:13px;
-
   font-weight:800;
 }
 
-/* =========================
-   SERVICES
-========================= */
+/* SERVICES */
 
 .cards{
   display:grid;
-
   grid-template-columns:repeat(3,1fr);
-
   gap:18px;
 }
 
@@ -634,23 +474,18 @@ img{
   padding:27px;
 
   background:#fff;
-
   border:1px solid var(--line);
-
   border-radius:18px;
 
   box-shadow:0 8px 30px rgba(7,27,43,.045);
 
   transition:.25s;
-
   cursor:pointer;
 }
 
 .card:hover{
   transform:translateY(-5px);
-
   box-shadow:var(--shadow);
-
   border-color:#cfe6ef;
 }
 
@@ -659,13 +494,11 @@ img{
   height:48px;
 
   display:grid;
-
   place-items:center;
 
   margin-bottom:19px;
 
   background:#eaf7fb;
-
   color:var(--accent2);
 
   border-radius:14px;
@@ -675,43 +508,31 @@ img{
 
 .card h3{
   color:var(--navy);
-
   font-size:19px;
-
   margin:0 0 8px;
 }
 
 .card p{
   color:var(--muted);
-
   font-size:14px;
-
   line-height:1.7;
-
   margin:0;
 }
 
 .card-link{
   display:inline-block;
-
   margin-top:17px;
 
   color:var(--accent2);
-
   font-size:13px;
-
   font-weight:900;
 }
 
-/* =========================
-   PROJECTS
-========================= */
+/* PROJECTS */
 
 .project-grid{
   display:grid;
-
   grid-template-columns:repeat(4,1fr);
-
   gap:14px;
 }
 
@@ -731,7 +552,6 @@ img{
 
 .project img{
   width:100%;
-
   height:100%;
 
   object-fit:cover;
@@ -745,7 +565,6 @@ img{
 
 .project-overlay{
   position:absolute;
-
   left:0;
   right:0;
   bottom:0;
@@ -766,21 +585,16 @@ img{
 
 .project-overlay span{
   display:block;
-
   margin-top:4px;
 
   font-size:10px;
-
   opacity:.8;
 }
 
-/* =========================
-   VIDEO
-========================= */
+/* VIDEO */
 
 .video-wrap{
   max-width:1000px;
-
   margin:auto;
 
   position:relative;
@@ -796,7 +610,6 @@ img{
 
 .video-wrap video{
   width:100%;
-
   display:block;
 
   max-height:650px;
@@ -806,17 +619,12 @@ img{
   background:#061724;
 }
 
-/* =========================
-   INSTAGRAM
-========================= */
+/* INSTAGRAM */
 
 .instagram-box{
   display:grid;
-
   grid-template-columns:1fr auto;
-
   gap:30px;
-
   align-items:center;
 
   padding:34px;
@@ -837,7 +645,6 @@ img{
 
 .instagram-box h2{
   margin:0 0 7px;
-
   font-size:29px;
 }
 
@@ -851,9 +658,7 @@ img{
 
 .ig-btn{
   display:inline-flex;
-
   align-items:center;
-
   gap:9px;
 
   padding:14px 20px;
@@ -861,21 +666,16 @@ img{
   border-radius:999px;
 
   background:#fff;
-
   color:#071b2b;
 
   font-weight:900;
 }
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact-grid{
   display:grid;
-
   grid-template-columns:.8fr 1.2fr;
-
   gap:25px;
 }
 
@@ -883,7 +683,6 @@ img{
   padding:29px;
 
   border:1px solid var(--line);
-
   border-radius:20px;
 
   background:#fff;
@@ -891,13 +690,11 @@ img{
 
 .contact-card h3{
   color:var(--navy);
-
   margin:0 0 19px;
 }
 
 .contact-row{
   display:flex;
-
   gap:14px;
 
   align-items:flex-start;
@@ -924,13 +721,11 @@ img{
 .contact-row a,
 .contact-row strong{
   color:var(--navy);
-
   font-weight:800;
 }
 
 .form{
   display:grid;
-
   gap:12px;
 }
 
@@ -939,7 +734,6 @@ img{
   width:100%;
 
   border:1px solid var(--line);
-
   border-radius:12px;
 
   padding:14px 15px;
@@ -954,7 +748,6 @@ img{
 
 .form textarea{
   min-height:145px;
-
   resize:vertical;
 }
 
@@ -962,7 +755,6 @@ img{
   border:0;
 
   background:var(--navy);
-
   color:#fff;
 
   padding:15px;
@@ -974,13 +766,10 @@ img{
   cursor:pointer;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
   background:#061725;
-
   color:#a9bdc9;
 
   padding:38px 0;
@@ -988,11 +777,8 @@ footer{
 
 .footer{
   display:flex;
-
   justify-content:space-between;
-
   align-items:center;
-
   gap:20px;
 }
 
@@ -1002,7 +788,6 @@ footer{
 
 .footer-links{
   display:flex;
-
   gap:18px;
 
   font-size:12px;
@@ -1012,19 +797,15 @@ footer{
   color:#fff;
 }
 
-/* =========================
-   MODAL
-========================= */
+/* MODAL */
 
 .modal{
   position:fixed;
-
   inset:0;
 
   z-index:2000;
 
   display:none;
-
   place-items:center;
 
   padding:20px;
@@ -1052,7 +833,6 @@ footer{
 
 .modal-card img{
   width:100%;
-
   max-height:480px;
 
   object-fit:cover;
@@ -1064,7 +844,6 @@ footer{
 
 .modal-body h3{
   color:var(--navy);
-
   margin:0 0 10px;
 
   font-size:27px;
@@ -1072,7 +851,6 @@ footer{
 
 .modal-body p{
   color:var(--muted);
-
   line-height:1.8;
 }
 
@@ -1088,7 +866,6 @@ footer{
   height:40px;
 
   border:0;
-
   border-radius:50%;
 
   background:rgba(0,0,0,.65);
@@ -1100,9 +877,7 @@ footer{
   cursor:pointer;
 }
 
-/* =========================
-   RTL
-========================= */
+/* RTL */
 
 html[dir="rtl"] body{
   font-family:Arial,Tahoma,sans-serif;
@@ -1110,10 +885,6 @@ html[dir="rtl"] body{
 
 html[dir="rtl"] .hero-caption{
   text-align:right;
-}
-
-html[dir="rtl"] .hero-mini{
-  flex-direction:row-reverse;
 }
 
 html[dir="rtl"] .hero-actions{
@@ -1124,9 +895,7 @@ html[dir="rtl"] .contact-row{
   text-align:right;
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -1140,7 +909,6 @@ html[dir="rtl"] .contact-row{
     position:absolute;
 
     top:72px;
-
     left:15px;
     right:15px;
 
@@ -1151,7 +919,6 @@ html[dir="rtl"] .contact-row{
     border-radius:0 0 16px 16px;
 
     flex-direction:column;
-
     align-items:stretch;
   }
 
@@ -1171,22 +938,17 @@ html[dir="rtl"] .contact-row{
     min-height:650px;
   }
 
-  .hero-content{
-    bottom:55px;
-  }
-
   .hero-mini{
     display:block;
   }
 
   .hero-caption{
     max-width:100%;
-
-    margin-bottom:15px;
+    margin-bottom:14px;
   }
 
   .hero-caption p{
-    font-size:13px;
+    font-size:12px;
   }
 
   .hero-actions{
@@ -1224,15 +986,12 @@ html[dir="rtl"] .contact-row{
 
   .footer{
     display:block;
-
     text-align:center;
   }
 
   .footer-links{
     justify-content:center;
-
     margin-top:15px;
-
     flex-wrap:wrap;
   }
 }
@@ -1260,29 +1019,22 @@ html[dir="rtl"] .contact-row{
     min-height:620px;
   }
 
-  .hero-content{
-    bottom:50px;
-  }
-
   .hero-caption span{
     font-size:9px;
   }
 
   .hero-caption p{
-    font-size:12px;
+    font-size:11px;
   }
 
   /*
-    Three buttons remain DOWN at the
-    bottom of the hero.
+    THREE BUTTONS STAY AT THE BOTTOM.
   */
 
   .hero-actions{
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
-    width:100%;
+    gap:8px;
   }
 
   .hero-actions .btn:last-child{
@@ -1314,9 +1066,7 @@ html[dir="rtl"] .contact-row{
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
+<!-- HEADER -->
 
 <header class="header">
 
@@ -1330,66 +1080,51 @@ html[dir="rtl"] .contact-row{
       >
 
       <div class="brand-text">
-
-        <strong>
-          DESIGN GLASS &amp; MIRROR
-        </strong>
-
-        <span>
-          KUWAIT
-        </span>
-
+        <strong>DESIGN GLASS &amp; MIRROR</strong>
+        <span>KUWAIT</span>
       </div>
 
     </a>
 
-
     <nav class="nav-links" id="navLinks">
 
-      <a
-        href="#home"
-        data-en="Home"
-        data-ar="الرئيسية">
-        Home
+      <a href="#home"
+         data-en="Home"
+         data-ar="الرئيسية">
+         Home
       </a>
 
-      <a
-        href="#about"
-        data-en="About"
-        data-ar="من نحن">
-        About
+      <a href="#about"
+         data-en="About"
+         data-ar="من نحن">
+         About
       </a>
 
-      <a
-        href="#services"
-        data-en="Services"
-        data-ar="خدماتنا">
-        Services
+      <a href="#services"
+         data-en="Services"
+         data-ar="خدماتنا">
+         Services
       </a>
 
-      <a
-        href="#projects"
-        data-en="Our Work"
-        data-ar="أعمالنا">
-        Our Work
+      <a href="#projects"
+         data-en="Our Work"
+         data-ar="أعمالنا">
+         Our Work
       </a>
 
-      <a
-        href="#video"
-        data-en="Video"
-        data-ar="الفيديو">
-        Video
+      <a href="#video"
+         data-en="Video"
+         data-ar="الفيديو">
+         Video
       </a>
 
-      <a
-        href="#contact"
-        data-en="Contact"
-        data-ar="اتصل بنا">
-        Contact
+      <a href="#contact"
+         data-en="Contact"
+         data-ar="اتصل بنا">
+         Contact
       </a>
 
     </nav>
-
 
     <button
       class="lang-btn"
@@ -1397,7 +1132,6 @@ html[dir="rtl"] .contact-row{
       type="button">
       العربية
     </button>
-
 
     <button
       class="menu-btn"
@@ -1413,13 +1147,9 @@ html[dir="rtl"] .contact-row{
 
 <main>
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
-<section
-  class="hero"
-  id="home">
+<section class="hero" id="home">
 
   <div
     class="hero-slide active"
@@ -1441,12 +1171,6 @@ html[dir="rtl"] .contact-row{
     data-image="10mm clear glass temper staircas with wooden handle.jpeg">
   </div>
 
-
-  <!--
-    NO BIG HERO HEADING.
-    "Glass That Defines Your Space"
-    has been completely removed.
-  -->
 
   <div class="hero-content">
 
@@ -1471,8 +1195,6 @@ html[dir="rtl"] .contact-row{
         </div>
 
 
-        <!-- BUTTONS AT BOTTOM -->
-
         <div class="hero-actions">
 
           <a
@@ -1494,7 +1216,7 @@ html[dir="rtl"] .contact-row{
             class="btn btn-green"
             href="https://wa.me/96555507290"
             target="_blank"
-            rel="noopener">
+            rel="noopener noreferrer">
 
             💬
 
@@ -1536,9 +1258,7 @@ html[dir="rtl"] .contact-row{
 </section>
 
 
-<!-- =========================
-     STATS
-========================= -->
+<!-- STATS -->
 
 <section
   class="section"
@@ -1602,9 +1322,7 @@ html[dir="rtl"] .contact-row{
 </section>
 
 
-<!-- =========================
-     ABOUT
-========================= -->
+<!-- ABOUT -->
 
 <section
   class="section soft"
@@ -1658,7 +1376,6 @@ html[dir="rtl"] .contact-row{
           </span>
         </div>
 
-
         <div class="check">
           ✓
           <span
@@ -1668,7 +1385,6 @@ html[dir="rtl"] .contact-row{
           </span>
         </div>
 
-
         <div class="check">
           ✓
           <span
@@ -1677,7 +1393,6 @@ html[dir="rtl"] .contact-row{
             Custom sizes
           </span>
         </div>
-
 
         <div class="check">
           ✓
@@ -1697,9 +1412,7 @@ html[dir="rtl"] .contact-row{
 </section>
 
 
-<!-- =========================
-     SERVICES
-========================= -->
+<!-- SERVICES -->
 
 <section
   class="section"
@@ -1743,9 +1456,7 @@ html[dir="rtl"] .contact-row{
 </section>
 
 
-<!-- =========================
-     PROJECTS
-========================= -->
+<!-- PROJECTS -->
 
 <section
   class="section soft"
@@ -1789,9 +1500,7 @@ html[dir="rtl"] .contact-row{
 </section>
 
 
-<!-- =========================
-     VIDEO
-========================= -->
+<!-- VIDEO -->
 
 <section
   class="section"
@@ -1839,7 +1548,6 @@ html[dir="rtl"] .contact-row{
         poster="10mm%20clear%20glass%20temper%20staircas%20with%20wooden%20handle.jpeg">
 
         <source
-          id="videoSource"
           src="staircase%20clear%20ggm.mp4"
           type="video/mp4">
 
@@ -1854,11 +1562,10 @@ html[dir="rtl"] .contact-row{
 </section>
 
 
-<!-- =========================
-     INSTAGRAM
-========================= -->
+<!-- INSTAGRAM -->
 
-<section class="section soft">
+<section
+  class="section soft">
 
   <div class="container">
 
@@ -1875,9 +1582,7 @@ html[dir="rtl"] .contact-row{
         </div>
 
 
-        <h2>
-          Instagram
-        </h2>
+        <h2>Instagram</h2>
 
 
         <p
@@ -1893,7 +1598,7 @@ html[dir="rtl"] .contact-row{
         class="ig-btn"
         href="https://www.instagram.com/design_glass_mirror/"
         target="_blank"
-        rel="noopener">
+        rel="noopener noreferrer">
 
         ◎
 
@@ -1912,9 +1617,7 @@ html[dir="rtl"] .contact-row{
 </section>
 
 
-<!-- =========================
-     CONTACT
-========================= -->
+<!-- CONTACT -->
 
 <section
   class="section"
@@ -1993,7 +1696,7 @@ html[dir="rtl"] .contact-row{
             <a
               href="https://wa.me/96555507290"
               target="_blank"
-              rel="noopener">
+              rel="noopener noreferrer">
 
               <span
                 data-en="Chat on WhatsApp"
@@ -2023,7 +1726,7 @@ html[dir="rtl"] .contact-row{
             <a
               href="https://www.instagram.com/design_glass_mirror/"
               target="_blank"
-              rel="noopener">
+              rel="noopener noreferrer">
               @design_glass_mirror
             </a>
 
@@ -2115,9 +1818,7 @@ html[dir="rtl"] .contact-row{
 </main>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -2149,12 +1850,14 @@ html[dir="rtl"] .contact-row{
         Home
       </a>
 
+
       <a
         href="#services"
         data-en="Services"
         data-ar="خدماتنا">
         Services
       </a>
+
 
       <a
         href="#projects"
@@ -2163,10 +1866,11 @@ html[dir="rtl"] .contact-row{
         Our Work
       </a>
 
+
       <a
         href="https://www.instagram.com/design_glass_mirror/"
         target="_blank"
-        rel="noopener">
+        rel="noopener noreferrer">
         Instagram
       </a>
 
@@ -2177,9 +1881,7 @@ html[dir="rtl"] .contact-row{
 </footer>
 
 
-<!-- =========================
-     PROJECT MODAL
-========================= -->
+<!-- PROJECT MODAL -->
 
 <div
   class="modal"
@@ -2212,15 +1914,9 @@ html[dir="rtl"] .contact-row{
         class="btn btn-blue"
         href="https://wa.me/96555507290"
         target="_blank"
-        rel="noopener">
+        rel="noopener noreferrer">
 
-        💬
-
-        <span
-          data-en="WhatsApp"
-          data-ar="واتساب">
-          WhatsApp
-        </span>
+        💬 WhatsApp
 
       </a>
 
@@ -2234,15 +1930,11 @@ html[dir="rtl"] .contact-row{
 <script>
 
 /* =====================================================
-   WEBSITE SETTINGS
+   BASIC SETTINGS
 ===================================================== */
 
 const PHONE = "96555507290";
 
-
-/* =====================================================
-   ASSET URL
-===================================================== */
 
 function asset(filename){
 
@@ -2252,7 +1944,7 @@ function asset(filename){
 
 
 /* =====================================================
-   HERO
+   HERO SLIDESHOW
 ===================================================== */
 
 const heroSlides =
@@ -2270,12 +1962,10 @@ function buildHero(){
 
   heroDots.innerHTML = "";
 
-
   heroSlides.forEach((slide,index)=>{
 
     const filename =
       slide.dataset.image;
-
 
     slide.style.backgroundImage =
       `url("${asset(filename)}")`;
@@ -2284,14 +1974,11 @@ function buildHero(){
     const dot =
       document.createElement("button");
 
-
     dot.className =
       "hero-dot" +
       (index === 0 ? " active" : "");
 
-
     dot.type = "button";
-
 
     dot.setAttribute(
       "aria-label",
@@ -2319,7 +2006,6 @@ function showHero(index,manual=false){
   if(!heroSlides.length){
     return;
   }
-
 
   heroIndex =
     (index + heroSlides.length)
@@ -2360,7 +2046,6 @@ function restartHero(){
 
   clearInterval(heroTimer);
 
-
   heroTimer =
     setInterval(
       ()=>{
@@ -2379,7 +2064,6 @@ restartHero();
 
 /* =====================================================
    SERVICES
-   Arabic and English both work.
 ===================================================== */
 
 const services = [
@@ -2433,66 +2117,54 @@ const serviceGrid =
   document.getElementById("serviceGrid");
 
 
-function renderServices(){
+services.forEach((service)=>{
 
-  serviceGrid.innerHTML = "";
+  const card =
+    document.createElement("article");
 
-
-  const isArabic =
-    document.documentElement.dir === "rtl";
-
-
-  services.forEach((service)=>{
-
-    const card =
-      document.createElement("article");
+  card.className = "card";
 
 
-    card.className = "card";
+  card.innerHTML = `
+
+    <div class="card-icon">
+      ${service[0]}
+    </div>
+
+    <h3>
+      ${service[1]}
+    </h3>
+
+    <p>
+      ${service[2]}
+    </p>
+
+    <span
+      class="card-link"
+      data-en="View details →"
+      data-ar="عرض التفاصيل ←">
+      View details →
+    </span>
+
+  `;
 
 
-    card.innerHTML = `
-
-      <div class="card-icon">
-        ${service[0]}
-      </div>
-
-      <h3>
-        ${isArabic ? service[3] : service[1]}
-      </h3>
-
-      <p>
-        ${isArabic ? service[3] : service[2]}
-      </p>
-
-      <span class="card-link">
-        ${isArabic ? "عرض التفاصيل ←" : "View details →"}
-      </span>
-
-    `;
+  card.addEventListener(
+    "click",
+    ()=>{
+      openModal(
+        null,
+        service[1],
+        service[2],
+        service[3]
+      );
+    }
+  );
 
 
-    card.addEventListener(
-      "click",
-      ()=>{
-        openModal(
-          null,
-          isArabic ? service[3] : service[1],
-          service[2],
-          service[3]
-        );
-      }
-    );
+  serviceGrid.appendChild(card);
 
-
-    serviceGrid.appendChild(card);
-
-  });
-
-}
-
-
-renderServices();
+});
 
 
 /* =====================================================
@@ -2618,15 +2290,10 @@ function renderProjects(){
   projectGrid.innerHTML = "";
 
 
-  const isArabic =
-    document.documentElement.dir === "rtl";
-
-
   projects.forEach((project)=>{
 
     const item =
       document.createElement("article");
-
 
     item.className = "project";
 
@@ -2634,14 +2301,11 @@ function renderProjects(){
     const image =
       document.createElement("img");
 
-
     image.src =
       asset(project[0]);
 
-
     image.alt =
-      isArabic ? project[3] : project[1];
-
+      project[1];
 
     image.loading =
       "lazy";
@@ -2657,7 +2321,6 @@ function renderProjects(){
     const overlay =
       document.createElement("div");
 
-
     overlay.className =
       "project-overlay";
 
@@ -2665,7 +2328,7 @@ function renderProjects(){
     overlay.innerHTML = `
 
       <strong>
-        ${isArabic ? project[3] : project[1]}
+        ${project[1]}
       </strong>
 
       <span>
@@ -2685,7 +2348,7 @@ function renderProjects(){
       ()=>{
         openModal(
           project[0],
-          isArabic ? project[3] : project[1],
+          project[1],
           project[2],
           project[3]
         );
@@ -2732,7 +2395,7 @@ function openModal(
 
 
   modalTitle.textContent =
-    title;
+    isArabic ? arabic : title;
 
 
   modalText.textContent =
@@ -2801,7 +2464,6 @@ function applyLanguage(){
   document.documentElement.lang =
     language;
 
-
   document.documentElement.dir =
     language === "ar"
       ? "rtl"
@@ -2813,10 +2475,9 @@ function applyLanguage(){
     .forEach(element=>{
 
       const value =
-        language === "ar"
-          ? element.dataset.ar
-          : element.dataset.en;
-
+        element.dataset[
+          language
+        ];
 
       if(value !== undefined){
 
@@ -2833,9 +2494,9 @@ function applyLanguage(){
     .forEach(element=>{
 
       element.placeholder =
-        language === "ar"
-          ? element.dataset.placeholderAr
-          : element.dataset.placeholderEn;
+        element.dataset[
+          "placeholder-" + language
+        ];
 
     });
 
@@ -2851,16 +2512,6 @@ function applyLanguage(){
     language === "ar"
       ? "ديزاين جلاس وميرور الكويت"
       : "Design Glass & Mirror Kuwait";
-
-
-  /*
-    Re-render dynamic services and projects
-    so Arabic works there too.
-  */
-
-  renderServices();
-
-  renderProjects();
 
 }
 
@@ -2927,14 +2578,13 @@ document
           .classList.remove("open");
 
       }
-
     );
 
   });
 
 
 /* =====================================================
-   WHATSAPP FORM
+   WHATSAPP QUOTE FORM
 ===================================================== */
 
 document
@@ -2947,24 +2597,18 @@ document
 
 
       const name =
-        document
-          .getElementById("name")
-          .value
-          .trim();
+        document.getElementById("name")
+          .value.trim();
 
 
       const phone =
-        document
-          .getElementById("phone")
-          .value
-          .trim();
+        document.getElementById("phone")
+          .value.trim();
 
 
       const message =
-        document
-          .getElementById("message")
-          .value
-          .trim();
+        document.getElementById("message")
+          .value.trim();
 
 
       const text =
@@ -3006,9 +2650,7 @@ const video =
 function tryPlayVideo(){
 
   if(!video){
-
     return;
-
   }
 
 
@@ -3025,15 +2667,7 @@ function tryPlayVideo(){
 
   if(promise){
 
-    promise.catch(()=>{
-
-      /*
-        Some browsers block autoplay.
-        The video remains available through
-        the controls.
-      */
-
-    });
+    promise.catch(()=>{});
 
   }
 
@@ -3076,11 +2710,6 @@ document.addEventListener(
   }
 );
 
-
-/*
-  Try autoplay again after the first
-  normal user interaction.
-*/
 
 document.addEventListener(
   "click",
