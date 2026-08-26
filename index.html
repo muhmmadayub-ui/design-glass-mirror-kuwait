@@ -15,12 +15,6 @@
 <meta property="og:type" content="website">
 
 <style>
-/* =========================================================
-   DESIGN GLASS & MIRROR KUWAIT
-   PREMIUM WHITE WEBSITE
-   PUBLIC WEBSITE ONLY - NO ADMIN / NO EDITOR
-========================================================= */
-
 :root{
   --black:#111111;
   --dark:#222222;
@@ -75,7 +69,7 @@ button{
 }
 
 .container{
-  width:min(var(--max), calc(100% - 40px));
+  width:min(var(--max),calc(100% - 40px));
   margin:auto;
 }
 
@@ -128,9 +122,7 @@ section{
   font-size:17px;
 }
 
-/* =========================================================
-   TOP BAR
-========================================================= */
+/* TOP BAR */
 
 .topbar{
   background:#111;
@@ -166,9 +158,7 @@ section{
   opacity:1;
 }
 
-/* =========================================================
-   HEADER
-========================================================= */
+/* HEADER */
 
 header{
   position:sticky;
@@ -294,9 +284,7 @@ header{
   font-size:20px;
 }
 
-/* =========================================================
-   MOBILE NAV
-========================================================= */
+/* MOBILE MENU */
 
 .mobile-menu{
   display:none;
@@ -316,9 +304,7 @@ header{
   display:block;
 }
 
-/* =========================================================
-   HERO
-========================================================= */
+/* HERO */
 
 .hero{
   min-height:calc(100vh - 120px);
@@ -508,9 +494,7 @@ header{
   border-radius:20px;
 }
 
-/* =========================================================
-   INTRO
-========================================================= */
+/* INTRO */
 
 .intro-grid{
   display:grid;
@@ -573,9 +557,7 @@ header{
   font-size:13px;
 }
 
-/* =========================================================
-   SERVICES
-========================================================= */
+/* SERVICES */
 
 .services-grid{
   display:grid;
@@ -633,9 +615,7 @@ header{
   font-size:13px;
 }
 
-/* =========================================================
-   PROJECTS
-========================================================= */
+/* PROJECTS */
 
 .project-grid{
   display:grid;
@@ -683,9 +663,7 @@ header{
   margin-top:4px;
 }
 
-/* =========================================================
-   VIDEO
-========================================================= */
+/* VIDEO */
 
 .video-section{
   background:#111;
@@ -745,9 +723,7 @@ header{
   margin-top:5px;
 }
 
-/* =========================================================
-   ALUMINUM / MIRRORS
-========================================================= */
+/* SPLIT */
 
 .split-section{
   display:grid;
@@ -810,9 +786,7 @@ header{
   font-size:11px;
 }
 
-/* =========================================================
-   QUALITY
-========================================================= */
+/* QUALITY */
 
 .quality-grid{
   display:grid;
@@ -844,9 +818,7 @@ header{
   font-size:13px;
 }
 
-/* =========================================================
-   CTA
-========================================================= */
+/* CTA */
 
 .cta{
   padding:95px 0;
@@ -892,9 +864,7 @@ header{
   border:1px solid rgba(255,255,255,.35);
 }
 
-/* =========================================================
-   CONTACT
-========================================================= */
+/* CONTACT */
 
 .contact-grid{
   display:grid;
@@ -1028,9 +998,7 @@ header{
   margin-top:18px;
 }
 
-/* =========================================================
-   FOOTER
-========================================================= */
+/* FOOTER */
 
 footer{
   background:#111;
@@ -1096,9 +1064,7 @@ footer{
   font-size:11px;
 }
 
-/* =========================================================
-   FLOATING WHATSAPP
-========================================================= */
+/* WHATSAPP */
 
 .float-whatsapp{
   position:fixed;
@@ -1121,9 +1087,7 @@ footer{
   transform:translateY(-5px) scale(1.05);
 }
 
-/* =========================================================
-   LIGHTBOX
-========================================================= */
+/* LIGHTBOX */
 
 .lightbox{
   position:fixed;
@@ -1161,9 +1125,7 @@ footer{
   font-size:24px;
 }
 
-/* =========================================================
-   RTL ARABIC
-========================================================= */
+/* RTL */
 
 body.rtl{
   direction:rtl;
@@ -1181,19 +1143,18 @@ body.rtl .contact-card:hover{
   transform:translateX(-5px);
 }
 
-body.rtl .hero:after{
-  background:linear-gradient(
-    270deg,
-    rgba(255,255,255,.94) 0%,
-    rgba(255,255,255,.78) 38%,
-    rgba(255,255,255,.20) 70%,
-    rgba(255,255,255,.05) 100%
-  );
+body.rtl .hero-slide:after{
+  background:
+    linear-gradient(
+      270deg,
+      rgba(255,255,255,.94) 0%,
+      rgba(255,255,255,.78) 38%,
+      rgba(255,255,255,.20) 70%,
+      rgba(255,255,255,.05) 100%
+    );
 }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
+/* RESPONSIVE */
 
 @media(max-width:1050px){
 
@@ -1416,10 +1377,6 @@ body.rtl .hero:after{
   }
 }
 
-/* =========================================================
-   ACCESSIBILITY
-========================================================= */
-
 :focus-visible{
   outline:3px solid #777;
   outline-offset:3px;
@@ -1430,9 +1387,7 @@ body.rtl .hero:after{
     scroll-behavior:auto;
   }
 
-  *,
-  *:before,
-  *:after{
+  *{
     transition:none !important;
     animation:none !important;
   }
@@ -1442,18 +1397,25 @@ body.rtl .hero:after{
 
 <body>
 
-<!-- ======================================================
-     TOP CONTACT BAR
-======================================================= -->
+<!-- TOP CONTACT BAR -->
 
 <div class="topbar">
   <div class="topbar-inner">
 
     <div class="topbar-left">
-      <a href="tel:+96555507290">☎ +965 5550 7290</a>
-      <a href="https://www.instagram.com/design_glass_mirror/" target="_blank" rel="noopener">
+
+      <a href="tel:+96555507290">
+        ☎ +965 5550 7290
+      </a>
+
+      <a
+        href="https://www.instagram.com/design_glass_mirror/"
+        target="_blank"
+        rel="noopener"
+      >
         Instagram @design_glass_mirror
       </a>
+
     </div>
 
     <div class="topbar-right">
@@ -1465,15 +1427,17 @@ body.rtl .hero:after{
 </div>
 
 
-<!-- ======================================================
-     HEADER
-======================================================= -->
+<!-- HEADER -->
 
 <header>
 
   <nav class="nav">
 
-    <a class="brand" href="#home" aria-label="Design Glass & Mirror Kuwait">
+    <a
+      class="brand"
+      href="#home"
+      aria-label="Design Glass & Mirror Kuwait"
+    >
 
       <img
         src="WhatsApp Image 2026-08-23 at 12.24.46 PM.jpeg"
@@ -1481,8 +1445,13 @@ body.rtl .hero:after{
       >
 
       <div class="brand-text">
-        <div class="brand-title">DESIGN GLASS & MIRROR</div>
-        <div class="brand-sub">KUWAIT • GLASS • MIRROR • ALUMINUM</div>
+        <div class="brand-title">
+          DESIGN GLASS & MIRROR
+        </div>
+
+        <div class="brand-sub">
+          KUWAIT • GLASS • MIRROR • ALUMINUM
+        </div>
       </div>
 
     </a>
@@ -1532,7 +1501,10 @@ body.rtl .hero:after{
   </nav>
 
 
-  <div class="mobile-menu" id="mobileMenu">
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+  >
 
     <a href="#home" onclick="closeMobileMenu()">Home</a>
     <a href="#services" onclick="closeMobileMenu()">Services</a>
@@ -1541,7 +1513,10 @@ body.rtl .hero:after{
     <a href="#about" onclick="closeMobileMenu()">About</a>
     <a href="#contact" onclick="closeMobileMenu()">Contact</a>
 
-    <a href="tel:+96555507290" onclick="closeMobileMenu()">
+    <a
+      href="tel:+96555507290"
+      onclick="closeMobileMenu()"
+    >
       📞 Call +965 5550 7290
     </a>
 
@@ -1568,30 +1543,36 @@ body.rtl .hero:after{
 </header>
 
 
-<!-- ======================================================
-     HERO
-======================================================= -->
-
 <main>
 
-<section class="hero" id="home">
+<!-- HERO -->
+
+<section
+  class="hero"
+  id="home"
+>
 
   <div class="hero-slides">
 
+    <!-- POOL PICTURE IS NOW HERO SLIDE 1 -->
+
     <div
       class="hero-slide active"
+      style="background-image:url('10mm clear glass temper pool.jpeg');"
+    ></div>
+
+
+    <div
+      class="hero-slide"
       style="background-image:url('10mm clear glass temper fix in black spider system.jpeg');"
     ></div>
+
 
     <div
       class="hero-slide"
       style="background-image:url('10mm clear glass temper stair with wooden handle.jpeg');"
     ></div>
 
-    <div
-      class="hero-slide"
-      style="background-image:url('10mm clear glass temper shower with golden frame.jpeg');"
-    ></div>
 
     <div
       class="hero-slide"
@@ -1606,29 +1587,47 @@ body.rtl .hero:after{
     <div class="hero-copy">
 
       <div class="hero-kicker">
+
         <span></span>
+
         Premium Glass & Architectural Solutions
+
       </div>
 
+
       <h1>
+
         DESIGN
         <br>
+
         GLASS & MIRROR
+
         <small>KUWAIT</small>
+
       </h1>
 
+
       <p class="hero-description">
+
         Professional glass, mirror and aluminum solutions for
         homes, shops, offices and modern buildings across Kuwait.
+
       </p>
+
 
       <div class="hero-buttons">
 
-        <a class="btn btn-dark" href="#projects">
+        <a
+          class="btn btn-dark"
+          href="#projects"
+        >
           Explore Our Projects
         </a>
 
-        <a class="btn btn-light" href="#contact">
+        <a
+          class="btn btn-light"
+          href="#contact"
+        >
           Request a Quote
         </a>
 
@@ -1638,18 +1637,29 @@ body.rtl .hero:after{
       <div class="hero-stats">
 
         <div class="hero-stat">
+
           <strong>10mm</strong>
+
           <span>Tempered Glass</span>
+
         </div>
 
+
         <div class="hero-stat">
+
           <strong>100%</strong>
+
           <span>Custom Work</span>
+
         </div>
 
+
         <div class="hero-stat">
+
           <strong>KW</strong>
+
           <span>Across Kuwait</span>
+
         </div>
 
       </div>
@@ -1661,21 +1671,41 @@ body.rtl .hero:after{
 
   <div class="hero-dots">
 
-    <button class="hero-dot active" onclick="goToSlide(0)" aria-label="Slide 1"></button>
-    <button class="hero-dot" onclick="goToSlide(1)" aria-label="Slide 2"></button>
-    <button class="hero-dot" onclick="goToSlide(2)" aria-label="Slide 3"></button>
-    <button class="hero-dot" onclick="goToSlide(3)" aria-label="Slide 4"></button>
+    <button
+      class="hero-dot active"
+      onclick="goToSlide(0)"
+      aria-label="Slide 1"
+    ></button>
+
+    <button
+      class="hero-dot"
+      onclick="goToSlide(1)"
+      aria-label="Slide 2"
+    ></button>
+
+    <button
+      class="hero-dot"
+      onclick="goToSlide(2)"
+      aria-label="Slide 3"
+    ></button>
+
+    <button
+      class="hero-dot"
+      onclick="goToSlide(3)"
+      aria-label="Slide 4"
+    ></button>
 
   </div>
 
 </section>
 
 
-<!-- ======================================================
-     INTRO / ABOUT
-======================================================= -->
+<!-- ABOUT -->
 
-<section class="section-light" id="about">
+<section
+  class="section-light"
+  id="about"
+>
 
   <div class="container">
 
@@ -1694,7 +1724,9 @@ body.rtl .hero:after{
 
       <div class="intro-copy">
 
-        <div class="eyebrow">Design • Quality • Precision</div>
+        <div class="eyebrow">
+          Design • Quality • Precision
+        </div>
 
         <h2>
           Glass solutions designed for modern Kuwait.
@@ -1746,17 +1778,20 @@ body.rtl .hero:after{
 </section>
 
 
-<!-- ======================================================
-     SERVICES
-======================================================= -->
+<!-- SERVICES -->
 
-<section class="section-soft" id="services">
+<section
+  class="section-soft"
+  id="services"
+>
 
   <div class="container">
 
     <div class="section-head">
 
-      <div class="eyebrow">What We Do</div>
+      <div class="eyebrow">
+        What We Do
+      </div>
 
       <h2>
         Professional glass & architectural solutions.
@@ -1772,20 +1807,29 @@ body.rtl .hero:after{
 
     <div class="services-grid">
 
+
       <article class="service">
 
         <div class="service-image">
+
           <img
             src="10mm clear glass temper shower with golden frame.jpeg"
             alt="Glass shower with golden frame"
             loading="lazy"
           >
+
         </div>
 
         <div class="service-body">
+
           <div class="service-number">01</div>
+
           <h3>Glass Showers</h3>
-          <p>Elegant custom shower glass for modern bathrooms.</p>
+
+          <p>
+            Elegant custom shower glass for modern bathrooms.
+          </p>
+
         </div>
 
       </article>
@@ -1794,17 +1838,25 @@ body.rtl .hero:after{
       <article class="service">
 
         <div class="service-image">
+
           <img
             src="10mm clear glass temper stair with wooden handle.jpeg"
             alt="Glass staircase"
             loading="lazy"
           >
+
         </div>
 
         <div class="service-body">
+
           <div class="service-number">02</div>
+
           <h3>Glass Staircases</h3>
-          <p>Modern staircase systems with clean architectural lines.</p>
+
+          <p>
+            Modern staircase systems with clean architectural lines.
+          </p>
+
         </div>
 
       </article>
@@ -1813,17 +1865,25 @@ body.rtl .hero:after{
       <article class="service">
 
         <div class="service-image">
+
           <img
             src="10mm clear glass temper sliding door.jpeg"
             alt="Glass sliding door"
             loading="lazy"
           >
+
         </div>
 
         <div class="service-body">
+
           <div class="service-number">03</div>
+
           <h3>Glass Doors</h3>
-          <p>Sliding, hinged and custom glass door systems.</p>
+
+          <p>
+            Sliding, hinged and custom glass door systems.
+          </p>
+
         </div>
 
       </article>
@@ -1832,17 +1892,25 @@ body.rtl .hero:after{
       <article class="service">
 
         <div class="service-image">
+
           <img
             src="10mm clear glass temper fix in black spider system.jpeg"
             alt="Architectural glass system"
             loading="lazy"
           >
+
         </div>
 
         <div class="service-body">
+
           <div class="service-number">04</div>
+
           <h3>Architectural Glass</h3>
-          <p>Premium façade and structural glass solutions.</p>
+
+          <p>
+            Premium façade and structural glass solutions.
+          </p>
+
         </div>
 
       </article>
@@ -1854,19 +1922,24 @@ body.rtl .hero:after{
 </section>
 
 
-<!-- ======================================================
-     PROJECTS
-======================================================= -->
+<!-- PROJECTS -->
 
-<section class="section-light" id="projects">
+<section
+  class="section-light"
+  id="projects"
+>
 
   <div class="container">
 
     <div class="section-head">
 
-      <div class="eyebrow">Our Work</div>
+      <div class="eyebrow">
+        Our Work
+      </div>
 
-      <h2>Selected projects.</h2>
+      <h2>
+        Selected projects.
+      </h2>
 
       <p>
         A selection of our glass, staircase, shower,
@@ -1879,7 +1952,10 @@ body.rtl .hero:after{
     <div class="project-grid">
 
 
-      <article class="project" onclick="openLightbox(this)">
+      <article
+        class="project"
+        onclick="openLightbox(this)"
+      >
 
         <img
           src="10mm black glass temper staircas kloudy.jpeg"
@@ -1888,14 +1964,24 @@ body.rtl .hero:after{
         >
 
         <div class="project-overlay">
-          <div class="project-category">Staircase</div>
-          <h3>Black Tempered Glass</h3>
+
+          <div class="project-category">
+            Staircase
+          </div>
+
+          <h3>
+            Black Tempered Glass
+          </h3>
+
         </div>
 
       </article>
 
 
-      <article class="project" onclick="openLightbox(this)">
+      <article
+        class="project"
+        onclick="openLightbox(this)"
+      >
 
         <img
           src="10mm bowns glass temper shower.jpeg"
@@ -1904,14 +1990,24 @@ body.rtl .hero:after{
         >
 
         <div class="project-overlay">
-          <div class="project-category">Bathroom</div>
-          <h3>Custom Glass Shower</h3>
+
+          <div class="project-category">
+            Bathroom
+          </div>
+
+          <h3>
+            Custom Glass Shower
+          </h3>
+
         </div>
 
       </article>
 
 
-      <article class="project" onclick="openLightbox(this)">
+      <article
+        class="project"
+        onclick="openLightbox(this)"
+      >
 
         <img
           src="10mm browns glass temper amood fix.jpeg"
@@ -1920,14 +2016,24 @@ body.rtl .hero:after{
         >
 
         <div class="project-overlay">
-          <div class="project-category">Glass</div>
-          <h3>Brown Tempered Glass</h3>
+
+          <div class="project-category">
+            Glass
+          </div>
+
+          <h3>
+            Brown Tempered Glass
+          </h3>
+
         </div>
 
       </article>
 
 
-      <article class="project" onclick="openLightbox(this)">
+      <article
+        class="project"
+        onclick="openLightbox(this)"
+      >
 
         <img
           src="10mm browns glass temper staircas.jpeg"
@@ -1936,14 +2042,24 @@ body.rtl .hero:after{
         >
 
         <div class="project-overlay">
-          <div class="project-category">Staircase</div>
-          <h3>Brown Glass Staircase</h3>
+
+          <div class="project-category">
+            Staircase
+          </div>
+
+          <h3>
+            Brown Glass Staircase
+          </h3>
+
         </div>
 
       </article>
 
 
-      <article class="project" onclick="openLightbox(this)">
+      <article
+        class="project"
+        onclick="openLightbox(this)"
+      >
 
         <img
           src="10mm clear glass temper pool.jpeg"
@@ -1952,14 +2068,24 @@ body.rtl .hero:after{
         >
 
         <div class="project-overlay">
-          <div class="project-category">Pool</div>
-          <h3>Pool Glass Installation</h3>
+
+          <div class="project-category">
+            Pool
+          </div>
+
+          <h3>
+            Pool Glass Installation
+          </h3>
+
         </div>
 
       </article>
 
 
-      <article class="project" onclick="openLightbox(this)">
+      <article
+        class="project"
+        onclick="openLightbox(this)"
+      >
 
         <img
           src="10mm clear glass temper swiming pool.jpeg"
@@ -1968,14 +2094,24 @@ body.rtl .hero:after{
         >
 
         <div class="project-overlay">
-          <div class="project-category">Pool</div>
-          <h3>Swimming Pool Glass</h3>
+
+          <div class="project-category">
+            Pool
+          </div>
+
+          <h3>
+            Swimming Pool Glass
+          </h3>
+
         </div>
 
       </article>
 
 
-      <article class="project" onclick="openLightbox(this)">
+      <article
+        class="project"
+        onclick="openLightbox(this)"
+      >
 
         <img
           src="10mm sandblast glass stair with standsteel handle.jpeg"
@@ -1984,14 +2120,24 @@ body.rtl .hero:after{
         >
 
         <div class="project-overlay">
-          <div class="project-category">Staircase</div>
-          <h3>Sandblast Glass & Steel</h3>
+
+          <div class="project-category">
+            Staircase
+          </div>
+
+          <h3>
+            Sandblast Glass & Steel
+          </h3>
+
         </div>
 
       </article>
 
 
-      <article class="project" onclick="openLightbox(this)">
+      <article
+        class="project"
+        onclick="openLightbox(this)"
+      >
 
         <img
           src="10mm sandblast glass temper fixed in stanless steel.jpeg"
@@ -2000,14 +2146,24 @@ body.rtl .hero:after{
         >
 
         <div class="project-overlay">
-          <div class="project-category">Architectural</div>
-          <h3>Sandblast Glass System</h3>
+
+          <div class="project-category">
+            Architectural
+          </div>
+
+          <h3>
+            Sandblast Glass System
+          </h3>
+
         </div>
 
       </article>
 
 
-      <article class="project" onclick="openLightbox(this)">
+      <article
+        class="project"
+        onclick="openLightbox(this)"
+      >
 
         <img
           src="10mm clear glass temper with normal doors shop.jpeg"
@@ -2016,14 +2172,24 @@ body.rtl .hero:after{
         >
 
         <div class="project-overlay">
-          <div class="project-category">Commercial</div>
-          <h3>Shop Glass Doors</h3>
+
+          <div class="project-category">
+            Commercial
+          </div>
+
+          <h3>
+            Shop Glass Doors
+          </h3>
+
         </div>
 
       </article>
 
 
-      <article class="project" onclick="openLightbox(this)">
+      <article
+        class="project"
+        onclick="openLightbox(this)"
+      >
 
         <img
           src="aluminum double doors sample.jpeg"
@@ -2032,14 +2198,24 @@ body.rtl .hero:after{
         >
 
         <div class="project-overlay">
-          <div class="project-category">Aluminum</div>
-          <h3>Double Doors</h3>
+
+          <div class="project-category">
+            Aluminum
+          </div>
+
+          <h3>
+            Double Doors
+          </h3>
+
         </div>
 
       </article>
 
 
-      <article class="project" onclick="openLightbox(this)">
+      <article
+        class="project"
+        onclick="openLightbox(this)"
+      >
 
         <img
           src="aluminum fix glass sample.jpeg"
@@ -2048,14 +2224,24 @@ body.rtl .hero:after{
         >
 
         <div class="project-overlay">
-          <div class="project-category">Aluminum</div>
-          <h3>Fixed Glass System</h3>
+
+          <div class="project-category">
+            Aluminum
+          </div>
+
+          <h3>
+            Fixed Glass System
+          </h3>
+
         </div>
 
       </article>
 
 
-      <article class="project" onclick="openLightbox(this)">
+      <article
+        class="project"
+        onclick="openLightbox(this)"
+      >
 
         <img
           src="aluminum sliding doors.jpeg"
@@ -2064,8 +2250,15 @@ body.rtl .hero:after{
         >
 
         <div class="project-overlay">
-          <div class="project-category">Aluminum</div>
-          <h3>Sliding Doors</h3>
+
+          <div class="project-category">
+            Aluminum
+          </div>
+
+          <h3>
+            Sliding Doors
+          </h3>
+
         </div>
 
       </article>
@@ -2077,19 +2270,24 @@ body.rtl .hero:after{
 </section>
 
 
-<!-- ======================================================
-     VIDEOS
-======================================================= -->
+<!-- VIDEOS -->
 
-<section class="video-section" id="videos">
+<section
+  class="video-section"
+  id="videos"
+>
 
   <div class="container">
 
     <div class="section-head">
 
-      <div class="eyebrow">Project Videos</div>
+      <div class="eyebrow">
+        Project Videos
+      </div>
 
-      <h2>See our work in motion.</h2>
+      <h2>
+        See our work in motion.
+      </h2>
 
       <p>
         Real project videos showing our glass installations,
@@ -2102,113 +2300,172 @@ body.rtl .hero:after{
     <div class="video-grid">
 
 
+      <!-- VIDEO 1 -->
+
       <article class="video-card">
 
         <div class="video-box">
 
           <video
-            controls
+            autoplay
+            muted
+            loop
             playsinline
-            preload="metadata"
+            controls
+            preload="auto"
             poster="10mm clear glass temper stair with wooden handle.jpeg"
           >
+
             <source
               src="glass technician.mp4"
               type="video/mp4"
             >
+
             Your browser does not support video.
+
           </video>
 
         </div>
 
         <div class="video-info">
-          <div class="video-tag">Installation</div>
-          <h3>Professional Glass Installation</h3>
+
+          <div class="video-tag">
+            Installation
+          </div>
+
+          <h3>
+            Professional Glass Installation
+          </h3>
+
         </div>
 
       </article>
 
+
+      <!-- VIDEO 2 -->
 
       <article class="video-card">
 
         <div class="video-box">
 
           <video
-            controls
+            autoplay
+            muted
+            loop
             playsinline
-            preload="metadata"
+            controls
+            preload="auto"
             poster="10mm clear glass temper staircas with wooden handle.jpeg"
           >
+
             <source
               src="sataircase design v.mp4"
               type="video/mp4"
             >
+
             Your browser does not support video.
+
           </video>
 
         </div>
 
         <div class="video-info">
-          <div class="video-tag">Staircase</div>
-          <h3>Modern Staircase Design</h3>
+
+          <div class="video-tag">
+            Staircase
+          </div>
+
+          <h3>
+            Modern Staircase Design
+          </h3>
+
         </div>
 
       </article>
 
+
+      <!-- VIDEO 3 -->
 
       <article class="video-card">
 
         <div class="video-box">
 
           <video
-            controls
+            autoplay
+            muted
+            loop
             playsinline
-            preload="metadata"
+            controls
+            preload="auto"
             poster="10mm clear glass temper sliding door.jpeg"
           >
+
             <source
               src="sliding door exap.mp4"
               type="video/mp4"
             >
+
             Your browser does not support video.
+
           </video>
 
         </div>
 
         <div class="video-info">
-          <div class="video-tag">Doors</div>
-          <h3>Sliding Glass Door Project</h3>
+
+          <div class="video-tag">
+            Doors
+          </div>
+
+          <h3>
+            Sliding Glass Door Project
+          </h3>
+
         </div>
 
       </article>
 
+
+      <!-- VIDEO 4 -->
 
       <article class="video-card">
 
         <div class="video-box">
 
           <video
-            controls
+            autoplay
+            muted
+            loop
             playsinline
-            preload="metadata"
+            controls
+            preload="auto"
             poster="10mm clear glass temper staircas with wooden handle.jpeg"
           >
+
             <source
               src="staircase clear ggm.mp4"
               type="video/mp4"
             >
+
             Your browser does not support video.
+
           </video>
 
         </div>
 
         <div class="video-info">
-          <div class="video-tag">Glass Staircase</div>
-          <h3>Clear Glass Staircase</h3>
+
+          <div class="video-tag">
+            Glass Staircase
+          </div>
+
+          <h3>
+            Clear Glass Staircase
+          </h3>
+
         </div>
 
       </article>
-
 
     </div>
 
@@ -2217,9 +2474,7 @@ body.rtl .hero:after{
 </section>
 
 
-<!-- ======================================================
-     ALUMINUM
-======================================================= -->
+<!-- ALUMINUM -->
 
 <section class="section-light">
 
@@ -2235,7 +2490,9 @@ body.rtl .hero:after{
 
       <div class="split-copy-inner">
 
-        <div class="eyebrow">Aluminum Systems</div>
+        <div class="eyebrow">
+          Aluminum Systems
+        </div>
 
         <h2>
           Clean aluminum.
@@ -2256,7 +2513,10 @@ body.rtl .hero:after{
 
         </ul>
 
-        <a class="btn btn-dark" href="#contact">
+        <a
+          class="btn btn-dark"
+          href="#contact"
+        >
           Ask About Aluminum
         </a>
 
@@ -2269,9 +2529,7 @@ body.rtl .hero:after{
 </section>
 
 
-<!-- ======================================================
-     MIRRORS
-======================================================= -->
+<!-- MIRRORS -->
 
 <section class="section-soft">
 
@@ -2287,7 +2545,9 @@ body.rtl .hero:after{
 
       <div class="split-copy-inner">
 
-        <div class="eyebrow">Mirrors</div>
+        <div class="eyebrow">
+          Mirrors
+        </div>
 
         <h2>
           Mirrors made
@@ -2308,7 +2568,10 @@ body.rtl .hero:after{
 
         </ul>
 
-        <a class="btn btn-dark" href="#contact">
+        <a
+          class="btn btn-dark"
+          href="#contact"
+        >
           Ask About Mirrors
         </a>
 
@@ -2321,9 +2584,7 @@ body.rtl .hero:after{
 </section>
 
 
-<!-- ======================================================
-     QUALITY
-======================================================= -->
+<!-- QUALITY -->
 
 <section class="section-light">
 
@@ -2331,9 +2592,13 @@ body.rtl .hero:after{
 
     <div class="section-head">
 
-      <div class="eyebrow">Why Design Glass</div>
+      <div class="eyebrow">
+        Why Design Glass
+      </div>
 
-      <h2>Built around quality and detail.</h2>
+      <h2>
+        Built around quality and detail.
+      </h2>
 
       <p>
         Every project is planned around the space,
@@ -2346,36 +2611,71 @@ body.rtl .hero:after{
     <div class="quality-grid">
 
       <div class="quality">
-        <div class="quality-number">01</div>
-        <h3>Custom Design</h3>
+
+        <div class="quality-number">
+          01
+        </div>
+
+        <h3>
+          Custom Design
+        </h3>
+
         <p>
           Solutions made around your project and dimensions.
         </p>
+
       </div>
 
+
       <div class="quality">
-        <div class="quality-number">02</div>
-        <h3>Quality Materials</h3>
+
+        <div class="quality-number">
+          02
+        </div>
+
+        <h3>
+          Quality Materials
+        </h3>
+
         <p>
           Professional glass, mirror and aluminum systems.
         </p>
+
       </div>
 
+
       <div class="quality">
-        <div class="quality-number">03</div>
-        <h3>Precise Installation</h3>
+
+        <div class="quality-number">
+          03
+        </div>
+
+        <h3>
+          Precise Installation
+        </h3>
+
         <p>
           Clean installation with attention to every detail.
         </p>
+
       </div>
 
+
       <div class="quality">
-        <div class="quality-number">04</div>
-        <h3>Professional Finish</h3>
+
+        <div class="quality-number">
+          04
+        </div>
+
+        <h3>
+          Professional Finish
+        </h3>
+
         <p>
           A premium final appearance for residential and
           commercial spaces.
         </p>
+
       </div>
 
     </div>
@@ -2385,9 +2685,7 @@ body.rtl .hero:after{
 </section>
 
 
-<!-- ======================================================
-     CTA
-======================================================= -->
+<!-- CTA -->
 
 <section class="cta">
 
@@ -2437,11 +2735,12 @@ body.rtl .hero:after{
 </section>
 
 
-<!-- ======================================================
-     CONTACT
-======================================================= -->
+<!-- CONTACT -->
 
-<section class="section-light" id="contact">
+<section
+  class="section-light"
+  id="contact"
+>
 
   <div class="container">
 
@@ -2450,7 +2749,9 @@ body.rtl .hero:after{
 
       <div class="contact-copy">
 
-        <div class="eyebrow">Get In Touch</div>
+        <div class="eyebrow">
+          Get In Touch
+        </div>
 
         <h2>
           Ready to discuss your project?
@@ -2470,12 +2771,24 @@ body.rtl .hero:after{
             href="tel:+96555507290"
           >
 
-            <div class="contact-icon">☎</div>
+            <div class="contact-icon">
+              ☎
+            </div>
 
             <div>
-              <small>Phone</small>
-              <strong>+965 5550 7290</strong>
-              <span>Tap to call us</span>
+
+              <small>
+                Phone
+              </small>
+
+              <strong>
+                +965 5550 7290
+              </strong>
+
+              <span>
+                Tap to call us
+              </span>
+
             </div>
 
           </a>
@@ -2488,12 +2801,24 @@ body.rtl .hero:after{
             rel="noopener"
           >
 
-            <div class="contact-icon">W</div>
+            <div class="contact-icon">
+              W
+            </div>
 
             <div>
-              <small>WhatsApp</small>
-              <strong>Chat with us</strong>
-              <span>Fast response for enquiries</span>
+
+              <small>
+                WhatsApp
+              </small>
+
+              <strong>
+                Chat with us
+              </strong>
+
+              <span>
+                Fast response for enquiries
+              </span>
+
             </div>
 
           </a>
@@ -2506,12 +2831,24 @@ body.rtl .hero:after{
             rel="noopener"
           >
 
-            <div class="contact-icon">@</div>
+            <div class="contact-icon">
+              @
+            </div>
 
             <div>
-              <small>Instagram</small>
-              <strong>@design_glass_mirror</strong>
-              <span>See our latest work</span>
+
+              <small>
+                Instagram
+              </small>
+
+              <strong>
+                @design_glass_mirror
+              </strong>
+
+              <span>
+                See our latest work
+              </span>
+
             </div>
 
           </a>
@@ -2519,12 +2856,24 @@ body.rtl .hero:after{
 
           <div class="contact-card">
 
-            <div class="contact-icon">KW</div>
+            <div class="contact-icon">
+              KW
+            </div>
 
             <div>
-              <small>Service Area</small>
-              <strong>Kuwait</strong>
-              <span>Residential & commercial projects</span>
+
+              <small>
+                Service Area
+              </small>
+
+              <strong>
+                Kuwait
+              </strong>
+
+              <span>
+                Residential & commercial projects
+              </span>
+
             </div>
 
           </div>
@@ -2537,7 +2886,9 @@ body.rtl .hero:after{
 
       <div class="contact-panel">
 
-        <h3>Contact us directly.</h3>
+        <h3>
+          Contact us directly.
+        </h3>
 
         <p>
           For the fastest response, call or send us a WhatsApp message.
@@ -2591,9 +2942,7 @@ body.rtl .hero:after{
 </main>
 
 
-<!-- ======================================================
-     FOOTER
-======================================================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -2627,7 +2976,9 @@ body.rtl .hero:after{
 
       <div class="footer-col">
 
-        <h4>Navigation</h4>
+        <h4>
+          Navigation
+        </h4>
 
         <a href="#home">Home</a>
         <a href="#services">Services</a>
@@ -2641,7 +2992,9 @@ body.rtl .hero:after{
 
       <div class="footer-col">
 
-        <h4>Contact</h4>
+        <h4>
+          Contact
+        </h4>
 
         <a href="tel:+96555507290">
           +965 5550 7290
@@ -2669,14 +3022,14 @@ body.rtl .hero:after{
 
       </div>
 
-
     </div>
 
 
     <div class="footer-bottom">
 
       <span>
-        © <span id="year"></span> Design Glass & Mirror Kuwait.
+        © <span id="year"></span>
+        Design Glass & Mirror Kuwait.
         All rights reserved.
       </span>
 
@@ -2691,9 +3044,7 @@ body.rtl .hero:after{
 </footer>
 
 
-<!-- ======================================================
-     FLOATING WHATSAPP
-======================================================= -->
+<!-- FLOATING WHATSAPP -->
 
 <a
   class="float-whatsapp"
@@ -2706,9 +3057,7 @@ body.rtl .hero:after{
 </a>
 
 
-<!-- ======================================================
-     LIGHTBOX
-======================================================= -->
+<!-- LIGHTBOX -->
 
 <div
   class="lightbox"
@@ -2735,41 +3084,35 @@ body.rtl .hero:after{
 
 
 <script>
-/* =========================================================
-   DESIGN GLASS & MIRROR KUWAIT
-   PUBLIC JAVASCRIPT
-========================================================= */
 
-/* ---------------------------------------------------------
-   YEAR
---------------------------------------------------------- */
+/* YEAR */
 
 document.getElementById("year").textContent =
   new Date().getFullYear();
 
 
-/* ---------------------------------------------------------
-   MOBILE MENU
---------------------------------------------------------- */
+/* MOBILE MENU */
 
 function toggleMobileMenu(){
 
-  const menu = document.getElementById("mobileMenu");
+  const menu =
+    document.getElementById("mobileMenu");
 
   menu.classList.toggle("open");
 
 }
 
+
 function closeMobileMenu(){
 
-  document.getElementById("mobileMenu").classList.remove("open");
+  document
+    .getElementById("mobileMenu")
+    .classList.remove("open");
 
 }
 
 
-/* ---------------------------------------------------------
-   HERO SLIDER
---------------------------------------------------------- */
+/* HERO SLIDER */
 
 const heroSlides =
   document.querySelectorAll(".hero-slide");
@@ -2778,6 +3121,7 @@ const heroDots =
   document.querySelectorAll(".hero-dot");
 
 let currentSlide = 0;
+
 let slideTimer;
 
 
@@ -2785,18 +3129,26 @@ function goToSlide(index){
 
   if(!heroSlides.length) return;
 
-  heroSlides[currentSlide].classList.remove("active");
+  heroSlides[currentSlide]
+    .classList.remove("active");
 
   if(heroDots[currentSlide]){
-    heroDots[currentSlide].classList.remove("active");
+
+    heroDots[currentSlide]
+      .classList.remove("active");
+
   }
 
   currentSlide = index;
 
-  heroSlides[currentSlide].classList.add("active");
+  heroSlides[currentSlide]
+    .classList.add("active");
 
   if(heroDots[currentSlide]){
-    heroDots[currentSlide].classList.add("active");
+
+    heroDots[currentSlide]
+      .classList.add("active");
+
   }
 
   restartSlider();
@@ -2806,10 +3158,13 @@ function goToSlide(index){
 
 function nextSlide(){
 
-  let next = currentSlide + 1;
+  let next =
+    currentSlide + 1;
 
   if(next >= heroSlides.length){
+
     next = 0;
+
   }
 
   goToSlide(next);
@@ -2821,20 +3176,17 @@ function restartSlider(){
 
   clearInterval(slideTimer);
 
-  slideTimer = setInterval(
-    nextSlide,
-    6500
-  );
+  slideTimer =
+    setInterval(
+      nextSlide,
+      6500
+    );
 
 }
 
 
 restartSlider();
 
-
-/* ---------------------------------------------------------
-   PAUSE HERO WHEN TAB IS HIDDEN
---------------------------------------------------------- */
 
 document.addEventListener(
   "visibilitychange",
@@ -2854,9 +3206,7 @@ document.addEventListener(
 );
 
 
-/* ---------------------------------------------------------
-   LIGHTBOX
---------------------------------------------------------- */
+/* LIGHTBOX */
 
 function openLightbox(card){
 
@@ -2871,13 +3221,16 @@ function openLightbox(card){
   const lightboxImage =
     document.getElementById("lightboxImage");
 
-  lightboxImage.src = image.src;
+  lightboxImage.src =
+    image.src;
 
-  lightboxImage.alt = image.alt || "Project image";
+  lightboxImage.alt =
+    image.alt || "Project image";
 
   box.classList.add("open");
 
-  document.body.style.overflow = "hidden";
+  document.body.style.overflow =
+    "hidden";
 
 }
 
@@ -2889,14 +3242,17 @@ function closeLightbox(event){
     event.target &&
     event.target.id !== "lightbox"
   ){
+
     return;
+
   }
 
   document
     .getElementById("lightbox")
     .classList.remove("open");
 
-  document.body.style.overflow = "";
+  document.body.style.overflow =
+    "";
 
 }
 
@@ -2911,7 +3267,8 @@ document.addEventListener(
         .getElementById("lightbox")
         .classList.remove("open");
 
-      document.body.style.overflow = "";
+      document.body.style.overflow =
+        "";
 
     }
 
@@ -2919,10 +3276,7 @@ document.addEventListener(
 );
 
 
-/* ---------------------------------------------------------
-   LANGUAGE
-   Simple English / Arabic presentation
---------------------------------------------------------- */
+/* LANGUAGE */
 
 let arabic = false;
 
@@ -3006,7 +3360,9 @@ function toggleLanguage(){
   );
 
   const button =
-    document.getElementById("languageButton");
+    document.getElementById(
+      "languageButton"
+    );
 
   button.textContent =
     arabic ? "English" : "العربية";
@@ -3039,7 +3395,11 @@ function translatePage(isArabic){
         ) ||
         element.textContent.trim();
 
-      if(!element.hasAttribute("data-original-text")){
+      if(
+        !element.hasAttribute(
+          "data-original-text"
+        )
+      ){
 
         element.setAttribute(
           "data-original-text",
@@ -3073,9 +3433,7 @@ function translatePage(isArabic){
 }
 
 
-/* ---------------------------------------------------------
-   IMAGE ERROR HANDLING
---------------------------------------------------------- */
+/* IMAGE ERROR HANDLING */
 
 document.querySelectorAll("img").forEach(
   function(image){
@@ -3094,12 +3452,95 @@ document.querySelectorAll("img").forEach(
 );
 
 
-/* ---------------------------------------------------------
-   VIDEO ERROR HANDLING
---------------------------------------------------------- */
+/* VIDEO AUTOPLAY */
 
 document.querySelectorAll("video").forEach(
   function(video){
+
+    /* Make absolutely sure autoplay is muted */
+
+    video.muted = true;
+
+    video.setAttribute(
+      "muted",
+      ""
+    );
+
+    video.setAttribute(
+      "autoplay",
+      ""
+    );
+
+    video.setAttribute(
+      "playsinline",
+      ""
+    );
+
+    video.setAttribute(
+      "loop",
+      ""
+    );
+
+
+    /* Try autoplay immediately */
+
+    const tryPlay = function(){
+
+      video.muted = true;
+
+      const playPromise =
+        video.play();
+
+      if(
+        playPromise &&
+        typeof playPromise.catch === "function"
+      ){
+
+        playPromise.catch(
+          function(){
+
+            /*
+              Some browsers may delay autoplay
+              until the page becomes visible.
+            */
+
+          }
+        );
+
+      }
+
+    };
+
+
+    tryPlay();
+
+
+    /* Try again when video is ready */
+
+    video.addEventListener(
+      "canplay",
+      tryPlay,
+      {once:true}
+    );
+
+
+    /* Try again when page becomes visible */
+
+    document.addEventListener(
+      "visibilitychange",
+      function(){
+
+        if(!document.hidden){
+
+          tryPlay();
+
+        }
+
+      }
+    );
+
+
+    /* Video error */
 
     video.addEventListener(
       "error",
@@ -3120,6 +3561,7 @@ document.querySelectorAll("video").forEach(
 
   }
 );
+
 </script>
 
 </body>
