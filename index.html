@@ -1,2585 +1,3740 @@
 ```html
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 <meta name="description"
-content="Design Glass & Mirror Kuwait — professional glass, mirrors, shower glass, staircases, doors, partitions and architectural glass solutions across Kuwait.">
+content="Design Glass & Mirror Kuwait - Professional glass, mirror, shower glass, staircases, doors, partitions and architectural glass solutions across Kuwait.">
 
 <meta name="keywords"
-content="glass Kuwait, mirror Kuwait, glass company Kuwait, glass staircase Kuwait, shower glass Kuwait, glass doors Kuwait, mirrors Kuwait, architectural glass Kuwait, Design Glass Mirror Kuwait">
+content="glass Kuwait, mirror Kuwait, glass company Kuwait, tempered glass Kuwait, shower glass Kuwait, glass staircase Kuwait, glass doors Kuwait, LED mirrors Kuwait, architectural glass Kuwait">
 
-<meta name="author" content="Design Glass & Mirror Kuwait">
+<meta name="author"
+content="Design Glass & Mirror Kuwait">
 
 <title>Design Glass & Mirror Kuwait</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
+
 
 <style>
+
+/* =========================================================
+   DESIGN GLASS & MIRROR KUWAIT
+   CLEAN WHITE VERSION
+   ========================================================= */
+
 :root{
-  --navy:#061a2a;
-  --navy2:#0b3048;
-  --blue:#13afe4;
-  --blue2:#087da9;
-  --green:#25d366;
-  --gold:#d4a44d;
-  --white:#fff;
-  --dark:#102536;
-  --muted:#657786;
-  --light:#f4f8fb;
-  --line:#e1ebf1;
-  --shadow:0 20px 60px rgba(4,25,42,.14);
-  --radius:22px;
+
+--blue:#0a9ed1;
+--blue-dark:#087aa5;
+--navy:#092235;
+--text:#182b38;
+--muted:#657782;
+--white:#ffffff;
+--light:#f7fafc;
+--line:#e5edf1;
+--green:#25d366;
+
+--shadow:
+0 15px 45px rgba(9,34,53,.10);
+
 }
 
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 html{
-  scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-  font-family:Inter,Arial,sans-serif;
-  color:var(--dark);
-  background:#fff;
-  line-height:1.65;
+
+font-family:Inter,Arial,sans-serif;
+
+background:#ffffff;
+
+color:var(--text);
+
+line-height:1.65;
+
 }
 
 body.ar{
-  font-family:Cairo,Arial,sans-serif;
+font-family:Cairo,Arial,sans-serif;
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+text-decoration:none;
+color:inherit;
 }
 
 button{
-  font:inherit;
-  cursor:pointer;
+font:inherit;
+cursor:pointer;
 }
 
 img{
-  max-width:100%;
+max-width:100%;
 }
 
 .container{
-  width:min(1180px,92%);
-  margin:auto;
+
+width:min(1180px,92%);
+
+margin:auto;
+
 }
 
-/* ================= HEADER ================= */
+
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 header{
-  position:fixed;
-  z-index:1000;
-  top:0;
-  left:0;
-  right:0;
-  background:rgba(5,23,38,.90);
-  backdrop-filter:blur(16px);
-  border-bottom:1px solid rgba(255,255,255,.1);
+
+position:fixed;
+
+top:0;
+left:0;
+right:0;
+
+z-index:1000;
+
+background:rgba(255,255,255,.96);
+
+backdrop-filter:blur(15px);
+
+border-bottom:1px solid var(--line);
+
 }
 
 .nav{
-  height:82px;
-  display:flex;
-  align-items:center;
-  gap:25px;
+
+height:82px;
+
+display:flex;
+
+align-items:center;
+
+gap:25px;
+
 }
 
 .brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin-right:auto;
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+margin-right:auto;
+
 }
 
 .brand img{
-  width:58px;
-  height:58px;
-  object-fit:contain;
-  background:#fff;
-  border-radius:6px;
-  padding:4px;
+
+width:58px;
+height:58px;
+
+object-fit:contain;
+
+background:#fff;
+
+border-radius:6px;
+
+padding:3px;
+
 }
 
-.brand-text strong{
-  display:block;
-  color:#fff;
-  font-size:14px;
-  line-height:1.1;
-  letter-spacing:.5px;
+.brand strong{
+
+display:block;
+
+font-size:14px;
+
+line-height:1.05;
+
+color:var(--navy);
+
+letter-spacing:.4px;
+
 }
 
-.brand-text span{
-  color:#20c1f1;
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:3px;
+.brand span{
+
+display:block;
+
+font-size:10px;
+
+letter-spacing:3px;
+
+font-weight:800;
+
+color:var(--blue);
+
 }
 
 .navlinks{
-  display:flex;
-  align-items:center;
-  gap:24px;
+
+display:flex;
+
+align-items:center;
+
+gap:24px;
+
 }
 
 .navlinks a{
-  color:#fff;
-  font-size:14px;
-  font-weight:700;
-  transition:.2s;
+
+color:var(--navy);
+
+font-size:14px;
+
+font-weight:800;
+
+transition:.2s;
+
 }
 
 .navlinks a:hover{
-  color:#28c7f5;
+
+color:var(--blue);
+
 }
 
 .nav-actions{
-  display:flex;
-  align-items:center;
-  gap:8px;
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
 }
 
-.lang-btn,
+.lang-btn{
+
+border:1px solid var(--line);
+
+background:#fff;
+
+color:var(--navy);
+
+border-radius:999px;
+
+padding:9px 15px;
+
+font-weight:800;
+
+}
+
 .menu-btn{
-  background:transparent;
-  border:1px solid rgba(255,255,255,.3);
-  color:#fff;
-  border-radius:999px;
-  padding:9px 15px;
-  font-weight:800;
+
+display:none;
+
+border:1px solid var(--line);
+
+background:#fff;
+
+color:var(--navy);
+
+border-radius:999px;
+
+padding:9px 13px;
+
 }
 
-.menu-btn{
-  display:none;
-}
 
-/* ================= HERO ================= */
+/* =========================================================
+   HERO
+   ========================================================= */
 
 .hero{
-  position:relative;
-  min-height:780px;
-  height:100vh;
-  max-height:920px;
-  overflow:hidden;
-  background:#061a2a;
-  color:#fff;
+
+position:relative;
+
+height:100vh;
+
+min-height:720px;
+
+max-height:920px;
+
+overflow:hidden;
+
+background:#092235;
+
+color:#fff;
+
 }
 
 .hero-slide{
-  position:absolute;
-  inset:-4%;
-  background-size:cover;
-  background-position:center center;
-  background-repeat:no-repeat;
-  opacity:0;
-  transform:scale(1.03);
-  z-index:0;
-  transition:opacity 1.2s ease;
+
+position:absolute;
+
+inset:-4%;
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+opacity:0;
+
+transform:scale(1.03);
+
+transition:opacity 1.1s ease;
+
 }
 
 .hero-slide.active{
-  opacity:1;
-  animation:heroMove 7s ease-in-out forwards;
+
+opacity:1;
+
+animation:heroMove 7s ease-in-out forwards;
+
 }
 
 .hero-slide::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(2,16,28,.82),
-      rgba(2,16,28,.46) 52%,
-      rgba(2,16,28,.18)
-    );
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+rgba(3,18,30,.68),
+
+rgba(3,18,30,.35),
+
+rgba(3,18,30,.12)
+
+);
+
 }
 
 @keyframes heroMove{
-  0%{
-    transform:scale(1.03);
-    background-position:center top;
-  }
 
-  45%{
-    transform:scale(1.09);
-    background-position:center center;
-  }
+0%{
 
-  100%{
-    transform:scale(1.15);
-    background-position:center bottom;
-  }
+transform:scale(1.03);
+
+background-position:center top;
+
+}
+
+45%{
+
+transform:scale(1.09);
+
+background-position:center center;
+
+}
+
+100%{
+
+transform:scale(1.15);
+
+background-position:center bottom;
+
+}
+
 }
 
 .hero-content{
-  position:relative;
-  z-index:4;
-  min-height:780px;
-  height:100%;
-  display:flex;
-  align-items:center;
-  padding-top:90px;
+
+position:relative;
+
+z-index:5;
+
+height:100%;
+
+display:flex;
+
+align-items:center;
+
+padding-top:90px;
+
 }
 
 .hero-copy{
-  max-width:820px;
-  animation:heroText .9s ease both;
-}
 
-@keyframes heroText{
-  from{
-    opacity:0;
-    transform:translateY(35px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
+max-width:820px;
+
 }
 
 .hero-badge{
-  display:inline-flex;
-  padding:8px 15px;
-  border:1px solid rgba(255,255,255,.4);
-  border-radius:999px;
-  background:rgba(0,0,0,.12);
-  backdrop-filter:blur(5px);
-  color:#dff8ff;
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:2px;
-  margin-bottom:20px;
+
+display:inline-flex;
+
+padding:8px 15px;
+
+border:1px solid rgba(255,255,255,.45);
+
+border-radius:999px;
+
+font-size:12px;
+
+font-weight:800;
+
+letter-spacing:2px;
+
+margin-bottom:20px;
+
 }
 
 .hero h1{
-  font-size:clamp(42px,6vw,76px);
-  line-height:1.02;
-  margin-bottom:20px;
-  text-shadow:0 5px 30px rgba(0,0,0,.35);
+
+font-size:clamp(42px,6vw,76px);
+
+line-height:1.02;
+
+margin-bottom:20px;
+
+text-shadow:0 5px 30px rgba(0,0,0,.35);
+
 }
 
 .hero p{
-  max-width:760px;
-  color:#eefaff;
-  font-size:clamp(16px,2vw,21px);
+
+max-width:760px;
+
+font-size:clamp(16px,2vw,21px);
+
+color:#f1fbff;
+
 }
 
 .hero-buttons{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:42px;
+
+display:flex;
+
+gap:12px;
+
+flex-wrap:wrap;
+
+margin-top:38px;
+
 }
 
 .btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  min-height:48px;
-  padding:0 21px;
-  border-radius:999px;
-  font-weight:800;
-  transition:.25s;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:8px;
+
+padding:14px 22px;
+
+border-radius:999px;
+
+font-weight:800;
+
+transition:.25s;
+
 }
 
 .btn:hover{
-  transform:translateY(-3px);
+
+transform:translateY(-3px);
+
 }
 
 .btn-white{
-  background:#fff;
-  color:#092338;
-}
 
-.btn-green{
-  background:var(--green);
-  color:#fff;
+background:#fff;
+
+color:var(--navy);
+
 }
 
 .btn-blue{
-  background:var(--blue);
-  color:#fff;
+
+background:var(--blue);
+
+color:#fff;
+
 }
 
-.hero-dots{
-  position:absolute;
-  z-index:6;
-  left:50%;
-  bottom:25px;
-  transform:translateX(-50%);
-  display:flex;
-  gap:8px;
-}
+.btn-green{
 
-.hero-dot{
-  width:9px;
-  height:9px;
-  padding:0;
-  border:0;
-  border-radius:99px;
-  background:rgba(255,255,255,.45);
-}
+background:var(--green);
 
-.hero-dot.active{
-  width:28px;
-  background:#fff;
+color:#fff;
+
 }
 
 .hero-arrow{
-  position:absolute;
-  z-index:6;
-  top:50%;
-  transform:translateY(-50%);
-  width:48px;
-  height:48px;
-  border-radius:50%;
-  color:#fff;
-  background:rgba(0,0,0,.25);
-  border:1px solid rgba(255,255,255,.3);
-  font-size:28px;
+
+position:absolute;
+
+z-index:8;
+
+top:50%;
+
+transform:translateY(-50%);
+
+width:48px;
+
+height:48px;
+
+border-radius:50%;
+
+border:1px solid rgba(255,255,255,.35);
+
+background:rgba(0,0,0,.25);
+
+color:#fff;
+
+font-size:28px;
+
 }
 
 .hero-prev{
-  left:22px;
+
+left:20px;
+
 }
 
 .hero-next{
-  right:22px;
+
+right:20px;
+
 }
 
-/* ================= GENERAL ================= */
+.hero-dots{
+
+position:absolute;
+
+z-index:8;
+
+bottom:25px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+display:flex;
+
+gap:8px;
+
+}
+
+.hero-dot{
+
+width:9px;
+
+height:9px;
+
+border:0;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.45);
+
+}
+
+.hero-dot.active{
+
+width:28px;
+
+background:#fff;
+
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
 
 .section{
-  padding:90px 0;
+
+padding:90px 0;
+
+background:#fff;
+
 }
 
 .section.light{
-  background:var(--light);
+
+background:#f8fafc;
+
 }
 
 .section-head{
-  max-width:760px;
-  margin:0 auto 45px;
-  text-align:center;
+
+max-width:760px;
+
+margin:0 auto 45px;
+
+text-align:center;
+
 }
 
 .kicker{
-  color:var(--blue2);
-  font-size:12px;
-  font-weight:900;
-  letter-spacing:2px;
-  text-transform:uppercase;
+
+color:var(--blue-dark);
+
+font-size:12px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
 }
 
 .section-head h2{
-  color:var(--navy);
-  font-size:clamp(32px,4vw,50px);
-  line-height:1.1;
-  margin:10px 0 15px;
+
+color:var(--navy);
+
+font-size:clamp(32px,4vw,50px);
+
+line-height:1.1;
+
+margin:10px 0 15px;
+
 }
 
 .section-head p{
-  color:var(--muted);
-  font-size:16px;
+
+color:var(--muted);
+
+font-size:16px;
+
 }
 
-/* ================= STATS ================= */
 
-.stats{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-}
-
-.stat{
-  padding:30px 15px;
-  text-align:center;
-  border-right:1px solid var(--line);
-}
-
-.stat:last-child{
-  border-right:0;
-}
-
-.stat strong{
-  display:block;
-  color:var(--navy);
-  font-size:32px;
-}
-
-.stat span{
-  display:block;
-  color:var(--muted);
-  font-size:13px;
-  font-weight:700;
-  margin-top:5px;
-}
-
-/* ================= ABOUT ================= */
+/* =========================================================
+   ABOUT
+   ========================================================= */
 
 .about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:55px;
-  align-items:center;
-}
 
-.about-image{
-  min-height:450px;
-  border-radius:25px;
-  overflow:hidden;
-  box-shadow:var(--shadow);
-}
+display:grid;
 
-.about-image img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+grid-template-columns:1fr 1fr;
+
+gap:55px;
+
+align-items:center;
+
 }
 
 .about-copy h2{
-  color:var(--navy);
-  font-size:42px;
-  line-height:1.1;
-  margin:10px 0 18px;
+
+color:var(--navy);
+
+font-size:42px;
+
+line-height:1.1;
+
+margin:10px 0 18px;
+
 }
 
 .about-copy p{
-  color:var(--muted);
-  line-height:1.9;
-  margin:10px 0;
+
+color:var(--muted);
+
+margin:12px 0;
+
+font-size:16px;
+
 }
 
-.checks{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-  margin-top:25px;
+.about-image{
+
+height:450px;
+
+overflow:hidden;
+
+border-radius:24px;
+
+box-shadow:var(--shadow);
+
+}
+
+.about-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.check-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+margin-top:25px;
+
 }
 
 .check{
-  padding:14px 16px;
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:15px;
-  font-weight:800;
+
+border:1px solid var(--line);
+
+border-radius:15px;
+
+padding:15px;
+
+background:#fff;
+
+font-weight:800;
+
 }
 
-/* ================= SERVICES ================= */
+.check b{
 
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
+color:var(--blue);
+
+}
+
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.services-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
 }
 
 .service{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:20px;
-  padding:27px;
-  transition:.25s;
-  cursor:pointer;
+
+background:#fff;
+
+border:1px solid var(--line);
+
+border-radius:20px;
+
+padding:27px;
+
+transition:.25s;
+
+cursor:pointer;
+
 }
 
 .service:hover{
-  transform:translateY(-6px);
-  box-shadow:var(--shadow);
+
+transform:translateY(-5px);
+
+box-shadow:var(--shadow);
+
 }
 
 .service-icon{
-  width:50px;
-  height:50px;
-  border-radius:14px;
-  background:#e8f8fd;
-  color:var(--blue2);
-  display:grid;
-  place-items:center;
-  font-size:23px;
-  margin-bottom:18px;
+
+width:52px;
+
+height:52px;
+
+border-radius:15px;
+
+background:#e9f8fd;
+
+color:var(--blue-dark);
+
+display:grid;
+
+place-items:center;
+
+font-size:24px;
+
+margin-bottom:18px;
+
 }
 
 .service h3{
-  color:var(--navy);
-  margin-bottom:8px;
-  font-size:20px;
+
+color:var(--navy);
+
+margin-bottom:8px;
+
+font-size:20px;
+
 }
 
 .service p{
-  color:var(--muted);
-  font-size:14px;
-  line-height:1.7;
+
+color:var(--muted);
+
+font-size:14px;
+
 }
 
-/* ================= PROJECTS ================= */
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
 
 .project-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:16px;
+
 }
 
 .project{
-  position:relative;
-  aspect-ratio:1/1;
-  overflow:hidden;
-  border-radius:17px;
-  background:#dce8ee;
-  cursor:pointer;
+
+position:relative;
+
+aspect-ratio:1/1;
+
+overflow:hidden;
+
+border-radius:17px;
+
+background:#edf4f7;
+
+cursor:pointer;
+
 }
 
 .project img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transition:.6s;
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.55s;
+
 }
 
 .project:hover img{
-  transform:scale(1.08);
+
+transform:scale(1.08);
+
 }
 
-.project-overlay{
-  position:absolute;
-  z-index:2;
-  left:0;
-  right:0;
-  bottom:0;
-  padding:45px 15px 15px;
-  color:#fff;
-  background:linear-gradient(transparent,rgba(0,0,0,.88));
+.project-caption{
+
+position:absolute;
+
+left:0;
+right:0;
+bottom:0;
+
+z-index:2;
+
+padding:45px 15px 15px;
+
+color:#fff;
+
+background:linear-gradient(
+
+transparent,
+
+rgba(0,0,0,.85)
+
+);
+
 }
 
-.project-overlay strong{
-  display:block;
-  font-size:14px;
+.project-caption strong{
+
+display:block;
+
+font-size:14px;
+
 }
 
-.project-overlay span{
-  display:block;
-  font-size:11px;
-  opacity:.8;
-  margin-top:3px;
-}
 
-/* ================= VIDEO ================= */
+/* =========================================================
+   FOUR VIDEOS
+   ========================================================= */
 
 .video-section{
-  background:var(--navy);
-  color:#fff;
+
+background:#fff;
+
 }
 
-.video-section .section-head h2{
-  color:#fff;
+.video-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:25px;
+
 }
 
-.video-section .section-head p{
-  color:#bfd4df;
+.video-card{
+
+border:1px solid var(--line);
+
+border-radius:22px;
+
+overflow:hidden;
+
+background:#fff;
+
+box-shadow:var(--shadow);
+
 }
 
-.video-box{
-  max-width:1000px;
-  margin:auto;
-  border-radius:24px;
-  overflow:hidden;
-  background:#020a10;
-  box-shadow:var(--shadow);
+.video-card video{
+
+width:100%;
+
+aspect-ratio:16/9;
+
+display:block;
+
+object-fit:cover;
+
+background:#edf2f5;
+
 }
 
-.video-box video{
-  width:100%;
-  display:block;
-  max-height:650px;
-  object-fit:cover;
-  background:#020a10;
+.video-info{
+
+padding:20px;
+
 }
 
-.video-note{
-  text-align:center;
-  color:#8eacbb;
-  font-size:12px;
-  margin-top:14px;
+.video-info h3{
+
+color:var(--navy);
+
+font-size:20px;
+
 }
 
-/* ================= INSTAGRAM ================= */
+.video-info p{
+
+color:var(--muted);
+
+font-size:14px;
+
+margin-top:5px;
+
+}
+
+
+/* =========================================================
+   WHY
+   ========================================================= */
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:18px;
+
+}
+
+.why-card{
+
+border:1px solid var(--line);
+
+border-radius:18px;
+
+padding:25px;
+
+background:#fff;
+
+}
+
+.why-card b{
+
+color:var(--blue);
+
+font-size:22px;
+
+}
+
+.why-card h3{
+
+color:var(--navy);
+
+margin:10px 0 6px;
+
+}
+
+.why-card p{
+
+color:var(--muted);
+
+font-size:14px;
+
+}
+
+
+/* =========================================================
+   INSTAGRAM
+   ========================================================= */
 
 .instagram-box{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:25px;
-  padding:38px;
-  border-radius:25px;
-  color:#fff;
-  background:linear-gradient(135deg,#071b2b,#105373);
-  box-shadow:var(--shadow);
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:25px;
+
+padding:38px;
+
+border:1px solid var(--line);
+
+border-radius:24px;
+
+background:#fff;
+
+box-shadow:var(--shadow);
+
 }
 
 .instagram-box h2{
-  margin:7px 0;
+
+color:var(--navy);
+
+margin:7px 0;
+
 }
 
 .instagram-box p{
-  color:#c9e0ea;
+
+color:var(--muted);
+
 }
 
 .instagram-btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:14px 22px;
-  border-radius:999px;
-  background:#fff;
-  color:var(--navy);
-  font-weight:900;
-  white-space:nowrap;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:8px;
+
+padding:14px 23px;
+
+border-radius:999px;
+
+background:var(--navy);
+
+color:#fff;
+
+font-weight:800;
+
 }
 
-/* ================= CONTACT ================= */
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
 
 .contact-grid{
-  display:grid;
-  grid-template-columns:.85fr 1.15fr;
-  gap:25px;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:25px;
+
 }
 
 .contact-card{
-  padding:30px;
-  border:1px solid var(--line);
-  border-radius:22px;
-  background:#fff;
+
+border:1px solid var(--line);
+
+border-radius:22px;
+
+padding:30px;
+
+background:#fff;
+
 }
 
 .contact-card h3{
-  color:var(--navy);
-  margin-bottom:15px;
-  font-size:24px;
+
+color:var(--navy);
+
+font-size:25px;
+
+margin-bottom:15px;
+
 }
 
 .contact-row{
-  display:flex;
-  gap:14px;
-  padding:15px 0;
-  border-bottom:1px solid var(--line);
+
+display:flex;
+
+gap:14px;
+
+padding:16px 0;
+
+border-bottom:1px solid var(--line);
+
 }
 
 .contact-row:last-child{
-  border-bottom:0;
+
+border-bottom:0;
+
 }
 
 .contact-row small{
-  display:block;
-  color:var(--muted);
-  font-weight:700;
+
+display:block;
+
+color:var(--muted);
+
+font-weight:700;
+
 }
 
-.contact-row a,
 .contact-row strong{
-  font-weight:800;
+
+font-weight:800;
+
 }
 
-.quote-form{
-  display:grid;
-  gap:12px;
+.quote{
+
+background:#f8fafc;
+
 }
 
-.quote-form input,
-.quote-form textarea{
-  width:100%;
-  border:1px solid var(--line);
-  border-radius:12px;
-  padding:14px;
-  font:inherit;
-  outline:none;
+.quote p{
+
+color:var(--muted);
+
+margin-bottom:20px;
+
 }
 
-.quote-form input:focus,
-.quote-form textarea:focus{
-  border-color:var(--blue);
-}
 
-.quote-form textarea{
-  min-height:150px;
-  resize:vertical;
-}
-
-.quote-form button{
-  border:0;
-  background:var(--navy);
-  color:#fff;
-  padding:15px;
-  border-radius:12px;
-  font-weight:900;
-}
-
-/* ================= FOOTER ================= */
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 footer{
-  background:#051522;
-  color:#abc0cb;
-  padding:35px 0;
+
+background:#fff;
+
+border-top:1px solid var(--line);
+
+padding:35px 0;
+
 }
 
 .footer{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:20px;
+
 }
 
 .footer strong{
-  color:#fff;
+
+color:var(--navy);
+
 }
 
 .footer-links{
-  display:flex;
-  gap:18px;
-  flex-wrap:wrap;
+
+display:flex;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+font-size:13px;
+
+font-weight:700;
+
 }
 
-/* ================= MODAL ================= */
+
+/* =========================================================
+   MODAL
+   ========================================================= */
 
 .modal{
-  position:fixed;
-  inset:0;
-  z-index:3000;
-  display:none;
-  align-items:center;
-  justify-content:center;
-  padding:20px;
-  background:rgba(0,10,18,.82);
+
+position:fixed;
+
+inset:0;
+
+z-index:3000;
+
+display:none;
+
+align-items:center;
+
+justify-content:center;
+
+padding:20px;
+
+background:rgba(0,0,0,.75);
+
 }
 
 .modal.open{
-  display:flex;
+
+display:flex;
+
 }
 
 .modal-box{
-  width:min(850px,100%);
-  max-height:90vh;
-  overflow:auto;
-  background:#fff;
-  border-radius:22px;
-  position:relative;
+
+width:min(850px,100%);
+
+background:#fff;
+
+border-radius:22px;
+
+overflow:hidden;
+
+position:relative;
+
 }
 
 .modal-box img{
-  width:100%;
-  max-height:550px;
-  object-fit:cover;
+
+width:100%;
+
+max-height:550px;
+
+object-fit:cover;
+
 }
 
 .modal-content{
-  padding:25px;
+
+padding:25px;
+
 }
 
-.modal-content h3{
-  color:var(--navy);
-  font-size:27px;
+.modal-content h2{
+
+color:var(--navy);
+
 }
 
 .modal-content p{
-  color:var(--muted);
-  margin:8px 0 20px;
+
+color:var(--muted);
+
 }
 
 .modal-close{
-  position:absolute;
-  top:12px;
-  right:12px;
-  z-index:4;
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  background:rgba(0,0,0,.65);
-  color:#fff;
-  font-size:25px;
+
+position:absolute;
+
+top:12px;
+
+right:12px;
+
+z-index:5;
+
+width:42px;
+
+height:42px;
+
+border-radius:50%;
+
+background:rgba(0,0,0,.65);
+
+color:#fff;
+
+font-size:25px;
+
 }
 
-/* ================= RTL ================= */
+
+/* =========================================================
+   ARABIC
+   ========================================================= */
 
 html[dir="rtl"] body{
-  font-family:Cairo,Arial,sans-serif;
-}
 
-html[dir="rtl"] .hero-copy{
-  text-align:right;
-}
+font-family:Cairo,Arial,sans-serif;
 
-html[dir="rtl"] .hero-buttons{
-  justify-content:flex-start;
 }
 
 html[dir="rtl"] .brand{
-  margin-right:0;
-  margin-left:auto;
+
+margin-right:0;
+
+margin-left:auto;
+
+}
+
+html[dir="rtl"] .hero-copy{
+
+text-align:right;
+
+}
+
+html[dir="rtl"] .hero-buttons{
+
+justify-content:flex-start;
+
 }
 
 html[dir="rtl"] .contact-row{
-  text-align:right;
+
+text-align:right;
+
 }
 
-html[dir="rtl"] .project-overlay{
-  text-align:right;
-}
 
-/* ================= MOBILE ================= */
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media(max-width:950px){
 
-  .nav{
-    height:72px;
-  }
+.navlinks{
 
-  .navlinks{
-    display:none;
-    position:absolute;
-    top:72px;
-    left:12px;
-    right:12px;
-    padding:16px;
-    background:var(--navy);
-    border-radius:0 0 18px 18px;
-    flex-direction:column;
-    align-items:stretch;
-  }
+display:none;
 
-  .navlinks.open{
-    display:flex;
-  }
+position:absolute;
 
-  .navlinks a{
-    padding:9px;
-  }
+top:82px;
 
-  .menu-btn{
-    display:block;
-  }
+left:12px;
 
-  .hero{
-    min-height:720px;
-  }
+right:12px;
 
-  .hero-content{
-    min-height:720px;
-    padding-top:100px;
-  }
+padding:15px;
 
-  .hero h1{
-    font-size:54px;
-  }
+background:#fff;
 
-  .service-grid{
-    grid-template-columns:1fr 1fr;
-  }
+border:1px solid var(--line);
 
-  .project-grid{
-    grid-template-columns:1fr 1fr;
-  }
+border-radius:0 0 18px 18px;
 
-  .about-grid,
-  .contact-grid{
-    grid-template-columns:1fr;
-  }
+box-shadow:var(--shadow);
 
-  .stats{
-    grid-template-columns:1fr 1fr;
-  }
+flex-direction:column;
 
-  .stat:nth-child(2){
-    border-right:0;
-  }
+align-items:stretch;
 
-  .stat:nth-child(-n+2){
-    border-bottom:1px solid var(--line);
-  }
+}
 
-  .instagram-box{
-    flex-direction:column;
-    align-items:flex-start;
-  }
+.navlinks.open{
+
+display:flex;
+
+}
+
+.navlinks a{
+
+padding:9px;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+.services-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.project-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.why-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.about-grid,
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.video-grid{
+
+grid-template-columns:1fr;
+
+}
+
 }
 
 @media(max-width:600px){
 
-  .container{
-    width:min(100% - 24px,1180px);
-  }
+.nav{
 
-  .brand img{
-    width:46px;
-    height:46px;
-  }
+height:72px;
 
-  .brand-text strong{
-    font-size:11px;
-  }
-
-  .brand-text span{
-    font-size:9px;
-  }
-
-  .lang-btn{
-    padding:8px 11px;
-  }
-
-  .hero{
-    min-height:700px;
-    height:100svh;
-  }
-
-  .hero-content{
-    min-height:700px;
-    padding-top:80px;
-  }
-
-  .hero h1{
-    font-size:41px;
-  }
-
-  .hero p{
-    font-size:15px;
-  }
-
-  .hero-buttons{
-    flex-direction:column;
-    max-width:300px;
-    margin-top:32px;
-  }
-
-  .btn{
-    width:100%;
-  }
-
-  .hero-arrow{
-    display:none;
-  }
-
-  .section{
-    padding:68px 0;
-  }
-
-  .service-grid,
-  .project-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .project{
-    border-radius:13px;
-  }
-
-  .project-overlay{
-    padding:35px 9px 9px;
-  }
-
-  .project-overlay strong{
-    font-size:11px;
-  }
-
-  .project-overlay span{
-    display:none;
-  }
-
-  .about-copy h2{
-    font-size:34px;
-  }
-
-  .checks{
-    grid-template-columns:1fr;
-  }
-
-  .instagram-box{
-    padding:28px;
-  }
-
-  .instagram-btn{
-    width:100%;
-  }
-
-  .footer{
-    flex-direction:column;
-    text-align:center;
-  }
-
-  .footer-links{
-    justify-content:center;
-  }
 }
+
+.brand img{
+
+width:47px;
+
+height:47px;
+
+}
+
+.brand strong{
+
+font-size:11px;
+
+}
+
+.brand span{
+
+font-size:9px;
+
+}
+
+.hero{
+
+min-height:700px;
+
+}
+
+.hero h1{
+
+font-size:41px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+max-width:300px;
+
+}
+
+.btn{
+
+width:100%;
+
+}
+
+.hero-arrow{
+
+display:none;
+
+}
+
+.section{
+
+padding:65px 0;
+
+}
+
+.services-grid,
+.project-grid,
+.why-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.project-caption{
+
+padding:35px 9px 9px;
+
+}
+
+.project-caption strong{
+
+font-size:11px;
+
+}
+
+.about-image{
+
+height:330px;
+
+}
+
+.check-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.instagram-box{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+padding:28px;
+
+}
+
+.instagram-btn{
+
+width:100%;
+
+}
+
+.footer{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.footer-links{
+
+justify-content:center;
+
+}
+
+}
+
 </style>
+
 </head>
+
 
 <body>
 
-<!-- ================= HEADER ================= -->
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
 
 <header>
-  <div class="container nav">
 
-    <a class="brand" href="#home">
+<div class="container nav">
 
-      <img
-        src="WhatsApp%20Image%202026-08-23%20at%2012.24.46%20PM.jpeg"
-        alt="Design Glass & Mirror Kuwait Logo"
-      >
 
-      <div class="brand-text">
-        <strong>DESIGN GLASS & MIRROR</strong>
-        <span>KUWAIT</span>
-      </div>
+<a class="brand" href="#home">
 
-    </a>
+<img
+src="WhatsApp%20Image%202026-08-23%20at%2012.24.46%20PM.jpeg"
+alt="Design Glass & Mirror Kuwait Logo">
 
-    <nav class="navlinks" id="navLinks">
+<div>
 
-      <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+<strong>
+DESIGN GLASS & MIRROR
+</strong>
 
-      <a href="#about" data-en="About" data-ar="من نحن">About</a>
+<span>
+KUWAIT
+</span>
 
-      <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
+</div>
 
-      <a href="#projects" data-en="Our Work" data-ar="أعمالنا">Our Work</a>
+</a>
 
-      <a href="#video" data-en="Videos" data-ar="الفيديوهات">Videos</a>
 
-      <a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+<nav
+class="navlinks"
+id="navlinks">
 
-    </nav>
+<a href="#home"
+data-t="home">
+Home
+</a>
 
-    <div class="nav-actions">
+<a href="#about"
+data-t="about">
+About
+</a>
 
-      <button
-        class="lang-btn"
-        id="langBtn"
-        type="button"
-      >العربية</button>
+<a href="#services"
+data-t="services">
+Services
+</a>
 
-      <button
-        class="menu-btn"
-        id="menuBtn"
-        type="button"
-      >☰</button>
+<a href="#projects"
+data-t="projects">
+Projects
+</a>
 
-    </div>
+<a href="#videos"
+data-t="videos">
+Videos
+</a>
 
-  </div>
-</header>
+<a href="#contact"
+data-t="contact">
+Contact
+</a>
 
+</nav>
 
-<main>
 
-<!-- ================= HERO ================= -->
+<div class="nav-actions">
 
-<section class="hero" id="home">
+<button
+class="lang-btn"
+id="langBtn">
+العربية
+</button>
 
-  <!-- NEW PROFESSIONAL HERO PICTURES -->
-
-  <div
-    class="hero-slide active"
-    data-image="10mm clear glass temper pool.jpeg">
-  </div>
-
-  <div
-    class="hero-slide"
-    data-image="10mm clear glass temper shower with golden frame.jpeg">
-  </div>
-
-  <div
-    class="hero-slide"
-    data-image="10mm clear glass temper staircas with wooden handle.jpeg">
-  </div>
-
-  <div
-    class="hero-slide"
-    data-image="10mm clear glass temper fix in black spider system.jpeg">
-  </div>
-
-  <div
-    class="hero-slide"
-    data-image="10mm black glass temper staircas kloudy.jpeg">
-  </div>
-
-  <button
-    class="hero-arrow hero-prev"
-    id="heroPrev"
-    type="button"
-    aria-label="Previous">
-    ‹
-  </button>
-
-  <button
-    class="hero-arrow hero-next"
-    id="heroNext"
-    type="button"
-    aria-label="Next">
-    ›
-  </button>
-
-
-  <div class="container hero-content">
-
-    <div class="hero-copy" id="heroCopy">
-
-      <div
-        class="hero-badge"
-        data-en="PROFESSIONAL GLASS & MIRROR WORKS IN KUWAIT"
-        data-ar="أعمال احترافية للزجاج والمرايا في الكويت">
-        PROFESSIONAL GLASS & MIRROR WORKS IN KUWAIT
-      </div>
-
-      <h1
-        data-en="DESIGN GLASS & MIRROR KUWAIT"
-        data-ar="ديزاين جلاس وميرور الكويت">
-        DESIGN GLASS & MIRROR KUWAIT
-      </h1>
-
-      <p
-        data-en="Professional glass, mirror and architectural glass solutions for homes, shops, offices and modern buildings across Kuwait."
-        data-ar="حلول احترافية للزجاج والمرايا والزجاج المعماري للمنازل والمحلات والمكاتب والمباني الحديثة في جميع أنحاء الكويت.">
-        Professional glass, mirror and architectural glass solutions for homes, shops, offices and modern buildings across Kuwait.
-      </p>
-
-      <div class="hero-buttons">
-
-        <a
-          class="btn btn-white"
-          href="tel:+96555507290">
-          📞
-          <span
-            data-en="Call Now"
-            data-ar="اتصل الآن">
-            Call Now
-          </span>
-        </a>
-
-        <a
-          class="btn btn-green"
-          href="https://wa.me/96555507290"
-          target="_blank"
-          rel="noopener">
-          💬
-          <span
-            data-en="WhatsApp"
-            data-ar="واتساب">
-            WhatsApp
-          </span>
-        </a>
-
-        <a
-          class="btn btn-blue"
-          href="#projects">
-          👁️
-          <span
-            data-en="View Our Work"
-            data-ar="شاهد أعمالنا">
-            View Our Work
-          </span>
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div
-    class="hero-dots"
-    id="heroDots">
-  </div>
-
-</section>
-
-
-<!-- ================= STATS ================= -->
-
-<section class="section" style="padding-top:45px;padding-bottom:45px;">
-
-  <div class="container stats">
-
-    <div class="stat">
-      <strong>100%</strong>
-      <span
-        data-en="Custom Work"
-        data-ar="أعمال مخصصة">
-        Custom Work
-      </span>
-    </div>
-
-    <div class="stat">
-      <strong>24/7</strong>
-      <span
-        data-en="WhatsApp Contact"
-        data-ar="تواصل عبر واتساب">
-        WhatsApp Contact
-      </span>
-    </div>
-
-    <div class="stat">
-      <strong>15+</strong>
-      <span
-        data-en="Glass & Mirror Services"
-        data-ar="خدمات الزجاج والمرايا">
-        Glass & Mirror Services
-      </span>
-    </div>
-
-    <div class="stat">
-      <strong>KUWAIT</strong>
-      <span
-        data-en="Service Across Kuwait"
-        data-ar="خدمة في جميع أنحاء الكويت">
-        Service Across Kuwait
-      </span>
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section class="section light" id="about">
-
-  <div class="container about-grid">
-
-    <div class="about-image">
-
-      <img
-        src="10mm%20clear%20glass%20temper%20fix%20in%20black%20spider%20system.jpeg"
-        alt="Architectural glass project"
-        loading="lazy">
-
-    </div>
-
-    <div class="about-copy">
-
-      <div
-        class="kicker"
-        data-en="ABOUT US"
-        data-ar="من نحن">
-        ABOUT US
-      </div>
-
-      <h2
-        data-en="Professional Glass & Mirror Solutions in Kuwait"
-        data-ar="حلول احترافية للزجاج والمرايا في الكويت">
-        Professional Glass & Mirror Solutions in Kuwait
-      </h2>
-
-      <p
-        data-en="Design Glass & Mirror Kuwait provides professional glass, mirror and architectural solutions for homes, offices, shops, staircases, bathrooms and modern commercial spaces."
-        data-ar="تقدم ديزاين جلاس وميرور الكويت حلولاً احترافية للزجاج والمرايا والزجاج المعماري للمنازل والمكاتب والمحلات والسلالم والحمامات والمساحات التجارية الحديثة.">
-        Design Glass & Mirror Kuwait provides professional glass, mirror and architectural solutions for homes, offices, shops, staircases, bathrooms and modern commercial spaces.
-      </p>
-
-      <p
-        data-en="We focus on clean finishing, practical installation and modern designs that make every space look better."
-        data-ar="نركز على التشطيب النظيف والتركيب العملي والتصاميم الحديثة التي تجعل كل مساحة أجمل.">
-        We focus on clean finishing, practical installation and modern designs that make every space look better.
-      </p>
-
-      <div class="checks">
-
-        <div class="check">
-          ✓
-          <span
-            data-en="Quality Work"
-            data-ar="عمل بجودة عالية">
-            Quality Work
-          </span>
-        </div>
-
-        <div class="check">
-          ✓
-          <span
-            data-en="Modern Designs"
-            data-ar="تصاميم عصرية">
-            Modern Designs
-          </span>
-        </div>
-
-        <div class="check">
-          ✓
-          <span
-            data-en="Custom Sizes"
-            data-ar="مقاسات مخصصة">
-            Custom Sizes
-          </span>
-        </div>
-
-        <div class="check">
-          ✓
-          <span
-            data-en="Kuwait Service"
-            data-ar="خدمة داخل الكويت">
-            Kuwait Service
-          </span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ================= SERVICES ================= -->
-
-<section class="section" id="services">
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <div
-        class="kicker"
-        data-en="WHAT WE DO"
-        data-ar="ماذا نقدم">
-        WHAT WE DO
-      </div>
-
-      <h2
-        data-en="Professional Glass & Mirror Services"
-        data-ar="خدمات احترافية للزجاج والمرايا">
-        Professional Glass & Mirror Services
-      </h2>
-
-      <p
-        data-en="Professional solutions designed for homes, shops, offices and modern buildings."
-        data-ar="حلول احترافية للمنازل والمحلات والمكاتب والمباني الحديثة.">
-        Professional solutions designed for homes, shops, offices and modern buildings.
-      </p>
-
-    </div>
-
-    <div class="service-grid" id="serviceGrid"></div>
-
-  </div>
-
-</section>
-
-
-<!-- ================= PROJECTS ================= -->
-
-<section class="section light" id="projects">
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <div
-        class="kicker"
-        data-en="OUR WORK"
-        data-ar="أعمالنا">
-        OUR WORK
-      </div>
-
-      <h2
-        data-en="Glass & Mirror Projects"
-        data-ar="مشاريع الزجاج والمرايا">
-        Glass & Mirror Projects
-      </h2>
-
-      <p
-        data-en="Explore our glass, mirror, staircase, shower, door and architectural projects."
-        data-ar="شاهد مشاريعنا في الزجاج والمرايا والسلالم والحمامات والأبواب والزجاج المعماري.">
-        Explore our glass, mirror, staircase, shower, door and architectural projects.
-      </p>
-
-    </div>
-
-    <div
-      class="project-grid"
-      id="projectGrid">
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ================= VIDEO ================= -->
-
-<section class="section video-section" id="video">
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <div
-        class="kicker"
-        data-en="PROJECT VIDEO"
-        data-ar="فيديو المشروع">
-        PROJECT VIDEO
-      </div>
-
-      <h2
-        data-en="See Our Work in Motion"
-        data-ar="شاهد أعمالنا بالفيديو">
-        See Our Work in Motion
-      </h2>
-
-      <p
-        data-en="Our project video starts automatically, plays silently and loops continuously."
-        data-ar="يبدأ فيديو المشروع تلقائياً بدون صوت ويستمر بالتكرار.">
-        Our project video starts automatically, plays silently and loops continuously.
-      </p>
-
-    </div>
-
-    <div class="video-box">
-
-      <video
-        id="projectVideo"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        poster="10mm%20clear%20glass%20temper%20staircas%20with%20wooden%20handle.jpeg">
-
-        <source
-          src="staircase%20clear%20ggm.mp4"
-          type="video/mp4">
-
-        Your browser does not support video.
-
-      </video>
-
-    </div>
-
-    <div
-      class="video-note"
-      data-en="The video is muted because mobile browsers normally block autoplay with sound."
-      data-ar="الفيديو بدون صوت لأن متصفحات الهاتف تمنع التشغيل التلقائي مع الصوت.">
-      The video is muted because mobile browsers normally block autoplay with sound.
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ================= INSTAGRAM ================= -->
-
-<section class="section light">
-
-  <div class="container">
-
-    <div class="instagram-box">
-
-      <div>
-
-        <div
-          class="kicker"
-          style="color:#67d9f7"
-          data-en="FOLLOW OUR WORK"
-          data-ar="تابع أعمالنا">
-          FOLLOW OUR WORK
-        </div>
-
-        <h2>Instagram</h2>
-
-        <p
-          data-en="See more Design Glass & Mirror Kuwait projects, designs and updates on Instagram."
-          data-ar="شاهد المزيد من مشاريع وتصاميم وتحديثات ديزاين جلاس وميرور الكويت على إنستغرام.">
-          See more Design Glass & Mirror Kuwait projects, designs and updates on Instagram.
-        </p>
-
-      </div>
-
-      <a
-        class="instagram-btn"
-        href="https://www.instagram.com/design_glass_mirror/"
-        target="_blank"
-        rel="noopener">
-
-        ◎
-        <span
-          data-en="Open Instagram"
-          data-ar="فتح إنستغرام">
-          Open Instagram
-        </span>
-
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section class="section" id="contact">
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <div
-        class="kicker"
-        data-en="CONTACT"
-        data-ar="تواصل معنا">
-        CONTACT
-      </div>
-
-      <h2
-        data-en="Let's Discuss Your Project"
-        data-ar="لنتحدث عن مشروعك">
-        Let's Discuss Your Project
-      </h2>
-
-      <p
-        data-en="Send your project details and contact us for the right glass or mirror solution."
-        data-ar="أرسل تفاصيل مشروعك وتواصل معنا للحصول على الحل المناسب للزجاج أو المرايا.">
-        Send your project details and contact us for the right glass or mirror solution.
-      </p>
-
-    </div>
-
-
-    <div class="contact-grid">
-
-      <div class="contact-card">
-
-        <h3
-          data-en="Design Glass & Mirror Kuwait"
-          data-ar="ديزاين جلاس وميرور الكويت">
-          Design Glass & Mirror Kuwait
-        </h3>
-
-        <div class="contact-row">
-
-          <div>📞</div>
-
-          <div>
-            <small
-              data-en="PHONE"
-              data-ar="الهاتف">
-              PHONE
-            </small>
-
-            <a href="tel:+96555507290">
-              +965 5550 7290
-            </a>
-          </div>
-
-        </div>
-
-
-        <div class="contact-row">
-
-          <div>💬</div>
-
-          <div>
-            <small>WHATSAPP</small>
-
-            <a
-              href="https://wa.me/96555507290"
-              target="_blank"
-              rel="noopener">
-              +965 5550 7290
-            </a>
-          </div>
-
-        </div>
-
-
-        <div class="contact-row">
-
-          <div>◎</div>
-
-          <div>
-            <small>INSTAGRAM</small>
-
-            <a
-              href="https://www.instagram.com/design_glass_mirror/"
-              target="_blank"
-              rel="noopener">
-              @design_glass_mirror
-            </a>
-          </div>
-
-        </div>
-
-
-        <div class="contact-row">
-
-          <div>📍</div>
-
-          <div>
-            <small
-              data-en="LOCATION"
-              data-ar="الموقع">
-              LOCATION
-            </small>
-
-            <strong
-              data-en="Kuwait"
-              data-ar="الكويت">
-              Kuwait
-            </strong>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <div class="contact-card">
-
-        <h3
-          data-en="Request a Quote"
-          data-ar="اطلب عرض سعر">
-          Request a Quote
-        </h3>
-
-        <form
-          class="quote-form"
-          id="quoteForm">
-
-          <input
-            id="name"
-            required
-            data-placeholder-en="Your Name"
-            data-placeholder-ar="اسمك"
-            placeholder="Your Name">
-
-          <input
-            id="phone"
-            required
-            data-placeholder-en="Phone Number"
-            data-placeholder-ar="رقم الهاتف"
-            placeholder="Phone Number">
-
-          <textarea
-            id="message"
-            required
-            data-placeholder-en="Tell us about your project..."
-            data-placeholder-ar="اكتب تفاصيل مشروعك..."
-            placeholder="Tell us about your project..."></textarea>
-
-          <button
-            type="submit"
-            data-en="Send Request on WhatsApp"
-            data-ar="إرسال الطلب عبر واتساب">
-            Send Request on WhatsApp
-          </button>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-</main>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-  <div class="container footer">
-
-    <div>
-
-      <strong>
-        DESIGN GLASS & MIRROR KUWAIT
-      </strong>
-
-      <br>
-
-      <small
-        data-en="Professional glass & mirror solutions in Kuwait"
-        data-ar="حلول احترافية للزجاج والمرايا في الكويت">
-        Professional glass & mirror solutions in Kuwait
-      </small>
-
-    </div>
-
-    <div class="footer-links">
-
-      <a
-        href="#home"
-        data-en="Home"
-        data-ar="الرئيسية">
-        Home
-      </a>
-
-      <a
-        href="#services"
-        data-en="Services"
-        data-ar="خدماتنا">
-        Services
-      </a>
-
-      <a
-        href="#projects"
-        data-en="Our Work"
-        data-ar="أعمالنا">
-        Our Work
-      </a>
-
-      <a
-        href="https://www.instagram.com/design_glass_mirror/"
-        target="_blank"
-        rel="noopener">
-        Instagram
-      </a>
-
-    </div>
-
-  </div>
-
-</footer>
-
-
-<!-- ================= IMAGE MODAL ================= -->
-
-<div
-  class="modal"
-  id="modal">
-
-  <div class="modal-box">
-
-    <button
-      class="modal-close"
-      id="modalClose"
-      type="button">
-      ×
-    </button>
-
-    <img
-      id="modalImage"
-      src=""
-      alt="Project">
-
-    <div class="modal-content">
-
-      <h3 id="modalTitle"></h3>
-
-      <p id="modalDescription"></p>
-
-      <a
-        class="btn btn-blue"
-        href="https://wa.me/96555507290"
-        target="_blank"
-        rel="noopener">
-        💬
-        <span
-          data-en="Ask on WhatsApp"
-          data-ar="اسأل عبر واتساب">
-          Ask on WhatsApp
-        </span>
-      </a>
-
-    </div>
-
-  </div>
+<button
+class="menu-btn"
+id="menuBtn">
+☰
+</button>
 
 </div>
 
 
+</div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section
+class="hero"
+id="home">
+
+
+<div
+class="hero-slide active"
+data-image="blue bilding pic 1.jfif">
+</div>
+
+<div
+class="hero-slide"
+data-image="blue building 2.jpg">
+</div>
+
+<div
+class="hero-slide"
+data-image="green building glass.jpg">
+</div>
+
+<div
+class="hero-slide"
+data-image="twist out building.jpg">
+</div>
+
+
+<button
+class="hero-arrow hero-prev"
+id="heroPrev">
+‹
+</button>
+
+
+<button
+class="hero-arrow hero-next"
+id="heroNext">
+›
+</button>
+
+
+<div class="container hero-content">
+
+<div class="hero-copy">
+
+
+<div
+class="hero-badge"
+data-t="badge">
+
+PROFESSIONAL GLASS & MIRROR WORKS IN KUWAIT
+
+</div>
+
+
+<h1
+data-t="heroTitle">
+
+DESIGN GLASS & MIRROR KUWAIT
+
+</h1>
+
+
+<p
+data-t="heroText">
+
+Professional glass, mirror and architectural glass solutions for homes, shops, offices and modern buildings across Kuwait.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a
+class="btn btn-white"
+href="tel:+96555507290"
+data-t="call">
+
+📞 Call Now
+
+</a>
+
+
+<a
+class="btn btn-green"
+href="https://wa.me/96555507290"
+target="_blank"
+rel="noopener"
+data-t="whatsapp">
+
+💬 WhatsApp
+
+</a>
+
+
+<a
+class="btn btn-blue"
+href="#projects"
+data-t="viewProjects">
+
+👁️ View Our Work
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div
+class="hero-dots"
+id="heroDots">
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
+
+<section
+class="section"
+id="about">
+
+<div class="container about-grid">
+
+
+<div class="about-image">
+
+<img
+src="10mm%20clear%20glass%20temper%20fix%20in%20black%20spider%20system.jpeg"
+alt="Architectural glass project"
+loading="lazy">
+
+</div>
+
+
+<div class="about-copy">
+
+<div
+class="kicker"
+data-t="aboutSmall">
+
+ABOUT US
+
+</div>
+
+
+<h2
+data-t="aboutTitle">
+
+Professional Glass & Mirror Solutions in Kuwait
+
+</h2>
+
+
+<p
+data-t="aboutText1">
+
+Design Glass & Mirror Kuwait provides professional glass, mirror and architectural glass solutions for homes, offices, shops and modern buildings across Kuwait.
+
+</p>
+
+
+<p
+data-t="aboutText2">
+
+We focus on clean finishing, modern designs and quality workmanship — from custom mirrors and shower glass to staircases, partitions, doors and architectural glass.
+
+</p>
+
+
+<div class="check-grid">
+
+<div class="check">
+<b>✓</b>
+<span data-t="quality">
+Quality Work
+</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span data-t="modern">
+Modern Designs
+</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span data-t="professional">
+Professional Service
+</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span data-t="kuwait">
+Kuwait Service
+</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SERVICES
+     ========================================================= -->
+
+<section
+class="section light"
+id="services">
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div
+class="kicker"
+data-t="servicesSmall">
+
+WHAT WE DO
+
+</div>
+
+<h2
+data-t="servicesTitle">
+
+Our Services
+
+</h2>
+
+<p
+data-t="servicesIntro">
+
+Complete glass and mirror solutions designed around your project.
+
+</p>
+
+</div>
+
+
+<div
+class="services-grid"
+id="servicesGrid">
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROJECTS
+     ========================================================= -->
+
+<section
+class="section"
+id="projects">
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div
+class="kicker"
+data-t="projectsSmall">
+
+OUR WORK
+
+</div>
+
+<h2
+data-t="projectsTitle">
+
+Glass & Mirror Project Gallery
+
+</h2>
+
+<p
+data-t="projectsIntro">
+
+Explore real glass, mirror, shower, staircase, railing, door and interior projects.
+
+</p>
+
+</div>
+
+
+<div
+class="project-grid"
+id="projectGrid">
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOUR PROJECT VIDEOS
+     ========================================================= -->
+
+<section
+class="section light"
+id="videos">
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div
+class="kicker"
+data-t="videosSmall">
+
+PROJECT VIDEOS
+
+</div>
+
+<h2
+data-t="videosTitle">
+
+See Our Work in Motion
+
+</h2>
+
+<p
+data-t="videosIntro">
+
+Watch our four project videos and see the quality of our glass work.
+
+</p>
+
+</div>
+
+
+<div class="video-grid">
+
+
+<!-- VIDEO 1 -->
+
+<article class="video-card">
+
+<video
+muted
+autoplay
+loop
+playsinline
+controls
+preload="auto"
+poster="10mm clear glass temper stair with wooden handle.jpeg">
+
+<source
+src="glass%20technician.mp4"
+type="video/mp4">
+
+Your browser does not support video.
+
+</video>
+
+<div class="video-info">
+
+<h3
+data-t="video1">
+Glass Installation
+</h3>
+
+<p
+data-t="video1Text">
+Professional glass installation project.
+</p>
+
+</div>
+
+</article>
+
+
+<!-- VIDEO 2 -->
+
+<article class="video-card">
+
+<video
+muted
+autoplay
+loop
+playsinline
+controls
+preload="auto"
+poster="10mm clear glass temper staircas with wooden handle.jpeg">
+
+<source
+src="sataircase%20design%20v.mp4"
+type="video/mp4">
+
+Your browser does not support video.
+
+</video>
+
+<div class="video-info">
+
+<h3
+data-t="video2">
+Staircase Glass Design
+</h3>
+
+<p
+data-t="video2Text">
+Modern staircase glass project.
+</p>
+
+</div>
+
+</article>
+
+
+<!-- VIDEO 3 -->
+
+<article class="video-card">
+
+<video
+muted
+autoplay
+loop
+playsinline
+controls
+preload="auto"
+poster="10mm clear glass temper sliding door.jpeg">
+
+<source
+src="sliding%20door%20exap.mp4"
+type="video/mp4">
+
+Your browser does not support video.
+
+</video>
+
+<div class="video-info">
+
+<h3
+data-t="video3">
+Sliding Glass Door
+</h3>
+
+<p
+data-t="video3Text">
+Sliding glass door project.
+</p>
+
+</div>
+
+</article>
+
+
+<!-- VIDEO 4 -->
+
+<article class="video-card">
+
+<video
+muted
+autoplay
+loop
+playsinline
+controls
+preload="auto"
+poster="10mm clear glass temper staircas with wooden handle.jpeg">
+
+<source
+src="staircase%20clear%20ggm.mp4"
+type="video/mp4">
+
+Your browser does not support video.
+
+</video>
+
+<div class="video-info">
+
+<h3
+data-t="video4">
+Clear Glass Staircase
+</h3>
+
+<p
+data-t="video4Text">
+Clear glass staircase project.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     WHY US
+     ========================================================= -->
+
+<section
+class="section"
+id="why">
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div
+class="kicker"
+data-t="whySmall">
+
+WHY CHOOSE US
+
+</div>
+
+<h2
+data-t="whyTitle">
+
+Built Around Quality & Detail
+
+</h2>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div class="why-card">
+
+<b>01</b>
+
+<h3
+data-t="why1">
+Professional Work
+</h3>
+
+<p
+data-t="why1Text">
+Clean finishing and careful installation.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<b>02</b>
+
+<h3
+data-t="why2">
+Modern Designs
+</h3>
+
+<p
+data-t="why2Text">
+Elegant solutions for modern spaces.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<b>03</b>
+
+<h3
+data-t="why3">
+Quality Materials
+</h3>
+
+<p
+data-t="why3Text">
+Glass and mirror solutions selected for each project.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<b>04</b>
+
+<h3
+data-t="why4">
+Customer Service
+</h3>
+
+<p
+data-t="why4Text">
+Clear communication from enquiry to completion.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INSTAGRAM
+     ========================================================= -->
+
+<section
+class="section light">
+
+<div class="container">
+
+
+<div class="instagram-box">
+
+
+<div>
+
+<div
+class="kicker"
+data-t="instagramSmall">
+
+FOLLOW OUR WORK
+
+</div>
+
+<h2>
+Instagram
+</h2>
+
+<p
+data-t="instagramText">
+
+See more Design Glass & Mirror Kuwait projects and updates on Instagram.
+
+</p>
+
+</div>
+
+
+<a
+class="instagram-btn"
+href="https://www.instagram.com/design_glass_mirror/"
+target="_blank"
+rel="noopener"
+data-t="instagramButton">
+
+◎ Open Instagram
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+     ========================================================= -->
+
+<section
+class="section"
+id="contact">
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div
+class="kicker"
+data-t="contactSmall">
+
+GET IN TOUCH
+
+</div>
+
+<h2
+data-t="contactTitle">
+
+Let's Discuss Your Project
+
+</h2>
+
+<p
+data-t="contactIntro">
+
+Contact us for glass, mirror and architectural glass work in Kuwait.
+
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+
+<h3
+data-t="contactCompany">
+
+Design Glass & Mirror Kuwait
+
+</h3>
+
+
+<div class="contact-row">
+
+<div>📞</div>
+
+<div>
+
+<small
+data-t="phone">
+PHONE
+</small>
+
+<strong>
+<a href="tel:+96555507290">
++965 5550 7290
+</a>
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-row">
+
+<div>💬</div>
+
+<div>
+
+<small>
+WHATSAPP
+</small>
+
+<strong>
+
+<a
+href="https://wa.me/96555507290"
+target="_blank"
+rel="noopener">
+
++965 5550 7290
+
+</a>
+
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-row">
+
+<div>◎</div>
+
+<div>
+
+<small>
+INSTAGRAM
+</small>
+
+<strong>
+
+<a
+href="https://www.instagram.com/design_glass_mirror/"
+target="_blank"
+rel="noopener">
+
+@design_glass_mirror
+
+</a>
+
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-row">
+
+<div>📍</div>
+
+<div>
+
+<small
+data-t="locationLabel">
+LOCATION
+</small>
+
+<strong
+data-t="location">
+Kuwait
+</strong>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="contact-card quote">
+
+
+<h3
+data-t="quoteTitle">
+
+Request a Quote
+
+</h3>
+
+
+<p
+data-t="quoteText">
+
+Tell us about your glass or mirror project and contact us directly through WhatsApp.
+
+</p>
+
+
+<a
+class="btn btn-green"
+href="https://wa.me/96555507290"
+target="_blank"
+rel="noopener"
+data-t="quoteButton">
+
+💬 Send Request on WhatsApp
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+<div class="container footer">
+
+
+<div>
+
+<strong>
+DESIGN GLASS & MIRROR KUWAIT
+</strong>
+
+<br>
+
+<span
+data-t="footerText">
+
+Professional Glass & Mirror Solutions in Kuwait
+
+</span>
+
+</div>
+
+
+<div class="footer-links">
+
+<a
+href="#home"
+data-t="home">
+Home
+</a>
+
+<a
+href="#services"
+data-t="services">
+Services
+</a>
+
+<a
+href="#projects"
+data-t="projects">
+Projects
+</a>
+
+<a
+href="#contact"
+data-t="contact">
+Contact
+</a>
+
+</div>
+
+
+</div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     PROJECT MODAL
+     ========================================================= -->
+
+<div
+class="modal"
+id="modal">
+
+<div class="modal-box">
+
+
+<button
+class="modal-close"
+id="modalClose">
+×
+</button>
+
+
+<img
+id="modalImage"
+src=""
+alt="Glass project">
+
+
+<div class="modal-content">
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalText"></p>
+
+<br>
+
+<a
+class="btn btn-green"
+href="https://wa.me/96555507290"
+target="_blank"
+rel="noopener"
+data-t="modalWhatsApp">
+
+💬 Ask on WhatsApp
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
 <script>
 
+
 /* =========================================================
-   DESIGN GLASS & MIRROR KUWAIT
-   CLEAN STATIC WEBSITE
-   NO LOCALSTORAGE
+   HERO
    ========================================================= */
 
-
-/* ================= FILE HELPER ================= */
-
-function asset(filename){
-
-  return encodeURI(filename);
-
-}
-
-
-/* ================= HERO ================= */
-
 const heroSlides =
-  Array.from(
-    document.querySelectorAll(".hero-slide")
-  );
+Array.from(
+document.querySelectorAll(".hero-slide")
+);
 
 const heroDots =
-  document.getElementById("heroDots");
+document.getElementById("heroDots");
 
-let heroIndex = 0;
-let heroTimer = null;
+let heroIndex=0;
 
-
-/* Load hero pictures */
-
-heroSlides.forEach((slide,index)=>{
-
-  const filename =
-    slide.dataset.image;
-
-  slide.style.backgroundImage =
-    `url("${asset(filename)}")`;
+let heroTimer;
 
 
-  const dot =
-    document.createElement("button");
+heroSlides.forEach(
+(slide,index)=>{
 
-  dot.className =
-    "hero-dot" +
-    (index === 0 ? " active" : "");
-
-  dot.type = "button";
-
-  dot.addEventListener(
-    "click",
-    ()=>{
-      showHero(index,true);
-    }
-  );
-
-  heroDots.appendChild(dot);
-
-});
+slide.style.backgroundImage=
+`url("${encodeURI(slide.dataset.image)}")`;
 
 
-function showHero(index,manual=false){
+const dot=
+document.createElement("button");
 
-  heroIndex =
-    (index + heroSlides.length)
-    % heroSlides.length;
+dot.className=
+"hero-dot";
 
+dot.type="button";
 
-  heroSlides.forEach(
-    (slide,i)=>{
-      slide.classList.toggle(
-        "active",
-        i === heroIndex
-      );
-    }
-  );
+dot.addEventListener(
+"click",
+()=>{
+goHero(index,true);
+}
+);
 
+heroDots.appendChild(dot);
 
-  Array.from(
-    heroDots.children
-  ).forEach(
-    (dot,i)=>{
-      dot.classList.toggle(
-        "active",
-        i === heroIndex
-      );
-    }
-  );
+}
+);
 
 
-  /*
-    Restart the animation when
-    the user changes picture.
-  */
+function goHero(index,manual=false){
 
-  if(manual){
+heroIndex=
+(index+heroSlides.length)
+%heroSlides.length;
 
-    const active =
-      heroSlides[heroIndex];
 
-    active.style.animation="none";
+heroSlides.forEach(
+(slide,i)=>{
 
-    void active.offsetWidth;
+slide.classList.toggle(
+"active",
+i===heroIndex
+);
 
-    active.style.animation =
-      "heroMove 7s ease-in-out forwards";
+}
+);
 
-    restartHero();
 
-  }
+Array.from(
+heroDots.children
+).forEach(
+(dot,i)=>{
+
+dot.classList.toggle(
+"active",
+i===heroIndex
+);
+
+}
+);
+
+
+clearTimeout(heroTimer);
+
+heroTimer=
+setTimeout(
+()=>{
+goHero(heroIndex+1);
+},
+6500
+);
 
 }
 
 
-function restartHero(){
+function changeHero(number){
 
-  clearInterval(heroTimer);
-
-  heroTimer =
-    setInterval(
-      ()=>{
-        showHero(heroIndex + 1);
-      },
-      6500
-    );
+goHero(
+heroIndex+number,
+true
+);
 
 }
 
 
 document
-  .getElementById("heroPrev")
-  .addEventListener(
-    "click",
-    ()=>{
-      showHero(heroIndex - 1,true);
-    }
-  );
+.getElementById("heroPrev")
+.addEventListener(
+"click",
+()=>{
+changeHero(-1);
+}
+);
 
 
 document
-  .getElementById("heroNext")
-  .addEventListener(
-    "click",
-    ()=>{
-      showHero(heroIndex + 1,true);
-    }
-  );
+.getElementById("heroNext")
+.addEventListener(
+"click",
+()=>{
+changeHero(1);
+}
+);
 
 
-restartHero();
+goHero(0);
 
 
-/* ================= SERVICES ================= */
+/* =========================================================
+   SERVICES
+   ========================================================= */
 
-const services = [
+const services=[
 
-  {
-    icon:"◈",
-    enTitle:"Glass Partitions",
-    arTitle:"قواطع زجاجية",
-    enText:"Modern glass partitions for offices, homes and commercial spaces.",
-    arText:"قواطع زجاجية عصرية للمكاتب والمنازل والمساحات التجارية."
-  },
+{
 
-  {
-    icon:"◇",
-    enTitle:"Custom Mirrors",
-    arTitle:"مرايا مخصصة",
-    enText:"Custom mirrors for bedrooms, bathrooms, shops and interior designs.",
-    arText:"مرايا مخصصة لغرف النوم والحمامات والمحلات والتصاميم الداخلية."
-  },
+icon:"◈",
 
-  {
-    icon:"▱",
-    enTitle:"Shower Glass",
-    arTitle:"زجاج الحمامات",
-    enText:"Elegant shower glass doors, fixed panels and modern bathroom solutions.",
-    arText:"أبواب زجاجية للحمامات وألواح ثابتة وحلول عصرية."
-  },
+enTitle:"Glass Partitions",
 
-  {
-    icon:"⌂",
-    enTitle:"Glass Staircases",
-    arTitle:"سلالم زجاجية",
-    enText:"Clear, tinted and black glass solutions for stairs and railings.",
-    arText:"حلول الزجاج الشفاف والملون والأسود للسلالم والدرابزين."
-  },
+arTitle:"القواطع الزجاجية",
 
-  {
-    icon:"▣",
-    enTitle:"Glass Doors",
-    arTitle:"أبواب زجاجية",
-    enText:"Sliding, hinged and shop glass doors with modern finishing.",
-    arText:"أبواب زجاجية سحاب ومفصلية وأبواب للمحلات بتشطيب عصري."
-  },
+enText:
+"Modern glass partitions for homes, offices and commercial spaces.",
 
-  {
-    icon:"✦",
-    enTitle:"Architectural Glass",
-    arTitle:"الزجاج المعماري",
-    enText:"Professional glass solutions for modern buildings and commercial spaces.",
-    arText:"حلول زجاجية احترافية للمباني الحديثة والمساحات التجارية."
-  }
+arText:
+"قواطع زجاجية عصرية للمنازل والمكاتب والمساحات التجارية."
+
+},
+
+{
+
+icon:"◇",
+
+enTitle:"Custom Mirrors",
+
+arTitle:"المرايا المخصصة",
+
+enText:
+"Custom mirrors for bathrooms, bedrooms, shops and modern interiors.",
+
+arText:
+"مرايا مخصصة للحمامات وغرف النوم والمحلات والديكورات الحديثة."
+
+},
+
+{
+
+icon:"▱",
+
+enTitle:"Shower Glass",
+
+arTitle:"زجاج الحمامات والدش",
+
+enText:
+"Elegant shower glass doors and fixed panels.",
+
+arText:
+"أبواب زجاجية أنيقة للحمامات وألواح زجاجية ثابتة."
+
+},
+
+{
+
+icon:"⌂",
+
+enTitle:"Glass Staircases",
+
+arTitle:"السلالم الزجاجية",
+
+enText:
+"Clear, tinted and black glass solutions for stairs and railings.",
+
+arText:
+"حلول الزجاج الشفاف والملون والأسود للسلالم والدرابزين."
+
+},
+
+{
+
+icon:"▣",
+
+enTitle:"Glass Doors",
+
+arTitle:"الأبواب الزجاجية",
+
+enText:
+"Sliding, hinged and custom glass doors.",
+
+arText:
+"أبواب زجاجية سحاب ومفصلية ومخصصة."
+
+},
+
+{
+
+icon:"✦",
+
+enTitle:"Architectural Glass",
+
+arTitle:"الزجاج المعماري",
+
+enText:
+"Modern architectural and structural glass solutions.",
+
+arText:
+"حلول الزجاج المعماري والإنشائي الحديثة."
+
+}
 
 ];
 
 
-const serviceGrid =
-  document.getElementById("serviceGrid");
+const servicesGrid=
+document.getElementById(
+"servicesGrid"
+);
 
 
 services.forEach(
-  service=>{
+service=>{
 
-    const card =
-      document.createElement("article");
+const card=
+document.createElement("article");
 
-    card.className =
-      "service";
+card.className="service";
 
-    card.innerHTML = `
+card.innerHTML=`
 
-      <div class="service-icon">
-        ${service.icon}
-      </div>
+<div class="service-icon">
+${service.icon}
+</div>
 
-      <h3
-        data-en="${service.enTitle}"
-        data-ar="${service.arTitle}">
-        ${service.enTitle}
-      </h3>
+<h3
+data-en="${service.enTitle}"
+data-ar="${service.arTitle}">
+${service.enTitle}
+</h3>
 
-      <p
-        data-en="${service.enText}"
-        data-ar="${service.arText}">
-        ${service.enText}
-      </p>
+<p
+data-en="${service.enText}"
+data-ar="${service.arText}">
+${service.enText}
+</p>
 
-    `;
+`;
 
-    serviceGrid.appendChild(card);
+servicesGrid.appendChild(card);
 
-  }
+}
 );
 
 
-/* ================= PROJECTS ================= */
+/* =========================================================
+   PROJECTS
+   ========================================================= */
 
-/*
-   These are the project pictures
-   already used by your website.
-*/
+const projects=[
 
-const projects = [
+[
+"6mm mirror with design LED LIGHT.jpeg",
+"Custom Mirror & LED Light",
+"مرآة مخصصة وإضاءة LED",
+"Custom mirror with decorative LED lighting.",
+"مرآة مخصصة مع إضاءة LED ديكورية."
+],
 
-  {
-    image:"10mm clear glass temper pool.jpeg",
-    enTitle:"Pool Glass",
-    arTitle:"زجاج المسبح",
-    enText:"Clear tempered glass pool protection with modern finishing.",
-    arText:"زجاج مسبح شفاف مقسى بتشطيب عصري."
-  },
+[
+"10mm black glass temper staircas kloudy.jpeg",
+"Black Tempered Glass Staircase",
+"درج زجاج أسود مقسى",
+"Black tempered glass staircase project.",
+"مشروع درج زجاجي أسود مقسى."
+],
 
-  {
-    image:"10mm clear glass temper shower with golden frame.jpeg",
-    enTitle:"Golden Frame Shower",
-    arTitle:"زجاج دش بإطار ذهبي",
-    enText:"Tempered shower glass with an elegant golden frame.",
-    arText:"زجاج دش مقسى بإطار ذهبي أنيق."
-  },
+[
+"10mm bowns glass temper shower.jpeg",
+"Tempered Shower Glass",
+"زجاج دش مقسى",
+"Tempered shower glass installation.",
+"تركيب زجاج دش مقسى."
+],
 
-  {
-    image:"10mm clear glass temper staircas with wooden handle.jpeg",
-    enTitle:"Glass Staircase",
-    arTitle:"درج زجاجي",
-    enText:"Clear tempered glass staircase with a wooden handle.",
-    arText:"درج زجاجي شفاف مقسى مع مقبض خشبي."
-  },
+[
+"10mm browns glass temper amood fix.jpeg",
+"Brown Tempered Glass",
+"زجاج بني مقسى",
+"Brown tempered glass project.",
+"مشروع زجاج بني مقسى."
+],
 
-  {
-    image:"10mm clear glass temper fix in black spider system.jpeg",
-    enTitle:"Black Spider System",
-    arTitle:"نظام سبايدر أسود",
-    enText:"Clear glass installed with a modern black spider system.",
-    arText:"زجاج شفاف مثبت بنظام سبايدر أسود عصري."
-  },
+[
+"10mm browns glass temper staircas.jpeg",
+"Brown Glass Staircase",
+"درج زجاج بني",
+"Brown glass staircase project.",
+"مشروع درج زجاجي بني."
+],
 
-  {
-    image:"10mm black glass temper staircas kloudy.jpeg",
-    enTitle:"Black Glass Staircase",
-    arTitle:"درج زجاج أسود",
-    enText:"Black tempered glass staircase with a modern appearance.",
-    arText:"درج زجاجي أسود مقسى بمظهر عصري."
-  },
+[
+"10mm clear glass temper fix in black spider system.jpeg",
+"Black Spider Glass System",
+"نظام زجاج سبايدر أسود",
+"Clear glass fixed using a black spider system.",
+"زجاج شفاف مثبت باستخدام نظام سبايدر أسود."
+],
 
-  {
-    image:"10mm browns glass temper shower.jpeg",
-    enTitle:"Brown Shower Glass",
-    arTitle:"زجاج دش بني",
-    enText:"Brown tempered glass shower installation.",
-    arText:"تركيب زجاج دش بني مقسى."
-  },
+[
+"10mm clear glass temper pool.jpeg",
+"Pool Glass",
+"زجاج المسبح",
+"Clear tempered pool glass.",
+"زجاج مسبح شفاف مقسى."
+],
 
-  {
-    image:"10mm browns glass temper staircas.jpeg",
-    enTitle:"Brown Glass Staircase",
-    arTitle:"درج زجاج بني",
-    enText:"Brown tempered glass staircase project.",
-    arText:"مشروع درج زجاجي بني مقسى."
-  },
+[
+"10mm clear glass temper swiming pool.jpeg",
+"Swimming Pool Glass",
+"زجاج حمام السباحة",
+"Swimming pool glass project.",
+"مشروع زجاج حمام سباحة."
+],
 
-  {
-    image:"10mm clear glass temper sliding door.jpeg",
-    enTitle:"Sliding Glass Door",
-    arTitle:"باب زجاجي سحاب",
-    enText:"Clean sliding glass door solution for modern spaces.",
-    arText:"حل باب زجاجي سحاب للمساحات الحديثة."
-  },
+[
+"10mm clear glass temper shower with golden frame.jpeg",
+"Golden Frame Shower",
+"زجاج دش بإطار ذهبي",
+"Tempered shower glass with golden frame.",
+"زجاج دش مقسى بإطار ذهبي."
+],
 
-  {
-    image:"10mm clear glass temper stair with wooden handle.jpeg",
-    enTitle:"Wood Handle Stair",
-    arTitle:"درج بمقبض خشبي",
-    enText:"Clear glass stair installation with a wooden handle.",
-    arText:"تركيب درج زجاجي شفاف مع مقبض خشبي."
-  },
+[
+"10mm clear glass temper sliding door.jpeg",
+"Sliding Glass Door",
+"باب زجاجي سحاب",
+"Clear tempered sliding glass door.",
+"باب زجاجي سحاب شفاف مقسى."
+],
 
-  {
-    image:"10mm clear glass temper with normal doors shop.jpeg",
-    enTitle:"Shop Glass Doors",
-    arTitle:"أبواب زجاجية للمحلات",
-    enText:"Tempered glass storefront with practical doors.",
-    arText:"واجهة محل بزجاج مقسى وأبواب عملية."
-  },
+[
+"10mm clear glass temper stair with wooden handle.jpeg",
+"Glass Staircase & Wooden Handle",
+"درج زجاجي ومقبض خشبي",
+"Clear glass staircase with wooden handle.",
+"درج زجاجي شفاف مع مقبض خشبي."
+],
 
-  {
-    image:"10mm sandblast glass temper fixed in stanless steel.jpeg",
-    enTitle:"Sandblast Glass",
-    arTitle:"زجاج ساندبلاست",
-    enText:"Sandblasted tempered glass with stainless-steel fixing.",
-    arText:"زجاج مقسى ساندبلاست مع تثبيت من الستانلس ستيل."
-  },
+[
+"10mm clear glass temper staircas with wooden handle.jpeg",
+"Clear Glass Staircase",
+"درج زجاجي شفاف",
+"Clear glass staircase project.",
+"مشروع درج زجاجي شفاف."
+],
 
-  {
-    image:"10mm sandblast glass stair with standsteel handle.jpeg",
-    enTitle:"Sandblast Stair",
-    arTitle:"درج زجاج ساندبلاست",
-    enText:"Sandblasted glass staircase with stainless-steel handle.",
-    arText:"درج زجاج ساندبلاست مع مقبض ستانلس ستيل."
-  },
+[
+"10mm clear glass temper with normal doors shop.jpeg",
+"Shop Glass Doors",
+"أبواب زجاجية للمحلات",
+"Clear glass shop front and doors.",
+"واجهة محل وأبواب زجاجية شفافة."
+],
 
-  {
-    image:"6mm mirror with design LED LIGHT.jpeg",
-    enTitle:"LED Mirror",
-    arTitle:"مرآة LED",
-    enText:"Custom mirror with decorative LED lighting.",
-    arText:"مرآة مخصصة مع إضاءة LED."
-  },
+[
+"10mm sandblast glass stair with standsteel handle.jpeg",
+"Sandblast Glass Staircase",
+"درج زجاج ساندبلاست",
+"Sandblast glass staircase with stainless steel handle.",
+"درج زجاج ساندبلاست مع مقبض ستانلس ستيل."
+],
 
-  {
-    image:"D shave mirror.jpeg",
-    enTitle:"Shave Mirror",
-    arTitle:"مرآة حلاقة",
-    enText:"Custom mirror solution for bathrooms and interiors.",
-    arText:"مرآة مخصصة للحمامات والديكورات."
-  },
+[
+"10mm sandblast glass temper fixed in stanless steel.jpeg",
+"Sandblast Tempered Glass",
+"زجاج ساندبلاست مقسى",
+"Sandblast tempered glass fixed in stainless steel.",
+"زجاج ساندبلاست مقسى مثبت بالستانلس ستيل."
+],
 
-  {
-    image:"design mirror with light back.jpeg",
-    enTitle:"Backlit Mirror",
-    arTitle:"مرآة بإضاءة خلفية",
-    enText:"Decorative mirror with elegant back lighting.",
-    arText:"مرآة ديكورية بإضاءة خلفية أنيقة."
-  },
+[
+"D shave mirror.jpeg",
+"D Shape Mirror",
+"مرآة D",
+"Custom designer mirror.",
+"مرآة ديكورية مخصصة."
+],
 
-  {
-    image:"wood handle colour pictures .jpeg",
-    enTitle:"Wood Handle Glass",
-    arTitle:"زجاج بمقبض خشبي",
-    enText:"Custom glass work with a modern wooden handle.",
-    arText:"عمل زجاجي مخصص مع مقبض خشبي عصري."
-  }
+[
+"design mirror with light back.jpeg",
+"Backlit Designer Mirror",
+"مرآة بإضاءة خلفية",
+"Designer mirror with back lighting.",
+"مرآة ديكورية بإضاءة خلفية."
+],
+
+[
+"wood handle colour pictures .jpeg",
+"Wood Handle Glass",
+"زجاج بمقبض خشبي",
+"Custom glass with wooden handle.",
+"زجاج مخصص بمقبض خشبي."
+]
 
 ];
 
 
-const projectGrid =
-  document.getElementById("projectGrid");
-
-
-projects.forEach(
-  project=>{
-
-    const item =
-      document.createElement("article");
-
-    item.className =
-      "project";
-
-
-    item.innerHTML = `
-
-      <img
-        src="${asset(project.image)}"
-        alt="${project.enTitle}"
-        loading="lazy"
-        onerror="this.style.opacity='0.15';">
-
-      <div class="project-overlay">
-
-        <strong
-          data-en="${project.enTitle}"
-          data-ar="${project.arTitle}">
-          ${project.enTitle}
-        </strong>
-
-        <span>
-          Design Glass & Mirror Kuwait
-        </span>
-
-      </div>
-
-    `;
-
-
-    item.addEventListener(
-      "click",
-      ()=>{
-        openProject(
-          project.image,
-          project.enTitle,
-          project.arTitle,
-          project.enText,
-          project.arText
-        );
-      }
-    );
-
-
-    projectGrid.appendChild(item);
-
-  }
+const projectGrid=
+document.getElementById(
+"projectGrid"
 );
 
 
-/* ================= PROJECT MODAL ================= */
+projects.forEach(
+(project,index)=>{
 
-const modal =
-  document.getElementById("modal");
+const card=
+document.createElement("article");
 
-const modalImage =
-  document.getElementById("modalImage");
+card.className="project";
 
-const modalTitle =
-  document.getElementById("modalTitle");
+card.innerHTML=`
 
-const modalDescription =
-  document.getElementById("modalDescription");
+<img
+src="${encodeURI(project[0])}"
+alt="${project[1]}"
+loading="lazy"
+onerror="this.parentElement.style.display='none'">
 
+<div class="project-caption">
 
-function openProject(
-  image,
-  enTitle,
-  arTitle,
-  enText,
-  arText
-){
+<strong
+data-en="${project[1]}"
+data-ar="${project[2]}">
+${project[1]}
+</strong>
 
-  const isArabic =
-    document.documentElement.lang === "ar";
+</div>
 
+`;
 
-  modalImage.src =
-    asset(image);
+card.addEventListener(
+"click",
+()=>{
+openProject(index);
+}
+);
 
+projectGrid.appendChild(card);
 
-  modalImage.alt =
-    isArabic ? arTitle : enTitle;
-
-
-  modalTitle.textContent =
-    isArabic ? arTitle : enTitle;
-
-
-  modalDescription.textContent =
-    isArabic ? arText : enText;
+}
+);
 
 
-  modal.classList.add("open");
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+function openProject(index){
+
+const p=
+projects[index];
+
+const arabic=
+document.documentElement.lang==="ar";
+
+
+document.getElementById(
+"modalImage"
+).src=
+encodeURI(p[0]);
+
+
+document.getElementById(
+"modalTitle"
+).textContent=
+arabic?p[2]:p[1];
+
+
+document.getElementById(
+"modalText"
+).textContent=
+arabic?p[4]:p[3];
+
+
+document.getElementById(
+"modal"
+).classList.add("open");
 
 }
 
 
 function closeModal(){
 
-  modal.classList.remove("open");
+document.getElementById(
+"modal"
+).classList.remove("open");
 
 }
 
 
 document
-  .getElementById("modalClose")
-  .addEventListener(
-    "click",
-    closeModal
-  );
-
-
-modal.addEventListener(
-  "click",
-  event=>{
-    if(event.target === modal){
-      closeModal();
-    }
-  }
+.getElementById("modalClose")
+.addEventListener(
+"click",
+closeModal
 );
 
 
-/* ================= LANGUAGE ================= */
+document
+.getElementById("modal")
+.addEventListener(
+"click",
+event=>{
 
-let currentLanguage = "en";
+if(
+event.target.id==="modal"
+){
+
+closeModal();
+
+}
+
+}
+);
+
+
+/* =========================================================
+   TRANSLATIONS
+   ========================================================= */
+
+const T={
+
+
+en:{
+
+home:"Home",
+
+about:"About",
+
+services:"Services",
+
+projects:"Projects",
+
+videos:"Videos",
+
+contact:"Contact",
+
+badge:
+"PROFESSIONAL GLASS & MIRROR WORKS IN KUWAIT",
+
+heroTitle:
+"DESIGN GLASS & MIRROR KUWAIT",
+
+heroText:
+"Professional glass, mirror and architectural glass solutions for homes, shops, offices and modern buildings across Kuwait.",
+
+call:"📞 Call Now",
+
+whatsapp:"💬 WhatsApp",
+
+viewProjects:
+"👁️ View Our Work",
+
+aboutSmall:"ABOUT US",
+
+aboutTitle:
+"Professional Glass & Mirror Solutions in Kuwait",
+
+aboutText1:
+"Design Glass & Mirror Kuwait provides professional glass, mirror and architectural glass solutions for homes, offices, shops and modern buildings across Kuwait.",
+
+aboutText2:
+"We focus on clean finishing, modern designs and quality workmanship — from custom mirrors and shower glass to staircases, partitions, doors and architectural glass.",
+
+quality:"Quality Work",
+
+modern:"Modern Designs",
+
+professional:"Professional Service",
+
+kuwait:"Kuwait Service",
+
+servicesSmall:"WHAT WE DO",
+
+servicesTitle:"Our Services",
+
+servicesIntro:
+"Complete glass and mirror solutions designed around your project.",
+
+projectsSmall:"OUR WORK",
+
+projectsTitle:
+"Glass & Mirror Project Gallery",
+
+projectsIntro:
+"Explore real glass, mirror, shower, staircase, railing, door and interior projects.",
+
+videosSmall:"PROJECT VIDEOS",
+
+videosTitle:
+"See Our Work in Motion",
+
+videosIntro:
+"Watch our four project videos and see the quality of our glass work.",
+
+video1:"Glass Installation",
+
+video1Text:"Professional glass installation project.",
+
+video2:"Staircase Glass Design",
+
+video2Text:"Modern staircase glass project.",
+
+video3:"Sliding Glass Door",
+
+video3Text:"Sliding glass door project.",
+
+video4:"Clear Glass Staircase",
+
+video4Text:"Clear glass staircase project.",
+
+whySmall:"WHY CHOOSE US",
+
+whyTitle:"Built Around Quality & Detail",
+
+why1:"Professional Work",
+
+why1Text:"Clean finishing and careful installation.",
+
+why2:"Modern Designs",
+
+why2Text:"Elegant solutions for modern spaces.",
+
+why3:"Quality Materials",
+
+why3Text:"Glass and mirror solutions selected for each project.",
+
+why4:"Customer Service",
+
+why4Text:"Clear communication from enquiry to completion.",
+
+instagramSmall:"FOLLOW OUR WORK",
+
+instagramText:
+"See more Design Glass & Mirror Kuwait projects and updates on Instagram.",
+
+instagramButton:
+"◎ Open Instagram",
+
+contactSmall:"GET IN TOUCH",
+
+contactTitle:
+"Let's Discuss Your Project",
+
+contactIntro:
+"Contact us for glass, mirror and architectural glass work in Kuwait.",
+
+contactCompany:
+"Design Glass & Mirror Kuwait",
+
+phone:"PHONE",
+
+locationLabel:"LOCATION",
+
+location:"Kuwait",
+
+quoteTitle:"Request a Quote",
+
+quoteText:
+"Tell us about your glass or mirror project and contact us directly through WhatsApp.",
+
+quoteButton:
+"💬 Send Request on WhatsApp",
+
+modalWhatsApp:
+"💬 Ask on WhatsApp",
+
+footerText:
+"Professional Glass & Mirror Solutions in Kuwait"
+
+},
+
+
+ar:{
+
+home:"الرئيسية",
+
+about:"من نحن",
+
+services:"خدماتنا",
+
+projects:"المشاريع",
+
+videos:"الفيديوهات",
+
+contact:"اتصل بنا",
+
+badge:
+"أعمال احترافية للزجاج والمرايا في الكويت",
+
+heroTitle:
+"ديزاين جلاس وميرور الكويت",
+
+heroText:
+"حلول احترافية للزجاج والمرايا والزجاج المعماري للمنازل والمحلات والمكاتب والمباني الحديثة في جميع أنحاء الكويت.",
+
+call:"📞 اتصل الآن",
+
+whatsapp:"💬 واتساب",
+
+viewProjects:
+"👁️ شاهد أعمالنا",
+
+aboutSmall:"من نحن",
+
+aboutTitle:
+"حلول احترافية للزجاج والمرايا في الكويت",
+
+aboutText1:
+"توفر ديزاين جلاس وميرور الكويت حلولاً احترافية للزجاج والمرايا والزجاج المعماري للمنازل والمكاتب والمحلات والمباني الحديثة في الكويت.",
+
+aboutText2:
+"نركز على التشطيب النظيف والتصاميم الحديثة وجودة العمل — من المرايا المخصصة وزجاج الدش إلى السلالم والقواطع والأبواب والزجاج المعماري.",
+
+quality:"جودة العمل",
+
+modern:"تصاميم عصرية",
+
+professional:"خدمة احترافية",
+
+kuwait:"خدمة داخل الكويت",
+
+servicesSmall:"ماذا نقدم",
+
+servicesTitle:"خدماتنا",
+
+servicesIntro:
+"حلول متكاملة للزجاج والمرايا مصممة حسب مشروعك.",
+
+projectsSmall:"أعمالنا",
+
+projectsTitle:
+"معرض مشاريع الزجاج والمرايا",
+
+projectsIntro:
+"استكشف مشاريعنا الحقيقية في الزجاج والمرايا والدش والسلالم والدرابزين والأبواب والديكورات.",
+
+videosSmall:"فيديوهات المشاريع",
+
+videosTitle:
+"شاهد أعمالنا بالفيديو",
+
+videosIntro:
+"شاهد فيديوهات مشاريعنا الأربعة وتعرف على جودة أعمال الزجاج.",
+
+video1:"تركيب الزجاج",
+
+video1Text:"مشروع احترافي لتركيب الزجاج.",
+
+video2:"تصميم درج زجاجي",
+
+video2Text:"مشروع درج زجاجي عصري.",
+
+video3:"باب زجاجي سحاب",
+
+video3Text:"مشروع باب زجاجي سحاب.",
+
+video4:"درج زجاجي شفاف",
+
+video4Text:"مشروع درج زجاجي شفاف.",
+
+whySmall:"لماذا نحن",
+
+whyTitle:"الجودة والتفاصيل أولاً",
+
+why1:"عمل احترافي",
+
+why1Text:"تشطيب نظيف وتركيب دقيق.",
+
+why2:"تصاميم عصرية",
+
+why2Text:"حلول أنيقة للمساحات الحديثة.",
+
+why3:"مواد عالية الجودة",
+
+why3Text:"حلول زجاج ومرايا مناسبة لكل مشروع.",
+
+why4:"خدمة العملاء",
+
+why4Text:"تواصل واضح من الطلب حتى الإنجاز.",
+
+instagramSmall:"تابع أعمالنا",
+
+instagramText:
+"شاهد المزيد من مشاريع وتحديثات ديزاين جلاس وميرور الكويت على إنستغرام.",
+
+instagramButton:
+"◎ فتح إنستغرام",
+
+contactSmall:"تواصل معنا",
+
+contactTitle:
+"لنتحدث عن مشروعك",
+
+contactIntro:
+"تواصل معنا لأعمال الزجاج والمرايا والزجاج المعماري في الكويت.",
+
+contactCompany:
+"ديزاين جلاس وميرور الكويت",
+
+phone:"الهاتف",
+
+locationLabel:"الموقع",
+
+location:"الكويت",
+
+quoteTitle:"اطلب عرض سعر",
+
+quoteText:
+"أخبرنا عن مشروع الزجاج أو المرايا الذي تحتاجه وتواصل معنا مباشرة عبر واتساب.",
+
+quoteButton:
+"💬 إرسال الطلب عبر واتساب",
+
+modalWhatsApp:
+"💬 اسأل عبر واتساب",
+
+footerText:
+"حلول احترافية للزجاج والمرايا في الكويت"
+
+}
+
+};
+
+
+/* =========================================================
+   APPLY LANGUAGE
+   ========================================================= */
+
+let arabic=false;
 
 
 function applyLanguage(){
 
-  const isArabic =
-    currentLanguage === "ar";
+const lang=
+arabic?"ar":"en";
 
 
-  document.documentElement.lang =
-    currentLanguage;
+document.documentElement.lang=
+lang;
+
+document.documentElement.dir=
+arabic?"rtl":"ltr";
 
 
-  document.documentElement.dir =
-    isArabic ? "rtl" : "ltr";
+document.body.classList.toggle(
+"ar",
+arabic
+);
 
 
-  document.body.classList.toggle(
-    "ar",
-    isArabic
-  );
+document
+.querySelectorAll("[data-t]")
+.forEach(element=>{
+
+const key=
+element.dataset.t;
+
+if(T[lang][key]!==undefined){
+
+element.textContent=
+T[lang][key];
+
+}
+
+});
 
 
-  document
-    .querySelectorAll("[data-en][data-ar]")
-    .forEach(element=>{
+document
+.querySelectorAll(
+"[data-en][data-ar]"
+)
+.forEach(element=>{
 
-      const value =
-        isArabic
-          ? element.dataset.ar
-          : element.dataset.en;
+element.textContent=
+arabic
+?element.dataset.ar
+:element.dataset.en;
 
-      if(value !== undefined){
-        element.textContent = value;
-      }
-
-    });
+});
 
 
-  document
-    .querySelectorAll(
-      "[data-placeholder-en][data-placeholder-ar]"
-    )
-    .forEach(element=>{
-
-      element.placeholder =
-        isArabic
-          ? element.dataset.placeholderAr
-          : element.dataset.placeholderEn;
-
-    });
+document.getElementById(
+"langBtn"
+).textContent=
+arabic
+?"English"
+:"العربية";
 
 
-  document.getElementById(
-    "langBtn"
-  ).textContent =
-    isArabic
-      ? "English"
-      : "العربية";
-
-
-  document.title =
-    isArabic
-      ? "ديزاين جلاس وميرور الكويت | الزجاج والمرايا"
-      : "Design Glass & Mirror Kuwait";
+document.title=
+arabic
+?"ديزاين جلاس وميرور الكويت | الزجاج والمرايا"
+:"Design Glass & Mirror Kuwait";
 
 }
 
 
+/* =========================================================
+   LANGUAGE BUTTON
+   ========================================================= */
+
 document
-  .getElementById("langBtn")
-  .addEventListener(
-    "click",
-    ()=>{
+.getElementById("langBtn")
+.addEventListener(
+"click",
+()=>{
 
-      currentLanguage =
-        currentLanguage === "en"
-          ? "ar"
-          : "en";
+arabic=!arabic;
 
-      applyLanguage();
+applyLanguage();
 
-    }
-  );
-
-
-/* ================= MOBILE MENU ================= */
-
-const menuBtn =
-  document.getElementById("menuBtn");
-
-const navLinks =
-  document.getElementById("navLinks");
-
-
-menuBtn.addEventListener(
-  "click",
-  ()=>{
-    navLinks.classList.toggle("open");
-  }
+}
 );
 
 
-navLinks
-  .querySelectorAll("a")
-  .forEach(link=>{
-
-    link.addEventListener(
-      "click",
-      ()=>{
-        navLinks.classList.remove("open");
-      }
-    );
-
-  });
-
-
-/* ================= WHATSAPP FORM ================= */
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
 
 document
-  .getElementById("quoteForm")
-  .addEventListener(
-    "submit",
-    event=>{
+.getElementById("menuBtn")
+.addEventListener(
+"click",
+()=>{
 
-      event.preventDefault();
+document
+.getElementById("navlinks")
+.classList.toggle("open");
 
-
-      const name =
-        document.getElementById("name").value.trim();
-
-
-      const phone =
-        document.getElementById("phone").value.trim();
+}
+);
 
 
-      const message =
-        document.getElementById("message").value.trim();
+document
+.querySelectorAll(".navlinks a")
+.forEach(
+link=>{
+
+link.addEventListener(
+"click",
+()=>{
+
+document
+.getElementById("navlinks")
+.classList.remove("open");
+
+}
+);
+
+}
+);
 
 
-      const isArabic =
-        currentLanguage === "ar";
+/* =========================================================
+   VIDEO AUTOPLAY
+   ========================================================= */
+
+const videos=
+document.querySelectorAll(
+".video-card video"
+);
 
 
-      const text =
-        isArabic
+function playVideos(){
 
-        ? `مرحباً ديزاين جلاس وميرور الكويت
+videos.forEach(
+video=>{
 
-الاسم: ${name}
+video.muted=true;
 
-رقم الهاتف: ${phone}
+video.defaultMuted=true;
 
-تفاصيل المشروع: ${message}`
+video.playsInline=true;
 
-        : `Hello Design Glass & Mirror Kuwait
+const promise=
+video.play();
 
-Name: ${name}
+if(promise){
 
-Phone: ${phone}
+promise.catch(
+()=>{}
+);
 
-Project details: ${message}`;
+}
 
-
-      const whatsappURL =
-        "https://wa.me/96555507290?text=" +
-        encodeURIComponent(text);
-
-
-      window.open(
-        whatsappURL,
-        "_blank"
-      );
-
-    }
-  );
-
-
-/* ================= VIDEO AUTOPLAY ================= */
-
-const projectVideo =
-  document.getElementById("projectVideo");
-
-
-projectVideo.muted = true;
-
-projectVideo.defaultMuted = true;
-
-projectVideo.playsInline = true;
-
-
-/*
-   Try to start immediately.
-*/
-
-function startVideo(){
-
-  projectVideo
-    .play()
-    .catch(
-      ()=>{
-        /*
-          Some browsers require
-          the first user interaction.
-        */
-      }
-    );
+}
+);
 
 }
 
 
 window.addEventListener(
-  "load",
-  startVideo
+"load",
+()=>{
+
+setTimeout(
+playVideos,
+500
 );
 
-
-document.addEventListener(
-  "visibilitychange",
-  ()=>{
-    if(!document.hidden){
-      startVideo();
-    }
-  }
+}
 );
 
 
 /*
-   If autoplay was blocked,
-   start after the first touch/click.
+
+Mobile browsers may block autoplay
+until the customer interacts with
+the page. After the first interaction
+we try again.
+
 */
 
-["touchstart","click","scroll"]
-  .forEach(eventName=>{
+[
+"click",
+"touchstart",
+"scroll"
+].forEach(
+eventName=>{
 
-    document.addEventListener(
-      eventName,
-      startVideo,
-      {
-        once:true,
-        passive:true
-      }
-    );
+document.addEventListener(
+eventName,
+playVideos,
+{
+once:true,
+passive:true
+}
+);
 
-  });
+}
+);
 
 
-/* ================= INITIALIZE ================= */
+/* =========================================================
+   START
+   ========================================================= */
 
 applyLanguage();
 
-showHero(0);
-
 </script>
+
 
 </body>
 </html>
